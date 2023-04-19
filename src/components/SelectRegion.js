@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import "../style/SelectRegion.css";
 import { AppContext } from "../contexts/AppContext";
 
 const SelectRegion = () => {

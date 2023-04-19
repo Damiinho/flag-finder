@@ -1,6 +1,5 @@
-import "./App.css";
+import "./style/App.scss";
 import Header from "./components/Header";
-// import Nav from "./components/Nav";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 import AppProvider from "./contexts/AppContext";
@@ -10,7 +9,6 @@ function App() {
     <AppProvider>
       <div className="App">
         <Header />
-        {/* <Nav /> */}
         <Main />
         <Footer />
       </div>

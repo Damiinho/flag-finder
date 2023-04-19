@@ -5,7 +5,6 @@ import SelectColor from "./SelectColor";
 import SelectStripes from "./SelectStripes";
 import SelectRegion from "./SelectRegion";
 import SelectOther from "./SelectOther";
-import "../style/Main.css";
 import { AppContext } from "../contexts/AppContext";
 
 const Main = () => {

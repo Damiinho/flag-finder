@@ -1,8 +1,7 @@
 import React from "react";
-import "../style/Footer.css";
 
 const Footer = () => {
-  return <footer>Damian Ludef — 2021–2023</footer>;
+  return <footer>Do you want some footer? Anyone?</footer>;
 };
 
 export default Footer;

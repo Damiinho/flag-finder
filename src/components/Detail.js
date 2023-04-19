@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import "..//style/Detail.css";
 import { AppContext } from "../contexts/AppContext";
 
 const Detail = () => {
