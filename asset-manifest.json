@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/flag-finder/static/css/main.ac7bd14b.css",
+    "main.js": "/flag-finder/static/js/main.01ab7a8e.js",
+    "static/js/787.c318f016.chunk.js": "/flag-finder/static/js/787.c318f016.chunk.js",
+    "index.html": "/flag-finder/index.html",
+    "main.ac7bd14b.css.map": "/flag-finder/static/css/main.ac7bd14b.css.map",
+    "main.01ab7a8e.js.map": "/flag-finder/static/js/main.01ab7a8e.js.map",
+    "787.c318f016.chunk.js.map": "/flag-finder/static/js/787.c318f016.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac7bd14b.css",
+    "static/js/main.01ab7a8e.js"
+  ]
+}

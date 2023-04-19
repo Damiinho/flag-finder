@@ -1,0 +1,1994 @@
+[ {
+    "id": 0,
+        "active": true,
+        "name": "Andora",
+        "colors": ["blue", "yellow", "red"],
+        "img": "./assets/ad.png",
+        "region": "europe",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 1,
+        "active": true,
+        "name": "Zjednoczone Emiraty Arabskie",
+        "colors": ["red", "green", "white", "black"],
+        "img": "./assets/ae.png",
+        "region": "asia",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 2,
+        "active": true,
+        "name": "Afganistan",
+        "colors": ["red", "green", "black"],
+        "img": "./assets/af.png",
+        "region": "asia",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 3,
+        "active": true,
+        "name": "Antigua i Barbuda",
+        "colors": ["red", "blue", "white", "black", "yellow"],
+        "img": "./assets/ag.png",
+        "region": "carraibean",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 4,
+        "active": true,
+        "name": "Brytyjskie Terytorium Zamorskie Anguilla",
+        "colors": ["red", "blue", "white", "yellow"],
+        "img": "./assets/ai.png",
+        "region": "carraibean",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 5,
+        "active": true,
+        "name": "Albania",
+        "colors": ["red", "black"],
+        "img": "./assets/al.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 6,
+        "active": true,
+        "name": "Armenia",
+        "colors": ["red", "blue", "yellow", "orange"],
+        "img": "./assets/am.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 7,
+        "active": true,
+        "name": "Angola",
+        "colors": ["red", "black", "yellow"],
+        "img": "./assets/ao.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 8,
+        "active": true,
+        "name": "Antarktyda",
+        "colors": ["blue", "white"],
+        "img": "./assets/aq.png",
+        "region": "antarctica",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 9,
+        "active": true,
+        "name": "Argentyna",
+        "colors": ["blue", "white", "yellow"],
+        "img": "./assets/ar.png",
+        "region": "south-america",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 10,
+        "active": true,
+        "name": "Samoa Amerykańskie",
+        "colors": ["blue", "white", "red"],
+        "img": "./assets/as.png",
+        "region": "oceania",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": false,
+        "country": false
+}
+
+,
+    {
+    "id": 11,
+        "active": true,
+        "name": "Austria",
+        "colors": ["white", "red"],
+        "img": "./assets/at.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 12,
+        "active": true,
+        "name": "Australia",
+        "colors": ["white", "red", "blue"],
+        "img": "./assets/au.png",
+        "region": "oceania",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 13,
+        "active": true,
+        "name": "Aruba",
+        "colors": ["blue", "yellow", "red"],
+        "img": "./assets/aw.png",
+        "region": "carraibean",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": false,
+        "country": false
+}
+
+,
+    {
+    "id": 14,
+        "active": true,
+        "name": "Wyspy Alandzkie",
+        "colors": ["blue", "yellow", "red"],
+        "img": "./assets/ax.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 15,
+        "active": true,
+        "name": "Azerbejdżan",
+        "colors": ["white", "red", "green", "blue"],
+        "img": "./assets/az.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 16,
+        "active": true,
+        "name": "Bośnia i Hercehowina",
+        "colors": ["white", "blue", "yellow"],
+        "img": "./assets/ba.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 17,
+        "active": true,
+        "name": "Barbados",
+        "colors": ["blue", "yellow"],
+        "img": "./assets/bb.png",
+        "region": "carraibean",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 18,
+        "active": true,
+        "name": "Bangladesz",
+        "colors": ["green", "red"],
+        "img": "./assets/bd.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 19,
+        "active": true,
+        "name": "Belgia",
+        "colors": ["black", "yellow", "red"],
+        "img": "./assets/be.png",
+        "region": "europe",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 20,
+        "active": true,
+        "name": "Burkina Faso",
+        "colors": ["green", "yellow", "red"],
+        "img": "./assets/bf.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 21,
+        "active": true,
+        "name": "Bułgaria",
+        "colors": ["white", "red", "green"],
+        "img": "./assets/bg.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 22,
+        "active": true,
+        "name": "Bahrajn",
+        "colors": ["white", "red"],
+        "img": "./assets/bh.png",
+        "region": "asia",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 23,
+        "active": true,
+        "name": "Burundi",
+        "colors": ["white", "red", "yellow"],
+        "img": "./assets/bi.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 24,
+        "active": true,
+        "name": "Benin",
+        "colors": ["green", "yellow", "red"],
+        "img": "./assets/bj.png",
+        "region": "africa",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 25,
+        "active": true,
+        "name": "Wspólnota Saint-Barthélemy",
+        "colors": ["blue", "yellow", "red", "white"],
+        "img": "./assets/bl.png",
+        "region": "carraibean",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 26,
+        "active": true,
+        "name": "Bermudy",
+        "colors": ["blue", "red", "white"],
+        "img": "./assets/bm.png",
+        "region": "north-america",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 27,
+        "active": true,
+        "name": "Brunei",
+        "colors": ["white", "yellow", "red", "black"],
+        "img": "./assets/bn.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 28,
+        "active": true,
+        "name": "Boliwia",
+        "colors": ["green", "yellow", "red"],
+        "img": "./assets/bo.png",
+        "region": "south-america",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 29,
+        "active": true,
+        "name": "Bonaire",
+        "colors": ["blue", "yellow", "white"],
+        "img": "./assets/bq.png",
+        "region": "carraibean",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 30,
+        "active": true,
+        "name": "Brazylia",
+        "colors": ["green", "yellow", "blue"],
+        "img": "./assets/br.png",
+        "region": "south-america",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 31,
+        "active": true,
+        "name": "Bahamy",
+        "colors": ["blue", "yellow", "black"],
+        "img": "./assets/bs.png",
+        "region": "carraibean",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 32,
+        "active": true,
+        "name": "Bhutan",
+        "colors": ["white", "yellow", "orange"],
+        "img": "./assets/bt.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 33,
+        "active": true,
+        "name": "Botswana",
+        "colors": ["white", "blue", "black"],
+        "img": "./assets/bw.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 34,
+        "active": true,
+        "name": "Białoruś",
+        "colors": ["red", "green", "white"],
+        "img": "./assets/by.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 35,
+        "active": true,
+        "name": "Belize",
+        "colors": ["red", "blue"],
+        "img": "./assets/bz.png",
+        "region": "north-america",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 36,
+        "active": true,
+        "name": "Kanada",
+        "colors": ["white", "red"],
+        "img": "./assets/ca.png",
+        "region": "north-america",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 37,
+        "active": true,
+        "name": "Wyspy Kokosowe",
+        "colors": ["yellow", "green"],
+        "img": "./assets/cc.png",
+        "region": "oceania",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 38,
+        "active": true,
+        "name": "Demokratyczna Republika Konga",
+        "colors": ["yellow", "blue", "red"],
+        "img": "./assets/cd.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 39,
+        "active": true,
+        "name": "Republika Środkowoafrykańska",
+        "colors": ["white", "green", "yellow", "red", "blue"],
+        "img": "./assets/cf.png",
+        "region": "africa",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 40,
+        "active": true,
+        "name": "Kongo",
+        "colors": ["green", "yellow", "red"],
+        "img": "./assets/cg.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 41,
+        "active": true,
+        "name": "Szwajcaria",
+        "colors": ["white", "red"],
+        "img": "./assets/ch.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 42,
+        "active": true,
+        "name": "Wybrzeże Kości Słoniowej",
+        "colors": ["white", "orange", "yellow", "green"],
+        "img": "./assets/ci.png",
+        "region": "africa",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 43,
+        "active": true,
+        "name": "Wyspy Cooka",
+        "colors": ["white", "blue", "red"],
+        "img": "./assets/ck.png",
+        "region": "oceania",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 44,
+        "active": true,
+        "name": "Chile",
+        "colors": ["white", "blue", "red"],
+        "img": "./assets/cl.png",
+        "region": "south-america",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 45,
+        "active": true,
+        "name": "Kamerun",
+        "colors": ["green", "red", "yellow"],
+        "img": "./assets/cm.png",
+        "region": "africa",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 46,
+        "active": true,
+        "name": "Chiny",
+        "colors": ["red", "yellow"],
+        "img": "./assets/cn.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 47,
+        "active": true,
+        "name": "Kolumbia",
+        "colors": ["yellow", "blue", "red"],
+        "img": "./assets/co.png",
+        "region": "south-america",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 48,
+        "active": true,
+        "name": "Kostaryka",
+        "colors": ["white", "blue", "red"],
+        "img": "./assets/cr.png",
+        "region": "north-america",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 49,
+        "active": true,
+        "name": "Kuba",
+        "colors": ["white", "blue", "red"],
+        "img": "./assets/cu.png",
+        "region": "carraibean",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 50,
+        "active": true,
+        "name": "Republikja Zielonego Przylądka",
+        "colors": ["white", "blue", "red"],
+        "img": "./assets/cv.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 51,
+        "active": true,
+        "name": "Curaçao",
+        "colors": ["white", "blue", "yellow"],
+        "img": "./assets/cw.png",
+        "region": "carraibean",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 52,
+        "active": true,
+        "name": "Wyspy Bożego Narodzenia",
+        "colors": ["green", "blue", "yellow"],
+        "img": "./assets/cx.png",
+        "region": "oceania",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 53,
+        "active": true,
+        "name": "Cypr",
+        "colors": ["white", "yellow"],
+        "img": "./assets/cy.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 54,
+        "active": true,
+        "name": "Czechy",
+        "colors": ["white", "blue", "red"],
+        "img": "./assets/cz.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 55,
+        "active": true,
+        "name": "Niemcy",
+        "colors": ["red", "black", "yellow"],
+        "img": "./assets/de.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 56,
+        "active": true,
+        "name": "Dżibuti",
+        "colors": ["white", "blue", "green", "red"],
+        "img": "./assets/dj.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 57,
+        "active": true,
+        "name": "Dania",
+        "colors": ["red", "white"],
+        "img": "./assets/dk.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 58,
+        "active": true,
+        "name": "Dominika",
+        "colors": ["white", "black", "red", "green", "yellow"],
+        "img": "./assets/dm.png",
+        "region": "carraibean",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 59,
+        "active": true,
+        "name": "Dominikana",
+        "colors": ["white", "blue", "red"],
+        "img": "./assets/do.png",
+        "region": "carraibean",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 60,
+        "active": true,
+        "name": "Algieria",
+        "colors": ["white", "green", "red"],
+        "img": "./assets/dz.png",
+        "region": "africa",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 61,
+        "active": true,
+        "name": "Ekwador",
+        "colors": ["yellow", "blue", "red"],
+        "img": "./assets/ec.png",
+        "region": "south-america",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 62,
+        "active": true,
+        "name": "Estonia",
+        "colors": ["white", "blue", "black"],
+        "img": "./assets/ee.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 63,
+        "active": true,
+        "name": "Egipt",
+        "colors": ["white", "black", "red"],
+        "img": "./assets/eg.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 64,
+        "active": true,
+        "name": "Sahara Zachodnia",
+        "colors": ["white", "black", "red", "green"],
+        "img": "./assets/eh.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 65,
+        "active": true,
+        "name": "Erytrea",
+        "colors": ["green", "blue", "red"],
+        "img": "./assets/er.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 66,
+        "active": true,
+        "name": "Hiszpania",
+        "colors": ["yellow", "red"],
+        "img": "./assets/es.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 67,
+        "active": true,
+        "name": "Etiopia",
+        "colors": ["greem", "blue", "red", "yellow"],
+        "img": "./assets/et.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 68,
+        "active": true,
+        "name": "Finlandia",
+        "colors": ["white", "blue"],
+        "img": "./assets/fi.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 69,
+        "active": true,
+        "name": "Fidżi",
+        "colors": ["white", "blue", "red"],
+        "img": "./assets/fj.png",
+        "region": "oceania",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 70,
+        "active": true,
+        "name": "Falklandy",
+        "colors": ["white", "blue", "red"],
+        "img": "./assets/fk.png",
+        "region": "south-america",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 71,
+        "active": true,
+        "name": "Mikronezja",
+        "colors": ["white", "blue"],
+        "img": "./assets/fm.png",
+        "region": "oceania",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 72,
+        "active": true,
+        "name": "Wyspy Owcze",
+        "colors": ["white", "blue", "red"],
+        "img": "./assets/fo.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": false,
+        "country": false
+}
+
+,
+    {
+    "id": 73,
+        "active": true,
+        "name": "Francja",
+        "colors": ["white", "blue", "red"],
+        "img": "./assets/fr.png",
+        "region": "europe",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 74,
+        "active": true,
+        "name": "Gabon",
+        "colors": ["yellow", "blue", "green"],
+        "img": "./assets/ga.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 75,
+        "active": true,
+        "name": "Wielka Brytania",
+        "colors": ["white", "blue", "red"],
+        "img": "./assets/gb.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 76,
+        "active": true,
+        "name": "Anglia",
+        "colors": ["white", "red"],
+        "img": "./assets/gb-eng.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 77,
+        "active": true,
+        "name": "Irlandia Północna",
+        "colors": ["white", "red"],
+        "img": "./assets/gb-nir.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 78,
+        "active": true,
+        "name": "Szkocja",
+        "colors": ["white", "blue"],
+        "img": "./assets/gb-sct.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 79,
+        "active": true,
+        "name": "Walia",
+        "colors": ["white", "green", "red"],
+        "img": "./assets/gb-wls.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 80,
+        "active": true,
+        "name": "Grenada",
+        "colors": ["yellow", "green", "red"],
+        "img": "./assets/gd.png",
+        "region": "carraibean",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 81,
+        "active": true,
+        "name": "Gruzja",
+        "colors": ["white", "red"],
+        "img": "./assets/ge.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 82,
+        "active": true,
+        "name": "Gujana Francuska",
+        "colors": ["green", "yellow", "red"],
+        "img": "./assets/gf.png",
+        "region": "south-america",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 83,
+        "active": true,
+        "name": "Guernsey",
+        "colors": ["white", "red"],
+        "img": "./assets/gg.png",
+        "region": "carraibean",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 84,
+        "active": true,
+        "name": "Ghana",
+        "colors": ["yellow", "green", "red", "black"],
+        "img": "./assets/gh.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 85,
+        "active": true,
+        "name": "Giblartar",
+        "colors": ["white", "red"],
+        "img": "./assets/gi.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 86,
+        "active": true,
+        "name": "Grenlandia",
+        "colors": ["white", "red"],
+        "img": "./assets/gl.png",
+        "region": "north-america",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": false,
+        "country": false
+}
+
+,
+    {
+    "id": 87,
+        "active": true,
+        "name": "Gambia",
+        "colors": ["blue", "green", "red", "white"],
+        "img": "./assets/gm.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 88,
+        "active": true,
+        "name": "Gwinea",
+        "colors": ["yellow", "green", "red"],
+        "img": "./assets/gn.png",
+        "region": "africa",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 89,
+        "active": true,
+        "name": "Gwadelupa",
+        "colors": ["yellow", "green", "blue"],
+        "img": "./assets/gp.png",
+        "region": "carraibean",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 90,
+        "active": true,
+        "name": "Gwinea Równikowa",
+        "colors": ["white", "green", "red", "blue"],
+        "img": "./assets/gq.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 91,
+        "active": true,
+        "name": "Grecja",
+        "colors": ["blue", "white"],
+        "img": "./assets/gn.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 92,
+        "active": true,
+        "name": "Georgia Południowa",
+        "colors": ["blue", "red"],
+        "img": "./assets/gs.png",
+        "region": "antarctica",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 93,
+        "active": true,
+        "name": "Gwatemala",
+        "colors": ["blue", "white"],
+        "img": "./assets/gt.png",
+        "region": "north-america",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 94,
+        "active": true,
+        "name": "Guam",
+        "colors": ["blue", "red"],
+        "img": "./assets/gu.png",
+        "region": "oceania",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 95,
+        "active": true,
+        "name": "Gwinea Bissau",
+        "colors": ["yellow", "green", "red"],
+        "img": "./assets/gw.png",
+        "region": "africa",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 96,
+        "active": true,
+        "name": "Gujana",
+        "colors": ["yellow", "green", "red"],
+        "img": "./assets/gy.png",
+        "region": "south-america",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 97,
+        "active": true,
+        "name": "Hongkong",
+        "colors": ["white", "red"],
+        "img": "./assets/hk.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 98,
+        "active": true,
+        "name": "Honduras",
+        "colors": ["white", "red"],
+        "img": "./assets/hn.png",
+        "region": "north-america",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 99,
+        "active": true,
+        "name": "Chorwacja",
+        "colors": ["white", "blue", "red"],
+        "img": "./assets/hr.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 100,
+        "active": true,
+        "name": "Haiti",
+        "colors": ["blue", "red"],
+        "img": "./assets/ht.png",
+        "region": "carraibean",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 101,
+        "active": true,
+        "name": "Węgry",
+        "colors": ["white", "green", "red"],
+        "img": "./assets/hu.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 102,
+        "active": true,
+        "name": "Indonezja",
+        "colors": ["white", "red"],
+        "img": "./assets/id.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 103,
+        "active": true,
+        "name": "Irlandia",
+        "colors": ["yellow", "white", "green", "orange"],
+        "img": "./assets/ie.png",
+        "region": "europe",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 104,
+        "active": true,
+        "name": "Izrael",
+        "colors": ["white", "blue"],
+        "img": "./assets/il.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 105,
+        "active": true,
+        "name": "Wyspa Man",
+        "colors": ["white", "red"],
+        "img": "./assets/im.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 106,
+        "active": true,
+        "name": "Indie",
+        "colors": ["white", "green", "yellow", "orange"],
+        "img": "./assets/in.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 107,
+        "active": true,
+        "name": "Brytyjskie Terytorium Oceanu Indyjskiego",
+        "colors": ["white", "blue", "red"],
+        "img": "./assets/io.png",
+        "region": "oceania",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 108,
+        "active": true,
+        "name": "Irak",
+        "colors": ["white", "green", "red", "black"],
+        "img": "./assets/iq.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 109,
+        "active": true,
+        "name": "Iran",
+        "colors": ["white", "green", "red"],
+        "img": "./assets/ir.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 110,
+        "active": true,
+        "name": "Islandia",
+        "colors": ["white", "blue", "red"],
+        "img": "./assets/is.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 111,
+        "active": true,
+        "name": "Włochy",
+        "colors": ["white", "green", "red"],
+        "img": "./assets/it.png",
+        "region": "europe",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 112,
+        "active": true,
+        "name": "Wyspa Jersey",
+        "colors": ["white", "red"],
+        "img": "./assets/je.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 113,
+        "active": true,
+        "name": "Jamajka",
+        "colors": ["black", "green", "yellow"],
+        "img": "./assets/jm.png",
+        "region": "carraibean",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 114,
+        "active": true,
+        "name": "Jordania",
+        "colors": ["white", "green", "red", "black"],
+        "img": "./assets/jo.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 115,
+        "active": true,
+        "name": "Japonia",
+        "colors": ["white", "red"],
+        "img": "./assets/jp.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 116,
+        "active": true,
+        "name": "Kenia",
+        "colors": ["black", "green", "red"],
+        "img": "./assets/ke.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 117,
+        "active": true,
+        "name": "Kirgistan",
+        "colors": ["yellow", "red"],
+        "img": "./assets/kg.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 118,
+        "active": true,
+        "name": "Kambodża",
+        "colors": ["white", "blue", "red"],
+        "img": "./assets/kh.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 119,
+        "active": true,
+        "name": "Kiribati",
+        "colors": ["white", "yellow", "blue", "red"],
+        "img": "./assets/ki.png",
+        "region": "oceania",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 120,
+        "active": true,
+        "name": "Komory",
+        "colors": ["white", "green", "red", "yellow", "blue"],
+        "img": "./assets/km.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 121,
+        "active": true,
+        "name": "Saint Kitts i Nevis",
+        "colors": ["back", "yellow", "white", "green", "red"],
+        "img": "./assets/kn.png",
+        "region": "carraibean",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 122,
+        "active": true,
+        "name": "Korea Północna",
+        "colors": ["white", "blue", "red"],
+        "img": "./assets/kp.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 123,
+        "active": true,
+        "name": "Korea Południowa",
+        "colors": ["white", "blue", "red", "black"],
+        "img": "./assets/kr.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 124,
+        "active": true,
+        "name": "Kuwejt",
+        "colors": ["white", "green", "red", "black"],
+        "img": "./assets/kw.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 125,
+        "active": true,
+        "name": "Kajmany",
+        "colors": ["white", "blue", "red"],
+        "img": "./assets/ky.png",
+        "region": "carraibean",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+}
+
+,
+    {
+    "id": 126,
+        "active": true,
+        "name": "Kazachstan",
+        "colors": ["yellow", "blue"],
+        "img": "./assets/kz.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 127,
+        "active": true,
+        "name": "Laos",
+        "colors": ["white", "blue", "red"],
+        "img": "./assets/la.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 128,
+        "active": true,
+        "name": "Liban",
+        "colors": ["white", "green", "red"],
+        "img": "./assets/lb.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 129,
+        "active": true,
+        "name": "Saint Lucia",
+        "colors": ["blue", "yellow", "black"],
+        "img": "./assets/lc.png",
+        "region": "carraibean",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+}
+
+,
+    {
+    "id": 130,
+        "active": true,
+        "name": "Liechtenstein",
+        "colors": ["blue", "red"],
+        "img": "./assets/li.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 131,
+        "active": true,
+        "name": "Sri Lanka",
+        "colors": ["yellow", "orange", "green", "red"],
+        "img": "./assets/lk.png",
+        "region": "asia",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+}
+
+,
+    {
+    "id": 132,
+        "active": true,
+        "name": "Liberia",
+        "colors": ["white", "blue", "red"],
+        "img": "./assets/lr.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+}
+]
