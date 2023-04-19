@@ -13,7 +13,7 @@ export const AppProvider = ({ children }) => {
   const [orange, setOrange] = useState(false);
   const [verticalStripes, setVerticalStripes] = useState(false);
   const [horizontalStripes, setHorizontalStripes] = useState(false);
-  const [otherShipes, setOtherShipes] = useState(false);
+  const [otherShapes, setOtherShapes] = useState(false);
   const [symbols, setSymbols] = useState(false);
   const [region, setRegion] = useState("");
   const [isCountrySelected, setIsCountrySelected] = useState(false);
@@ -39,8 +39,8 @@ export const AppProvider = ({ children }) => {
     setVerticalStripes,
     horizontalStripes,
     setHorizontalStripes,
-    otherShipes,
-    setOtherShipes,
+    otherShapes,
+    setOtherShapes,
     symbols,
     setSymbols,
     region,

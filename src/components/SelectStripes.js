@@ -8,8 +8,8 @@ const SelectStripes = () => {
     setVerticalStripes,
     horizontalStripes,
     setHorizontalStripes,
-    otherShipes,
-    setOtherShipes,
+    otherShapes,
+    setOtherShapes,
     symbols,
     setSymbols,
   } = useContext(AppContext);
@@ -23,8 +23,8 @@ const SelectStripes = () => {
   };
 
   const setActiveOther = (item) => {
-    if (item === "other-shipes") {
-      setOtherShipes(!otherShipes);
+    if (item === "other-shapes") {
+      setOtherShapes(!otherShapes);
     }
     if (item === "symbols") {
       setSymbols(!symbols);
@@ -46,9 +46,9 @@ const SelectStripes = () => {
         paski poziome
       </button>
       <button
-        className={`stripes other-shipes ${otherShipes ? "active" : ""}`}
+        className={`stripes other-shapes ${otherShapes ? "active" : ""}`}
         onClick={() => {
-          setActiveOther("other-shipes");
+          setActiveOther("other-shapes");
         }}
       >
         Inne kształty

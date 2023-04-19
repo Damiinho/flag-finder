@@ -15,7 +15,7 @@ const SelectOther = () => {
     setOrange,
     setVerticalStripes,
     setHorizontalStripes,
-    setOtherShipes,
+    setOtherShapes,
     setSymbols,
     setRegion,
   } = useContext(AppContext);
@@ -33,7 +33,7 @@ const SelectOther = () => {
     setOrange(false);
     setVerticalStripes(false);
     setHorizontalStripes(false);
-    setOtherShipes(false);
+    setOtherShapes(false);
     setSymbols(false);
     setRegion("");
     setIsCountrySelected(false);

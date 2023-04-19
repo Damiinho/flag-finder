@@ -7,7 +7,7 @@
         "region": "europe",
         "verticalStripes": true,
         "horizontalStripes": false,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": true,
         "country": true
 }
@@ -22,7 +22,7 @@
         "region": "asia",
         "verticalStripes": true,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": true,
         "country": true
 }
@@ -37,7 +37,7 @@
         "region": "asia",
         "verticalStripes": true,
         "horizontalStripes": false,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": true,
         "country": true
 }
@@ -52,7 +52,7 @@
         "region": "carraibean",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -67,7 +67,7 @@
         "region": "carraibean",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": false
 }
@@ -82,7 +82,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -97,7 +97,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": false,
         "country": true
 }
@@ -112,7 +112,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -127,7 +127,7 @@
         "region": "antarctica",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": false,
         "country": true
 }
@@ -142,7 +142,7 @@
         "region": "south-america",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": true,
         "country": true
 }
@@ -157,7 +157,7 @@
         "region": "oceania",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": false,
         "country": false
 }
@@ -172,7 +172,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": false,
         "country": true
 }
@@ -187,7 +187,7 @@
         "region": "oceania",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -202,7 +202,7 @@
         "region": "carraibean",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": false,
         "country": false
 }
@@ -217,7 +217,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": false
 }
@@ -232,7 +232,7 @@
         "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": true,
         "country": true
 }
@@ -247,7 +247,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -262,7 +262,7 @@
         "region": "carraibean",
         "verticalStripes": true,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -277,7 +277,7 @@
         "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": false,
         "country": true
 }
@@ -292,7 +292,7 @@
         "region": "europe",
         "verticalStripes": true,
         "horizontalStripes": false,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": false,
         "country": true
 }
@@ -307,7 +307,7 @@
         "region": "africa",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -322,7 +322,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": false,
         "country": true
 }
@@ -337,7 +337,7 @@
         "region": "asia",
         "verticalStripes": true,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": false,
         "country": true
 }
@@ -352,7 +352,7 @@
         "region": "africa",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -367,7 +367,7 @@
         "region": "africa",
         "verticalStripes": true,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": false,
         "country": true
 }
@@ -382,7 +382,7 @@
         "region": "carraibean",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": true,
         "country": false
 }
@@ -397,7 +397,7 @@
         "region": "north-america",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": false
 }
@@ -412,7 +412,7 @@
         "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -427,7 +427,7 @@
         "region": "south-america",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": false,
         "country": true
 }
@@ -442,7 +442,7 @@
         "region": "carraibean",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": false
 }
@@ -457,7 +457,7 @@
         "region": "south-america",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -472,7 +472,7 @@
         "region": "carraibean",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": false,
         "country": true
 }
@@ -487,7 +487,7 @@
         "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -502,7 +502,7 @@
         "region": "africa",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": false,
         "country": true
 }
@@ -517,7 +517,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -532,7 +532,7 @@
         "region": "north-america",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -547,7 +547,7 @@
         "region": "north-america",
         "verticalStripes": true,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -562,7 +562,7 @@
         "region": "oceania",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": false
 }
@@ -577,7 +577,7 @@
         "region": "africa",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -592,7 +592,7 @@
         "region": "africa",
         "verticalStripes": true,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -607,7 +607,7 @@
         "region": "africa",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": false,
         "country": true
 }
@@ -622,7 +622,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -637,7 +637,7 @@
         "region": "africa",
         "verticalStripes": true,
         "horizontalStripes": false,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": false,
         "country": true
 }
@@ -652,7 +652,7 @@
         "region": "oceania",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": false
 }
@@ -667,7 +667,7 @@
         "region": "south-america",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -682,7 +682,7 @@
         "region": "africa",
         "verticalStripes": true,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -697,7 +697,7 @@
         "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -712,7 +712,7 @@
         "region": "south-america",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": false,
         "country": true
 }
@@ -727,7 +727,7 @@
         "region": "north-america",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -742,7 +742,7 @@
         "region": "carraibean",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -757,7 +757,7 @@
         "region": "africa",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": true,
         "country": true
 }
@@ -772,7 +772,7 @@
         "region": "carraibean",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": true,
         "country": false
 }
@@ -787,7 +787,7 @@
         "region": "oceania",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": false
 }
@@ -802,7 +802,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -817,7 +817,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": false,
         "country": true
 }
@@ -832,7 +832,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": false,
         "country": true
 }
@@ -847,7 +847,7 @@
         "region": "africa",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -862,7 +862,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": false,
         "country": true
 }
@@ -877,7 +877,7 @@
         "region": "carraibean",
         "verticalStripes": true,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -892,7 +892,7 @@
         "region": "carraibean",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -907,7 +907,7 @@
         "region": "africa",
         "verticalStripes": true,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -922,7 +922,7 @@
         "region": "south-america",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": true,
         "country": true
 }
@@ -937,7 +937,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": false,
         "country": true
 }
@@ -952,7 +952,7 @@
         "region": "africa",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": true,
         "country": true
 }
@@ -967,7 +967,7 @@
         "region": "africa",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -982,7 +982,7 @@
         "region": "africa",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -997,7 +997,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": true,
         "country": true
 }
@@ -1012,7 +1012,7 @@
         "region": "africa",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1027,7 +1027,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": false,
         "country": true
 }
@@ -1042,7 +1042,7 @@
         "region": "oceania",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1057,7 +1057,7 @@
         "region": "south-america",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": false
 }
@@ -1072,7 +1072,7 @@
         "region": "oceania",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1087,7 +1087,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": false,
         "country": false
 }
@@ -1102,7 +1102,7 @@
         "region": "europe",
         "verticalStripes": true,
         "horizontalStripes": false,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": false,
         "country": true
 }
@@ -1117,7 +1117,7 @@
         "region": "africa",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": false,
         "country": true
 }
@@ -1132,7 +1132,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": false,
         "country": true
 }
@@ -1147,7 +1147,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": false
 }
@@ -1162,7 +1162,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": false
 }
@@ -1177,7 +1177,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": true,
         "country": false
 }
@@ -1192,7 +1192,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": true,
         "country": false
 }
@@ -1207,7 +1207,7 @@
         "region": "carraibean",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1222,7 +1222,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1237,7 +1237,7 @@
         "region": "south-america",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": false
 }
@@ -1252,7 +1252,7 @@
         "region": "carraibean",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": false
 }
@@ -1267,7 +1267,7 @@
         "region": "africa",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1282,7 +1282,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": false
 }
@@ -1297,7 +1297,7 @@
         "region": "north-america",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": false,
         "country": false
 }
@@ -1312,7 +1312,7 @@
         "region": "africa",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": false,
         "country": true
 }
@@ -1327,7 +1327,7 @@
         "region": "africa",
         "verticalStripes": true,
         "horizontalStripes": false,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": false,
         "country": true
 }
@@ -1342,7 +1342,7 @@
         "region": "carraibean",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": false
 }
@@ -1357,7 +1357,7 @@
         "region": "africa",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1372,7 +1372,7 @@
         "region": "africa",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": false,
         "country": true
 }
@@ -1387,7 +1387,7 @@
         "region": "antarctica",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": false
 }
@@ -1402,7 +1402,7 @@
         "region": "north-america",
         "verticalStripes": true,
         "horizontalStripes": false,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": true,
         "country": true
 }
@@ -1417,7 +1417,7 @@
         "region": "oceania",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": false
 }
@@ -1432,7 +1432,7 @@
         "region": "africa",
         "verticalStripes": true,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1447,7 +1447,7 @@
         "region": "south-america",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": false,
         "country": true
 }
@@ -1462,7 +1462,7 @@
         "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": false
 }
@@ -1477,7 +1477,7 @@
         "region": "north-america",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1492,7 +1492,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": true,
         "country": true
 }
@@ -1507,7 +1507,7 @@
         "region": "carraibean",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": true,
         "country": true
 }
@@ -1522,7 +1522,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": false,
         "country": true
 }
@@ -1537,7 +1537,7 @@
         "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": false,
         "country": true
 }
@@ -1552,7 +1552,7 @@
         "region": "europe",
         "verticalStripes": true,
         "horizontalStripes": false,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": false,
         "country": true
 }
@@ -1567,7 +1567,7 @@
         "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1582,7 +1582,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": true,
         "country": false
 }
@@ -1597,7 +1597,7 @@
         "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1612,7 +1612,7 @@
         "region": "oceania",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": false
 }
@@ -1627,7 +1627,7 @@
         "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1642,7 +1642,7 @@
         "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": true,
         "country": true
 }
@@ -1657,7 +1657,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1672,7 +1672,7 @@
         "region": "europe",
         "verticalStripes": true,
         "horizontalStripes": false,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": false,
         "country": true
 }
@@ -1687,7 +1687,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": false
 }
@@ -1702,7 +1702,7 @@
         "region": "carraibean",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": false,
         "country": true
 }
@@ -1717,7 +1717,7 @@
         "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1732,7 +1732,7 @@
         "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": false,
         "country": true
 }
@@ -1747,7 +1747,7 @@
         "region": "africa",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1762,7 +1762,7 @@
         "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1777,7 +1777,7 @@
         "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": true,
         "country": true
 }
@@ -1792,7 +1792,7 @@
         "region": "oceania",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1807,7 +1807,7 @@
         "region": "africa",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1822,7 +1822,7 @@
         "region": "carraibean",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1837,7 +1837,7 @@
         "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1852,7 +1852,7 @@
         "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1867,7 +1867,7 @@
         "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": false,
         "country": true
 }
@@ -1882,7 +1882,7 @@
         "region": "carraibean",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": false
 }
@@ -1897,7 +1897,7 @@
         "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1912,7 +1912,7 @@
         "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": false,
         "country": true
 }
@@ -1927,7 +1927,7 @@
         "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1942,7 +1942,7 @@
         "region": "carraibean",
         "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": false,
         "country": true
 }
@@ -1957,7 +1957,7 @@
         "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": true,
         "country": true
 }
@@ -1972,7 +1972,7 @@
         "region": "asia",
         "verticalStripes": true,
         "horizontalStripes": false,
-        "otherShipes": true,
+        "otherShapes": true,
         "symbols": true,
         "country": true
 }
@@ -1987,7 +1987,7 @@
         "region": "africa",
         "verticalStripes": false,
         "horizontalStripes": true,
-        "otherShipes": false,
+        "otherShapes": false,
         "symbols": true,
         "country": true
 }

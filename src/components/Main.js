@@ -34,7 +34,9 @@ const Main = () => {
       </div>
 
       <div className="main-box">
-        <div className="full-list"></div>
+        <div className="full-list">
+          <FullList />
+        </div>
       </div>
     </div>
   );
