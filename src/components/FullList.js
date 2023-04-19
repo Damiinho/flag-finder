@@ -69,16 +69,7 @@ const FullList = () => {
 
   const handleList = () => {
     const listShowCountries = countries.map((item) => (
-      <SmallOne
-        key={item.name}
-        name={item.name}
-        colors={item.colors}
-        img={item.img}
-        region={item.region}
-        stripes={item.stripes}
-        active={item.active}
-        // click={props.click}
-      />
+      <SmallOne key={item.id} item={item} />
     ));
 
     return listShowCountries;

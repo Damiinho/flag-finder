@@ -17,6 +17,7 @@ export const AppProvider = ({ children }) => {
   const [symbols, setSymbols] = useState(false);
   const [region, setRegion] = useState("");
   const [isCountrySelected, setIsCountrySelected] = useState(false);
+  const [selectedSmallOne, setSelectedSmallOne] = useState(null);
 
   const providerValue = {
     flags,
@@ -47,6 +48,8 @@ export const AppProvider = ({ children }) => {
     setRegion,
     isCountrySelected,
     setIsCountrySelected,
+    selectedSmallOne,
+    setSelectedSmallOne,
   };
 
   return (

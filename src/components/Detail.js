@@ -1,31 +1,37 @@
-import React from "react";
+import React, { useContext } from "react";
 import "..//style/Detail.css";
+import { AppContext } from "../contexts/AppContext";
 
-const Detail = (props) => {
-  if (props.data.region === "europe") {
-    props.data.region = "Europa";
-  } else if (props.data.region === "south-america") {
-    props.data.region = "Ameryka Południowa";
-  } else if (props.data.region === "north-america") {
-    props.data.region = "Ameryka Północna";
-  } else if (props.data.region === "asia") {
-    props.data.region = "Azja";
-  } else if (props.data.region === "africa") {
-    props.data.region = "Afryka";
-  } else if (props.data.region === "oceania") {
-    props.data.region = "Australia/Oceania";
-  } else if (props.data.region === "carraibean") {
-    props.data.region = "Karaiby";
-  } else if (props.data.region === "antarctica") {
-    props.data.region = "Antarktyka";
+const Detail = () => {
+  const { selectedSmallOne } = useContext(AppContext);
+
+  let region = "";
+  if (selectedSmallOne) {
+    if (selectedSmallOne.region === "europe") {
+      region = "Europa";
+    } else if (selectedSmallOne.region === "south-america") {
+      region = "Ameryka Południowa";
+    } else if (selectedSmallOne.region === "north-america") {
+      region = "Ameryka Północna";
+    } else if (selectedSmallOne.region === "asia") {
+      region = "Azja";
+    } else if (selectedSmallOne.region === "africa") {
+      region = "Afryka";
+    } else if (selectedSmallOne.region === "oceania") {
+      region = "Australia/Oceania";
+    } else if (selectedSmallOne.region === "carraibean") {
+      region = "Karaiby";
+    } else if (selectedSmallOne.region === "antarctica") {
+      region = "Antarktyka";
+    }
   }
 
-  if (props.data.name) {
+  if (selectedSmallOne) {
     return (
       <div class="detail">
-        <p>{props.data.name}</p>
-        <p>Region: {props.data.region}</p>
-        <img src={props.data.img} alt={props.data.name} />
+        <p>{selectedSmallOne.name}</p>
+        <p>Region: {region}</p>
+        <img src={selectedSmallOne.img} alt={selectedSmallOne.name} />
       </div>
     );
   } else

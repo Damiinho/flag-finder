@@ -1559,7 +1559,7 @@
 
 ,
     {
-    "id": 102,
+    "id": 104,
         "active": true,
         "name": "Izrael",
         "colors": ["white", "blue"],
@@ -1574,7 +1574,7 @@
 
 ,
     {
-    "id": 103,
+    "id": 105,
         "active": true,
         "name": "Wyspa Man",
         "colors": ["white", "red"],
@@ -1589,7 +1589,7 @@
 
 ,
     {
-    "id": 104,
+    "id": 106,
         "active": true,
         "name": "Indie",
         "colors": ["white", "green", "yellow", "orange"],
@@ -1604,7 +1604,7 @@
 
 ,
     {
-    "id": 105,
+    "id": 107,
         "active": true,
         "name": "Brytyjskie Terytorium Oceanu Indyjskiego",
         "colors": ["white", "blue", "red"],
@@ -1619,7 +1619,7 @@
 
 ,
     {
-    "id": 106,
+    "id": 108,
         "active": true,
         "name": "Irak",
         "colors": ["white", "green", "red", "black"],
@@ -1634,7 +1634,7 @@
 
 ,
     {
-    "id": 107,
+    "id": 109,
         "active": true,
         "name": "Iran",
         "colors": ["white", "green", "red"],
@@ -1649,7 +1649,7 @@
 
 ,
     {
-    "id": 108,
+    "id": 110,
         "active": true,
         "name": "Islandia",
         "colors": ["white", "blue", "red"],
@@ -1664,7 +1664,7 @@
 
 ,
     {
-    "id": 109,
+    "id": 111,
         "active": true,
         "name": "Włochy",
         "colors": ["white", "green", "red"],
@@ -1679,7 +1679,7 @@
 
 ,
     {
-    "id": 110,
+    "id": 112,
         "active": true,
         "name": "Wyspa Jersey",
         "colors": ["white", "red"],
@@ -1694,7 +1694,7 @@
 
 ,
     {
-    "id": 111,
+    "id": 113,
         "active": true,
         "name": "Jamajka",
         "colors": ["black", "green", "yellow"],
@@ -1709,7 +1709,7 @@
 
 ,
     {
-    "id": 112,
+    "id": 114,
         "active": true,
         "name": "Jordania",
         "colors": ["white", "green", "red", "black"],
@@ -1724,7 +1724,7 @@
 
 ,
     {
-    "id": 113,
+    "id": 115,
         "active": true,
         "name": "Japonia",
         "colors": ["white", "red"],
@@ -1739,7 +1739,7 @@
 
 ,
     {
-    "id": 114,
+    "id": 116,
         "active": true,
         "name": "Kenia",
         "colors": ["black", "green", "red"],
@@ -1754,7 +1754,7 @@
 
 ,
     {
-    "id": 115,
+    "id": 117,
         "active": true,
         "name": "Kirgistan",
         "colors": ["yellow", "red"],
@@ -1769,7 +1769,7 @@
 
 ,
     {
-    "id": 116,
+    "id": 118,
         "active": true,
         "name": "Kambodża",
         "colors": ["white", "blue", "red"],
@@ -1784,7 +1784,7 @@
 
 ,
     {
-    "id": 117,
+    "id": 119,
         "active": true,
         "name": "Kiribati",
         "colors": ["white", "yellow", "blue", "red"],
@@ -1799,7 +1799,7 @@
 
 ,
     {
-    "id": 118,
+    "id": 120,
         "active": true,
         "name": "Komory",
         "colors": ["white", "green", "red", "yellow", "blue"],
@@ -1814,7 +1814,7 @@
 
 ,
     {
-    "id": 119,
+    "id": 121,
         "active": true,
         "name": "Saint Kitts i Nevis",
         "colors": ["back", "yellow", "white", "green", "red"],
@@ -1829,7 +1829,7 @@
 
 ,
     {
-    "id": 120,
+    "id": 122,
         "active": true,
         "name": "Korea Północna",
         "colors": ["white", "blue", "red"],
@@ -1844,7 +1844,7 @@
 
 ,
     {
-    "id": 121,
+    "id": 123,
         "active": true,
         "name": "Korea Południowa",
         "colors": ["white", "blue", "red", "black"],
@@ -1859,7 +1859,7 @@
 
 ,
     {
-    "id": 122,
+    "id": 124,
         "active": true,
         "name": "Kuwejt",
         "colors": ["white", "green", "red", "black"],
@@ -1874,7 +1874,7 @@
 
 ,
     {
-    "id": 123,
+    "id": 125,
         "active": true,
         "name": "Kajmany",
         "colors": ["white", "blue", "red"],
@@ -1889,7 +1889,7 @@
 
 ,
     {
-    "id": 124,
+    "id": 126,
         "active": true,
         "name": "Kazachstan",
         "colors": ["yellow", "blue"],
@@ -1904,7 +1904,7 @@
 
 ,
     {
-    "id": 125,
+    "id": 127,
         "active": true,
         "name": "Laos",
         "colors": ["white", "blue", "red"],
@@ -1919,7 +1919,7 @@
 
 ,
     {
-    "id": 126,
+    "id": 128,
         "active": true,
         "name": "Liban",
         "colors": ["white", "green", "red"],
@@ -1934,7 +1934,7 @@
 
 ,
     {
-    "id": 127,
+    "id": 129,
         "active": true,
         "name": "Saint Lucia",
         "colors": ["blue", "yellow", "black"],
@@ -1949,7 +1949,7 @@
 
 ,
     {
-    "id": 128,
+    "id": 130,
         "active": true,
         "name": "Liechtenstein",
         "colors": ["blue", "red"],
@@ -1964,7 +1964,7 @@
 
 ,
     {
-    "id": 129,
+    "id": 131,
         "active": true,
         "name": "Sri Lanka",
         "colors": ["yellow", "orange", "green", "red"],
@@ -1979,7 +1979,7 @@
 
 ,
     {
-    "id": 130,
+    "id": 132,
         "active": true,
         "name": "Liberia",
         "colors": ["white", "blue", "red"],

@@ -9,7 +9,7 @@ import "../style/Main.css";
 import { AppContext } from "../contexts/AppContext";
 
 const Main = () => {
-  const { flags, setFlags } = useContext(AppContext);
+  const { setFlags } = useContext(AppContext);
 
   useEffect(() => {
     fetch("data/flag.json")
@@ -17,7 +17,7 @@ const Main = () => {
       .then((flags) => {
         setFlags(flags);
       });
-  }, []);
+  }, [setFlags]);
 
   return (
     <div className="main">
@@ -29,7 +29,9 @@ const Main = () => {
             <SelectRegion />
             <SelectOther />
           </div>
-          <div className="detail-box">{/* <Detail /> */}</div>
+          <div className="detail-box">
+            <Detail />
+          </div>
         </div>
       </div>
 
