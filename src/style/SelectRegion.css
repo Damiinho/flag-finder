@@ -1,0 +1,9 @@
+.region button:hover {
+    color: #fff;
+    background-color: black;
+}
+
+.region button.active {
+    color: #fff;
+    background-color: black;
+}

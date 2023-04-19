@@ -1,0 +1,9 @@
+.stripes button:hover {
+    color: #fff;
+    background-color: black;
+}
+
+.stripes button.active {
+    color: #fff;
+    background-color: black;
+}

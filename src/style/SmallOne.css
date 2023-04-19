@@ -1,0 +1,13 @@
+.smallitem {
+    display: block;
+    max-width: 100px;
+    max-height: 50px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.smallitem:hover {
+    filter: brightness(50%);
+    transition: 0.2s;
+    cursor: pointer;
+}

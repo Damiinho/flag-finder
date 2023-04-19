@@ -1,0 +1,11 @@
+.detail img {
+    max-height: 125px;
+}
+
+.detail p {
+    font-size: 20px;
+}
+
+.detail {
+    padding-left: 50px;
+}

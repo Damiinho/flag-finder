@@ -1,0 +1,9 @@
+.other button:hover {
+    color: #fff;
+    background-color: black;
+}
+
+.other button.onlycountries {
+    color: #fff;
+    background-color: black;
+}

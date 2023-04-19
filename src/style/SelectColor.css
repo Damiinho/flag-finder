@@ -1,0 +1,89 @@
+button.red {
+    color: #e74c3c;
+}
+
+button.red:hover {
+    color: #fff;
+    background-color: #e74c3c;
+}
+
+button.red.active {
+    color: #fff;
+    background-color: #e74c3c;
+}
+
+button.white:hover {
+    color: #fff;
+    background-color: black;
+}
+
+button.white.active {
+    color: #fff;
+    background-color: black;
+}
+
+button.black:hover {
+    color: white;
+    background-color: black;
+}
+
+button.black.active {
+    color: white;
+    background-color: black;
+}
+
+button.yellow {
+    color: #f1c40f;
+}
+
+button.yellow:hover {
+    color: #fff;
+    background-color: #f1c40f;
+}
+
+button.yellow.active {
+    color: #fff;
+    background-color: #f1c40f;
+}
+
+button.blue {
+    color: #55acee;
+}
+
+button.blue:hover {
+    background-color: #55acee;
+    color: #fff
+}
+
+button.blue.active {
+    background-color: #55acee;
+    color: #fff
+}
+
+button.green {
+    color: #2ecc71;
+}
+
+button.green:hover {
+    color: #fff;
+    background-color: #2ecc71;
+}
+
+button.green.active {
+    color: #fff;
+    background-color: #2ecc71;
+}
+
+button.orange {
+    color: #e67e22;
+}
+
+button.orange:hover {
+    color: #fff;
+    background-color: #e67e22;
+}
+
+button.orange.active {
+    color: #fff;
+    background-color: #e67e22;
+}
