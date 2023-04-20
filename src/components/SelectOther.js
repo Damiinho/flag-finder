@@ -43,9 +43,7 @@ const SelectOther = () => {
   return (
     <div className="other">
       <button
-        className={`other countries ${
-          isCountrySelected ? "onlycountries" : ""
-        }`}
+        className={`other countries ${isCountrySelected ? "active" : ""}`}
         onClick={handleCountryButton}
       >
         Przeszukaj tylko bazę krajów

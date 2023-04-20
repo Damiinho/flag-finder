@@ -32,25 +32,22 @@ const SelectStripes = () => {
 
   return (
     <div className="stripes">
+      <p>Kształty:</p>
       <button
         className={`stripes vertical ${verticalStripes ? "active" : ""}`}
         onClick={setActiveVertical}
-      >
-        paski pionowe
-      </button>
+      ></button>
       <button
         className={`stripes horizontal ${horizontalStripes ? "active" : ""}`}
         onClick={setActiveHorizontal}
-      >
-        paski poziome
-      </button>
+      ></button>
       <button
         className={`stripes other-shapes ${otherShapes ? "active" : ""}`}
         onClick={() => {
           setActiveOther("other-shapes");
         }}
       >
-        Inne kształty
+        inne
       </button>
       <button
         className={`stripes symbols ${symbols ? "active" : ""}`}
@@ -58,7 +55,7 @@ const SelectStripes = () => {
           setActiveOther("symbols");
         }}
       >
-        Symbole
+        symbole
       </button>
     </div>
   );

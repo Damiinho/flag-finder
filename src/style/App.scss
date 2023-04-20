@@ -6,28 +6,24 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   box-sizing: border-box;
-  background-color: rgb(214, 237, 255);
 
   div.App {
     margin: 0 auto;
+    min-height: 100vh;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     header {
-      height: 8vh;
       background-color: #0d1821;
       color: #f0f4ef;
       text-align: center;
-      font-size: 4vh;
       font-weight: bold;
-      line-height: 8vh;
       text-transform: uppercase;
     }
     .main {
-      min-height: 90vh;
-      background-color: #bfcc94;
-
+      flex-grow: 1;
       .main-select {
-        border-top: 5px solid #344966;
-        background-color: #b4cded;
-
         .select-box {
           display: flex;
           align-items: flex-start;
@@ -38,140 +34,119 @@ body {
           .selectors {
             padding-top: 10px;
             width: 60%;
+
             button {
+              background-color: #fff;
               cursor: pointer;
-              margin: 5px;
-              border-radius: 5px;
-              text-decoration: none;
-              padding: 5px;
-              font-size: 15px;
-              transition: 0.3s;
-              background-color: rgb(247, 247, 247);
-              font-family: "Open Sans", "sans-serif";
+              transition: 0.2s;
+              &:hover {
+                box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+              }
+              &.active {
+                box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+              }
             }
 
             .colors {
+              display: flex;
+              align-items: center;
+              button {
+                width: 30px;
+                height: 30px;
+                margin: 0 5px;
+              }
+
+              button.black {
+                background-color: black;
+              }
+
               button.red {
-                color: #e74c3c;
-              }
-
-              button.red:hover {
-                color: #fff;
                 background-color: #e74c3c;
-              }
-
-              button.red.active {
-                color: #fff;
-                background-color: #e74c3c;
-              }
-
-              button.white:hover {
-                color: #fff;
-                background-color: black;
-              }
-
-              button.white.active {
-                color: #fff;
-                background-color: black;
-              }
-
-              button.black:hover {
-                color: white;
-                background-color: black;
-              }
-
-              button.black.active {
-                color: white;
-                background-color: black;
               }
 
               button.yellow {
-                color: #f1c40f;
-              }
-
-              button.yellow:hover {
-                color: #fff;
-                background-color: #f1c40f;
-              }
-
-              button.yellow.active {
-                color: #fff;
                 background-color: #f1c40f;
               }
 
               button.blue {
-                color: #55acee;
-              }
-
-              button.blue:hover {
                 background-color: #55acee;
-                color: #fff;
-              }
-
-              button.blue.active {
-                background-color: #55acee;
-                color: #fff;
               }
 
               button.green {
-                color: #2ecc71;
-              }
-
-              button.green:hover {
-                color: #fff;
-                background-color: #2ecc71;
-              }
-
-              button.green.active {
-                color: #fff;
                 background-color: #2ecc71;
               }
 
               button.orange {
-                color: #e67e22;
-              }
-
-              button.orange:hover {
-                color: #fff;
-                background-color: #e67e22;
-              }
-
-              button.orange.active {
-                color: #fff;
                 background-color: #e67e22;
               }
             }
             .stripes {
-              button:hover {
-                color: #fff;
-                background-color: black;
+              display: flex;
+              align-items: center;
+              button {
+                width: 30px;
+                height: 30px;
+                margin: 0 5px;
               }
 
-              button.active {
-                color: #fff;
-                background-color: black;
+              &.vertical {
+                background: rgb(255, 255, 255);
+                background: linear-gradient(
+                  90deg,
+                  rgba(255, 255, 255, 1) 15%,
+                  rgba(0, 0, 0, 1) 15%,
+                  rgba(0, 0, 0, 1) 42%,
+                  rgba(255, 255, 255, 1) 42%,
+                  rgba(255, 255, 255, 1) 58%,
+                  rgba(0, 0, 0, 1) 58%,
+                  rgba(0, 0, 0, 1) 85%,
+                  rgba(255, 255, 255, 1) 85%,
+                  rgba(255, 255, 255, 1) 100%
+                );
+              }
+              &.horizontal {
+                background: rgb(255, 255, 255);
+                background: linear-gradient(
+                  rgba(255, 255, 255, 1) 15%,
+                  rgba(0, 0, 0, 1) 15%,
+                  rgba(0, 0, 0, 1) 42%,
+                  rgba(255, 255, 255, 1) 42%,
+                  rgba(255, 255, 255, 1) 58%,
+                  rgba(0, 0, 0, 1) 58%,
+                  rgba(0, 0, 0, 1) 85%,
+                  rgba(255, 255, 255, 1) 85%,
+                  rgba(255, 255, 255, 1) 100%
+                );
+              }
+              &.other-shapes,
+              &.symbols {
+                width: auto;
               }
             }
             .region {
-              button:hover {
-                color: #fff;
-                background-color: black;
+              display: flex;
+              align-items: center;
+
+              button {
+                width: auto;
+                height: 30px;
+                margin: 5px 5px;
               }
 
-              button.active {
-                color: #fff;
-                background-color: black;
+              .region-buttons {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
               }
             }
             .other {
-              button:hover {
-                color: #fff;
-                background-color: black;
-              }
-
-              button.onlycountries {
-                color: #fff;
-                background-color: black;
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+              button {
+                width: auto;
+                height: 30px;
+                margin: 5px 5px;
               }
             }
           }
@@ -218,8 +193,6 @@ body {
       background-color: #344966;
       text-align: center;
       color: #fbfbff;
-      height: 2vh;
-      line-height: 2vh;
     }
   }
 }

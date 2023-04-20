@@ -1,11 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import FullList from "./FullList";
 import Detail from "./Detail";
-import SelectColor from "./SelectColor";
-import SelectStripes from "./SelectStripes";
-import SelectRegion from "./SelectRegion";
-import SelectOther from "./SelectOther";
 import { AppContext } from "../contexts/AppContext";
+import Select from "./Select";
 
 const Main = () => {
   const { setFlags } = useContext(AppContext);
@@ -23,10 +20,7 @@ const Main = () => {
       <div className="main-select">
         <div className="select-box">
           <div className="selectors">
-            <SelectColor />
-            <SelectStripes />
-            <SelectRegion />
-            <SelectOther />
+            <Select />
           </div>
           <div className="detail-box">
             <Detail />
