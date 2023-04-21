@@ -1,7 +1,7 @@
 import React from "react";
 
 const Header = () => {
-  return <header>Wyszukiwarka flag</header>;
+  return <header>Znajdź flagę</header>;
 };
 
 export default Header;

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import FullList from "./FullList";
 import Detail from "./Detail";
 import { AppContext } from "../contexts/AppContext";
@@ -6,6 +6,7 @@ import Select from "./Select";
 
 const Main = () => {
   const { setFlags } = useContext(AppContext);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetch("data/flag.json")
@@ -13,7 +14,28 @@ const Main = () => {
       .then((flags) => {
         setFlags(flags);
       });
+
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+      const height = document.querySelector(".main-box").offsetHeight - 30;
+      console.log(height);
+      document.querySelector(".full-list").style.height = height + "px";
+    }, 3000);
+
+    return () => clearTimeout(timer);
   }, [setFlags]);
+
+  useEffect(() => {
+    const fullList = document.querySelector(".full-list");
+    if (!isLoading) {
+      console.log("teraz sprawdzam");
+      if (fullList.scrollHeight > fullList.clientHeight) {
+        fullList.classList.add("has-overflow");
+      } else {
+        fullList.classList.remove("has-overflow");
+      }
+    }
+  });
 
   return (
     <div className="main">
@@ -29,8 +51,8 @@ const Main = () => {
       </div>
 
       <div className="main-box">
-        <div className="full-list">
-          <FullList />
+        <div className="full-list has-overflow">
+          {isLoading ? <div class="preloader"></div> : <FullList />}
         </div>
       </div>
     </div>

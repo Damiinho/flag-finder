@@ -1,33 +1,110 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;400;700;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+
+  background-image: url("../img/background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: color-dodge;
+  background-color: rgba(18, 21, 39, 0.86);
+  height: 100vh;
+
+  &.inactive {
+    overflow: hidden;
+    // background-color: black;
+  }
+
+  .load {
+    position: absolute;
+    // background-color: black;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    left: -100vw;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: "Poiret One", cursive;
+
+    animation: slide-in-out 3s ease-in-out 0s forwards;
+    @keyframes slide-in-out {
+      0% {
+        left: -100vw;
+      }
+      15% {
+        left: calc(50% - 50vw);
+      }
+      85% {
+        left: calc(50% - 50vw);
+      }
+      100% {
+        left: calc(100% + 100vw);
+      }
+    }
+    img {
+      width: 300px;
+    }
+  }
+
+  div.root {
+    // height: 100vh;
+    position: relative;
+  }
 
   div.App {
-    margin: 0 auto;
-    min-height: 100vh;
-    width: 800px;
+    position: absolute;
+    left: 50%;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    width: 95%;
+    max-width: 1024px;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: #101153a9;
+    display: flex;
+    overflow: hidden;
+    border-radius: 50px;
+    font-weight: 500;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.842);
+    position: relative;
+    color: white;
+
     header {
-      background-color: #0d1821;
+      background-color: #1c527e;
       color: #f0f4ef;
       text-align: center;
       font-weight: bold;
+      font-size: 40px;
       text-transform: uppercase;
+      border-radius: 40px;
+      padding: 10px;
+      margin: 15px auto 0;
+      width: 500px;
+      border: 3px groove white;
+      text-shadow: 4px 4px 2px black;
+
+      box-shadow: 4px 4px 12px 0px rgba(66, 68, 90, 1);
     }
     .main {
       flex-grow: 1;
+      display: flex;
+      flex-direction: row;
       .main-select {
+        width: 30%;
         .select-box {
           display: flex;
           align-items: flex-start;
-          flex-direction: row;
+          flex-direction: column;
           min-height: 250px;
           max-width: 1024px;
           margin: 0 auto;
@@ -36,6 +113,8 @@ body {
             width: 60%;
 
             button {
+              font-family: "Poiret One", cursive;
+              font-weight: bold;
               background-color: #fff;
               cursor: pointer;
               transition: 0.2s;
@@ -54,6 +133,7 @@ body {
                 width: 30px;
                 height: 30px;
                 margin: 0 5px;
+                border-radius: 50%;
               }
 
               button.black {
@@ -103,6 +183,7 @@ body {
                   rgba(255, 255, 255, 1) 85%,
                   rgba(255, 255, 255, 1) 100%
                 );
+                border-radius: 50%;
               }
               &.horizontal {
                 background: rgb(255, 255, 255);
@@ -117,6 +198,7 @@ body {
                   rgba(255, 255, 255, 1) 85%,
                   rgba(255, 255, 255, 1) 100%
                 );
+                border-radius: 50%;
               }
               &.other-shapes,
               &.symbols {
@@ -165,13 +247,67 @@ body {
         }
       }
       .main-box {
-        border-top: 5px solid #344966;
+        width: 70%;
+
         div.full-list {
           margin: 0 auto;
+          height: 400px;
           max-width: 1024px;
           padding: 20px;
           display: flex;
           flex-wrap: wrap;
+          overflow-y: auto;
+
+          div.preloader {
+            margin: 80px auto 0;
+            font-size: 70px;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            animation: animation 1.7s infinite ease;
+            @keyframes animation {
+              0% {
+                transform: rotate(0deg);
+                box-shadow: 0 -0.83em 0 -0.4em #f34a53,
+                  0 -0.83em 0 -0.42em #f34a53, 0 -0.83em 0 -0.44em #f34a53,
+                  0 -0.83em 0 -0.46em #f34a53, 0 -0.83em 0 -0.477em #f34a53;
+              }
+              5%,
+              95% {
+                box-shadow: 0 -0.83em 0 -0.4em #f34a53,
+                  0 -0.83em 0 -0.42em #f34a53, 0 -0.83em 0 -0.44em #f34a53,
+                  0 -0.83em 0 -0.46em #f34a53, 0 -0.83em 0 -0.477em #f34a53;
+              }
+              10%,
+              59% {
+                box-shadow: 0 -0.83em 0 -0.4em #f34a53,
+                  -0.087em -0.825em 0 -0.42em #f34a53,
+                  -0.173em -0.812em 0 -0.44em #f34a53,
+                  -0.256em -0.789em 0 -0.46em #f34a53,
+                  -0.297em -0.775em 0 -0.477em #f34a53;
+              }
+              20% {
+                box-shadow: 0 -0.83em 0 -0.4em #f34a53,
+                  -0.338em -0.758em 0 -0.42em #f34a53,
+                  -0.555em -0.617em 0 -0.44em #f34a53,
+                  -0.671em -0.488em 0 -0.46em #f34a53,
+                  -0.749em -0.34em 0 -0.477em #f34a53;
+              }
+              38% {
+                box-shadow: 0 -0.83em 0 -0.4em #f34a53,
+                  -0.377em -0.74em 0 -0.42em #f34a53,
+                  -0.645em -0.522em 0 -0.44em #f34a53,
+                  -0.775em -0.297em 0 -0.46em #f34a53,
+                  -0.82em -0.09em 0 -0.477em #f34a53;
+              }
+              100% {
+                transform: rotate(360deg);
+                box-shadow: 0 -0.83em 0 -0.4em #f34a53,
+                  0 -0.83em 0 -0.42em #f34a53, 0 -0.83em 0 -0.44em #f34a53,
+                  0 -0.83em 0 -0.46em #f34a53, 0 -0.83em 0 -0.477em #f34a53;
+              }
+            }
+          }
 
           .smallitem {
             display: block;
@@ -188,11 +324,6 @@ body {
           }
         }
       }
-    }
-    footer {
-      background-color: #344966;
-      text-align: center;
-      color: #fbfbff;
     }
   }
 }
