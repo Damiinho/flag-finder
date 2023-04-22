@@ -329,7 +329,9 @@ body {
           flex-wrap: wrap;
           overflow-y: auto;
           gap: 5px;
-          height: 100%;
+          height: auto;
+          justify-content: flex-start;
+          max-height: 100%;
 
           div.preloader {
             margin: 80px auto 0;
