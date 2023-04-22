@@ -32,31 +32,33 @@ const SelectStripes = () => {
 
   return (
     <div className="stripes">
-      <p>Kształty:</p>
-      <button
-        className={`stripes vertical ${verticalStripes ? "active" : ""}`}
-        onClick={setActiveVertical}
-      ></button>
-      <button
-        className={`stripes horizontal ${horizontalStripes ? "active" : ""}`}
-        onClick={setActiveHorizontal}
-      ></button>
-      <button
-        className={`stripes other-shapes ${otherShapes ? "active" : ""}`}
-        onClick={() => {
-          setActiveOther("other-shapes");
-        }}
-      >
-        inne
-      </button>
-      <button
-        className={`stripes symbols ${symbols ? "active" : ""}`}
-        onClick={() => {
-          setActiveOther("symbols");
-        }}
-      >
-        symbole
-      </button>
+      <p>kształty</p>
+      <div className="stripes-buttons">
+        <button
+          className={`stripes vertical ${verticalStripes ? "active" : ""}`}
+          onClick={setActiveVertical}
+        ></button>
+        <button
+          className={`stripes horizontal ${horizontalStripes ? "active" : ""}`}
+          onClick={setActiveHorizontal}
+        ></button>
+        <button
+          className={`stripes other-shapes ${otherShapes ? "active" : ""}`}
+          onClick={() => {
+            setActiveOther("other-shapes");
+          }}
+        >
+          <p>inne</p>
+        </button>
+        <button
+          className={`stripes symbols ${symbols ? "active" : ""}`}
+          onClick={() => {
+            setActiveOther("symbols");
+          }}
+        >
+          <p>symbole</p>
+        </button>
+      </div>
     </div>
   );
 };

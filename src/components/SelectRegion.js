@@ -12,7 +12,7 @@ const SelectRegion = () => {
 
   return (
     <div className="region">
-      <p>Region:</p>
+      <p>regiony</p>
       <div className="region-buttons">
         <button
           className={`region europe ${region === "europe" ? "active" : ""}`}
@@ -20,7 +20,7 @@ const SelectRegion = () => {
             setActiveRegion("europe");
           }}
         >
-          Europa
+          <p>Europa</p>
         </button>
         <button
           className={`region asia ${region === "asia" ? "active" : ""}`}
@@ -28,7 +28,7 @@ const SelectRegion = () => {
             setActiveRegion("asia");
           }}
         >
-          Azja
+          <p>Azja</p>
         </button>
         <button
           className={`region oceania ${region === "oceania" ? "active" : ""}`}
@@ -36,7 +36,15 @@ const SelectRegion = () => {
             setActiveRegion("oceania");
           }}
         >
-          Australia/Oceania
+          <p>Australia/Oceania</p>
+        </button>
+        <button
+          className={`region africa ${region === "africa" ? "active" : ""}`}
+          onClick={() => {
+            setActiveRegion("africa");
+          }}
+        >
+          <p>Afryka</p>
         </button>
         <button
           className={`region north-america ${
@@ -46,7 +54,7 @@ const SelectRegion = () => {
             setActiveRegion("north-america");
           }}
         >
-          Ameryka Północna
+          <p>Ameryka Północna</p>
         </button>
         <button
           className={`region south-america ${
@@ -56,16 +64,9 @@ const SelectRegion = () => {
             setActiveRegion("south-america");
           }}
         >
-          Ameryka Południowa
+          <p>Ameryka Południowa</p>
         </button>
-        <button
-          className={`region africa ${region === "africa" ? "active" : ""}`}
-          onClick={() => {
-            setActiveRegion("africa");
-          }}
-        >
-          Afryka
-        </button>
+
         <button
           className={`region carraibean ${
             region === "carraibean" ? "active" : ""
@@ -74,7 +75,7 @@ const SelectRegion = () => {
             setActiveRegion("carraibean");
           }}
         >
-          Karaiby
+          <p>Karaiby</p>
         </button>
         <button
           className={`region antarctica ${
@@ -84,7 +85,7 @@ const SelectRegion = () => {
             setActiveRegion("antarctica");
           }}
         >
-          Antarktyka
+          <p>Antarktyka</p>
         </button>
       </div>
     </div>

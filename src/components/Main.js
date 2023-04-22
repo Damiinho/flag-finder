@@ -17,25 +17,10 @@ const Main = () => {
 
     const timer = setTimeout(() => {
       setIsLoading(false);
-      const height = document.querySelector(".main-box").offsetHeight - 30;
-      console.log(height);
-      document.querySelector(".full-list").style.height = height + "px";
     }, 3000);
 
     return () => clearTimeout(timer);
   }, [setFlags]);
-
-  useEffect(() => {
-    const fullList = document.querySelector(".full-list");
-    if (!isLoading) {
-      console.log("teraz sprawdzam");
-      if (fullList.scrollHeight > fullList.clientHeight) {
-        fullList.classList.add("has-overflow");
-      } else {
-        fullList.classList.remove("has-overflow");
-      }
-    }
-  });
 
   return (
     <div className="main">
@@ -44,14 +29,14 @@ const Main = () => {
           <div className="selectors">
             <Select />
           </div>
-          <div className="detail-box">
+          {/* <div className="detail-box">
             <Detail />
-          </div>
+          </div> */}
         </div>
       </div>
 
       <div className="main-box">
-        <div className="full-list has-overflow">
+        <div className="full-list">
           {isLoading ? <div class="preloader"></div> : <FullList />}
         </div>
       </div>
