@@ -1,12 +1,65 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;400;700;900&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+$button-gradient: linear-gradient(
+  to bottom,
+  rgb(67, 59, 182) 0%,
+  rgb(23, 21, 51) 50%
+);
+
+@mixin stripeGradient(
+  $stripesBackgroundColor: $stripesBackgroundColor,
+  $stripesColor: $stripesColor,
+  $deg: 0deg
+) {
+  background: linear-gradient(
+    $deg,
+    $stripesBackgroundColor 15%,
+    $stripesColor 15%,
+    $stripesColor 42%,
+    $stripesBackgroundColor 42%,
+    $stripesBackgroundColor 58%,
+    $stripesColor 58%,
+    $stripesColor 85%,
+    $stripesBackgroundColor 85%,
+    $stripesBackgroundColor 100%
+  );
+}
+
+$stripesBackgroundColor: rgb(135, 131, 167);
+$stripesColor: rgb(1, 1, 4);
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset #161530;
+  background-color: #161530;
+  border-radius: 30px;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: #161530;
+  border-radius: 30px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, rgb(27, 52, 102)),
+    color-stop(0.72, rgb(39, 83, 136)),
+    color-stop(0.86, rgb(31, 39, 66))
+  );
+}
+
 body {
   margin: 0;
   box-sizing: border-box;
@@ -149,7 +202,6 @@ body {
             display: flex;
             justify-content: space-between;
             flex-direction: column;
-            // flex-wrap: wrap;
             gap: 20px;
 
             p {
@@ -164,10 +216,10 @@ body {
               cursor: pointer;
               transition: 0.2s;
               &:hover {
-                box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+                box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 4px #b34d4d;
               }
               &.active {
-                box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+                box-shadow: 0 0 10px 0 #423061 inset, 0 0 10px 4px #8a8989;
               }
             }
 
@@ -226,6 +278,11 @@ body {
 
                   &.other-shapes {
                     position: relative;
+                    background: $button-gradient;
+                    border-radius: 15px;
+                    color: #fff;
+                    font-size: 16px;
+
                     p {
                       position: absolute;
                       width: auto;
@@ -238,6 +295,10 @@ body {
                   &.symbols {
                     position: relative;
                     width: 70px;
+                    background: $button-gradient;
+                    border-radius: 15px;
+                    color: #fff;
+                    font-size: 16px;
                     p {
                       position: absolute;
                       width: auto;
@@ -250,34 +311,14 @@ body {
               }
 
               &.vertical {
-                background: rgb(255, 255, 255);
-                background: linear-gradient(
-                  90deg,
-                  rgba(255, 255, 255, 1) 15%,
-                  rgba(0, 0, 0, 1) 15%,
-                  rgba(0, 0, 0, 1) 42%,
-                  rgba(255, 255, 255, 1) 42%,
-                  rgba(255, 255, 255, 1) 58%,
-                  rgba(0, 0, 0, 1) 58%,
-                  rgba(0, 0, 0, 1) 85%,
-                  rgba(255, 255, 255, 1) 85%,
-                  rgba(255, 255, 255, 1) 100%
-                );
+                background: $stripesBackgroundColor;
+                @include stripeGradient($deg: 90deg);
                 border-radius: 50%;
               }
               &.horizontal {
-                background: rgb(255, 255, 255);
-                background: linear-gradient(
-                  rgba(255, 255, 255, 1) 15%,
-                  rgba(0, 0, 0, 1) 15%,
-                  rgba(0, 0, 0, 1) 42%,
-                  rgba(255, 255, 255, 1) 42%,
-                  rgba(255, 255, 255, 1) 58%,
-                  rgba(0, 0, 0, 1) 58%,
-                  rgba(0, 0, 0, 1) 85%,
-                  rgba(255, 255, 255, 1) 85%,
-                  rgba(255, 255, 255, 1) 100%
-                );
+                background: $stripesBackgroundColor;
+
+                @include stripeGradient;
                 border-radius: 50%;
               }
               &.other-shapes,
