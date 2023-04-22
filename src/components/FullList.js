@@ -18,6 +18,7 @@ const FullList = () => {
     blue,
     green,
     orange,
+    inputValue,
   } = useContext(AppContext);
 
   const filterFunction = () => {
@@ -62,6 +63,12 @@ const FullList = () => {
     if (orange) {
       newFlags = newFlags.filter((flag) => flag.colors.includes("orange"));
     }
+    if (inputValue) {
+      newFlags = newFlags.filter((flag) =>
+        flag.name.toLowerCase().includes(inputValue.toLowerCase())
+      );
+    }
+
     return newFlags;
   };
 
