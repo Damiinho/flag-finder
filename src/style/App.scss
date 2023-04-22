@@ -70,11 +70,9 @@ body {
     width: 95%;
     max-width: 1024px;
     height: 95vh;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #101153a9;
-    display: flex;
     overflow: hidden;
     border-radius: 50px;
     font-weight: 500;
@@ -95,33 +93,38 @@ body {
       width: 500px;
       border: 3px groove white;
       text-shadow: 4px 4px 2px black;
-
+      height: 72px;
       background-color: rgba(8, 8, 56, 0.827);
       box-shadow: 4px 4px 12px 0px rgba(66, 68, 90, 1);
     }
     .main {
-      flex-grow: 1;
+      margin: 20px 0;
+      padding: 20px 0;
       display: flex;
+      width: 100%;
       flex-direction: row;
-      height: 700px;
+      height: calc(95vh - 112px);
       .main-select {
         width: 30%;
         min-width: 300px;
+        height: 100%;
         .select-box {
           display: flex;
           align-items: flex-start;
           flex-direction: column;
           margin: 0 auto;
           height: 100%;
+          overflow-y: auto;
 
           .selectors {
             padding: 20px;
             width: 100%;
             height: 100%;
+            max-width: 310px;
             display: flex;
             justify-content: space-between;
             flex-direction: column;
-            flex-wrap: wrap;
+            // flex-wrap: wrap;
             gap: 20px;
 
             p {
@@ -325,10 +328,8 @@ body {
           display: flex;
           flex-wrap: wrap;
           overflow-y: auto;
-          align-items: flex-start;
-          justify-content: flex-start;
           gap: 5px;
-          height: 400px;
+          height: 100%;
 
           div.preloader {
             margin: 80px auto 0;
