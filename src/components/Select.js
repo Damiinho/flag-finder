@@ -16,7 +16,8 @@ const Select = () => {
     <>
       <p>Wybierz opcje, na podstawie których chcesz wyszukać</p>
       <input
-        placeholder="wyszukaj"
+        className="selectors-input"
+        placeholder="wpisz nazwę kraju"
         value={inputValue}
         onChange={handleInputChange}
       />
