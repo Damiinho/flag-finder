@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import FullList from "./FullList";
-import Detail from "./Detail";
 import { AppContext } from "../contexts/AppContext";
 import Select from "./Select";
 
@@ -29,9 +28,6 @@ const Main = () => {
           <div className="selectors">
             <Select />
           </div>
-          {/* <div className="detail-box">
-            <Detail />
-          </div> */}
         </div>
       </div>
 

@@ -27,19 +27,20 @@ const Detail = () => {
 
   if (selectedSmallOne) {
     return (
-      <div class="detail">
-        <p>{selectedSmallOne.name}</p>
-        <p>Region: {region}</p>
-        <img src={selectedSmallOne.img} alt={selectedSmallOne.name} />
-      </div>
+      <>
+        <div class="datail-box-text">
+          <h1>{selectedSmallOne.name}</h1>
+          <p>{region}</p>
+        </div>
+        <div className="datail-box-img">
+          <img src={selectedSmallOne.img} alt={selectedSmallOne.name} />
+        </div>
+      </>
     );
   } else
     return (
-      <div class="detail">
-        <p>
-          Jeśli naciśniesz flagę z listy poniżej, tutaj wyświetli się kilka
-          danych.
-        </p>
+      <div class="datail-box-text">
+        <p>// tu pojawią się dane wybranej flagi</p>
       </div>
     );
 };

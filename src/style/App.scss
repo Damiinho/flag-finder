@@ -12,7 +12,7 @@ body {
   box-sizing: border-box;
   font-family: "Roboto Slab", serif;
 
-  background-image: url("../img/background.png");
+  background-image: url("../img/worldbackground.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -76,29 +76,54 @@ body {
     overflow: hidden;
     border-radius: 50px;
     font-weight: 500;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.842);
+    box-shadow: 1px 1px 7px 13px rgba(0, 0, 0, 0.603);
     position: relative;
     color: white;
 
     header {
-      font-family: "Poiret One", cursive;
-      color: #f0f4ef;
-      text-align: center;
-      font-weight: bold;
-      font-size: 40px;
-      text-transform: uppercase;
-      border-radius: 40px;
-      padding: 10px;
-      margin: 15px auto 0;
-      width: 500px;
-      border: 3px groove white;
-      text-shadow: 4px 4px 2px black;
+      width: 100%;
       height: 72px;
-      background-color: rgba(8, 8, 56, 0.827);
-      box-shadow: 4px 4px 12px 0px rgba(66, 68, 90, 1);
+      margin-top: 35px;
+      display: flex;
+      flex-direction: row;
+
+      div.title {
+        width: 400px;
+        min-width: 400px;
+        .title-box {
+          width: 350px;
+          font-family: "Poiret One", cursive;
+          color: #f0f4ef;
+          text-align: center;
+          font-weight: bold;
+          font-size: 40px;
+          text-transform: uppercase;
+          border-radius: 40px;
+          padding: 10px;
+          margin: 0 auto;
+          border: 3px groove white;
+          text-shadow: 4px 4px 2px black;
+          background-color: rgba(8, 8, 56, 0.827);
+          box-shadow: 4px 4px 12px 0px rgba(66, 68, 90, 1);
+        }
+      }
+      div.detail {
+        flex-grow: 1;
+        div.detail-box {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          height: 100%;
+          padding: 0 50px;
+          div.datail-box-img img {
+            height: 72px;
+          }
+        }
+      }
     }
     .main {
-      margin: 20px 0;
+      margin: 0px 0 20px;
       padding: 20px 0;
       display: flex;
       width: 100%;
@@ -300,18 +325,6 @@ body {
                 background: #000;
                 font-size: 18px;
                 padding: 12px 20px;
-              }
-            }
-          }
-          .detail-box {
-            width: 40%;
-            .detail {
-              padding-left: 50px;
-              p {
-                font-size: 20px;
-              }
-              img {
-                max-height: 125px;
               }
             }
           }
