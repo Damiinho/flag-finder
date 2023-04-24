@@ -197,6 +197,29 @@ body {
             }
           }
         }
+        @media screen and (max-width: 550px) {
+          &-box {
+            padding: 0;
+            gap: 0;
+            flex-direction: column-reverse;
+
+            h1 {
+              margin-top: 10px;
+              font-size: 15px;
+              text-align: center;
+              @media screen and (max-width: 340px) {
+                font-size: 13px;
+              }
+              @media screen and (max-width: 300px) {
+                font-size: 12px;
+              }
+            }
+            p {
+              font-size: 12px;
+              text-align: center;
+            }
+          }
+        }
       }
     }
     .main {
@@ -206,7 +229,9 @@ body {
       width: 100%;
       flex-direction: row;
       height: calc(95vh - 112px);
-
+      &.flag-selected {
+        height: calc(95vh - 157px);
+      }
       .main__select {
         width: 30%;
         min-width: 300px;

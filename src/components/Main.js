@@ -4,7 +4,7 @@ import { AppContext } from "../contexts/AppContext";
 import Select from "./Select";
 
 const Main = () => {
-  const { setFlags, windowWidth } = useContext(AppContext);
+  const { setFlags, windowWidth, selectedSmallOne } = useContext(AppContext);
   const [isLoading, setIsLoading] = useState(true);
   const [isSelectors, setIsSelectors] = useState(false);
 
@@ -27,7 +27,11 @@ const Main = () => {
   };
 
   return (
-    <div className="main">
+    <div
+      className={`main ${
+        selectedSmallOne && windowWidth < 550 ? "flag-selected" : null
+      }`}
+    >
       {windowWidth > 670 ? (
         <div className="main__select">
           <div className="main__select-box">
@@ -35,7 +39,13 @@ const Main = () => {
           </div>
         </div>
       ) : (
-        <div className="main__select" onClick={handleSelectClick}>
+        <div
+          className="main__select"
+          style={
+            selectedSmallOne && windowWidth < 550 ? { top: "170px" } : null
+          }
+          onClick={handleSelectClick}
+        >
           {isSelectors ? "pokaż listę krajów" : "pokaż opcje wyboru"}
         </div>
       )}
