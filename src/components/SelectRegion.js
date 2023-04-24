@@ -11,9 +11,9 @@ const SelectRegion = () => {
   };
 
   return (
-    <div className="region">
-      <p>regiony</p>
-      <div className="region-buttons">
+    <div className="selectors__region">
+      <p className="selectors__region-description">regiony</p>
+      <div className="selectors__region__button-box">
         <button
           className={`region europe ${region === "europe" ? "active" : ""}`}
           onClick={() => {

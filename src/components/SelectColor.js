@@ -20,9 +20,9 @@ const SelectColor = () => {
   } = useContext(AppContext);
 
   return (
-    <div className="colors">
-      <p>kolory</p>
-      <div className="colors-buttons">
+    <div className="selectors__colors">
+      <p className="selectors__colors-description">kolory</p>
+      <div className="selectors__colors__button-box">
         <button
           className={`color white ${white ? "active" : ""}`}
           onClick={() => {

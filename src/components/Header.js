@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import Detail from "./Detail";
+import { AppContext } from "../contexts/AppContext";
 
 const Header = () => {
+  const { selectedSmallOne, windowWidth } = useContext(AppContext);
+
   return (
-    <header>
-      <div className="title">
-        <div className="title-box">Znajdź flagę</div>
-      </div>
-      <div className="detail">
-        <div className="detail-box">
-          <Detail />
+    <header className="App__header">
+      {windowWidth < 900 && selectedSmallOne ? null : (
+        <div className="header__title">
+          <div className="header__title-box">Znajdź flagę</div>
         </div>
-      </div>
+      )}
+      {windowWidth < 900 && !selectedSmallOne ? null : (
+        <div className="header__detail">
+          <div className="header__detail-box">
+            <Detail />
+          </div>
+        </div>
+      )}
     </header>
   );
 };

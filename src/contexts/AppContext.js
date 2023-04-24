@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 export const AppContext = createContext();
 
@@ -19,6 +19,7 @@ export const AppProvider = ({ children }) => {
   const [isCountrySelected, setIsCountrySelected] = useState(false);
   const [selectedSmallOne, setSelectedSmallOne] = useState(null);
   const [inputValue, setInputValue] = useState("");
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const providerValue = {
     flags,
@@ -53,7 +54,18 @@ export const AppProvider = ({ children }) => {
     setSelectedSmallOne,
     inputValue,
     setInputValue,
+    windowWidth,
+    setWindowWidth,
   };
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <AppContext.Provider value={providerValue}>{children}</AppContext.Provider>

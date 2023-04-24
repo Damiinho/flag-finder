@@ -28,18 +28,20 @@ const Detail = () => {
   if (selectedSmallOne) {
     return (
       <>
-        <div class="datail-box-text">
-          <h1>{selectedSmallOne.name}</h1>
-          <p>{region}</p>
+        <div className="header__datail-box__text">
+          <h1 className="header__datail-box__text-title">
+            {selectedSmallOne.name}
+          </h1>
+          <p className="header__datail-box__text-description">{region}</p>
         </div>
-        <div className="datail-box-img">
+        <div className="header__datail-box__img">
           <img src={selectedSmallOne.img} alt={selectedSmallOne.name} />
         </div>
       </>
     );
   } else
     return (
-      <div class="datail-box-text">
+      <div class="header__datail-box__text">
         <p>// tu pojawią się dane wybranej flagi</p>
       </div>
     );

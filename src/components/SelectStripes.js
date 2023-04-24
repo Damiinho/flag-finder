@@ -31,9 +31,9 @@ const SelectStripes = () => {
   };
 
   return (
-    <div className="stripes">
-      <p>kształty</p>
-      <div className="stripes-buttons">
+    <div className="selectors__stripes">
+      <p className="selectors__stripes-description">kształty</p>
+      <div className="selectors__stripes__button-box">
         <button
           className={`stripes vertical ${verticalStripes ? "active" : ""}`}
           onClick={setActiveVertical}

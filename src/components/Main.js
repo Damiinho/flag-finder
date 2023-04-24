@@ -4,8 +4,9 @@ import { AppContext } from "../contexts/AppContext";
 import Select from "./Select";
 
 const Main = () => {
-  const { setFlags } = useContext(AppContext);
+  const { setFlags, windowWidth } = useContext(AppContext);
   const [isLoading, setIsLoading] = useState(true);
+  const [isSelectors, setIsSelectors] = useState(false);
 
   useEffect(() => {
     fetch("data/flag.json")
@@ -21,19 +22,34 @@ const Main = () => {
     return () => clearTimeout(timer);
   }, [setFlags]);
 
+  const handleSelectClick = () => {
+    setIsSelectors(!isSelectors);
+  };
+
   return (
     <div className="main">
-      <div className="main-select">
-        <div className="select-box">
-          <div className="selectors">
+      {windowWidth > 670 ? (
+        <div className="main__select">
+          <div className="main__select-box">
             <Select />
           </div>
         </div>
-      </div>
-
-      <div className="main-box">
-        <div className="full-list">
-          {isLoading ? <div class="preloader"></div> : <FullList />}
+      ) : (
+        <div className="main__select" onClick={handleSelectClick}>
+          {isSelectors ? "pokaż listę krajów" : "pokaż opcje wyboru"}
+        </div>
+      )}
+      <div className="main-list">
+        <div className="main-list__full-list">
+          {isLoading ? (
+            <div className="full-list__preloader-box">
+              <div class="full-list__preloader-box-preloader"></div>
+            </div>
+          ) : isSelectors && !(windowWidth > 670) ? (
+            <Select />
+          ) : (
+            <FullList />
+          )}
         </div>
       </div>
     </div>

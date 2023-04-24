@@ -6,17 +6,21 @@ import { useContext } from "react";
 import { AppContext } from "../contexts/AppContext";
 
 const Select = () => {
-  const { inputValue, setInputValue } = useContext(AppContext);
+  const { inputValue, setInputValue, windowWidth } = useContext(AppContext);
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
   };
 
   return (
-    <>
-      <p>Wybierz opcje, na podstawie których chcesz wyszukać</p>
+    <div className="main__select-box__selectors">
+      {windowWidth > 670 ? (
+        <p className="selectors__description">
+          Wybierz opcje, na podstawie których chcesz wyszukać
+        </p>
+      ) : null}
       <input
-        className="selectors-input"
+        className="selectors__input"
         placeholder="wpisz nazwę kraju"
         value={inputValue}
         onChange={handleInputChange}
@@ -25,7 +29,7 @@ const Select = () => {
       <SelectStripes />
       <SelectRegion />
       <SelectOther />
-    </>
+    </div>
   );
 };
 

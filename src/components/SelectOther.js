@@ -43,15 +43,15 @@ const SelectOther = () => {
   };
 
   return (
-    <div className="other">
+    <div className="selectors__other">
       <button
         className={`other countries ${isCountrySelected ? "active" : ""}`}
         onClick={handleCountryButton}
       >
-        <p>Przeszukaj tylko bazę krajów</p>
+        <p>Przeszukaj tylko bazę państw</p>
       </button>
       <button className="other reset" onClick={handleResetButton}>
-        <p>Resetuj</p>
+        <p>Reset</p>
       </button>
     </div>
   );
