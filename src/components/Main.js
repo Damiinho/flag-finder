@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import FullList from "./FullList";
 import { AppContext } from "../contexts/AppContext";
-import Select from "./Select";
+import SelectionBox from "./SelectionBox";
 
 const Main = () => {
   const { setFlags, windowWidth, selectedSmallOne } = useContext(AppContext);
@@ -35,7 +35,7 @@ const Main = () => {
       {windowWidth > 670 ? (
         <div className="main__select">
           <div className="main__select-box">
-            <Select />
+            <SelectionBox />
           </div>
         </div>
       ) : (
@@ -56,7 +56,7 @@ const Main = () => {
               <div class="full-list__preloader-box-preloader"></div>
             </div>
           ) : isSelectors && !(windowWidth > 670) ? (
-            <Select />
+            <SelectionBox />
           ) : (
             <FullList />
           )}

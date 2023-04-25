@@ -2,12 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
-$button-gradient: linear-gradient(
-  to bottom,
-  rgb(67, 59, 182) 0%,
-  rgb(23, 21, 51) 50%
-);
+$button-gradient: linear-gradient(to bottom, #7e78a35e 0%, #7e78a35e 50%);
 
 @mixin stripeGradient(
   $stripesBackgroundColor: $stripesBackgroundColor,
@@ -302,16 +299,19 @@ body {
 
             //general visibility
             button {
-              font-family: "Poiret One", cursive;
-              font-weight: bold;
+              font-family: "Lato", sans-serif;
+              border-radius: 8px;
+              border: none;
               background-color: #fff;
+              color: #ccc;
+
               cursor: pointer;
               transition: 0.2s;
               &:hover {
-                box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 4px #b34d4d;
+                box-shadow: 0 0 10px 4px #8a8989;
               }
               &.active {
-                box-shadow: 0 0 10px 0 #423061 inset, 0 0 10px 4px #8a8989;
+                box-shadow: 0 0 10px 4px #8a8989;
               }
             }
 
@@ -407,8 +407,6 @@ body {
                   &.other-shapes {
                     position: relative;
                     background: $button-gradient;
-                    border-radius: 15px;
-                    color: #fff;
                     font-size: 16px;
 
                     p {
@@ -424,8 +422,6 @@ body {
                     position: relative;
                     width: 70px;
                     background: $button-gradient;
-                    border-radius: 15px;
-                    color: #fff;
                     font-size: 16px;
                     p {
                       position: absolute;
@@ -456,7 +452,7 @@ body {
               align-items: center;
               gap: 20px;
 
-              .selectors__region__button-box {
+              &__button-box {
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
@@ -472,14 +468,33 @@ body {
                   padding: 10px;
                   height: 30px;
                   background: $button-gradient;
-                  border-radius: 15px;
-                  color: #fff;
 
                   p {
                     position: relative;
                     top: 50%;
                     transform: translateY(-50%);
                   }
+                }
+
+                select {
+                  background-color: #7e78a35e;
+                  color: #999;
+                  border: none;
+                  border-radius: 10px;
+                  padding: 5px;
+                  font-family: "Lato", sans-serif;
+                  cursor: pointer;
+
+                  option {
+                    background-color: #3d386e;
+                    color: #999;
+                    padding: 5px;
+                    cursor: pointer;
+                  }
+                }
+
+                &__selector .Select-option {
+                  cursor: pointer;
                 }
               }
 
@@ -497,8 +512,6 @@ body {
                 display: inline-block;
                 outline: 0;
                 cursor: pointer;
-                border-radius: 50px;
-                color: #fff;
                 background: $button-gradient;
                 font-size: 18px;
                 padding: 12px 20px;

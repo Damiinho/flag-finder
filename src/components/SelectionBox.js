@@ -5,7 +5,7 @@ import SelectOther from "./SelectOther";
 import { useContext } from "react";
 import { AppContext } from "../contexts/AppContext";
 
-const Select = () => {
+const SelectionBox = () => {
   const { inputValue, setInputValue, windowWidth } = useContext(AppContext);
 
   const handleInputChange = (e) => {
@@ -33,4 +33,4 @@ const Select = () => {
   );
 };
 
-export default Select;
+export default SelectionBox;

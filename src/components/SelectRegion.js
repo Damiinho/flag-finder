@@ -1,92 +1,70 @@
 import React, { useContext } from "react";
 import { AppContext } from "../contexts/AppContext";
+import Select from "react-select";
 
 const SelectRegion = () => {
   const { region, setRegion } = useContext(AppContext);
 
   const setActiveRegion = (item) => {
-    if (item === region) {
-      setRegion("");
-    } else setRegion(item);
+    setRegion(item);
+  };
+
+  const options = [
+    { value: "", label: "dowolny" },
+    { value: "europe", label: "Europa" },
+    { value: "asia", label: "Azja" },
+    { value: "oceania", label: "Australia/Oceania" },
+    { value: "africa", label: "Afryka" },
+    { value: "north-america", label: "Ameryka Północna" },
+    { value: "south-america", label: "Ameryka Południowa" },
+    { value: "carraibean", label: "Karaiby" },
+    { value: "antarctica", label: "Antarktyka" },
+  ];
+
+  const customStyles = {
+    option: (defaultStyles, state) => ({
+      ...defaultStyles,
+      color: state.isSelected ? "#999" : "#999",
+      backgroundColor: state.isSelected ? "#201e3b" : "#3d386e",
+      cursor: "pointer",
+    }),
+    control: (defaultStyles) => ({
+      ...defaultStyles,
+      backgroundColor: "#3d386e",
+      border: "none",
+      // boxShadow: "none",
+      cursor: "pointer",
+      width: "200px",
+    }),
+    menu: (provided) => ({
+      ...provided,
+      padding: 0,
+    }),
+    singleValue: (defaultStyles) => ({ ...defaultStyles, color: "#999" }),
+    menuList: (provided, state) => ({
+      ...provided,
+      paddingTop: 0,
+      paddingBottom: 0,
+      backgroundColor: "#3d386e",
+    }),
   };
 
   return (
     <div className="selectors__region">
       <p className="selectors__region-description">regiony</p>
       <div className="selectors__region__button-box">
-        <button
-          className={`region europe ${region === "europe" ? "active" : ""}`}
-          onClick={() => {
-            setActiveRegion("europe");
+        <Select
+          className="selectors__region__button-box__selector"
+          value={{
+            value: region,
+            label: region
+              ? options.find((o) => o.value === region).label
+              : "dowolny",
           }}
-        >
-          <p>Europa</p>
-        </button>
-        <button
-          className={`region asia ${region === "asia" ? "active" : ""}`}
-          onClick={() => {
-            setActiveRegion("asia");
-          }}
-        >
-          <p>Azja</p>
-        </button>
-        <button
-          className={`region oceania ${region === "oceania" ? "active" : ""}`}
-          onClick={() => {
-            setActiveRegion("oceania");
-          }}
-        >
-          <p>Australia/Oceania</p>
-        </button>
-        <button
-          className={`region africa ${region === "africa" ? "active" : ""}`}
-          onClick={() => {
-            setActiveRegion("africa");
-          }}
-        >
-          <p>Afryka</p>
-        </button>
-        <button
-          className={`region north-america ${
-            region === "north-america" ? "active" : ""
-          }`}
-          onClick={() => {
-            setActiveRegion("north-america");
-          }}
-        >
-          <p>Ameryka Północna</p>
-        </button>
-        <button
-          className={`region south-america ${
-            region === "south-america" ? "active" : ""
-          }`}
-          onClick={() => {
-            setActiveRegion("south-america");
-          }}
-        >
-          <p>Ameryka Południowa</p>
-        </button>
-
-        <button
-          className={`region carraibean ${
-            region === "carraibean" ? "active" : ""
-          }`}
-          onClick={() => {
-            setActiveRegion("carraibean");
-          }}
-        >
-          <p>Karaiby</p>
-        </button>
-        <button
-          className={`region antarctica ${
-            region === "antarctica" ? "active" : ""
-          }`}
-          onClick={() => {
-            setActiveRegion("antarctica");
-          }}
-        >
-          <p>Antarktyka</p>
-        </button>
+          styles={customStyles}
+          onChange={(selectedOption) => setActiveRegion(selectedOption.value)}
+          options={options}
+        />
       </div>
     </div>
   );
