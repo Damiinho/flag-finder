@@ -19,6 +19,7 @@ const FullList = () => {
     green,
     orange,
     searchTerm,
+    selectedColors,
   } = useContext(AppContext);
 
   const filterFunction = () => {
@@ -68,6 +69,11 @@ const FullList = () => {
         flag.name.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
+    // if (selectedColors.length > 0) {
+    //   newFlags = newFlags.filter((flag) =>
+    //     selectedColors.every((color) => flag.colors.includes(color.value))
+    //   );
+    // }
 
     return newFlags;
   };

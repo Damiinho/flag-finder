@@ -178,7 +178,7 @@ body {
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
-          height: 100%;
+          height: 72px;
           padding: 0 50px;
           & img {
             height: 72px;
@@ -196,6 +196,7 @@ body {
         }
         @media screen and (max-width: 550px) {
           &-box {
+            height: 100%;
             padding: 0;
             gap: 0;
             flex-direction: column-reverse;
@@ -226,13 +227,16 @@ body {
       width: 100%;
       flex-direction: row;
       height: calc(95vh - 112px);
+
+      @media screen and (max-width: 670px) {
+        // height: auto;
+      }
       &.flag-selected {
         height: calc(95vh - 157px);
       }
       .main__select {
         width: 30%;
         min-width: 300px;
-        height: 100%;
         @media screen and (max-width: 670px) {
           position: absolute;
           top: 120px;
@@ -245,8 +249,9 @@ body {
           text-align: center;
           line-height: 35px;
           border-radius: 20px;
-          background-color: #3d386d;
+          background-color: #2c1f75d8;
           z-index: 1;
+          cursor: pointer;
         }
 
         @media screen and (max-width: 430px) {
@@ -296,6 +301,9 @@ body {
                 background-repeat: no-repeat;
                 background-position: 96%;
                 color: #fff;
+                &:focus {
+                  outline: none;
+                }
               }
               &__sugestion {
                 width: 100%;
@@ -322,6 +330,7 @@ body {
 
             //general visibility
             button {
+              box-sizing: content-box;
               font-family: "Lato", sans-serif;
               border-radius: 8px;
               border: none;
@@ -331,10 +340,10 @@ body {
               cursor: pointer;
               transition: 0.2s;
               &:hover {
-                box-shadow: 0 0 10px 4px #8a8989;
+                box-shadow: inset 0 0 5px 3px rgb(78, 7, 7);
               }
               &.active {
-                box-shadow: 0 0 10px 4px #8a8989;
+                box-shadow: inset 0 0 1px 3px rgb(139, 20, 20);
               }
             }
 
@@ -342,11 +351,12 @@ body {
               margin: 0 auto;
               display: flex;
               flex-direction: column;
-              gap: 20px;
+              gap: 5px;
               width: 250px;
 
               &-description {
                 @include description-center;
+                color: #ccc;
               }
 
               &__button-box {
@@ -357,6 +367,8 @@ body {
                   height: 50px;
                   margin: 0 5px;
                   border-radius: 50%;
+                  box-shadow: 0 0 0 2px rgb(31, 4, 128),
+                    0 0 0 3px rgb(83, 90, 156);
                 }
 
                 button.black {
@@ -364,15 +376,18 @@ body {
                 }
 
                 button.red {
-                  background-color: #e74c3c;
+                  background-color: #ff1900;
+                }
+                button.claret {
+                  background-color: #7a1b11;
                 }
 
                 button.yellow {
-                  background-color: #f1c40f;
+                  background-color: #ffda45;
                 }
 
                 button.blue {
-                  background-color: #55acee;
+                  background-color: #2243d4;
                 }
 
                 button.green {
@@ -399,11 +414,12 @@ body {
               margin: 0 auto;
               display: flex;
               flex-direction: column;
-              gap: 20px;
+              gap: 10px;
               max-width: 260px;
 
               &-description {
                 @include description-center;
+                color: #ccc;
               }
 
               &__button-box {
@@ -473,7 +489,11 @@ body {
               display: flex;
               flex-direction: column;
               align-items: center;
-              gap: 20px;
+              gap: 5px;
+
+              &-description {
+                color: #ccc;
+              }
 
               &__button-box {
                 display: flex;
@@ -515,10 +535,6 @@ body {
                     cursor: pointer;
                   }
                 }
-
-                &__selector .Select-option {
-                  cursor: pointer;
-                }
               }
 
               @media screen and (max-width: 670px) {
@@ -555,6 +571,7 @@ body {
 
         @media screen and (max-width: 670px) {
           width: 100%;
+          height: auto;
         }
 
         &__full-list {
@@ -600,6 +617,7 @@ body {
           .full-list__preloader-box {
             height: 200px;
             width: 100%;
+            grid-column: 2;
             &-preloader {
               margin: 80px auto 0;
               font-size: 70px;
@@ -667,6 +685,15 @@ body {
               max-width: 80px;
               max-height: 40px;
             }
+          }
+        }
+        .main__select-box__selectors {
+          justify-content: space-evenly;
+          margin-top: 40px;
+          padding-bottom: 40px;
+          overflow-y: auto;
+          @media screen and (max-height: 725px) {
+            justify-content: flex-start;
           }
         }
       }

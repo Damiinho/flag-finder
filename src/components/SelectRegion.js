@@ -21,7 +21,11 @@ const SelectRegion = () => {
     { value: "carraibean", label: "Karaiby" },
   ];
 
-  const customStyles = {
+  const styles = {
+    input: (provided) => ({
+      ...provided,
+      color: "#999",
+    }),
     option: (defaultStyles, state) => ({
       ...defaultStyles,
       color: state.isSelected ? "#999" : "#999",
@@ -45,18 +49,18 @@ const SelectRegion = () => {
       borderRadius: "15px",
     }),
     singleValue: (defaultStyles) => ({ ...defaultStyles, color: "#999" }),
-    menuList: (provided, state) => ({
+    menuList: (provided) => ({
       ...provided,
       paddingTop: 0,
       paddingBottom: 0,
-      // backgroundColor: "#3d386e",
+      backgroundColor: "#3d386e",
       borderRadius: "10px",
     }),
   };
 
   return (
     <div className="selectors__region">
-      <p className="selectors__region-description">regiony</p>
+      <p className="selectors__region-description">wybierz region</p>
       <div className="selectors__region__button-box">
         <Select
           className="selectors__region__button-box__selector"
@@ -66,7 +70,7 @@ const SelectRegion = () => {
               ? options.find((o) => o.value === region).label
               : "dowolny",
           }}
-          styles={customStyles}
+          styles={styles}
           onChange={(selectedOption) => setActiveRegion(selectedOption.value)}
           options={options}
         />

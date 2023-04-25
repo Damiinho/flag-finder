@@ -11,6 +11,7 @@ export const AppProvider = ({ children }) => {
   const [blue, setBlue] = useState(false);
   const [green, setGreen] = useState(false);
   const [orange, setOrange] = useState(false);
+  const [claret, setClaret] = useState(false);
   const [verticalStripes, setVerticalStripes] = useState(false);
   const [horizontalStripes, setHorizontalStripes] = useState(false);
   const [otherShapes, setOtherShapes] = useState(false);
@@ -21,12 +22,15 @@ export const AppProvider = ({ children }) => {
   const [inputValue, setInputValue] = useState("");
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [searchTerm, setSearchTerm] = useState("");
+  // const [selectedColors, setSelectedColors] = useState([]);
 
   const providerValue = {
     flags,
     setFlags,
     red,
     setRed,
+    claret,
+    setClaret,
     white,
     setWhite,
     black,
@@ -59,6 +63,8 @@ export const AppProvider = ({ children }) => {
     setInputValue,
     windowWidth,
     setWindowWidth,
+    // selectedColors,
+    // setSelectedColors,
   };
 
   useEffect(() => {

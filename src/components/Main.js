@@ -29,7 +29,7 @@ const Main = () => {
   return (
     <div
       className={`main ${
-        selectedSmallOne && windowWidth < 550 ? "flag-selected" : null
+        selectedSmallOne && windowWidth < 550 ? "flag-selected" : ""
       }`}
     >
       {windowWidth > 670 ? (
@@ -50,17 +50,19 @@ const Main = () => {
         </div>
       )}
       <div className="main-list">
-        <div className="main-list__full-list">
-          {isLoading ? (
-            <div className="full-list__preloader-box">
-              <div className="full-list__preloader-box-preloader"></div>
-            </div>
-          ) : isSelectors && !(windowWidth > 670) ? (
-            <SelectionBox />
-          ) : (
-            <FullList />
-          )}
-        </div>
+        {isSelectors && !(windowWidth > 670) ? (
+          <SelectionBox />
+        ) : (
+          <div className="main-list__full-list">
+            {isLoading ? (
+              <div className="full-list__preloader-box">
+                <div className="full-list__preloader-box-preloader"></div>
+              </div>
+            ) : (
+              <FullList />
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

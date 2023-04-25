@@ -20,6 +20,7 @@ const SelectOther = () => {
     setSelectedSmallOne,
     setInputValue,
     setSearchTerm,
+    // setSelectedColors,
   } = useContext(AppContext);
   const handleCountryButton = () => {
     setIsCountrySelected(!isCountrySelected);
@@ -42,6 +43,7 @@ const SelectOther = () => {
     setSelectedSmallOne(null);
     setInputValue("");
     setSearchTerm("");
+    // setSelectedColors([]);
   };
 
   return (
