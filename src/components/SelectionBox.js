@@ -4,13 +4,10 @@ import SelectRegion from "./SelectRegion";
 import SelectOther from "./SelectOther";
 import { useContext } from "react";
 import { AppContext } from "../contexts/AppContext";
+import SelectSearch from "./SelectSearch";
 
 const SelectionBox = () => {
-  const { inputValue, setInputValue, windowWidth } = useContext(AppContext);
-
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
-  };
+  const { windowWidth } = useContext(AppContext);
 
   return (
     <div className="main__select-box__selectors">
@@ -19,15 +16,10 @@ const SelectionBox = () => {
           Wybierz opcje, na podstawie których chcesz wyszukać
         </p>
       ) : null}
-      <input
-        className="selectors__input"
-        placeholder="wpisz nazwę kraju"
-        value={inputValue}
-        onChange={handleInputChange}
-      />
+      <SelectSearch />
+      <SelectRegion />
       <SelectColor />
       <SelectStripes />
-      <SelectRegion />
       <SelectOther />
     </div>
   );

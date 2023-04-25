@@ -276,25 +276,48 @@ body {
             .selectors__description {
               @include description-center;
             }
-            .selectors__input {
+            .selectors__input-box {
+              position: relative;
               margin: 0 auto;
-              width: 100%;
-              max-width: 300px;
-              height: 34px;
-              min-height: 34px;
-              border: none;
-              background-color: #7e78a35e;
-              border-radius: 8px;
-              font-family: "Inter", sans-serif;
-              font-size: 14px;
-              font-weight: 500;
-              padding: 0 40px 0 16px;
-              box-shadow: 0 0 0 2px rgba(134, 140, 160, 0.02);
-              background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56.966 56.966' fill='%23717790c7'%3e%3cpath d='M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z'/%3e%3c/svg%3e");
-              background-size: 14px;
-              background-repeat: no-repeat;
-              background-position: 96%;
-              color: #fff;
+              &__input {
+                width: 100%;
+                max-width: 225px;
+                height: 34px;
+                min-height: 34px;
+                border: none;
+                background-color: #7e78a35e;
+                border-radius: 8px;
+                font-family: "Inter", sans-serif;
+                font-size: 14px;
+                padding: 0 40px 0 16px;
+                box-shadow: 0 0 0 2px rgba(134, 140, 160, 0.02);
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56.966 56.966' fill='%23717790c7'%3e%3cpath d='M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z'/%3e%3c/svg%3e");
+                background-size: 14px;
+                background-repeat: no-repeat;
+                background-position: 96%;
+                color: #fff;
+              }
+              &__sugestion {
+                width: 100%;
+                position: absolute;
+                top: 40px;
+                left: 50%;
+                transform: translateX(-50%);
+                cursor: pointer;
+                background-color: #2b235fe5;
+                border-radius: 10px;
+                box-shadow: 1px 1px 7px 3px rgba(0, 0, 0, 0.603);
+                display: flex;
+                flex-direction: column;
+                z-index: 1;
+                &-item {
+                  padding: 10px 15px;
+                  transition: 0.2s;
+                  &:hover {
+                    background-color: #140f30e5;
+                  }
+                }
+              }
             }
 
             //general visibility
@@ -538,21 +561,40 @@ body {
           margin: 0 auto;
           max-width: 1024px;
           padding: 20px;
-          display: flex;
-          flex-wrap: wrap;
           overflow-y: auto;
-          gap: 5px;
+          gap: 10px;
           height: auto;
           justify-content: space-between;
           max-height: 100%;
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
 
+          @media screen and (max-width: 1000px) {
+            grid-template-columns: repeat(5, 1fr);
+          }
+          @media screen and (max-width: 910px) {
+            gap: 5px;
+          }
+          @media screen and (max-width: 890px) {
+            grid-template-columns: repeat(4, 1fr);
+          }
+          @media screen and (max-width: 800px) {
+            grid-template-columns: repeat(3, 1fr);
+          }
           @media screen and (max-width: 670px) {
+            grid-template-columns: repeat(5, 1fr);
             padding-top: 40px;
             width: 100%;
           }
+          @media screen and (max-width: 590px) {
+            grid-template-columns: repeat(4, 1fr);
+          }
+          @media screen and (max-width: 485px) {
+            grid-template-columns: repeat(3, 1fr);
+          }
 
           @media screen and (max-width: 300px) {
-            justify-content: center;
+            grid-template-columns: repeat(2, 1fr);
           }
 
           .full-list__preloader-box {
@@ -611,11 +653,11 @@ body {
           }
 
           .smallitem {
+            margin: 0 auto;
             display: block;
             max-width: 100px;
             max-height: 50px;
             border: 3px groove black;
-            margin: 5px;
             &:hover {
               filter: brightness(50%);
               transition: 0.2s;

@@ -18,7 +18,7 @@ const FullList = () => {
     blue,
     green,
     orange,
-    inputValue,
+    searchTerm,
   } = useContext(AppContext);
 
   const filterFunction = () => {
@@ -63,9 +63,9 @@ const FullList = () => {
     if (orange) {
       newFlags = newFlags.filter((flag) => flag.colors.includes("orange"));
     }
-    if (inputValue) {
+    if (searchTerm) {
       newFlags = newFlags.filter((flag) =>
-        flag.name.toLowerCase().includes(inputValue.toLowerCase())
+        flag.name.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
 

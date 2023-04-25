@@ -20,6 +20,7 @@ export const AppProvider = ({ children }) => {
   const [selectedSmallOne, setSelectedSmallOne] = useState(null);
   const [inputValue, setInputValue] = useState("");
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const providerValue = {
     flags,
@@ -52,6 +53,8 @@ export const AppProvider = ({ children }) => {
     setIsCountrySelected,
     selectedSmallOne,
     setSelectedSmallOne,
+    searchTerm,
+    setSearchTerm,
     inputValue,
     setInputValue,
     windowWidth,

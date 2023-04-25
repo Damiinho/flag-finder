@@ -11,41 +11,46 @@ const SelectRegion = () => {
 
   const options = [
     { value: "", label: "dowolny" },
-    { value: "europe", label: "Europa" },
-    { value: "asia", label: "Azja" },
-    { value: "oceania", label: "Australia/Oceania" },
     { value: "africa", label: "Afryka" },
-    { value: "north-america", label: "Ameryka Północna" },
     { value: "south-america", label: "Ameryka Południowa" },
-    { value: "carraibean", label: "Karaiby" },
+    { value: "north-america", label: "Ameryka Północna" },
     { value: "antarctica", label: "Antarktyka" },
+    { value: "oceania", label: "Australia/Oceania" },
+    { value: "asia", label: "Azja" },
+    { value: "europe", label: "Europa" },
+    { value: "carraibean", label: "Karaiby" },
   ];
 
   const customStyles = {
     option: (defaultStyles, state) => ({
       ...defaultStyles,
       color: state.isSelected ? "#999" : "#999",
-      backgroundColor: state.isSelected ? "#201e3b" : "#3d386e",
+      backgroundColor: state.isSelected
+        ? "#201e3b"
+        : state.isFocused
+        ? "#201e3b"
+        : "#3d386e",
       cursor: "pointer",
     }),
     control: (defaultStyles) => ({
       ...defaultStyles,
-      backgroundColor: "#3d386e",
+      backgroundColor: "#7e78a35e",
       border: "none",
-      // boxShadow: "none",
       cursor: "pointer",
-      width: "200px",
+      width: "225px",
     }),
     menu: (provided) => ({
       ...provided,
       padding: 0,
+      borderRadius: "15px",
     }),
     singleValue: (defaultStyles) => ({ ...defaultStyles, color: "#999" }),
     menuList: (provided, state) => ({
       ...provided,
       paddingTop: 0,
       paddingBottom: 0,
-      backgroundColor: "#3d386e",
+      // backgroundColor: "#3d386e",
+      borderRadius: "10px",
     }),
   };
 
