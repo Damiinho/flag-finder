@@ -2261,5 +2261,223 @@
         "otherShapes": false,
         "symbols": true,
         "country": true
+    },
+    {
+        "id": 133,
+        "active": true,
+        "name": "Lesotho",
+        "colors": [
+            "white",
+            "blue",
+            "green",
+            "black"
+        ],
+        "img": "./assets/ls.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 134,
+        "active": true,
+        "name": "Litwa",
+        "colors": [
+            "green",
+            "yellow",
+            "red"
+        ],
+        "img": "./assets/lt.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 135,
+        "active": true,
+        "name": "Luksemburg",
+        "colors": [
+            "white",
+            "blue",
+            "red"
+        ],
+        "img": "./assets/lu.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 136,
+        "active": true,
+        "name": "Łotwa",
+        "colors": [
+            "white",
+            "claret"
+        ],
+        "img": "./assets/lv.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 137,
+        "active": true,
+        "name": "Libia",
+        "colors": [
+            "white",
+            "black",
+            "green",
+            "red"
+        ],
+        "img": "./assets/ly.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 138,
+        "active": true,
+        "name": "Maroko",
+        "colors": [
+            "green",
+            "red"
+        ],
+        "img": "./assets/ma.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 139,
+        "active": true,
+        "name": "Monako",
+        "colors": [
+            "white",
+            "red"
+        ],
+        "img": "./assets/mc.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 140,
+        "active": true,
+        "name": "Mołdawia",
+        "colors": [
+            "blue",
+            "yellow",
+            "red"
+        ],
+        "img": "./assets/md.png",
+        "region": "africa",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 141,
+        "active": true,
+        "name": "Czarnogóra",
+        "colors": [
+            "claret",
+            "yellow"
+        ],
+        "img": "./assets/me.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 142,
+        "active": true,
+        "name": "Madagaskar",
+        "colors": [
+            "white",
+            "green",
+            "red"
+        ],
+        "img": "./assets/mg.png",
+        "region": "africa",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 143,
+        "active": true,
+        "name": "Wyspy Marshalla",
+        "colors": [
+            "white",
+            "navyblue",
+            "orange"
+        ],
+        "img": "./assets/mh.png",
+        "region": "oceania",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 144,
+        "active": true,
+        "name": "Mali",
+        "colors": [
+            "yellow",
+            "green",
+            "red"
+        ],
+        "img": "./assets/ml.png",
+        "region": "africa",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 145,
+        "active": true,
+        "name": "Macedonia Północna",
+        "colors": [
+            "yellow",
+            "red"
+        ],
+        "img": "./assets/mk.png",
+        "region": "europe",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
     }
 ]

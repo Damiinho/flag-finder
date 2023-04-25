@@ -140,6 +140,12 @@ const SelectColor = () => {
           onClick={() => {
             setBlack(!black);
           }}
+        ></button>{" "}
+        <button
+          className={`color orange ${orange ? "active" : ""}`}
+          onClick={() => {
+            setOrange(!orange);
+          }}
         ></button>
         <button
           className={`color red ${red ? "active" : ""}`}
@@ -175,12 +181,6 @@ const SelectColor = () => {
           className={`color green ${green ? "active" : ""}`}
           onClick={() => {
             setGreen(!green);
-          }}
-        ></button>
-        <button
-          className={`color orange ${orange ? "active" : ""}`}
-          onClick={() => {
-            setOrange(!orange);
           }}
         ></button>
       </div>
