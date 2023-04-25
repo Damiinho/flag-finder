@@ -41,7 +41,7 @@ const Detail = () => {
     );
   } else
     return (
-      <div class="header__datail-box__text">
+      <div className="header__datail-box__text">
         <p>// tu pojawią się dane wybranej flagi</p>
       </div>
     );

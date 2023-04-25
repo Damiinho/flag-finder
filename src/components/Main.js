@@ -53,7 +53,7 @@ const Main = () => {
         <div className="main-list__full-list">
           {isLoading ? (
             <div className="full-list__preloader-box">
-              <div class="full-list__preloader-box-preloader"></div>
+              <div className="full-list__preloader-box-preloader"></div>
             </div>
           ) : isSelectors && !(windowWidth > 670) ? (
             <SelectionBox />
