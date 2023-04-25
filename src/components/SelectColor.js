@@ -16,6 +16,8 @@ const SelectColor = () => {
     setYellow,
     blue,
     setBlue,
+    navyBlue,
+    setNavyBlue,
     green,
     setGreen,
     orange,
@@ -101,16 +103,16 @@ const SelectColor = () => {
   //   setSelectedColors(item);
   // };
 
-  const formatOptionLabel = ({ value }) => (
-    <div
-      style={{
-        backgroundColor: value,
-        height: "20px",
-        width: "20px",
-        borderRadius: "10px",
-      }}
-    />
-  );
+  // const formatOptionLabel = ({ value }) => (
+  //   <div
+  //     style={{
+  //       backgroundColor: value,
+  //       height: "20px",
+  //       width: "20px",
+  //       borderRadius: "10px",
+  //     }}
+  //   />
+  // );
 
   return (
     <div className="selectors__colors">
@@ -161,6 +163,12 @@ const SelectColor = () => {
           className={`color blue ${blue ? "active" : ""}`}
           onClick={() => {
             setBlue(!blue);
+          }}
+        ></button>
+        <button
+          className={`color navyblue ${navyBlue ? "active" : ""}`}
+          onClick={() => {
+            setNavyBlue(!navyBlue);
           }}
         ></button>
         <button

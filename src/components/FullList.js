@@ -12,14 +12,16 @@ const FullList = () => {
     region,
     isCountrySelected,
     red,
+    claret,
     white,
     black,
     yellow,
     blue,
+    navyBlue,
     green,
     orange,
     searchTerm,
-    selectedColors,
+    // selectedColors,
   } = useContext(AppContext);
 
   const filterFunction = () => {
@@ -46,6 +48,9 @@ const FullList = () => {
     if (red) {
       newFlags = newFlags.filter((flag) => flag.colors.includes("red"));
     }
+    if (claret) {
+      newFlags = newFlags.filter((flag) => flag.colors.includes("claret"));
+    }
     if (white) {
       newFlags = newFlags.filter((flag) => flag.colors.includes("white"));
     }
@@ -57,6 +62,9 @@ const FullList = () => {
     }
     if (blue) {
       newFlags = newFlags.filter((flag) => flag.colors.includes("blue"));
+    }
+    if (navyBlue) {
+      newFlags = newFlags.filter((flag) => flag.colors.includes("navyblue"));
     }
     if (green) {
       newFlags = newFlags.filter((flag) => flag.colors.includes("green"));

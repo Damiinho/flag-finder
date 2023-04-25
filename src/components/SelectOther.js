@@ -10,8 +10,10 @@ const SelectOther = () => {
     setBlack,
     setYellow,
     setBlue,
+    setNavyBlue,
     setGreen,
     setOrange,
+    setClaret,
     setVerticalStripes,
     setHorizontalStripes,
     setOtherShapes,
@@ -28,10 +30,12 @@ const SelectOther = () => {
 
   const handleResetButton = () => {
     setRed(false);
+    setClaret(false);
     setWhite(false);
     setBlack(false);
     setYellow(false);
     setBlue(false);
+    setNavyBlue(false);
     setGreen(false);
     setOrange(false);
     setVerticalStripes(false);

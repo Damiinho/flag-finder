@@ -352,7 +352,6 @@ body {
               display: flex;
               flex-direction: column;
               gap: 5px;
-              width: 250px;
 
               &-description {
                 @include description-center;
@@ -360,15 +359,22 @@ body {
               }
 
               &__button-box {
-                text-align: center;
-
+                display: grid;
+                background-color: #7e78a35e;
+                border-radius: 25px;
+                width: 225px;
+                height: 190px;
+                grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+                justify-content: center;
+                align-items: center;
                 button {
                   width: 50px;
                   height: 50px;
-                  margin: 0 5px;
+                  margin: 0 auto;
                   border-radius: 50%;
                   box-shadow: 0 0 0 2px rgb(31, 4, 128),
                     0 0 0 3px rgb(83, 90, 156);
+                  transition: 0.3s;
                 }
 
                 button.black {
@@ -387,7 +393,10 @@ body {
                 }
 
                 button.blue {
-                  background-color: #2243d4;
+                  background-color: #7ab2dc;
+                }
+                button.navyblue {
+                  background-color: #092168;
                 }
 
                 button.green {
@@ -396,6 +405,42 @@ body {
 
                 button.orange {
                   background-color: #e67e22;
+                }
+                button::after {
+                  display: block;
+                  content: "";
+                  transition: 0.3s;
+                }
+                button:hover::after {
+                  position: relative;
+                  top: 5px;
+                  left: 22px;
+                  display: block;
+                  content: "";
+                  transform: rotate(45deg);
+                  height: 17px;
+                  width: 10px;
+                  border-bottom: 5px solid #ffffff;
+                  border-right: 5px solid rgb(255, 255, 255);
+                }
+                button.active::after {
+                  position: relative;
+                  top: 5px;
+                  left: 22px;
+                  display: block;
+                  content: "";
+                  transform: rotate(45deg);
+                  height: 17px;
+                  width: 10px;
+                  border-bottom: 5px solid #ffffff;
+                  border-right: 5px solid rgb(255, 255, 255);
+                }
+
+                button.white.active::after,
+                button.white:hover::after,
+                button.yellow.active::after,
+                button.yellow:hover::after {
+                  border-color: black;
                 }
               }
 

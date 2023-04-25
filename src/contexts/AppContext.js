@@ -9,6 +9,7 @@ export const AppProvider = ({ children }) => {
   const [black, setBlack] = useState(false);
   const [yellow, setYellow] = useState(false);
   const [blue, setBlue] = useState(false);
+  const [navyBlue, setNavyBlue] = useState(false);
   const [green, setGreen] = useState(false);
   const [orange, setOrange] = useState(false);
   const [claret, setClaret] = useState(false);
@@ -39,6 +40,8 @@ export const AppProvider = ({ children }) => {
     setYellow,
     blue,
     setBlue,
+    navyBlue,
+    setNavyBlue,
     green,
     setGreen,
     orange,
