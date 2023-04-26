@@ -58,12 +58,12 @@ const SelectOther = () => {
       >
         <p>tylko państwa</p>
       </button>
-      <label className="other countries">
+      {/* <label className="other countries">
         tylko państwa <input type="checkbox" />
-      </label>
+      </label> */}
 
       <button className="other reset" onClick={handleResetButton}>
-        <p>Reset</p>
+        <p>reset</p>
       </button>
     </div>
   );

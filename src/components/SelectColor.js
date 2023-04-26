@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { AppContext } from "../contexts/AppContext";
+import checkmarkIMG from "../img/checkmark.png";
+import checkmarkBlackIMG from "../img/checkmarkBlack.png";
 // import Select from "react-select";
 
 const SelectColor = () => {
@@ -134,55 +136,73 @@ const SelectColor = () => {
           onClick={() => {
             setWhite(!white);
           }}
-        ></button>
+        >
+          <img src={checkmarkBlackIMG} alt="checkmark" />
+        </button>
         <button
           className={`color black ${black ? "active" : ""}`}
           onClick={() => {
             setBlack(!black);
           }}
-        ></button>{" "}
+        >
+          <img src={checkmarkIMG} alt="checkmark" />
+        </button>
         <button
           className={`color orange ${orange ? "active" : ""}`}
           onClick={() => {
             setOrange(!orange);
           }}
-        ></button>
+        >
+          <img src={checkmarkIMG} alt="checkmark" />
+        </button>
         <button
           className={`color red ${red ? "active" : ""}`}
           onClick={() => {
             setRed(!red);
           }}
-        ></button>
+        >
+          <img src={checkmarkIMG} alt="checkmark" />
+        </button>
         <button
           className={`color claret ${claret ? "active" : ""}`}
           onClick={() => {
             setClaret(!claret);
           }}
-        ></button>
+        >
+          <img src={checkmarkIMG} alt="checkmark" />
+        </button>
         <button
           className={`color yellow ${yellow ? "active" : ""}`}
           onClick={() => {
             setYellow(!yellow);
           }}
-        ></button>
+        >
+          <img src={checkmarkBlackIMG} alt="checkmark" />
+        </button>
         <button
           className={`color blue ${blue ? "active" : ""}`}
           onClick={() => {
             setBlue(!blue);
           }}
-        ></button>
+        >
+          <img src={checkmarkIMG} alt="checkmark" />
+        </button>
         <button
           className={`color navyblue ${navyBlue ? "active" : ""}`}
           onClick={() => {
             setNavyBlue(!navyBlue);
           }}
-        ></button>
+        >
+          <img src={checkmarkIMG} alt="checkmark" />
+        </button>
         <button
           className={`color green ${green ? "active" : ""}`}
           onClick={() => {
             setGreen(!green);
           }}
-        ></button>
+        >
+          <img src={checkmarkIMG} alt="checkmark" />
+        </button>
       </div>
     </div>
   );
