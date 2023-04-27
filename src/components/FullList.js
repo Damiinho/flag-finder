@@ -9,7 +9,7 @@ const FullList = () => {
     horizontalStripes,
     otherShapes,
     symbols,
-    region,
+    regions,
     isCountrySelected,
     red,
     claret,
@@ -38,9 +38,6 @@ const FullList = () => {
     }
     if (symbols) {
       newFlags = newFlags.filter((flag) => flag.symbols);
-    }
-    if (region) {
-      newFlags = newFlags.filter((flag) => flag.region === region);
     }
     if (isCountrySelected) {
       newFlags = newFlags.filter((flag) => flag.country);
@@ -82,6 +79,11 @@ const FullList = () => {
     //     selectedColors.every((color) => flag.colors.includes(color.value))
     //   );
     // }
+    if (regions.length > 0) {
+      newFlags = newFlags.filter((flag) =>
+        regions.some((region) => flag.regions.includes(region.value))
+      );
+    }
 
     return newFlags;
   };

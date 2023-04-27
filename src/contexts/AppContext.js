@@ -17,7 +17,7 @@ export const AppProvider = ({ children }) => {
   const [horizontalStripes, setHorizontalStripes] = useState(false);
   const [otherShapes, setOtherShapes] = useState(false);
   const [symbols, setSymbols] = useState(false);
-  const [region, setRegion] = useState("");
+  const [regions, setRegions] = useState([]);
   const [isCountrySelected, setIsCountrySelected] = useState(false);
   const [selectedSmallOne, setSelectedSmallOne] = useState(null);
   const [inputValue, setInputValue] = useState("");
@@ -54,8 +54,8 @@ export const AppProvider = ({ children }) => {
     setOtherShapes,
     symbols,
     setSymbols,
-    region,
-    setRegion,
+    regions,
+    setRegions,
     isCountrySelected,
     setIsCountrySelected,
     selectedSmallOne,

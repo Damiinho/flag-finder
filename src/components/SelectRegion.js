@@ -3,14 +3,13 @@ import { AppContext } from "../contexts/AppContext";
 import Select from "react-select";
 
 const SelectRegion = () => {
-  const { region, setRegion } = useContext(AppContext);
+  const { regions, setRegions } = useContext(AppContext);
 
-  const setActiveRegion = (item) => {
-    setRegion(item);
+  const handleSelectRegion = (item) => {
+    setRegions(item);
   };
 
   const options = [
-    { value: "", label: "dowolny" },
     { value: "africa", label: "Afryka" },
     { value: "south-america", label: "Ameryka Południowa" },
     { value: "north-america", label: "Ameryka Północna" },
@@ -63,15 +62,12 @@ const SelectRegion = () => {
       <p className="selectors__region-description">wybierz region</p>
       <div className="selectors__region__button-box">
         <Select
+          isMulti
+          placeholder="wybierz region"
           className="selectors__region__button-box__selector"
-          value={{
-            value: region,
-            label: region
-              ? options.find((o) => o.value === region).label
-              : "dowolny",
-          }}
+          value={regions}
           styles={styles}
-          onChange={(selectedOption) => setActiveRegion(selectedOption.value)}
+          onChange={(item) => handleSelectRegion(item)}
           options={options}
         />
       </div>

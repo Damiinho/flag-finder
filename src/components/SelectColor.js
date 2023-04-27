@@ -119,8 +119,8 @@ const SelectColor = () => {
   return (
     <div className="selectors__colors">
       <p className="selectors__colors-description">wybierz kolory</p>
-
-      {/* <Select
+      {/* 
+      <Select
         isMulti
         placeholder="wszystkie"
         styles={styles}

@@ -18,7 +18,7 @@ const SelectOther = () => {
     setHorizontalStripes,
     setOtherShapes,
     setSymbols,
-    setRegion,
+    setRegions,
     setSelectedSmallOne,
     setInputValue,
     setSearchTerm,
@@ -42,7 +42,7 @@ const SelectOther = () => {
     setHorizontalStripes(false);
     setOtherShapes(false);
     setSymbols(false);
-    setRegion("");
+    setRegions([]);
     setIsCountrySelected(false);
     setSelectedSmallOne(null);
     setInputValue("");

@@ -1624,7 +1624,8 @@
         "img": "./assets/es.png",
         "region": "europe",
         "regions": [
-            "europe"
+            "europe",
+            "africa"
         ],
         "verticalStripes": false,
         "horizontalStripes": true,
@@ -6226,7 +6227,7 @@
         "shapes": [
             "horizontal"
         ],
-        "img": "./assets/art.svg",
+        "img": "./assets/oss.svg",
         "region": "europe",
         "regions": [
             "europe"
