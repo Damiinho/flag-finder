@@ -2572,7 +2572,7 @@
         "active": true,
         "name": "Saint Kitts i Nevis",
         "colors": [
-            "back",
+            "black",
             "yellow",
             "white",
             "green",
@@ -5387,6 +5387,183 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
+        "country": false
+    },
+    {
+        "id": 250,
+        "active": true,
+        "name": "Abchazja",
+        "colors": [
+            "red",
+            "green",
+            "white"
+        ],
+        "shapes": [
+            "horizontal",
+            "star",
+            "other"
+        ],
+        "img": "./assets/abch.svg",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 251,
+        "active": true,
+        "name": "Cypr Północny",
+        "colors": [
+            "red",
+            "white"
+        ],
+        "shapes": [
+            "horizontal",
+            "star",
+            "moon"
+        ],
+        "img": "./assets/ncy.svg",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 252,
+        "active": true,
+        "name": "Górski Karabach",
+        "colors": [
+            "red",
+            "white",
+            "navyblue",
+            "orange"
+        ],
+        "shapes": [
+            "horizontal",
+            "other",
+            "triangle"
+        ],
+        "img": "./assets/art.svg",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": false,
+        "country": false
+    },
+    {
+        "id": 253,
+        "active": true,
+        "name": "Osetia Południowa",
+        "colors": [
+            "red",
+            "white",
+            "yellow"
+        ],
+        "shapes": [
+            "horizontal"
+        ],
+        "img": "./assets/art.svg",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": false
+    },
+    {
+        "id": 254,
+        "active": true,
+        "name": "Sint Eustatius",
+        "colors": [
+            "red",
+            "white",
+            "yellow",
+            "green",
+            "navyblue"
+        ],
+        "shapes": [
+            "other",
+            "star"
+        ],
+        "img": "./assets/seu.svg",
+        "region": "carraibean",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 254,
+        "active": true,
+        "name": "Saba",
+        "colors": [
+            "red",
+            "white",
+            "yellow",
+            "navyblue"
+        ],
+        "shapes": [
+            "other",
+            "star",
+            "triangle"
+        ],
+        "img": "./assets/saba.svg",
+        "region": "carraibean",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 255,
+        "active": true,
+        "name": "Naddniestrze",
+        "colors": [
+            "red",
+            "green",
+            "yellow"
+        ],
+        "shapes": [
+            "horizontal",
+            "star",
+            "weapon"
+        ],
+        "img": "./assets/tns.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 256,
+        "active": true,
+        "name": "Somaliland",
+        "colors": [
+            "red",
+            "green",
+            "white",
+            "black"
+        ],
+        "shapes": [
+            "horizontal",
+            "star",
+            "word"
+        ],
+        "img": "./assets/sml.svg",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
         "country": false
     }
 ]
