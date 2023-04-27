@@ -162,7 +162,8 @@
         "img": "./assets/am.png",
         "region": "europe",
         "regions": [
-            "europe"
+            "europe",
+            "asia"
         ],
         "verticalStripes": false,
         "horizontalStripes": true,
@@ -1086,7 +1087,8 @@
         "img": "./assets/cl.png",
         "region": "south-america",
         "regions": [
-            "south-america"
+            "south-america",
+            "oceania"
         ],
         "verticalStripes": false,
         "horizontalStripes": true,
@@ -1303,7 +1305,8 @@
         "img": "./assets/cy.png",
         "region": "asia",
         "regions": [
-            "asia"
+            "asia",
+            "europe"
         ],
         "verticalStripes": false,
         "horizontalStripes": false,
@@ -1549,7 +1552,8 @@
         "img": "./assets/eg.png",
         "region": "africa",
         "regions": [
-            "africa"
+            "africa",
+            "asia"
         ],
         "verticalStripes": false,
         "horizontalStripes": true,
@@ -1982,7 +1986,8 @@
         "img": "./assets/ge.png",
         "region": "europe",
         "regions": [
-            "europe"
+            "europe",
+            "asia"
         ],
         "verticalStripes": false,
         "horizontalStripes": false,
@@ -2485,7 +2490,8 @@
         "img": "./assets/id.png",
         "region": "asia",
         "regions": [
-            "asia"
+            "asia",
+            "oceania"
         ],
         "verticalStripes": false,
         "horizontalStripes": true,
@@ -2798,7 +2804,8 @@
         "img": "./assets/jp.png",
         "region": "asia",
         "regions": [
-            "asia"
+            "asia",
+            "oceania"
         ],
         "verticalStripes": false,
         "horizontalStripes": false,
@@ -3077,7 +3084,8 @@
         "img": "./assets/kz.png",
         "region": "asia",
         "regions": [
-            "asia"
+            "asia",
+            "europe"
         ],
         "verticalStripes": false,
         "horizontalStripes": false,
@@ -4454,7 +4462,8 @@
         "img": "./assets/pt.png",
         "region": "europe",
         "regions": [
-            "europe"
+            "europe",
+            "africa"
         ],
         "verticalStripes": true,
         "horizontalStripes": false,
@@ -4624,7 +4633,8 @@
         "img": "./assets/ru.png",
         "region": "europe",
         "regions": [
-            "europe"
+            "europe",
+            "asia"
         ],
         "verticalStripes": false,
         "horizontalStripes": true,
@@ -5450,7 +5460,8 @@
         "img": "./assets/tr.png",
         "region": "asia",
         "regions": [
-            "asia"
+            "asia",
+            "europe"
         ],
         "verticalStripes": false,
         "horizontalStripes": false,
@@ -5620,7 +5631,8 @@
         "img": "./assets/us.png",
         "region": "north-america",
         "regions": [
-            "north-america"
+            "north-america",
+            "oceania"
         ],
         "verticalStripes": false,
         "horizontalStripes": true,
@@ -5946,7 +5958,8 @@
         "img": "./assets/ye.png",
         "region": "asia",
         "regions": [
-            "asia"
+            "asia",
+            "africa"
         ],
         "verticalStripes": false,
         "horizontalStripes": true,
@@ -6181,7 +6194,8 @@
         "img": "./assets/ncy.svg",
         "region": "europe",
         "regions": [
-            "europe"
+            "europe",
+            "asia"
         ],
         "verticalStripes": false,
         "horizontalStripes": true,
