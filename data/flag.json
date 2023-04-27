@@ -8,6 +8,10 @@
             "yellow",
             "red"
         ],
+        "shapes": [
+            "vertical",
+            "emblem"
+        ],
         "img": "./assets/ad.png",
         "region": "europe",
         "verticalStripes": true,
@@ -26,6 +30,10 @@
             "white",
             "black"
         ],
+        "shapes": [
+            "vertical",
+            "horizontal"
+        ],
         "img": "./assets/ae.png",
         "region": "asia",
         "verticalStripes": true,
@@ -39,15 +47,17 @@
         "active": true,
         "name": "Afganistan",
         "colors": [
-            "red",
-            "green",
+            "white",
             "black"
         ],
-        "img": "./assets/af.png",
+        "shapes": [
+            "word"
+        ],
+        "img": "./assets/af-taliban.png",
         "region": "asia",
-        "verticalStripes": true,
+        "verticalStripes": false,
         "horizontalStripes": false,
-        "otherShapes": false,
+        "otherShapes": true,
         "symbols": true,
         "country": true
     },
@@ -61,6 +71,11 @@
             "white",
             "black",
             "yellow"
+        ],
+        "shapes": [
+            "horizontal",
+            "triangle",
+            "sun"
         ],
         "img": "./assets/ag.png",
         "region": "carraibean",
@@ -80,6 +95,11 @@
             "white",
             "yellow"
         ],
+        "shapes": [
+            "cross",
+            "emblem",
+            "animal"
+        ],
         "img": "./assets/ai.png",
         "region": "carraibean",
         "verticalStripes": false,
@@ -95,6 +115,10 @@
         "colors": [
             "red",
             "black"
+        ],
+        "shapes": [
+            "emblem",
+            "animal"
         ],
         "img": "./assets/al.png",
         "region": "europe",
@@ -114,6 +138,9 @@
             "yellow",
             "orange"
         ],
+        "shapes": [
+            "horizontal"
+        ],
         "img": "./assets/am.png",
         "region": "europe",
         "verticalStripes": false,
@@ -131,6 +158,12 @@
             "black",
             "yellow"
         ],
+        "shapes": [
+            "horizontal",
+            "star",
+            "emblem",
+            "weapon"
+        ],
         "img": "./assets/ao.png",
         "region": "europe",
         "verticalStripes": false,
@@ -147,13 +180,16 @@
             "blue",
             "white"
         ],
+        "shapes": [
+            "contours"
+        ],
         "img": "./assets/aq.png",
         "region": "antarctica",
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": false
     },
     {
         "id": 9,
@@ -163,6 +199,10 @@
             "blue",
             "white",
             "yellow"
+        ],
+        "shapes": [
+            "horizontal",
+            "sun"
         ],
         "img": "./assets/ar.png",
         "region": "south-america",
@@ -181,6 +221,10 @@
             "white",
             "red"
         ],
+        "shapes": [
+            "triangle",
+            "animal"
+        ],
         "img": "./assets/as.png",
         "region": "oceania",
         "verticalStripes": false,
@@ -196,6 +240,9 @@
         "colors": [
             "white",
             "red"
+        ],
+        "shapes": [
+            "horizontal"
         ],
         "img": "./assets/at.png",
         "region": "europe",
@@ -214,6 +261,10 @@
             "red",
             "navyblue"
         ],
+        "shapes": [
+            "cross",
+            "star"
+        ],
         "img": "./assets/au.png",
         "region": "oceania",
         "verticalStripes": false,
@@ -231,6 +282,10 @@
             "yellow",
             "red"
         ],
+        "shapes": [
+            "horizontal",
+            "star"
+        ],
         "img": "./assets/aw.png",
         "region": "carraibean",
         "verticalStripes": false,
@@ -247,6 +302,9 @@
             "navyblue",
             "yellow",
             "red"
+        ],
+        "shapes": [
+            "cross"
         ],
         "img": "./assets/ax.png",
         "region": "europe",
@@ -266,6 +324,11 @@
             "green",
             "blue"
         ],
+        "shapes": [
+            "horizontal",
+            "moon",
+            "star"
+        ],
         "img": "./assets/az.png",
         "region": "asia",
         "verticalStripes": false,
@@ -283,6 +346,10 @@
             "navyblue",
             "yellow"
         ],
+        "shapes": [
+            "triangle",
+            "star"
+        ],
         "img": "./assets/ba.png",
         "region": "europe",
         "verticalStripes": false,
@@ -299,6 +366,10 @@
             "navyblue",
             "yellow"
         ],
+        "shapes": [
+            "vertical",
+            "weapon"
+        ],
         "img": "./assets/bb.png",
         "region": "carraibean",
         "verticalStripes": true,
@@ -314,6 +385,9 @@
         "colors": [
             "green",
             "red"
+        ],
+        "shapes": [
+            "circle"
         ],
         "img": "./assets/bd.png",
         "region": "asia",
@@ -332,6 +406,9 @@
             "yellow",
             "red"
         ],
+        "shapes": [
+            "vertical"
+        ],
         "img": "./assets/be.png",
         "region": "europe",
         "verticalStripes": true,
@@ -348,6 +425,10 @@
             "green",
             "yellow",
             "red"
+        ],
+        "shapes": [
+            "horizontal",
+            "star"
         ],
         "img": "./assets/bf.png",
         "region": "africa",
@@ -366,6 +447,9 @@
             "red",
             "green"
         ],
+        "shapes": [
+            "horizontal"
+        ],
         "img": "./assets/bg.png",
         "region": "europe",
         "verticalStripes": false,
@@ -381,6 +465,10 @@
         "colors": [
             "white",
             "red"
+        ],
+        "shapes": [
+            "vertical",
+            "triangle"
         ],
         "img": "./assets/bh.png",
         "region": "asia",
@@ -399,6 +487,11 @@
             "red",
             "yellow"
         ],
+        "shapes": [
+            "triangle",
+            "diagonal",
+            "star"
+        ],
         "img": "./assets/bi.png",
         "region": "africa",
         "verticalStripes": false,
@@ -415,6 +508,10 @@
             "green",
             "yellow",
             "red"
+        ],
+        "shapes": [
+            "horizontal",
+            "vertical"
         ],
         "img": "./assets/bj.png",
         "region": "africa",
@@ -434,6 +531,15 @@
             "red",
             "white"
         ],
+        "shapes": [
+            "cross",
+            "star",
+            "emblem",
+            "word",
+            "building",
+            "animal",
+            "other"
+        ],
         "img": "./assets/bl.png",
         "region": "carraibean",
         "verticalStripes": false,
@@ -450,6 +556,12 @@
             "navyblue",
             "red",
             "white"
+        ],
+        "shapes": [
+            "cross",
+            "emblem",
+            "animal",
+            "other"
         ],
         "img": "./assets/bm.png",
         "region": "north-america",
@@ -469,6 +581,12 @@
             "red",
             "black"
         ],
+        "shapes": [
+            "diagonal",
+            "emblem",
+            "word",
+            "other"
+        ],
         "img": "./assets/bn.png",
         "region": "asia",
         "verticalStripes": false,
@@ -485,6 +603,9 @@
             "green",
             "yellow",
             "red"
+        ],
+        "shapes": [
+            "horizontal"
         ],
         "img": "./assets/bo.png",
         "region": "south-america",
@@ -503,6 +624,11 @@
             "yellow",
             "white"
         ],
+        "shapes": [
+            "diagonal",
+            "circle",
+            "star"
+        ],
         "img": "./assets/bq.png",
         "region": "carraibean",
         "verticalStripes": false,
@@ -519,6 +645,12 @@
             "green",
             "yellow",
             "navyblue"
+        ],
+        "shapes": [
+            "triangle",
+            "circle",
+            "star",
+            "word"
         ],
         "img": "./assets/br.png",
         "region": "south-america",
@@ -539,6 +671,10 @@
             "yellow",
             "black"
         ],
+        "shapes": [
+            "horizontal",
+            "triangle"
+        ],
         "img": "./assets/bs.png",
         "region": "carraibean",
         "verticalStripes": false,
@@ -555,6 +691,10 @@
             "white",
             "yellow",
             "orange"
+        ],
+        "shapes": [
+            "diagonal",
+            "animal"
         ],
         "img": "./assets/bt.png",
         "region": "asia",
@@ -573,6 +713,9 @@
             "blue",
             "black"
         ],
+        "shapes": [
+            "horizontal"
+        ],
         "img": "./assets/bw.png",
         "region": "africa",
         "verticalStripes": false,
@@ -590,6 +733,10 @@
             "green",
             "white"
         ],
+        "shapes": [
+            "horizontal",
+            "other"
+        ],
         "img": "./assets/by.png",
         "region": "europe",
         "verticalStripes": false,
@@ -605,6 +752,14 @@
         "colors": [
             "red",
             "navyblue"
+        ],
+        "shapes": [
+            "horizontal",
+            "circle",
+            "emblem",
+            "plant",
+            "word",
+            "weapon"
         ],
         "img": "./assets/bz.png",
         "region": "north-america",
@@ -622,6 +777,10 @@
             "white",
             "red"
         ],
+        "shapes": [
+            "plant",
+            "vertical"
+        ],
         "img": "./assets/ca.png",
         "region": "north-america",
         "verticalStripes": true,
@@ -637,6 +796,12 @@
         "colors": [
             "yellow",
             "green"
+        ],
+        "shapes": [
+            "circle",
+            "star",
+            "moon",
+            "plant"
         ],
         "img": "./assets/cc.png",
         "region": "oceania",
@@ -654,6 +819,10 @@
             "yellow",
             "blue",
             "red"
+        ],
+        "shapes": [
+            "diagonal",
+            "star"
         ],
         "img": "./assets/cd.png",
         "region": "africa",
@@ -674,6 +843,11 @@
             "red",
             "navyblue"
         ],
+        "shapes": [
+            "horizontal",
+            "vertical",
+            "star"
+        ],
         "img": "./assets/cf.png",
         "region": "africa",
         "verticalStripes": true,
@@ -691,6 +865,10 @@
             "yellow",
             "red"
         ],
+        "shapes": [
+            "diagonal",
+            "vertical"
+        ],
         "img": "./assets/cg.png",
         "region": "africa",
         "verticalStripes": false,
@@ -706,6 +884,9 @@
         "colors": [
             "white",
             "red"
+        ],
+        "shapes": [
+            "cross"
         ],
         "img": "./assets/ch.png",
         "region": "europe",
@@ -725,6 +906,9 @@
             "yellow",
             "green"
         ],
+        "shapes": [
+            "vertical"
+        ],
         "img": "./assets/ci.png",
         "region": "africa",
         "verticalStripes": true,
@@ -741,6 +925,10 @@
             "white",
             "navyblue",
             "red"
+        ],
+        "shapes": [
+            "cross",
+            "star"
         ],
         "img": "./assets/ck.png",
         "region": "oceania",
@@ -759,6 +947,10 @@
             "navyblue",
             "red"
         ],
+        "shapes": [
+            "horizontal",
+            "star"
+        ],
         "img": "./assets/cl.png",
         "region": "south-america",
         "verticalStripes": false,
@@ -776,6 +968,10 @@
             "red",
             "yellow"
         ],
+        "shapes": [
+            "star",
+            "vertical"
+        ],
         "img": "./assets/cm.png",
         "region": "africa",
         "verticalStripes": true,
@@ -791,6 +987,9 @@
         "colors": [
             "red",
             "yellow"
+        ],
+        "shapes": [
+            "star"
         ],
         "img": "./assets/cn.png",
         "region": "asia",
@@ -809,6 +1008,9 @@
             "navyblue",
             "red"
         ],
+        "shapes": [
+            "horizontal"
+        ],
         "img": "./assets/co.png",
         "region": "south-america",
         "verticalStripes": false,
@@ -825,6 +1027,10 @@
             "white",
             "navyblue",
             "red"
+        ],
+        "shapes": [
+            "horizontal",
+            "emblem"
         ],
         "img": "./assets/cr.png",
         "region": "north-america",
@@ -843,6 +1049,11 @@
             "navyblue",
             "red"
         ],
+        "shapes": [
+            "horizontal",
+            "triangle",
+            "star"
+        ],
         "img": "./assets/cu.png",
         "region": "carraibean",
         "verticalStripes": false,
@@ -859,6 +1070,10 @@
             "white",
             "navyblue",
             "red"
+        ],
+        "shapes": [
+            "horizontal",
+            "star"
         ],
         "img": "./assets/cv.png",
         "region": "africa",
@@ -877,6 +1092,10 @@
             "navyblue",
             "yellow"
         ],
+        "shapes": [
+            "horizontal",
+            "star"
+        ],
         "img": "./assets/cw.png",
         "region": "carraibean",
         "verticalStripes": false,
@@ -894,6 +1113,14 @@
             "navyblue",
             "yellow"
         ],
+        "shapes": [
+            "diagonal",
+            "triangle",
+            "star",
+            "circle",
+            "contours",
+            "animal"
+        ],
         "img": "./assets/cx.png",
         "region": "oceania",
         "verticalStripes": false,
@@ -910,8 +1137,12 @@
             "white",
             "yellow"
         ],
+        "shapes": [
+            "contours",
+            "plant"
+        ],
         "img": "./assets/cy.png",
-        "region": "europe",
+        "region": "asia",
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -927,6 +1158,10 @@
             "navyblue",
             "blue",
             "red"
+        ],
+        "shapes": [
+            "horizontal",
+            "triangle"
         ],
         "img": "./assets/cz.png",
         "region": "europe",
@@ -944,6 +1179,9 @@
             "red",
             "black",
             "yellow"
+        ],
+        "shapes": [
+            "horizontal"
         ],
         "img": "./assets/de.png",
         "region": "europe",
@@ -963,6 +1201,11 @@
             "green",
             "red"
         ],
+        "shapes": [
+            "horizontal",
+            "triangle",
+            "star"
+        ],
         "img": "./assets/dj.png",
         "region": "africa",
         "verticalStripes": false,
@@ -978,6 +1221,9 @@
         "colors": [
             "red",
             "white"
+        ],
+        "shapes": [
+            "cross"
         ],
         "img": "./assets/dk.png",
         "region": "europe",
@@ -998,6 +1244,11 @@
             "green",
             "yellow"
         ],
+        "shapes": [
+            "cross",
+            "star",
+            "animal"
+        ],
         "img": "./assets/dm.png",
         "region": "carraibean",
         "verticalStripes": true,
@@ -1015,6 +1266,10 @@
             "navyblue",
             "red"
         ],
+        "shapes": [
+            "cross",
+            "emblem"
+        ],
         "img": "./assets/do.png",
         "region": "carraibean",
         "verticalStripes": false,
@@ -1031,6 +1286,11 @@
             "white",
             "green",
             "red"
+        ],
+        "shapes": [
+            "star",
+            "moon",
+            "vertical"
         ],
         "img": "./assets/dz.png",
         "region": "africa",
@@ -1050,6 +1310,11 @@
             "blue",
             "red"
         ],
+        "shapes": [
+            "horizontal",
+            "animal",
+            "emblem"
+        ],
         "img": "./assets/ec.png",
         "region": "south-america",
         "verticalStripes": false,
@@ -1067,6 +1332,9 @@
             "blue",
             "black"
         ],
+        "shapes": [
+            "horizontal"
+        ],
         "img": "./assets/ee.png",
         "region": "europe",
         "verticalStripes": false,
@@ -1083,6 +1351,11 @@
             "white",
             "black",
             "red"
+        ],
+        "shapes": [
+            "horizontal",
+            "emblem",
+            "animal"
         ],
         "img": "./assets/eg.png",
         "region": "africa",
@@ -1102,6 +1375,12 @@
             "red",
             "green"
         ],
+        "shapes": [
+            "horizontal",
+            "triangle",
+            "moon",
+            "star"
+        ],
         "img": "./assets/eh.png",
         "region": "africa",
         "verticalStripes": false,
@@ -1119,6 +1398,11 @@
             "blue",
             "red"
         ],
+        "shapes": [
+            "triangle",
+            "emblem",
+            "plant"
+        ],
         "img": "./assets/er.png",
         "region": "africa",
         "verticalStripes": false,
@@ -1135,6 +1419,10 @@
             "yellow",
             "red"
         ],
+        "shapes": [
+            "horizontal",
+            "emblem"
+        ],
         "img": "./assets/es.png",
         "region": "europe",
         "verticalStripes": false,
@@ -1148,10 +1436,15 @@
         "active": true,
         "name": "Etiopia",
         "colors": [
-            "greem",
+            "green",
             "navyblue",
             "red",
             "yellow"
+        ],
+        "shapes": [
+            "horizontal",
+            "circle",
+            "star"
         ],
         "img": "./assets/et.png",
         "region": "africa",
@@ -1169,6 +1462,9 @@
             "white",
             "blue",
             "navyblue"
+        ],
+        "shapes": [
+            "cross"
         ],
         "img": "./assets/fi.png",
         "region": "europe",
@@ -1188,6 +1484,12 @@
             "navyblue",
             "red"
         ],
+        "shapes": [
+            "cross",
+            "emblem",
+            "plant",
+            "animal"
+        ],
         "img": "./assets/fj.png",
         "region": "oceania",
         "verticalStripes": false,
@@ -1205,6 +1507,13 @@
             "navyblue",
             "red"
         ],
+        "shapes": [
+            "cross",
+            "emblem",
+            "animal",
+            "word",
+            "other"
+        ],
         "img": "./assets/fk.png",
         "region": "south-america",
         "verticalStripes": false,
@@ -1220,6 +1529,9 @@
         "colors": [
             "white",
             "blue"
+        ],
+        "shapes": [
+            "star"
         ],
         "img": "./assets/fm.png",
         "region": "oceania",
@@ -1237,6 +1549,9 @@
             "white",
             "blue",
             "red"
+        ],
+        "shapes": [
+            "cross"
         ],
         "img": "./assets/fo.png",
         "region": "europe",
@@ -1256,6 +1571,9 @@
             "navyblue",
             "red"
         ],
+        "shapes": [
+            "vertical"
+        ],
         "img": "./assets/fr.png",
         "region": "europe",
         "verticalStripes": true,
@@ -1272,6 +1590,9 @@
             "yellow",
             "blue",
             "green"
+        ],
+        "shapes": [
+            "vertical"
         ],
         "img": "./assets/ga.png",
         "region": "africa",
@@ -1290,6 +1611,9 @@
             "navyblue",
             "red"
         ],
+        "shapes": [
+            "cross"
+        ],
         "img": "./assets/gb.png",
         "region": "europe",
         "verticalStripes": false,
@@ -1305,6 +1629,9 @@
         "colors": [
             "white",
             "red"
+        ],
+        "shapes": [
+            "cross"
         ],
         "img": "./assets/gb-eng.png",
         "region": "europe",
@@ -1322,6 +1649,11 @@
             "white",
             "red"
         ],
+        "shapes": [
+            "cross",
+            "emblem",
+            "star"
+        ],
         "img": "./assets/gb-nir.png",
         "region": "europe",
         "verticalStripes": false,
@@ -1337,6 +1669,9 @@
         "colors": [
             "white",
             "blue"
+        ],
+        "shapes": [
+            "cross"
         ],
         "img": "./assets/gb-sct.png",
         "region": "europe",
@@ -1355,6 +1690,10 @@
             "green",
             "red"
         ],
+        "shapes": [
+            "horizontal",
+            "animal"
+        ],
         "img": "./assets/gb-wls.png",
         "region": "europe",
         "verticalStripes": false,
@@ -1372,6 +1711,11 @@
             "green",
             "red"
         ],
+        "shapes": [
+            "triangle",
+            "star",
+            "plant"
+        ],
         "img": "./assets/gd.png",
         "region": "carraibean",
         "verticalStripes": false,
@@ -1387,6 +1731,9 @@
         "colors": [
             "white",
             "red"
+        ],
+        "shapes": [
+            "cross"
         ],
         "img": "./assets/ge.png",
         "region": "europe",
@@ -1405,6 +1752,11 @@
             "yellow",
             "red"
         ],
+        "shapes": [
+            "triangle",
+            "diagonal",
+            "star"
+        ],
         "img": "./assets/gf.png",
         "region": "south-america",
         "verticalStripes": false,
@@ -1421,8 +1773,11 @@
             "white",
             "red"
         ],
+        "shapes": [
+            "cross"
+        ],
         "img": "./assets/gg.png",
-        "region": "carraibean",
+        "region": "europe",
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -1438,6 +1793,10 @@
             "green",
             "red",
             "black"
+        ],
+        "shapes": [
+            "horizontal",
+            "star"
         ],
         "img": "./assets/gh.png",
         "region": "africa",
@@ -1455,6 +1814,11 @@
             "white",
             "red"
         ],
+        "shapes": [
+            "horizontal",
+            "building",
+            "emblem"
+        ],
         "img": "./assets/gi.png",
         "region": "europe",
         "verticalStripes": false,
@@ -1470,6 +1834,10 @@
         "colors": [
             "white",
             "red"
+        ],
+        "shapes": [
+            "horizontal",
+            "circle"
         ],
         "img": "./assets/gl.png",
         "region": "north-america",
@@ -1489,6 +1857,9 @@
             "red",
             "white"
         ],
+        "shapes": [
+            "horizontal"
+        ],
         "img": "./assets/gm.png",
         "region": "africa",
         "verticalStripes": false,
@@ -1506,6 +1877,9 @@
             "green",
             "red"
         ],
+        "shapes": [
+            "vertical"
+        ],
         "img": "./assets/gn.png",
         "region": "africa",
         "verticalStripes": true,
@@ -1522,6 +1896,12 @@
             "yellow",
             "green",
             "navyblue"
+        ],
+        "shapes": [
+            "horizontal",
+            "sun",
+            "plant",
+            "other"
         ],
         "img": "./assets/gp.png",
         "region": "carraibean",
@@ -1541,6 +1921,13 @@
             "red",
             "blue"
         ],
+        "shapes": [
+            "horizontal",
+            "triangle",
+            "emblem",
+            "star",
+            "plant"
+        ],
         "img": "./assets/gq.png",
         "region": "africa",
         "verticalStripes": false,
@@ -1556,6 +1943,10 @@
         "colors": [
             "navyblue",
             "white"
+        ],
+        "shapes": [
+            "horizontal",
+            "cross"
         ],
         "img": "./assets/gn.png",
         "region": "africa",
@@ -1573,6 +1964,11 @@
             "navyblue",
             "red"
         ],
+        "shapes": [
+            "cross",
+            "emblem",
+            "animal"
+        ],
         "img": "./assets/gs.png",
         "region": "antarctica",
         "verticalStripes": false,
@@ -1589,6 +1985,13 @@
             "blue",
             "white"
         ],
+        "shapes": [
+            "horizontal",
+            "emblem",
+            "plant",
+            "animal",
+            "weapon"
+        ],
         "img": "./assets/gt.png",
         "region": "north-america",
         "verticalStripes": true,
@@ -1604,6 +2007,11 @@
         "colors": [
             "navyblue",
             "red"
+        ],
+        "shapes": [
+            "other",
+            "emblem",
+            "plant"
         ],
         "img": "./assets/gu.png",
         "region": "oceania",
@@ -1622,6 +2030,11 @@
             "green",
             "red"
         ],
+        "shapes": [
+            "horizontal",
+            "vertical",
+            "star"
+        ],
         "img": "./assets/gw.png",
         "region": "africa",
         "verticalStripes": true,
@@ -1639,6 +2052,9 @@
             "green",
             "red"
         ],
+        "shapes": [
+            "triangle"
+        ],
         "img": "./assets/gy.png",
         "region": "south-america",
         "verticalStripes": false,
@@ -1655,6 +2071,10 @@
             "white",
             "red"
         ],
+        "shapes": [
+            "plant",
+            "star"
+        ],
         "img": "./assets/hk.png",
         "region": "asia",
         "verticalStripes": false,
@@ -1670,6 +2090,10 @@
         "colors": [
             "white",
             "blue"
+        ],
+        "shapes": [
+            "horizontal",
+            "star"
         ],
         "img": "./assets/hn.png",
         "region": "north-america",
@@ -1688,6 +2112,10 @@
             "navyblue",
             "red"
         ],
+        "shapes": [
+            "horizontal",
+            "emblem"
+        ],
         "img": "./assets/hr.png",
         "region": "europe",
         "verticalStripes": false,
@@ -1703,6 +2131,10 @@
         "colors": [
             "navyblue",
             "red"
+        ],
+        "shapes": [
+            "horizontal",
+            "emblem"
         ],
         "img": "./assets/ht.png",
         "region": "carraibean",
@@ -1721,6 +2153,9 @@
             "green",
             "red"
         ],
+        "shapes": [
+            "horizontal"
+        ],
         "img": "./assets/hu.png",
         "region": "europe",
         "verticalStripes": false,
@@ -1737,6 +2172,9 @@
             "white",
             "red"
         ],
+        "shapes": [
+            "horizontal"
+        ],
         "img": "./assets/id.png",
         "region": "asia",
         "verticalStripes": false,
@@ -1750,10 +2188,12 @@
         "active": true,
         "name": "Irlandia",
         "colors": [
-            "yellow",
             "white",
             "green",
             "orange"
+        ],
+        "shapes": [
+            "vertical"
         ],
         "img": "./assets/ie.png",
         "region": "europe",
@@ -1771,6 +2211,10 @@
             "white",
             "blue"
         ],
+        "shapes": [
+            "horizontal",
+            "star"
+        ],
         "img": "./assets/il.png",
         "region": "asia",
         "verticalStripes": false,
@@ -1786,6 +2230,9 @@
         "colors": [
             "white",
             "red"
+        ],
+        "shapes": [
+            "other"
         ],
         "img": "./assets/im.png",
         "region": "europe",
@@ -1805,6 +2252,11 @@
             "yellow",
             "orange"
         ],
+        "shapes": [
+            "horizontal",
+            "circle",
+            "sun"
+        ],
         "img": "./assets/in.png",
         "region": "asia",
         "verticalStripes": false,
@@ -1821,6 +2273,12 @@
             "white",
             "navyblue",
             "red"
+        ],
+        "shapes": [
+            "horizontal",
+            "cross",
+            "emblem",
+            "plant"
         ],
         "img": "./assets/io.png",
         "region": "oceania",
@@ -1840,6 +2298,10 @@
             "red",
             "black"
         ],
+        "shapes": [
+            "horizontal",
+            "word"
+        ],
         "img": "./assets/iq.png",
         "region": "asia",
         "verticalStripes": false,
@@ -1856,6 +2318,11 @@
             "white",
             "green",
             "red"
+        ],
+        "shapes": [
+            "horizontal",
+            "word",
+            "emblem"
         ],
         "img": "./assets/ir.png",
         "region": "asia",
@@ -1875,6 +2342,9 @@
             "blue",
             "red"
         ],
+        "shapes": [
+            "cross"
+        ],
         "img": "./assets/is.png",
         "region": "europe",
         "verticalStripes": false,
@@ -1892,6 +2362,9 @@
             "green",
             "red"
         ],
+        "shapes": [
+            "vertical"
+        ],
         "img": "./assets/it.png",
         "region": "europe",
         "verticalStripes": true,
@@ -1907,6 +2380,11 @@
         "colors": [
             "white",
             "red"
+        ],
+        "shapes": [
+            "cross",
+            "emblem",
+            "animal"
         ],
         "img": "./assets/je.png",
         "region": "europe",
@@ -1924,6 +2402,10 @@
             "black",
             "green",
             "yellow"
+        ],
+        "shapes": [
+            "cross",
+            "triangle"
         ],
         "img": "./assets/jm.png",
         "region": "carraibean",
@@ -1943,6 +2425,11 @@
             "red",
             "black"
         ],
+        "shapes": [
+            "horizontal",
+            "triangle",
+            "star"
+        ],
         "img": "./assets/jo.png",
         "region": "asia",
         "verticalStripes": false,
@@ -1958,6 +2445,9 @@
         "colors": [
             "white",
             "red"
+        ],
+        "shapes": [
+            "circle"
         ],
         "img": "./assets/jp.png",
         "region": "asia",
@@ -1976,6 +2466,11 @@
             "green",
             "red"
         ],
+        "shapes": [
+            "horizontal",
+            "emblem",
+            "weapon"
+        ],
         "img": "./assets/ke.png",
         "region": "africa",
         "verticalStripes": false,
@@ -1991,6 +2486,9 @@
         "colors": [
             "yellow",
             "red"
+        ],
+        "shapes": [
+            "sun"
         ],
         "img": "./assets/kg.png",
         "region": "asia",
@@ -2009,6 +2507,10 @@
             "navyblue",
             "red"
         ],
+        "shapes": [
+            "horizontal",
+            "building"
+        ],
         "img": "./assets/kh.png",
         "region": "asia",
         "verticalStripes": false,
@@ -2026,6 +2528,11 @@
             "yellow",
             "navyblue",
             "red"
+        ],
+        "shapes": [
+            "horizontal",
+            "animal",
+            "sun"
         ],
         "img": "./assets/ki.png",
         "region": "oceania",
@@ -2046,6 +2553,12 @@
             "yellow",
             "blue"
         ],
+        "shapes": [
+            "horizontal",
+            "triangle",
+            "moon",
+            "star"
+        ],
         "img": "./assets/km.png",
         "region": "africa",
         "verticalStripes": false,
@@ -2065,6 +2578,11 @@
             "green",
             "red"
         ],
+        "shapes": [
+            "diagonal",
+            "triangle",
+            "star"
+        ],
         "img": "./assets/kn.png",
         "region": "carraibean",
         "verticalStripes": false,
@@ -2081,6 +2599,11 @@
             "white",
             "navyblue",
             "red"
+        ],
+        "shapes": [
+            "horizontal",
+            "circle",
+            "star"
         ],
         "img": "./assets/kp.png",
         "region": "asia",
@@ -2101,6 +2624,10 @@
             "red",
             "black"
         ],
+        "shapes": [
+            "circle",
+            "other"
+        ],
         "img": "./assets/kr.png",
         "region": "asia",
         "verticalStripes": false,
@@ -2119,6 +2646,10 @@
             "red",
             "black"
         ],
+        "shapes": [
+            "other",
+            "horizontal"
+        ],
         "img": "./assets/kw.png",
         "region": "asia",
         "verticalStripes": false,
@@ -2136,6 +2667,13 @@
             "navyblue",
             "red"
         ],
+        "shapes": [
+            "cross",
+            "animal",
+            "emblem",
+            "star",
+            "word"
+        ],
         "img": "./assets/ky.png",
         "region": "carraibean",
         "verticalStripes": false,
@@ -2151,6 +2689,11 @@
         "colors": [
             "yellow",
             "blue"
+        ],
+        "shapes": [
+            "other",
+            "sun",
+            "animal"
         ],
         "img": "./assets/kz.png",
         "region": "asia",
@@ -2169,6 +2712,10 @@
             "navyblue",
             "red"
         ],
+        "shapes": [
+            "horizontal",
+            "circle"
+        ],
         "img": "./assets/la.png",
         "region": "asia",
         "verticalStripes": false,
@@ -2185,6 +2732,10 @@
             "white",
             "green",
             "red"
+        ],
+        "shapes": [
+            "horizontal",
+            "plant"
         ],
         "img": "./assets/lb.png",
         "region": "asia",
@@ -2203,6 +2754,9 @@
             "yellow",
             "black"
         ],
+        "shapes": [
+            "triangle"
+        ],
         "img": "./assets/lc.png",
         "region": "carraibean",
         "verticalStripes": false,
@@ -2218,6 +2772,10 @@
         "colors": [
             "navyblue",
             "red"
+        ],
+        "shapes": [
+            "horizontal",
+            "other"
         ],
         "img": "./assets/li.png",
         "region": "europe",
@@ -2237,6 +2795,11 @@
             "green",
             "claret"
         ],
+        "shapes": [
+            "weapon",
+            "vertical",
+            "animal"
+        ],
         "img": "./assets/lk.png",
         "region": "asia",
         "verticalStripes": true,
@@ -2253,6 +2816,10 @@
             "white",
             "navyblue",
             "red"
+        ],
+        "shapes": [
+            "horizontal",
+            "star"
         ],
         "img": "./assets/lr.png",
         "region": "africa",
@@ -2272,6 +2839,10 @@
             "green",
             "black"
         ],
+        "shapes": [
+            "horizontal",
+            "other"
+        ],
         "img": "./assets/ls.png",
         "region": "africa",
         "verticalStripes": false,
@@ -2288,6 +2859,9 @@
             "green",
             "yellow",
             "red"
+        ],
+        "shapes": [
+            "horizontal"
         ],
         "img": "./assets/lt.png",
         "region": "europe",
@@ -2306,6 +2880,9 @@
             "blue",
             "red"
         ],
+        "shapes": [
+            "horizontal"
+        ],
         "img": "./assets/lu.png",
         "region": "europe",
         "verticalStripes": false,
@@ -2321,6 +2898,9 @@
         "colors": [
             "white",
             "claret"
+        ],
+        "shapes": [
+            "horizontal"
         ],
         "img": "./assets/lv.png",
         "region": "europe",
@@ -2340,6 +2920,11 @@
             "green",
             "red"
         ],
+        "shapes": [
+            "horizontal",
+            "moon",
+            "star"
+        ],
         "img": "./assets/ly.png",
         "region": "africa",
         "verticalStripes": false,
@@ -2356,6 +2941,9 @@
             "green",
             "red"
         ],
+        "shapes": [
+            "star"
+        ],
         "img": "./assets/ma.png",
         "region": "africa",
         "verticalStripes": false,
@@ -2371,6 +2959,9 @@
         "colors": [
             "white",
             "red"
+        ],
+        "shapes": [
+            "horizontal"
         ],
         "img": "./assets/mc.png",
         "region": "europe",
@@ -2389,8 +2980,13 @@
             "yellow",
             "red"
         ],
+        "shapes": [
+            "vertical",
+            "emblem",
+            "animal"
+        ],
         "img": "./assets/md.png",
-        "region": "africa",
+        "region": "europe",
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -2404,6 +3000,10 @@
         "colors": [
             "claret",
             "yellow"
+        ],
+        "shapes": [
+            "emblem",
+            "animal"
         ],
         "img": "./assets/me.png",
         "region": "europe",
@@ -2422,6 +3022,10 @@
             "green",
             "red"
         ],
+        "shapes": [
+            "horizontal",
+            "vertical"
+        ],
         "img": "./assets/mg.png",
         "region": "africa",
         "verticalStripes": true,
@@ -2438,6 +3042,10 @@
             "white",
             "navyblue",
             "orange"
+        ],
+        "shapes": [
+            "diagonal",
+            "star"
         ],
         "img": "./assets/mh.png",
         "region": "oceania",
@@ -2456,6 +3064,9 @@
             "green",
             "red"
         ],
+        "shapes": [
+            "vertical"
+        ],
         "img": "./assets/ml.png",
         "region": "africa",
         "verticalStripes": true,
@@ -2472,6 +3083,11 @@
             "yellow",
             "red"
         ],
+        "shapes": [
+            "diagonal",
+            "circle",
+            "sun"
+        ],
         "img": "./assets/mk.png",
         "region": "europe",
         "verticalStripes": true,
@@ -2479,5 +3095,2298 @@
         "otherShapes": true,
         "symbols": true,
         "country": true
+    },
+    {
+        "id": 146,
+        "active": true,
+        "name": "Mjanma",
+        "colors": [
+            "yellow",
+            "red",
+            "green",
+            "white"
+        ],
+        "shapes": [
+            "horizontal",
+            "star"
+        ],
+        "img": "./assets/mm.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 147,
+        "active": true,
+        "name": "Mongolia",
+        "colors": [
+            "blue",
+            "navyblue",
+            "red"
+        ],
+        "shapes": [
+            "circle",
+            "moon",
+            "triangle",
+            "emblem",
+            "other",
+            "vertical"
+        ],
+        "img": "./assets/mn.png",
+        "region": "asia",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 148,
+        "active": true,
+        "name": "Makau",
+        "colors": [
+            "yellow",
+            "white",
+            "green"
+        ],
+        "shapes": [
+            "horizontal",
+            "star",
+            "plant"
+        ],
+        "img": "./assets/mo.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 149,
+        "active": true,
+        "name": "Mariany Północne",
+        "colors": [
+            "blue",
+            "navyblue",
+            "yellow",
+            "green",
+            "red",
+            "orange",
+            "white"
+        ],
+        "shapes": [
+            "emblem",
+            "star"
+        ],
+        "img": "./assets/mp.png",
+        "region": "oceania",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 150,
+        "active": true,
+        "name": "Mauretania",
+        "colors": [
+            "yellow",
+            "green",
+            "red"
+        ],
+        "shapes": [
+            "horizontal",
+            "star",
+            "moon"
+        ],
+        "img": "./assets/mr.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 151,
+        "active": true,
+        "name": "Montserrat",
+        "colors": [
+            "yellow",
+            "red"
+        ],
+        "shapes": [
+            "cross",
+            "emblem",
+            "other"
+        ],
+        "img": "./assets/ms.png",
+        "region": "carraibean",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 152,
+        "active": true,
+        "name": "Malta",
+        "colors": [
+            "red",
+            "white"
+        ],
+        "shapes": [
+            "vertical",
+            "cross"
+        ],
+        "img": "./assets/mt.png",
+        "region": "europe",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 153,
+        "active": true,
+        "name": "Mauritius",
+        "colors": [
+            "yellow",
+            "red",
+            "navyblue",
+            "blue",
+            "green"
+        ],
+        "shapes": [
+            "horizontal"
+        ],
+        "img": "./assets/mu.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 154,
+        "active": true,
+        "name": "Malediwy",
+        "colors": [
+            "red",
+            "white",
+            "green"
+        ],
+        "shapes": [
+            "other",
+            "moon"
+        ],
+        "img": "./assets/mv.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 155,
+        "active": true,
+        "name": "Malawi",
+        "colors": [
+            "red",
+            "black",
+            "green"
+        ],
+        "shapes": [
+            "horizontal",
+            "sun"
+        ],
+        "img": "./assets/mw.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 156,
+        "active": true,
+        "name": "Meksyk",
+        "colors": [
+            "red",
+            "white",
+            "green"
+        ],
+        "shapes": [
+            "vertical",
+            "emblem",
+            "animal"
+        ],
+        "img": "./assets/mx.png",
+        "region": "north-america",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 157,
+        "active": true,
+        "name": "Malezja",
+        "colors": [
+            "red",
+            "navyblue",
+            "yellow"
+        ],
+        "shapes": [
+            "horizontal",
+            "star",
+            "moon"
+        ],
+        "img": "./assets/my.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 158,
+        "active": true,
+        "name": "Mozambik",
+        "colors": [
+            "red",
+            "green",
+            "yellow",
+            "black",
+            "white"
+        ],
+        "shapes": [
+            "horizontal",
+            "triangle",
+            "other",
+            "weapon",
+            "star"
+        ],
+        "img": "./assets/mz.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 159,
+        "active": true,
+        "name": "Namibia",
+        "colors": [
+            "red",
+            "green",
+            "yellow",
+            "navyblue",
+            "white"
+        ],
+        "shapes": [
+            "triangle",
+            "sun",
+            "diagonal"
+        ],
+        "img": "./assets/na.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 160,
+        "active": true,
+        "name": "Nowa Kaledonia",
+        "colors": [
+            "red",
+            "green",
+            "yellow",
+            "navyblue",
+            "black"
+        ],
+        "shapes": [
+            "horizontal",
+            "other",
+            "circle"
+        ],
+        "img": "./assets/nc.png",
+        "region": "oceania",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 161,
+        "active": true,
+        "name": "Niger",
+        "colors": [
+            "orange",
+            "green",
+            "white"
+        ],
+        "shapes": [
+            "horizontal",
+            "circle"
+        ],
+        "img": "./assets/ne.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 162,
+        "active": true,
+        "name": "Norfolk",
+        "colors": [
+            "white",
+            "green"
+        ],
+        "shapes": [
+            "vertical",
+            "plant"
+        ],
+        "img": "./assets/nf.png",
+        "region": "oceania",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 163,
+        "active": true,
+        "name": "Nigeria",
+        "colors": [
+            "white",
+            "green"
+        ],
+        "shapes": [
+            "vertical"
+        ],
+        "img": "./assets/ng.png",
+        "region": "africa",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 164,
+        "active": true,
+        "name": "Nikaragua",
+        "colors": [
+            "white",
+            "blue"
+        ],
+        "shapes": [
+            "horizontal",
+            "triangle",
+            "emblem",
+            "word"
+        ],
+        "img": "./assets/ni.png",
+        "region": "north-america",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 165,
+        "active": true,
+        "name": "Holandia",
+        "colors": [
+            "white",
+            "blue",
+            "navyblue",
+            "red"
+        ],
+        "shapes": [
+            "horizontal"
+        ],
+        "img": "./assets/nl.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 166,
+        "active": true,
+        "name": "Norwegia",
+        "colors": [
+            "white",
+            "blue",
+            "navyblue",
+            "red"
+        ],
+        "shapes": [
+            "cross"
+        ],
+        "img": "./assets/no.png",
+        "region": "europe",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 167,
+        "active": true,
+        "name": "Nepal",
+        "colors": [
+            "white",
+            "blue",
+            "navyblue",
+            "red"
+        ],
+        "shapes": [
+            "triangle",
+            "sun",
+            "moon"
+        ],
+        "img": "./assets/np.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 168,
+        "active": true,
+        "name": "Nauru",
+        "colors": [
+            "white",
+            "blue",
+            "navyblue",
+            "yellow"
+        ],
+        "shapes": [
+            "horizontal",
+            "star"
+        ],
+        "img": "./assets/nr.png",
+        "region": "oceania",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 169,
+        "active": true,
+        "name": "Niue",
+        "colors": [
+            "white",
+            "navyblue",
+            "yellow",
+            "red"
+        ],
+        "shapes": [
+            "cross",
+            "star"
+        ],
+        "img": "./assets/nu.png",
+        "region": "oceania",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 170,
+        "active": true,
+        "name": "Nowa Zelandia",
+        "colors": [
+            "white",
+            "navyblue",
+            "red"
+        ],
+        "shapes": [
+            "cross",
+            "star"
+        ],
+        "img": "./assets/nz.png",
+        "region": "oceania",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 171,
+        "active": true,
+        "name": "Oman",
+        "colors": [
+            "white",
+            "green",
+            "red"
+        ],
+        "shapes": [
+            "horizontal",
+            "vertical",
+            "emblem",
+            "weapon"
+        ],
+        "img": "./assets/om.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 172,
+        "active": true,
+        "name": "Panama",
+        "colors": [
+            "white",
+            "navyblue",
+            "red"
+        ],
+        "shapes": [
+            "other",
+            "star"
+        ],
+        "img": "./assets/pa.png",
+        "region": "north-america",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 173,
+        "active": true,
+        "name": "Peru",
+        "colors": [
+            "white",
+            "red"
+        ],
+        "shapes": [
+            "vertical"
+        ],
+        "img": "./assets/pe.png",
+        "region": "north-america",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 174,
+        "active": true,
+        "name": "Polinezja Francuska",
+        "colors": [
+            "white",
+            "red",
+            "navyblue",
+            "yellow"
+        ],
+        "shapes": [
+            "horizontal",
+            "emblem",
+            "other"
+        ],
+        "img": "./assets/pf.png",
+        "region": "oceania",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 175,
+        "active": true,
+        "name": "Papua-Nowa Gwinea",
+        "colors": [
+            "white",
+            "red",
+            "black",
+            "yellow"
+        ],
+        "shapes": [
+            "triangle",
+            "star",
+            "animal"
+        ],
+        "img": "./assets/pg.png",
+        "region": "oceania",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 176,
+        "active": true,
+        "name": "Filipiny",
+        "colors": [
+            "white",
+            "red",
+            "blue",
+            "navyblue",
+            "yellow"
+        ],
+        "shapes": [
+            "horizontal",
+            "sun",
+            "triangle"
+        ],
+        "img": "./assets/ph.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 177,
+        "active": true,
+        "name": "Pakistan",
+        "colors": [
+            "white",
+            "green"
+        ],
+        "shapes": [
+            "vertical",
+            "star",
+            "moon"
+        ],
+        "img": "./assets/pk.png",
+        "region": "asia",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 178,
+        "active": true,
+        "name": "Polska",
+        "colors": [
+            "white",
+            "red"
+        ],
+        "shapes": [
+            "horizontal"
+        ],
+        "img": "./assets/pl.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 179,
+        "active": true,
+        "name": "Saint-Pierre i Miquelon",
+        "colors": [
+            "white",
+            "blue",
+            "navyblue",
+            "yellow",
+            "black",
+            "green",
+            "red"
+        ],
+        "shapes": [
+            "vertical",
+            "cross",
+            "other",
+            "animal"
+        ],
+        "img": "./assets/pm.png",
+        "region": "north-america",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 180,
+        "active": true,
+        "name": "Portoryko",
+        "colors": [
+            "white",
+            "blue",
+            "red"
+        ],
+        "shapes": [
+            "triangle",
+            "horizontal",
+            "star"
+        ],
+        "img": "./assets/pr.png",
+        "region": "carraibean",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 181,
+        "active": true,
+        "name": "Palestyna",
+        "colors": [
+            "white",
+            "blue",
+            "red"
+        ],
+        "shapes": [
+            "triangle",
+            "horizontal"
+        ],
+        "img": "./assets/ps.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 182,
+        "active": true,
+        "name": "Portugalia",
+        "colors": [
+            "white",
+            "green",
+            "red",
+            "yellow"
+        ],
+        "shapes": [
+            "emblem",
+            "vertical"
+        ],
+        "img": "./assets/pt.png",
+        "region": "europe",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 183,
+        "active": true,
+        "name": "Palau",
+        "colors": [
+            "blue",
+            "yellow"
+        ],
+        "shapes": [
+            "circle"
+        ],
+        "img": "./assets/pw.png",
+        "region": "oceania",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 184,
+        "active": true,
+        "name": "Paragwaj",
+        "colors": [
+            "blue",
+            "yellow",
+            "navyblue",
+            "white",
+            "red"
+        ],
+        "shapes": [
+            "emblem",
+            "horizontal",
+            "star",
+            "word"
+        ],
+        "img": "./assets/py.png",
+        "region": "north-america",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 185,
+        "active": true,
+        "name": "Katar",
+        "colors": [
+            "claret",
+            "white"
+        ],
+        "shapes": [
+            "vertical",
+            "other"
+        ],
+        "img": "./assets/qa.png",
+        "region": "asia",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 186,
+        "active": true,
+        "name": "Reunion",
+        "colors": [
+            "red",
+            "blue",
+            "yellow"
+        ],
+        "shapes": [
+            "triangle",
+            "sun"
+        ],
+        "img": "./assets/re.png",
+        "region": "africa",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": false,
+        "country": false
+    },
+    {
+        "id": 187,
+        "active": true,
+        "name": "Rumunia",
+        "colors": [
+            "red",
+            "blue",
+            "navyblue",
+            "yellow"
+        ],
+        "shapes": [
+            "vertical"
+        ],
+        "img": "./assets/ro.png",
+        "region": "europe",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 188,
+        "active": true,
+        "name": "Serbia",
+        "colors": [
+            "red",
+            "blue",
+            "navyblue",
+            "white"
+        ],
+        "shapes": [
+            "emblem",
+            "horizontal",
+            "animal"
+        ],
+        "img": "./assets/rs.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 189,
+        "active": true,
+        "name": "Rosja",
+        "colors": [
+            "red",
+            "blue",
+            "white"
+        ],
+        "shapes": [
+            "horizontal"
+        ],
+        "img": "./assets/ru.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 190,
+        "active": true,
+        "name": "Rwanda",
+        "colors": [
+            "yellow",
+            "blue",
+            "green"
+        ],
+        "shapes": [
+            "sun",
+            "horizontal"
+        ],
+        "img": "./assets/rw.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 191,
+        "active": true,
+        "name": "Arabia Saudyjska",
+        "colors": [
+            "white",
+            "green"
+        ],
+        "shapes": [
+            "word",
+            "weapon"
+        ],
+        "img": "./assets/sa.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 192,
+        "active": true,
+        "name": "Wyspy Salomona",
+        "colors": [
+            "white",
+            "blue",
+            "yellow",
+            "green"
+        ],
+        "shapes": [
+            "triangle",
+            "diagonal",
+            "star"
+        ],
+        "img": "./assets/sb.png",
+        "region": "oceania",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 193,
+        "active": true,
+        "name": "Seszele",
+        "colors": [
+            "white",
+            "blue",
+            "navyblue",
+            "yellow",
+            "red",
+            "green"
+        ],
+        "shapes": [
+            "triangle",
+            "diagonal"
+        ],
+        "img": "./assets/sc.png",
+        "region": "africa",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 194,
+        "active": true,
+        "name": "Sudan",
+        "colors": [
+            "white",
+            "black",
+            "red",
+            "green"
+        ],
+        "shapes": [
+            "triangle",
+            "horizontal"
+        ],
+        "img": "./assets/sd.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 195,
+        "active": true,
+        "name": "Szwecja",
+        "colors": [
+            "yellow",
+            "blue"
+        ],
+        "shapes": [
+            "cross"
+        ],
+        "img": "./assets/se.png",
+        "region": "europe",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 196,
+        "active": true,
+        "name": "Singapur",
+        "colors": [
+            "white",
+            "red"
+        ],
+        "shapes": [
+            "moon",
+            "horizontal",
+            "star"
+        ],
+        "img": "./assets/sg.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 197,
+        "active": true,
+        "name": "Wyspa Świętej Heleny",
+        "colors": [
+            "white",
+            "red",
+            "navyblue"
+        ],
+        "shapes": [
+            "cross",
+            "emblem",
+            "other",
+            "animal"
+        ],
+        "img": "./assets/sh.png",
+        "region": "africa",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 198,
+        "active": true,
+        "name": "Słowenia",
+        "colors": [
+            "white",
+            "red",
+            "blue"
+        ],
+        "shapes": [
+            "emblem",
+            "horizontal",
+            "star"
+        ],
+        "img": "./assets/si.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 199,
+        "active": true,
+        "name": "Słowacja",
+        "colors": [
+            "white",
+            "red",
+            "blue"
+        ],
+        "shapes": [
+            "cross",
+            "horizontal",
+            "emblem"
+        ],
+        "img": "./assets/sk.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 200,
+        "active": true,
+        "name": "Sierra Leone",
+        "colors": [
+            "white",
+            "red",
+            "green"
+        ],
+        "shapes": [
+            "horizontal"
+        ],
+        "img": "./assets/sl.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 201,
+        "active": true,
+        "name": "San Marino",
+        "colors": [
+            "white",
+            "blue",
+            "green",
+            "yellow"
+        ],
+        "shapes": [
+            "emblem",
+            "horizontal",
+            "word"
+        ],
+        "img": "./assets/sm.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 202,
+        "active": true,
+        "name": "Senegal",
+        "colors": [
+            "red",
+            "green",
+            "yellow"
+        ],
+        "shapes": [
+            "vertical",
+            "star"
+        ],
+        "img": "./assets/sn.png",
+        "region": "africa",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 203,
+        "active": true,
+        "name": "Somalia",
+        "colors": [
+            "blue",
+            "white"
+        ],
+        "shapes": [
+            "star"
+        ],
+        "img": "./assets/so.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 204,
+        "active": true,
+        "name": "Surinam",
+        "colors": [
+            "green",
+            "red",
+            "yellow",
+            "white"
+        ],
+        "shapes": [
+            "horizontal",
+            "star"
+        ],
+        "img": "./assets/sr.png",
+        "region": "south-america",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 205,
+        "active": true,
+        "name": "Sudan Południowy",
+        "colors": [
+            "green",
+            "red",
+            "yellow",
+            "blue",
+            "navyblue",
+            "black",
+            "white"
+        ],
+        "shapes": [
+            "triangle",
+            "horizontal",
+            "star"
+        ],
+        "img": "./assets/ss.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 206,
+        "active": true,
+        "name": "Wyspy Świętego Tomasza i Książęca",
+        "colors": [
+            "green",
+            "red",
+            "yellow",
+            "black"
+        ],
+        "shapes": [
+            "triangle",
+            "horizontal",
+            "star"
+        ],
+        "img": "./assets/st.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 207,
+        "active": true,
+        "name": "Salwador",
+        "colors": [
+            "green",
+            "white",
+            "yellow",
+            "blue"
+        ],
+        "shapes": [
+            "triangle",
+            "horizontal",
+            "star",
+            "emblem",
+            "word"
+        ],
+        "img": "./assets/sv.png",
+        "region": "north-america",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 208,
+        "active": true,
+        "name": "Sint Maarten",
+        "colors": [
+            "red",
+            "white",
+            "yellow",
+            "blue",
+            "navyblue"
+        ],
+        "shapes": [
+            "triangle",
+            "horizontal",
+            "emblem",
+            "building"
+        ],
+        "img": "./assets/sx.png",
+        "region": "carraibean",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 209,
+        "active": true,
+        "name": "Syria",
+        "colors": [
+            "red",
+            "white",
+            "green",
+            "black"
+        ],
+        "shapes": [
+            "horizontal",
+            "star"
+        ],
+        "img": "./assets/sy.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 210,
+        "active": true,
+        "name": "Eswatini",
+        "colors": [
+            "red",
+            "white",
+            "blue",
+            "yellow",
+            "black"
+        ],
+        "shapes": [
+            "weapon",
+            "horizontal"
+        ],
+        "img": "./assets/sz.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 211,
+        "active": true,
+        "name": "Turks i Caicos",
+        "colors": [
+            "red",
+            "white",
+            "navyblue",
+            "yellow",
+            "green"
+        ],
+        "shapes": [
+            "cross",
+            "emblem"
+        ],
+        "img": "./assets/tc.png",
+        "region": "carraibean",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 212,
+        "active": true,
+        "name": "Czad",
+        "colors": [
+            "red",
+            "yellow",
+            "navyblue",
+            "blue"
+        ],
+        "shapes": [
+            "vertical"
+        ],
+        "img": "./assets/td.png",
+        "region": "africa",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 213,
+        "active": true,
+        "name": "Francuskie Terytoria Południowe i Antarktyczne",
+        "colors": [
+            "red",
+            "white",
+            "navyblue"
+        ],
+        "shapes": [
+            "vertical",
+            "word",
+            "star"
+        ],
+        "img": "./assets/tf.png",
+        "region": "antarctica",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 214,
+        "active": true,
+        "name": "Togo",
+        "colors": [
+            "red",
+            "white",
+            "green",
+            "yellow"
+        ],
+        "shapes": [
+            "horizontal",
+            "star"
+        ],
+        "img": "./assets/tg.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 215,
+        "active": true,
+        "name": "Tajlandia",
+        "colors": [
+            "red",
+            "white",
+            "navyblue"
+        ],
+        "shapes": [
+            "horizontal"
+        ],
+        "img": "./assets/th.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 216,
+        "active": true,
+        "name": "Tadykistan",
+        "colors": [
+            "red",
+            "white",
+            "yellow",
+            "green"
+        ],
+        "shapes": [
+            "emblem",
+            "horizontal",
+            "star"
+        ],
+        "img": "./assets/tj.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 217,
+        "active": true,
+        "name": "Tokelau",
+        "colors": [
+            "white",
+            "yellow",
+            "navyblue"
+        ],
+        "shapes": [
+            "other",
+            "star"
+        ],
+        "img": "./assets/tk.png",
+        "region": "oceania",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 218,
+        "active": true,
+        "name": "Timor Wschodni",
+        "colors": [
+            "white",
+            "yellow",
+            "claret",
+            "black"
+        ],
+        "shapes": [
+            "triangle",
+            "star"
+        ],
+        "img": "./assets/tl.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 219,
+        "active": true,
+        "name": "Turkmenistan",
+        "colors": [
+            "white",
+            "green",
+            "claret",
+            "yellow",
+            "red"
+        ],
+        "shapes": [
+            "other",
+            "vertical",
+            "moon",
+            "star"
+        ],
+        "img": "./assets/tm.png",
+        "region": "asia",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 220,
+        "active": true,
+        "name": "Tunezja",
+        "colors": [
+            "white",
+            "red"
+        ],
+        "shapes": [
+            "circle",
+            "moon",
+            "star"
+        ],
+        "img": "./assets/tn.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 221,
+        "active": true,
+        "name": "Tonga",
+        "colors": [
+            "white",
+            "claret",
+            "red"
+        ],
+        "shapes": [
+            "cross",
+            "other"
+        ],
+        "img": "./assets/to.png",
+        "region": "oceania",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 222,
+        "active": true,
+        "name": "Turcja",
+        "colors": [
+            "white",
+            "red"
+        ],
+        "shapes": [
+            "moon",
+            "star"
+        ],
+        "img": "./assets/tr.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 223,
+        "active": true,
+        "name": "Trynidad i Tobago",
+        "colors": [
+            "white",
+            "red",
+            "black"
+        ],
+        "shapes": [
+            "diagonal",
+            "triangle"
+        ],
+        "img": "./assets/tt.png",
+        "region": "carraibean",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 224,
+        "active": true,
+        "name": "Tuwalu",
+        "colors": [
+            "white",
+            "red",
+            "blue",
+            "navyblue",
+            "yellow"
+        ],
+        "shapes": [
+            "cross",
+            "star"
+        ],
+        "img": "./assets/tv.png",
+        "region": "oceania",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 225,
+        "active": true,
+        "name": "Tajwan",
+        "colors": [
+            "white",
+            "red",
+            "navyblue"
+        ],
+        "shapes": [
+            "other",
+            "sun"
+        ],
+        "img": "./assets/tw.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 226,
+        "active": true,
+        "name": "Tanzania",
+        "colors": [
+            "blue",
+            "yellow",
+            "green",
+            "black"
+        ],
+        "shapes": [
+            "triangle",
+            "diagonal"
+        ],
+        "img": "./assets/tz.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 227,
+        "active": true,
+        "name": "Ukraina",
+        "colors": [
+            "blue",
+            "yellow"
+        ],
+        "shapes": [
+            "horizontal"
+        ],
+        "img": "./assets/ua.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 228,
+        "active": true,
+        "name": "Uganda",
+        "colors": [
+            "black",
+            "yellow",
+            "red"
+        ],
+        "shapes": [
+            "animal",
+            "horizontal",
+            "circle"
+        ],
+        "img": "./assets/ug.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 229,
+        "active": true,
+        "name": "Stany Zjednoczone",
+        "colors": [
+            "navyblue",
+            "white",
+            "red"
+        ],
+        "shapes": [
+            "horizontal",
+            "star"
+        ],
+        "img": "./assets/us.png",
+        "region": "north-america",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 230,
+        "active": true,
+        "name": "Urugwaj",
+        "colors": [
+            "blue",
+            "white",
+            "yellow"
+        ],
+        "shapes": [
+            "sun",
+            "horizontal"
+        ],
+        "img": "./assets/uy.png",
+        "region": "south-america",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 231,
+        "active": true,
+        "name": "Uzbekistan",
+        "colors": [
+            "blue",
+            "white",
+            "green",
+            "red"
+        ],
+        "shapes": [
+            "moon",
+            "horizontal",
+            "star"
+        ],
+        "img": "./assets/uz.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 232,
+        "active": true,
+        "name": "Watykan",
+        "colors": [
+            "white",
+            "yellow",
+            "red"
+        ],
+        "shapes": [
+            "vertical",
+            "emblem"
+        ],
+        "img": "./assets/va.png",
+        "region": "europe",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 233,
+        "active": true,
+        "name": "Saint Vincent i Grenadyny",
+        "colors": [
+            "navyblue",
+            "yellow",
+            "green"
+        ],
+        "shapes": [
+            "vertical",
+            "other"
+        ],
+        "img": "./assets/vc.png",
+        "region": "carraibean",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 234,
+        "active": true,
+        "name": "Wenezuela",
+        "colors": [
+            "navyblue",
+            "yellow",
+            "red",
+            "white"
+        ],
+        "shapes": [
+            "horizontal",
+            "star"
+        ],
+        "img": "./assets/ve.png",
+        "region": "south-america",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 235,
+        "active": true,
+        "name": "Brytyjskie Wyspy Dziewicze",
+        "colors": [
+            "navyblue",
+            "yellow",
+            "red",
+            "white",
+            "green"
+        ],
+        "shapes": [
+            "emblem",
+            "word",
+            "cross"
+        ],
+        "img": "./assets/vg.png",
+        "region": "carraibean",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 236,
+        "active": true,
+        "name": "Wyspy Dziewicze Stanów Zjednoczonych",
+        "colors": [
+            "navyblue",
+            "blue",
+            "yellow",
+            "red",
+            "white",
+            "green"
+        ],
+        "shapes": [
+            "emblem",
+            "word",
+            "animal",
+            "plant",
+            "weapon"
+        ],
+        "img": "./assets/vi.png",
+        "region": "carraibean",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 237,
+        "active": true,
+        "name": "Wietnam",
+        "colors": [
+            "yellow",
+            "red"
+        ],
+        "shapes": [
+            "star"
+        ],
+        "img": "./assets/vn.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 238,
+        "active": true,
+        "name": "Vanuatu",
+        "colors": [
+            "yellow",
+            "red",
+            "green",
+            "black"
+        ],
+        "shapes": [
+            "triangle",
+            "horizontal",
+            "emblem",
+            "plant"
+        ],
+        "img": "./assets/vu.png",
+        "region": "oceania",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 239,
+        "active": true,
+        "name": "Wallis i Futuna",
+        "colors": [
+            "navyblue",
+            "red",
+            "white"
+        ],
+        "shapes": [
+            "cross",
+            "other",
+            "vertical"
+        ],
+        "img": "./assets/wf.png",
+        "region": "oceania",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": false
+    },
+    {
+        "id": 240,
+        "active": true,
+        "name": "Samoa",
+        "colors": [
+            "navyblue",
+            "red",
+            "white",
+            "claret"
+        ],
+        "shapes": [
+            "other",
+            "star"
+        ],
+        "img": "./assets/ws.png",
+        "region": "oceania",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 241,
+        "active": true,
+        "name": "Kosowo",
+        "colors": [
+            "blue",
+            "yellow",
+            "white"
+        ],
+        "shapes": [
+            "contours",
+            "star"
+        ],
+        "img": "./assets/xk.png",
+        "region": "europe",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 242,
+        "active": true,
+        "name": "Jemen",
+        "colors": [
+            "black",
+            "red",
+            "white"
+        ],
+        "shapes": [
+            "horizontal"
+        ],
+        "img": "./assets/ye.png",
+        "region": "asia",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 243,
+        "active": true,
+        "name": "Majotta",
+        "colors": [
+            "white",
+            "red",
+            "blue",
+            "navyblue",
+            "yellow"
+        ],
+        "shapes": [
+            "emblem",
+            "word",
+            "animal",
+            "star",
+            "moon"
+        ],
+        "img": "./assets/yt.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": false,
+        "otherShapes": true,
+        "symbols": false,
+        "country": false
+    },
+    {
+        "id": 244,
+        "active": true,
+        "name": "Południowa Afryka",
+        "colors": [
+            "white",
+            "red",
+            "blue",
+            "navyblue",
+            "yellow",
+            "green",
+            "black"
+        ],
+        "shapes": [
+            "triangle",
+            "horizontal"
+        ],
+        "img": "./assets/za.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": false,
+        "country": true
+    },
+    {
+        "id": 245,
+        "active": true,
+        "name": "Zambia",
+        "colors": [
+            "red",
+            "yellow",
+            "green",
+            "black"
+        ],
+        "shapes": [
+            "vertical",
+            "animal"
+        ],
+        "img": "./assets/zm.png",
+        "region": "africa",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 246,
+        "active": true,
+        "name": "Zimbabwe",
+        "colors": [
+            "red",
+            "yellow",
+            "green",
+            "black",
+            "white"
+        ],
+        "shapes": [
+            "triangle",
+            "horizontal",
+            "star",
+            "animal"
+        ],
+        "img": "./assets/zw.png",
+        "region": "africa",
+        "verticalStripes": false,
+        "horizontalStripes": true,
+        "otherShapes": true,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 247,
+        "active": false,
+        "name": "Afganistan (stara flaga)",
+        "colors": [
+            "red",
+            "green",
+            "black"
+        ],
+        "shapes": [
+            "vertical",
+            "word",
+            "emblem",
+            "building"
+        ],
+        "img": "./assets/af.png",
+        "region": "asia",
+        "verticalStripes": true,
+        "horizontalStripes": false,
+        "otherShapes": false,
+        "symbols": true,
+        "country": true
+    },
+    {
+        "id": 248,
+        "active": true,
+        "name": "Martynika",
+        "colors": [
+            "blue",
+            "white"
+        ],
+        "shapes": [
+            "animal",
+            "cross"
+        ],
+        "img": "./assets/mq.png",
+        "region": "carraibean",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": false
+    },
+    {
+        "id": 249,
+        "active": true,
+        "name": "Pitcairn",
+        "colors": [
+            "navyblue",
+            "red",
+            "yellow",
+            "green",
+            "white"
+        ],
+        "shapes": [
+            "cross",
+            "emblem",
+            "other"
+        ],
+        "img": "./assets/pn.png",
+        "region": "oceania",
+        "verticalStripes": true,
+        "horizontalStripes": true,
+        "otherShapes": false,
+        "symbols": false,
+        "country": false
     }
 ]
