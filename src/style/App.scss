@@ -16,8 +16,8 @@ $buttonColor: #7e78a35e;
     $deg,
     $stripesBackgroundColor,
     $stripesBackgroundColor 8px,
-    $buttonColor 8px,
-    $buttonColor 16px
+    $stripesColor 8px,
+    $stripesColor 16px
   );
 }
 
@@ -35,7 +35,7 @@ $buttonColor: #7e78a35e;
 }
 
 $stripesBackgroundColor: #9592b4;
-$stripesColor: #1d2349;
+$stripesColor: #7e78a35e;
 
 * {
   margin: 0;
