@@ -5,34 +5,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overpass:ital@0;1&display=swap");
 
-$button-gradient: linear-gradient(to bottom, #7e78a35e 0%, #7e78a35e 50%);
+$buttonColor: #7e78a35e;
 
 @mixin stripeGradient(
   $stripesBackgroundColor: $stripesBackgroundColor,
   $stripesColor: $stripesColor,
   $deg: 0deg
 ) {
-  background: linear-gradient(
+  background: repeating-linear-gradient(
     $deg,
-    $stripesBackgroundColor 15%,
-    $stripesColor 15%,
-    $stripesColor 42%,
-    $stripesBackgroundColor 42%,
-    $stripesBackgroundColor 58%,
-    $stripesColor 58%,
-    $stripesColor 85%,
-    $stripesBackgroundColor 85%,
-    $stripesBackgroundColor 100%
+    $stripesBackgroundColor,
+    $stripesBackgroundColor 8px,
+    $buttonColor 8px,
+    $buttonColor 16px
   );
 }
+
+// background: repeating-linear-gradient(
+//   45deg,
+//   #606dbc,
+//   #606dbc 8px,
+//   #1d2349 8px,
+//   #1d2349 16px
+// );
 
 @mixin description-center {
   width: 100%;
   text-align: center;
 }
 
-$stripesBackgroundColor: rgb(135, 131, 167);
-$stripesColor: rgb(1, 1, 4);
+$stripesBackgroundColor: #9592b4;
+$stripesColor: #1d2349;
 
 * {
   margin: 0;
@@ -361,7 +364,46 @@ body {
               cursor: pointer;
               transition: 0.2s;
             }
+            .selectors__region {
+              margin: 0 auto;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 5px;
 
+              &-description {
+                color: #ccc;
+              }
+
+              &__button-box {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+
+                @media screen and (max-width: 1080px) {
+                  gap: 2px;
+                }
+
+                button {
+                  width: auto;
+                  padding: 10px;
+                  height: 30px;
+                  background: $buttonColor;
+
+                  p {
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                  }
+                }
+              }
+
+              @media screen and (max-width: 670px) {
+                max-width: 310px;
+              }
+            }
             .selectors__colors {
               margin: 0 auto;
               display: flex;
@@ -446,7 +488,6 @@ body {
                 }
               }
             }
-
             .selectors__stripes {
               margin: 0 auto;
               display: flex;
@@ -491,7 +532,7 @@ body {
 
                   &.other-shapes {
                     position: relative;
-                    background: $button-gradient;
+                    background: $buttonColor;
                     font-size: 16px;
 
                     p {
@@ -506,7 +547,7 @@ body {
                   &.symbols {
                     position: relative;
                     width: 70px;
-                    background: $button-gradient;
+                    background: $buttonColor;
                     font-size: 16px;
                     p {
                       position: absolute;
@@ -530,46 +571,46 @@ body {
                 }
               }
             }
-            .selectors__region {
+            .selectors__shapes {
               margin: 0 auto;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              gap: 5px;
-
               &-description {
+                @include description-center;
                 color: #ccc;
               }
-
               &__button-box {
                 display: flex;
                 flex-wrap: wrap;
-                align-items: center;
                 justify-content: center;
                 gap: 5px;
 
-                @media screen and (max-width: 1080px) {
-                  gap: 2px;
-                }
-
                 button {
-                  width: auto;
-                  padding: 10px;
-                  height: 30px;
-                  background: $button-gradient;
+                  width: 60px;
+                  height: 40px;
+                  background: $buttonColor;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
 
-                  p {
-                    position: relative;
-                    top: 50%;
-                    transform: translateY(-50%);
+                  &.vertical {
+                    @include stripeGradient($deg: 90deg);
+                  }
+                  &.horizontal {
+                    @include stripeGradient;
+                  }
+                  &.diagonal {
+                    @include stripeGradient($deg: 135deg);
+                  }
+
+                  &.cross {
+                    img {
+                      filter: brightness(0) invert(1);
+                      height: 25px;
+                    }
                   }
                 }
               }
-
-              @media screen and (max-width: 670px) {
-                max-width: 310px;
-              }
             }
+
             .selectors__other {
               display: flex;
               flex-direction: column;
@@ -581,7 +622,7 @@ body {
                 display: inline-block;
                 outline: 0;
                 cursor: pointer;
-                background: $button-gradient;
+                background: $buttonColor;
                 font-size: 18px;
                 height: 43px;
                 padding: 0 10px;

@@ -3,6 +3,7 @@ import SelectStripes from "./SelectStripes";
 import SelectRegion from "./SelectRegion";
 import SelectOther from "./SelectOther";
 import SelectSearch from "./SelectSearch";
+import SelectShape from "./SelectShape";
 
 const SelectionBox = () => {
   return (
@@ -11,6 +12,7 @@ const SelectionBox = () => {
       <SelectRegion />
       <SelectColor />
       <SelectStripes />
+      <SelectShape />
       <SelectOther />
     </div>
   );
