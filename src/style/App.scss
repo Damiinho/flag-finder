@@ -69,7 +69,6 @@ $stripesColor: #1d2349;
 
 body {
   margin: 0;
-  box-sizing: border-box;
   font-family: "Roboto Slab", serif;
 
   background-image: url("../img/worldbackground.png");
@@ -571,25 +570,112 @@ body {
                 }
               }
             }
+
             .selectors__shapes {
               margin: 0 auto;
               &-description {
                 @include description-center;
                 color: #ccc;
               }
+
+              &__showhide {
+                position: relative;
+                margin: 0 auto 0;
+                width: 180px;
+                height: 25px;
+                padding: 3px 0 2px;
+                background-color: $buttonColor;
+                text-align: center;
+                font-size: 15px;
+                cursor: pointer;
+                border-radius: 10px;
+                overflow: hidden;
+                border: 2px solid $buttonColor;
+                transition: 0.5s;
+                // &:hover {
+                //   border: 2px solid white;
+                //   img {
+                //     transform: translateY(20px);
+                //   }
+                // }
+
+                img {
+                  filter: brightness(0) invert(1);
+                  height: 10px;
+                  margin: 0 5px;
+                  transform: rotate(180deg);
+                  position: absolute;
+                  transform: translateY(0);
+                  transition: 1s;
+                }
+
+                &.hide {
+                  img {
+                    transform: rotate(0deg);
+                  }
+                  &:hover {
+                    img {
+                      transform: rotate(0deg) translateY(20px);
+                    }
+                  }
+                }
+                &.show {
+                  img {
+                    transform: rotate(180deg);
+                  }
+                  &:hover {
+                    img {
+                      transform: rotate(180deg) translateY(20px);
+                    }
+                  }
+                }
+              }
+
               &__button-box {
+                margin-top: 10px;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 5px;
+                gap: 10px;
+                overflow: hidden;
+                transition: 1s;
+
+                &.inactive {
+                  height: 0;
+                }
+                &.active {
+                  height: 240px;
+                  margin-bottom: 10px;
+                }
 
                 button {
+                  box-sizing: border-box;
                   width: 60px;
                   height: 40px;
                   background: $buttonColor;
                   display: flex;
                   justify-content: center;
                   align-items: center;
+                  border: 2px solid $buttonColor;
+
+                  img {
+                    filter: brightness(0) invert(1);
+                    height: 25px;
+                  }
+
+                  @mixin img($px) {
+                    img {
+                      height: $px;
+                      width: auto;
+                    }
+                  }
+
+                  &:hover {
+                    border: 2px solid white;
+                  }
+                  &.active {
+                    border: 2px solid white;
+                  }
 
                   &.vertical {
                     @include stripeGradient($deg: 90deg);
@@ -601,11 +687,15 @@ body {
                     @include stripeGradient($deg: 135deg);
                   }
 
-                  &.cross {
-                    img {
-                      filter: brightness(0) invert(1);
-                      height: 25px;
-                    }
+                  &.triangle,
+                  &.star {
+                    @include img(20px);
+                  }
+                  &.emblem,
+                  &.sun,
+                  &.moon,
+                  &.animal {
+                    @include img(30px);
                   }
                 }
               }

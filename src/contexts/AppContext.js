@@ -23,6 +23,7 @@ export const AppProvider = ({ children }) => {
   const [inputValue, setInputValue] = useState("");
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [searchTerm, setSearchTerm] = useState("");
+  const [selectedShapes, setSelectedShapes] = useState([]);
   // const [selectedColors, setSelectedColors] = useState([]);
 
   const providerValue = {
@@ -68,6 +69,8 @@ export const AppProvider = ({ children }) => {
     setWindowWidth,
     // selectedColors,
     // setSelectedColors,
+    selectedShapes,
+    setSelectedShapes,
   };
 
   useEffect(() => {

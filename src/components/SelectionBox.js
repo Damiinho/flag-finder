@@ -1,5 +1,5 @@
 import SelectColor from "./SelectColor";
-import SelectStripes from "./SelectStripes";
+// import SelectStripes from "./SelectStripes";
 import SelectRegion from "./SelectRegion";
 import SelectOther from "./SelectOther";
 import SelectSearch from "./SelectSearch";
@@ -11,7 +11,7 @@ const SelectionBox = () => {
       <SelectSearch />
       <SelectRegion />
       <SelectColor />
-      <SelectStripes />
+      {/* <SelectStripes /> */}
       <SelectShape />
       <SelectOther />
     </div>
