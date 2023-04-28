@@ -21,6 +21,7 @@ const FullList = () => {
     green,
     orange,
     searchTerm,
+    selectedShapes,
     // selectedColors,
   } = useContext(AppContext);
 
@@ -82,6 +83,11 @@ const FullList = () => {
     if (regions.length > 0) {
       newFlags = newFlags.filter((flag) =>
         regions.some((region) => flag.regions.includes(region.value))
+      );
+    }
+    if (selectedShapes.length > 0) {
+      newFlags = newFlags.filter((flag) =>
+        selectedShapes.every((shape) => flag.shapes.includes(shape))
       );
     }
 
