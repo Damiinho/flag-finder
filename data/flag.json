@@ -13,7 +13,9 @@
             "emblem"
         ],
         "img": "./assets/ad.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -35,7 +37,9 @@
             "horizontal"
         ],
         "img": "./assets/ae.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -54,7 +58,9 @@
             "word"
         ],
         "img": "./assets/af-taliban.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -67,7 +73,7 @@
         "name": "Antigua i Barbuda",
         "colors": [
             "red",
-            "navyblue",
+            "blue",
             "white",
             "black",
             "yellow"
@@ -78,7 +84,9 @@
             "sun"
         ],
         "img": "./assets/ag.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -101,7 +109,9 @@
             "animal"
         ],
         "img": "./assets/ai.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -121,7 +131,9 @@
             "animal"
         ],
         "img": "./assets/al.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -142,7 +154,10 @@
             "horizontal"
         ],
         "img": "./assets/am.png",
-        "region": "europe",
+        "regions": [
+            "europe",
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -165,7 +180,9 @@
             "weapon"
         ],
         "img": "./assets/ao.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -184,7 +201,9 @@
             "contours"
         ],
         "img": "./assets/aq.png",
-        "region": "antarctica",
+        "regions": [
+            "antarctica"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -205,7 +224,9 @@
             "sun"
         ],
         "img": "./assets/ar.png",
-        "region": "south-america",
+        "regions": [
+            "south-america"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -226,7 +247,9 @@
             "animal"
         ],
         "img": "./assets/as.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -245,7 +268,9 @@
             "horizontal"
         ],
         "img": "./assets/at.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -266,7 +291,9 @@
             "star"
         ],
         "img": "./assets/au.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -287,7 +314,9 @@
             "star"
         ],
         "img": "./assets/aw.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -307,7 +336,9 @@
             "cross"
         ],
         "img": "./assets/ax.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -330,7 +361,9 @@
             "star"
         ],
         "img": "./assets/az.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -351,7 +384,9 @@
             "star"
         ],
         "img": "./assets/ba.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -371,7 +406,9 @@
             "weapon"
         ],
         "img": "./assets/bb.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -390,7 +427,9 @@
             "circle"
         ],
         "img": "./assets/bd.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -410,7 +449,9 @@
             "vertical"
         ],
         "img": "./assets/be.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -431,7 +472,9 @@
             "star"
         ],
         "img": "./assets/bf.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -451,7 +494,9 @@
             "horizontal"
         ],
         "img": "./assets/bg.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -471,7 +516,9 @@
             "triangle"
         ],
         "img": "./assets/bh.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -493,7 +540,9 @@
             "star"
         ],
         "img": "./assets/bi.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -514,7 +563,9 @@
             "vertical"
         ],
         "img": "./assets/bj.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -541,7 +592,9 @@
             "other"
         ],
         "img": "./assets/bl.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -564,7 +617,9 @@
             "other"
         ],
         "img": "./assets/bm.png",
-        "region": "north-america",
+        "regions": [
+            "north-america"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -588,7 +643,9 @@
             "other"
         ],
         "img": "./assets/bn.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -608,7 +665,9 @@
             "horizontal"
         ],
         "img": "./assets/bo.png",
-        "region": "south-america",
+        "regions": [
+            "south-america"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -630,7 +689,9 @@
             "star"
         ],
         "img": "./assets/bq.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -653,7 +714,9 @@
             "word"
         ],
         "img": "./assets/br.png",
-        "region": "south-america",
+        "regions": [
+            "south-america"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -665,7 +728,6 @@
         "active": true,
         "name": "Bahamy",
         "colors": [
-            "navyblue",
             "green",
             "blue",
             "yellow",
@@ -676,7 +738,9 @@
             "triangle"
         ],
         "img": "./assets/bs.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -697,7 +761,9 @@
             "animal"
         ],
         "img": "./assets/bt.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -717,7 +783,9 @@
             "horizontal"
         ],
         "img": "./assets/bw.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -738,7 +806,9 @@
             "other"
         ],
         "img": "./assets/by.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -762,7 +832,9 @@
             "weapon"
         ],
         "img": "./assets/bz.png",
-        "region": "north-america",
+        "regions": [
+            "north-america"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -782,7 +854,9 @@
             "vertical"
         ],
         "img": "./assets/ca.png",
-        "region": "north-america",
+        "regions": [
+            "north-america"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -804,7 +878,9 @@
             "plant"
         ],
         "img": "./assets/cc.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -825,7 +901,9 @@
             "star"
         ],
         "img": "./assets/cd.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -849,7 +927,9 @@
             "star"
         ],
         "img": "./assets/cf.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -870,7 +950,9 @@
             "vertical"
         ],
         "img": "./assets/cg.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -889,7 +971,9 @@
             "cross"
         ],
         "img": "./assets/ch.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -910,7 +994,9 @@
             "vertical"
         ],
         "img": "./assets/ci.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -931,7 +1017,9 @@
             "star"
         ],
         "img": "./assets/ck.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -952,7 +1040,10 @@
             "star"
         ],
         "img": "./assets/cl.png",
-        "region": "south-america",
+        "regions": [
+            "south-america",
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -973,7 +1064,9 @@
             "vertical"
         ],
         "img": "./assets/cm.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -992,7 +1085,9 @@
             "star"
         ],
         "img": "./assets/cn.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -1012,7 +1107,9 @@
             "horizontal"
         ],
         "img": "./assets/co.png",
-        "region": "south-america",
+        "regions": [
+            "south-america"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -1033,7 +1130,9 @@
             "emblem"
         ],
         "img": "./assets/cr.png",
-        "region": "north-america",
+        "regions": [
+            "north-america"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -1055,7 +1154,9 @@
             "star"
         ],
         "img": "./assets/cu.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -1076,7 +1177,9 @@
             "star"
         ],
         "img": "./assets/cv.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -1097,7 +1200,9 @@
             "star"
         ],
         "img": "./assets/cw.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -1122,7 +1227,9 @@
             "animal"
         ],
         "img": "./assets/cx.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -1142,7 +1249,10 @@
             "plant"
         ],
         "img": "./assets/cy.png",
-        "region": "asia",
+        "regions": [
+            "asia",
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -1156,7 +1266,6 @@
         "colors": [
             "white",
             "navyblue",
-            "blue",
             "red"
         ],
         "shapes": [
@@ -1164,7 +1273,9 @@
             "triangle"
         ],
         "img": "./assets/cz.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -1184,7 +1295,9 @@
             "horizontal"
         ],
         "img": "./assets/de.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -1207,7 +1320,9 @@
             "star"
         ],
         "img": "./assets/dj.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -1226,7 +1341,9 @@
             "cross"
         ],
         "img": "./assets/dk.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -1250,7 +1367,9 @@
             "animal"
         ],
         "img": "./assets/dm.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -1271,7 +1390,9 @@
             "emblem"
         ],
         "img": "./assets/do.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -1293,7 +1414,9 @@
             "vertical"
         ],
         "img": "./assets/dz.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -1316,7 +1439,9 @@
             "emblem"
         ],
         "img": "./assets/ec.png",
-        "region": "south-america",
+        "regions": [
+            "south-america"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -1336,7 +1461,9 @@
             "horizontal"
         ],
         "img": "./assets/ee.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -1358,7 +1485,10 @@
             "animal"
         ],
         "img": "./assets/eg.png",
-        "region": "africa",
+        "regions": [
+            "africa",
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -1382,7 +1512,9 @@
             "star"
         ],
         "img": "./assets/eh.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -1404,7 +1536,9 @@
             "plant"
         ],
         "img": "./assets/er.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -1424,7 +1558,10 @@
             "emblem"
         ],
         "img": "./assets/es.png",
-        "region": "europe",
+        "regions": [
+            "europe",
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -1447,7 +1584,9 @@
             "star"
         ],
         "img": "./assets/et.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -1467,7 +1606,9 @@
             "cross"
         ],
         "img": "./assets/fi.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -1491,7 +1632,9 @@
             "animal"
         ],
         "img": "./assets/fj.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -1515,7 +1658,9 @@
             "other"
         ],
         "img": "./assets/fk.png",
-        "region": "south-america",
+        "regions": [
+            "south-america"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -1534,7 +1679,9 @@
             "star"
         ],
         "img": "./assets/fm.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -1554,7 +1701,9 @@
             "cross"
         ],
         "img": "./assets/fo.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -1567,7 +1716,6 @@
         "name": "Francja",
         "colors": [
             "white",
-            "blue",
             "navyblue",
             "red"
         ],
@@ -1575,7 +1723,9 @@
             "vertical"
         ],
         "img": "./assets/fr.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -1595,7 +1745,9 @@
             "vertical"
         ],
         "img": "./assets/ga.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -1615,7 +1767,9 @@
             "cross"
         ],
         "img": "./assets/gb.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -1634,7 +1788,9 @@
             "cross"
         ],
         "img": "./assets/gb-eng.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -1655,7 +1811,9 @@
             "star"
         ],
         "img": "./assets/gb-nir.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -1674,7 +1832,9 @@
             "cross"
         ],
         "img": "./assets/gb-sct.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -1695,7 +1855,9 @@
             "animal"
         ],
         "img": "./assets/gb-wls.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -1717,7 +1879,9 @@
             "plant"
         ],
         "img": "./assets/gd.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -1736,7 +1900,10 @@
             "cross"
         ],
         "img": "./assets/ge.png",
-        "region": "europe",
+        "regions": [
+            "europe",
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -1758,7 +1925,9 @@
             "star"
         ],
         "img": "./assets/gf.png",
-        "region": "south-america",
+        "regions": [
+            "south-america"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -1777,7 +1946,9 @@
             "cross"
         ],
         "img": "./assets/gg.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -1799,7 +1970,9 @@
             "star"
         ],
         "img": "./assets/gh.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -1820,7 +1993,9 @@
             "emblem"
         ],
         "img": "./assets/gi.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -1840,7 +2015,9 @@
             "circle"
         ],
         "img": "./assets/gl.png",
-        "region": "north-america",
+        "regions": [
+            "north-america"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -1861,7 +2038,9 @@
             "horizontal"
         ],
         "img": "./assets/gm.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -1881,7 +2060,9 @@
             "vertical"
         ],
         "img": "./assets/gn.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -1904,7 +2085,9 @@
             "other"
         ],
         "img": "./assets/gp.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -1929,7 +2112,9 @@
             "plant"
         ],
         "img": "./assets/gq.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -1941,15 +2126,17 @@
         "active": true,
         "name": "Grecja",
         "colors": [
-            "navyblue",
+            "blue",
             "white"
         ],
         "shapes": [
             "horizontal",
             "cross"
         ],
-        "img": "./assets/gn.png",
-        "region": "africa",
+        "img": "./assets/gr.png",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -1970,7 +2157,9 @@
             "animal"
         ],
         "img": "./assets/gs.png",
-        "region": "antarctica",
+        "regions": [
+            "antarctica"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -1993,7 +2182,9 @@
             "weapon"
         ],
         "img": "./assets/gt.png",
-        "region": "north-america",
+        "regions": [
+            "north-america"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -2014,7 +2205,9 @@
             "plant"
         ],
         "img": "./assets/gu.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -2036,7 +2229,9 @@
             "star"
         ],
         "img": "./assets/gw.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -2056,7 +2251,9 @@
             "triangle"
         ],
         "img": "./assets/gy.png",
-        "region": "south-america",
+        "regions": [
+            "south-america"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -2076,7 +2273,9 @@
             "star"
         ],
         "img": "./assets/hk.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -2096,7 +2295,9 @@
             "star"
         ],
         "img": "./assets/hn.png",
-        "region": "north-america",
+        "regions": [
+            "north-america"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -2117,7 +2318,9 @@
             "emblem"
         ],
         "img": "./assets/hr.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -2137,7 +2340,9 @@
             "emblem"
         ],
         "img": "./assets/ht.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -2157,7 +2362,9 @@
             "horizontal"
         ],
         "img": "./assets/hu.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -2176,7 +2383,10 @@
             "horizontal"
         ],
         "img": "./assets/id.png",
-        "region": "asia",
+        "regions": [
+            "asia",
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -2196,7 +2406,9 @@
             "vertical"
         ],
         "img": "./assets/ie.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -2216,7 +2428,9 @@
             "star"
         ],
         "img": "./assets/il.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -2235,7 +2449,9 @@
             "other"
         ],
         "img": "./assets/im.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -2258,7 +2474,9 @@
             "sun"
         ],
         "img": "./assets/in.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -2281,7 +2499,9 @@
             "plant"
         ],
         "img": "./assets/io.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -2303,7 +2523,9 @@
             "word"
         ],
         "img": "./assets/iq.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -2325,7 +2547,9 @@
             "emblem"
         ],
         "img": "./assets/ir.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -2338,15 +2562,17 @@
         "name": "Islandia",
         "colors": [
             "white",
-            "navyblue",
             "blue",
+            "navyblue",
             "red"
         ],
         "shapes": [
             "cross"
         ],
         "img": "./assets/is.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -2366,7 +2592,9 @@
             "vertical"
         ],
         "img": "./assets/it.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -2387,7 +2615,9 @@
             "animal"
         ],
         "img": "./assets/je.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -2408,7 +2638,9 @@
             "triangle"
         ],
         "img": "./assets/jm.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -2431,7 +2663,9 @@
             "star"
         ],
         "img": "./assets/jo.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -2450,7 +2684,10 @@
             "circle"
         ],
         "img": "./assets/jp.png",
-        "region": "asia",
+        "regions": [
+            "asia",
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -2472,7 +2709,9 @@
             "weapon"
         ],
         "img": "./assets/ke.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -2491,7 +2730,9 @@
             "sun"
         ],
         "img": "./assets/kg.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -2512,7 +2753,9 @@
             "building"
         ],
         "img": "./assets/kh.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -2535,7 +2778,9 @@
             "sun"
         ],
         "img": "./assets/ki.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -2560,7 +2805,9 @@
             "star"
         ],
         "img": "./assets/km.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -2584,7 +2831,9 @@
             "star"
         ],
         "img": "./assets/kn.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -2606,7 +2855,9 @@
             "star"
         ],
         "img": "./assets/kp.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -2629,7 +2880,9 @@
             "other"
         ],
         "img": "./assets/kr.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -2651,7 +2904,9 @@
             "horizontal"
         ],
         "img": "./assets/kw.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -2675,7 +2930,9 @@
             "word"
         ],
         "img": "./assets/ky.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -2696,7 +2953,10 @@
             "animal"
         ],
         "img": "./assets/kz.png",
-        "region": "asia",
+        "regions": [
+            "asia",
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -2717,7 +2977,9 @@
             "circle"
         ],
         "img": "./assets/la.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -2738,7 +3000,9 @@
             "plant"
         ],
         "img": "./assets/lb.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -2758,7 +3022,9 @@
             "triangle"
         ],
         "img": "./assets/lc.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -2778,7 +3044,9 @@
             "other"
         ],
         "img": "./assets/li.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -2801,7 +3069,9 @@
             "animal"
         ],
         "img": "./assets/lk.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -2822,7 +3092,9 @@
             "star"
         ],
         "img": "./assets/lr.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -2835,7 +3107,7 @@
         "name": "Lesotho",
         "colors": [
             "white",
-            "blue",
+            "navyblue",
             "green",
             "black"
         ],
@@ -2844,7 +3116,9 @@
             "other"
         ],
         "img": "./assets/ls.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -2864,7 +3138,9 @@
             "horizontal"
         ],
         "img": "./assets/lt.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -2884,7 +3160,9 @@
             "horizontal"
         ],
         "img": "./assets/lu.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -2903,7 +3181,9 @@
             "horizontal"
         ],
         "img": "./assets/lv.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -2926,7 +3206,9 @@
             "star"
         ],
         "img": "./assets/ly.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -2945,7 +3227,9 @@
             "star"
         ],
         "img": "./assets/ma.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -2964,7 +3248,9 @@
             "horizontal"
         ],
         "img": "./assets/mc.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -2977,6 +3263,7 @@
         "name": "Mołdawia",
         "colors": [
             "blue",
+            "navyblue",
             "yellow",
             "red"
         ],
@@ -2986,7 +3273,9 @@
             "animal"
         ],
         "img": "./assets/md.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -3006,7 +3295,9 @@
             "animal"
         ],
         "img": "./assets/me.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -3027,7 +3318,9 @@
             "vertical"
         ],
         "img": "./assets/mg.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -3048,7 +3341,9 @@
             "star"
         ],
         "img": "./assets/mh.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -3068,7 +3363,9 @@
             "vertical"
         ],
         "img": "./assets/ml.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -3089,7 +3386,9 @@
             "sun"
         ],
         "img": "./assets/mk.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -3111,7 +3410,9 @@
             "star"
         ],
         "img": "./assets/mm.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -3136,7 +3437,9 @@
             "vertical"
         ],
         "img": "./assets/mn.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -3158,7 +3461,9 @@
             "plant"
         ],
         "img": "./assets/mo.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -3171,7 +3476,6 @@
         "name": "Mariany Północne",
         "colors": [
             "blue",
-            "navyblue",
             "yellow",
             "green",
             "red",
@@ -3183,7 +3487,9 @@
             "star"
         ],
         "img": "./assets/mp.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -3205,7 +3511,9 @@
             "moon"
         ],
         "img": "./assets/mr.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -3226,7 +3534,9 @@
             "other"
         ],
         "img": "./assets/ms.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -3246,7 +3556,9 @@
             "cross"
         ],
         "img": "./assets/mt.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -3261,14 +3573,15 @@
             "yellow",
             "red",
             "navyblue",
-            "blue",
             "green"
         ],
         "shapes": [
             "horizontal"
         ],
         "img": "./assets/mu.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -3289,7 +3602,9 @@
             "moon"
         ],
         "img": "./assets/mv.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -3310,7 +3625,9 @@
             "sun"
         ],
         "img": "./assets/mw.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -3332,7 +3649,9 @@
             "animal"
         ],
         "img": "./assets/mx.png",
-        "region": "north-america",
+        "regions": [
+            "north-america"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -3354,7 +3673,9 @@
             "moon"
         ],
         "img": "./assets/my.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -3380,7 +3701,9 @@
             "star"
         ],
         "img": "./assets/mz.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -3404,7 +3727,9 @@
             "diagonal"
         ],
         "img": "./assets/na.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -3428,7 +3753,9 @@
             "circle"
         ],
         "img": "./assets/nc.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -3449,7 +3776,9 @@
             "circle"
         ],
         "img": "./assets/ne.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -3469,7 +3798,9 @@
             "plant"
         ],
         "img": "./assets/nf.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -3488,7 +3819,9 @@
             "vertical"
         ],
         "img": "./assets/ng.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -3510,7 +3843,9 @@
             "word"
         ],
         "img": "./assets/ni.png",
-        "region": "north-america",
+        "regions": [
+            "north-america"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -3523,7 +3858,6 @@
         "name": "Holandia",
         "colors": [
             "white",
-            "blue",
             "navyblue",
             "red"
         ],
@@ -3531,7 +3865,9 @@
             "horizontal"
         ],
         "img": "./assets/nl.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -3544,7 +3880,6 @@
         "name": "Norwegia",
         "colors": [
             "white",
-            "blue",
             "navyblue",
             "red"
         ],
@@ -3552,7 +3887,9 @@
             "cross"
         ],
         "img": "./assets/no.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -3565,7 +3902,6 @@
         "name": "Nepal",
         "colors": [
             "white",
-            "blue",
             "navyblue",
             "red"
         ],
@@ -3575,7 +3911,9 @@
             "moon"
         ],
         "img": "./assets/np.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -3588,7 +3926,6 @@
         "name": "Nauru",
         "colors": [
             "white",
-            "blue",
             "navyblue",
             "yellow"
         ],
@@ -3597,7 +3934,9 @@
             "star"
         ],
         "img": "./assets/nr.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -3619,7 +3958,9 @@
             "star"
         ],
         "img": "./assets/nu.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -3640,7 +3981,9 @@
             "star"
         ],
         "img": "./assets/nz.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -3663,7 +4006,9 @@
             "weapon"
         ],
         "img": "./assets/om.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -3684,7 +4029,9 @@
             "star"
         ],
         "img": "./assets/pa.png",
-        "region": "north-america",
+        "regions": [
+            "north-america"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -3703,7 +4050,9 @@
             "vertical"
         ],
         "img": "./assets/pe.png",
-        "region": "north-america",
+        "regions": [
+            "north-america"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -3726,7 +4075,9 @@
             "other"
         ],
         "img": "./assets/pf.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -3749,7 +4100,9 @@
             "animal"
         ],
         "img": "./assets/pg.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -3773,7 +4126,9 @@
             "triangle"
         ],
         "img": "./assets/ph.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -3794,7 +4149,9 @@
             "moon"
         ],
         "img": "./assets/pk.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -3813,7 +4170,9 @@
             "horizontal"
         ],
         "img": "./assets/pl.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -3827,9 +4186,7 @@
         "colors": [
             "white",
             "blue",
-            "navyblue",
             "yellow",
-            "black",
             "green",
             "red"
         ],
@@ -3840,7 +4197,9 @@
             "animal"
         ],
         "img": "./assets/pm.png",
-        "region": "north-america",
+        "regions": [
+            "north-america"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -3862,7 +4221,9 @@
             "star"
         ],
         "img": "./assets/pr.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -3875,15 +4236,18 @@
         "name": "Palestyna",
         "colors": [
             "white",
-            "blue",
-            "red"
+            "green",
+            "red",
+            "black"
         ],
         "shapes": [
             "triangle",
             "horizontal"
         ],
         "img": "./assets/ps.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -3905,7 +4269,10 @@
             "vertical"
         ],
         "img": "./assets/pt.png",
-        "region": "europe",
+        "regions": [
+            "europe",
+            "africa"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -3924,7 +4291,9 @@
             "circle"
         ],
         "img": "./assets/pw.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -3936,7 +4305,6 @@
         "active": true,
         "name": "Paragwaj",
         "colors": [
-            "blue",
             "yellow",
             "navyblue",
             "white",
@@ -3949,7 +4317,9 @@
             "word"
         ],
         "img": "./assets/py.png",
-        "region": "north-america",
+        "regions": [
+            "north-america"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -3969,7 +4339,9 @@
             "other"
         ],
         "img": "./assets/qa.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -3990,7 +4362,9 @@
             "sun"
         ],
         "img": "./assets/re.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -4003,7 +4377,6 @@
         "name": "Rumunia",
         "colors": [
             "red",
-            "blue",
             "navyblue",
             "yellow"
         ],
@@ -4011,7 +4384,9 @@
             "vertical"
         ],
         "img": "./assets/ro.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -4024,7 +4399,6 @@
         "name": "Serbia",
         "colors": [
             "red",
-            "blue",
             "navyblue",
             "white"
         ],
@@ -4034,7 +4408,9 @@
             "animal"
         ],
         "img": "./assets/rs.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -4048,13 +4424,17 @@
         "colors": [
             "red",
             "blue",
+            "navyblue",
             "white"
         ],
         "shapes": [
             "horizontal"
         ],
         "img": "./assets/ru.png",
-        "region": "europe",
+        "regions": [
+            "europe",
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -4075,7 +4455,9 @@
             "horizontal"
         ],
         "img": "./assets/rw.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -4095,7 +4477,9 @@
             "weapon"
         ],
         "img": "./assets/sa.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -4118,7 +4502,9 @@
             "star"
         ],
         "img": "./assets/sb.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -4142,7 +4528,9 @@
             "diagonal"
         ],
         "img": "./assets/sc.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -4164,7 +4552,9 @@
             "horizontal"
         ],
         "img": "./assets/sd.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -4183,7 +4573,9 @@
             "cross"
         ],
         "img": "./assets/se.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -4204,7 +4596,9 @@
             "star"
         ],
         "img": "./assets/sg.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -4227,7 +4621,9 @@
             "animal"
         ],
         "img": "./assets/sh.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -4249,7 +4645,9 @@
             "star"
         ],
         "img": "./assets/si.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -4271,7 +4669,9 @@
             "emblem"
         ],
         "img": "./assets/sk.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -4291,7 +4691,9 @@
             "horizontal"
         ],
         "img": "./assets/sl.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -4314,7 +4716,9 @@
             "word"
         ],
         "img": "./assets/sm.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -4335,7 +4739,9 @@
             "star"
         ],
         "img": "./assets/sn.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -4354,7 +4760,9 @@
             "star"
         ],
         "img": "./assets/so.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -4376,7 +4784,9 @@
             "star"
         ],
         "img": "./assets/sr.png",
-        "region": "south-america",
+        "regions": [
+            "south-america"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -4402,7 +4812,9 @@
             "star"
         ],
         "img": "./assets/ss.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -4425,7 +4837,9 @@
             "star"
         ],
         "img": "./assets/st.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -4450,7 +4864,9 @@
             "word"
         ],
         "img": "./assets/sv.png",
-        "region": "north-america",
+        "regions": [
+            "north-america"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -4465,7 +4881,6 @@
             "red",
             "white",
             "yellow",
-            "blue",
             "navyblue"
         ],
         "shapes": [
@@ -4475,7 +4890,9 @@
             "building"
         ],
         "img": "./assets/sx.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -4497,7 +4914,9 @@
             "star"
         ],
         "img": "./assets/sy.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -4520,7 +4939,9 @@
             "horizontal"
         ],
         "img": "./assets/sz.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -4543,7 +4964,9 @@
             "emblem"
         ],
         "img": "./assets/tc.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -4557,14 +4980,15 @@
         "colors": [
             "red",
             "yellow",
-            "navyblue",
-            "blue"
+            "navyblue"
         ],
         "shapes": [
             "vertical"
         ],
         "img": "./assets/td.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -4586,7 +5010,9 @@
             "star"
         ],
         "img": "./assets/tf.png",
-        "region": "antarctica",
+        "regions": [
+            "antarctica"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -4608,7 +5034,9 @@
             "star"
         ],
         "img": "./assets/tg.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -4628,7 +5056,9 @@
             "horizontal"
         ],
         "img": "./assets/th.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -4651,7 +5081,9 @@
             "star"
         ],
         "img": "./assets/tj.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -4672,7 +5104,9 @@
             "star"
         ],
         "img": "./assets/tk.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -4694,7 +5128,9 @@
             "star"
         ],
         "img": "./assets/tl.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -4719,7 +5155,9 @@
             "star"
         ],
         "img": "./assets/tm.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -4740,7 +5178,9 @@
             "star"
         ],
         "img": "./assets/tn.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -4761,7 +5201,9 @@
             "other"
         ],
         "img": "./assets/to.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -4781,7 +5223,10 @@
             "star"
         ],
         "img": "./assets/tr.png",
-        "region": "asia",
+        "regions": [
+            "asia",
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -4802,7 +5247,9 @@
             "triangle"
         ],
         "img": "./assets/tt.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -4825,7 +5272,9 @@
             "star"
         ],
         "img": "./assets/tv.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -4846,7 +5295,9 @@
             "sun"
         ],
         "img": "./assets/tw.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -4868,7 +5319,9 @@
             "diagonal"
         ],
         "img": "./assets/tz.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -4887,7 +5340,9 @@
             "horizontal"
         ],
         "img": "./assets/ua.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -4909,7 +5364,9 @@
             "circle"
         ],
         "img": "./assets/ug.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -4930,7 +5387,10 @@
             "star"
         ],
         "img": "./assets/us.png",
-        "region": "north-america",
+        "regions": [
+            "north-america",
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -4951,7 +5411,9 @@
             "horizontal"
         ],
         "img": "./assets/uy.png",
-        "region": "south-america",
+        "regions": [
+            "south-america"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -4974,7 +5436,9 @@
             "star"
         ],
         "img": "./assets/uz.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -4995,7 +5459,9 @@
             "emblem"
         ],
         "img": "./assets/va.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -5016,7 +5482,9 @@
             "other"
         ],
         "img": "./assets/vc.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -5038,7 +5506,9 @@
             "star"
         ],
         "img": "./assets/ve.png",
-        "region": "south-america",
+        "regions": [
+            "south-america"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -5062,7 +5532,9 @@
             "cross"
         ],
         "img": "./assets/vg.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -5089,7 +5561,9 @@
             "weapon"
         ],
         "img": "./assets/vi.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -5108,7 +5582,9 @@
             "star"
         ],
         "img": "./assets/vn.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -5132,7 +5608,9 @@
             "plant"
         ],
         "img": "./assets/vu.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -5154,7 +5632,9 @@
             "vertical"
         ],
         "img": "./assets/wf.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -5176,7 +5656,9 @@
             "star"
         ],
         "img": "./assets/ws.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -5189,6 +5671,7 @@
         "name": "Kosowo",
         "colors": [
             "blue",
+            "navyblue",
             "yellow",
             "white"
         ],
@@ -5197,7 +5680,9 @@
             "star"
         ],
         "img": "./assets/xk.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -5217,7 +5702,10 @@
             "horizontal"
         ],
         "img": "./assets/ye.png",
-        "region": "asia",
+        "regions": [
+            "asia",
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -5231,7 +5719,6 @@
         "colors": [
             "white",
             "red",
-            "blue",
             "navyblue",
             "yellow"
         ],
@@ -5243,7 +5730,9 @@
             "moon"
         ],
         "img": "./assets/yt.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -5257,7 +5746,6 @@
         "colors": [
             "white",
             "red",
-            "blue",
             "navyblue",
             "yellow",
             "green",
@@ -5268,7 +5756,9 @@
             "horizontal"
         ],
         "img": "./assets/za.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -5290,7 +5780,9 @@
             "animal"
         ],
         "img": "./assets/zm.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -5315,7 +5807,9 @@
             "animal"
         ],
         "img": "./assets/zw.png",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -5338,7 +5832,9 @@
             "building"
         ],
         "img": "./assets/af.png",
-        "region": "asia",
+        "regions": [
+            "asia"
+        ],
         "verticalStripes": true,
         "horizontalStripes": false,
         "otherShapes": false,
@@ -5351,6 +5847,7 @@
         "name": "Martynika",
         "colors": [
             "blue",
+            "navyblue",
             "white"
         ],
         "shapes": [
@@ -5358,7 +5855,9 @@
             "cross"
         ],
         "img": "./assets/mq.png",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -5382,7 +5881,9 @@
             "other"
         ],
         "img": "./assets/pn.png",
-        "region": "oceania",
+        "regions": [
+            "oceania"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -5404,7 +5905,9 @@
             "other"
         ],
         "img": "./assets/abch.svg",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -5425,7 +5928,10 @@
             "moon"
         ],
         "img": "./assets/ncy.svg",
-        "region": "europe",
+        "regions": [
+            "europe",
+            "asia"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -5448,7 +5954,9 @@
             "triangle"
         ],
         "img": "./assets/art.svg",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -5467,8 +5975,10 @@
         "shapes": [
             "horizontal"
         ],
-        "img": "./assets/art.svg",
-        "region": "europe",
+        "img": "./assets/oss.svg",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": false,
@@ -5491,7 +6001,9 @@
             "star"
         ],
         "img": "./assets/seu.svg",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": true,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -5499,7 +6011,7 @@
         "country": false
     },
     {
-        "id": 254,
+        "id": 255,
         "active": true,
         "name": "Saba",
         "colors": [
@@ -5514,7 +6026,9 @@
             "triangle"
         ],
         "img": "./assets/saba.svg",
-        "region": "carraibean",
+        "regions": [
+            "carraibean"
+        ],
         "verticalStripes": false,
         "horizontalStripes": false,
         "otherShapes": true,
@@ -5522,7 +6036,7 @@
         "country": false
     },
     {
-        "id": 255,
+        "id": 256,
         "active": true,
         "name": "Naddniestrze",
         "colors": [
@@ -5536,7 +6050,9 @@
             "weapon"
         ],
         "img": "./assets/tns.png",
-        "region": "europe",
+        "regions": [
+            "europe"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
@@ -5544,7 +6060,7 @@
         "country": false
     },
     {
-        "id": 256,
+        "id": 257,
         "active": true,
         "name": "Somaliland",
         "colors": [
@@ -5559,7 +6075,9 @@
             "word"
         ],
         "img": "./assets/sml.svg",
-        "region": "africa",
+        "regions": [
+            "africa"
+        ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,

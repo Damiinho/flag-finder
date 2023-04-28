@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Flag Finder",
+  "name": "Find your flag",
   "icons": [
     {
       "src": "favicon.ico",
