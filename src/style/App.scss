@@ -409,13 +409,14 @@ body {
               &__button-box {
                 display: grid;
                 padding: 10px 0;
-                background-color: #7e78a35e;
+                background-color: $buttonColor;
                 border-radius: 25px;
-                width: 225px;
+                width: 215px;
                 height: 190px;
                 grid-template: repeat(3, 1fr) / repeat(3, 1fr);
                 justify-content: center;
                 align-items: center;
+                border: 3px solid $buttonColor;
 
                 button {
                   width: 50px;
@@ -502,6 +503,10 @@ body {
                 border: 2px solid $buttonColor;
                 transition: 0.5s;
 
+                &:hover {
+                  border: 2px solid white;
+                }
+
                 img {
                   filter: brightness(0) invert(1);
                   height: 10px;
@@ -545,10 +550,12 @@ body {
 
                 &.inactive {
                   height: 0;
+                  width: 250px;
                 }
                 &.active {
                   height: 240px;
                   margin-bottom: 10px;
+                  width: 250px;
                 }
 
                 button {
@@ -612,6 +619,7 @@ body {
               gap: 10px;
 
               button {
+                box-sizing: border-box;
                 display: inline-block;
                 outline: 0;
                 cursor: pointer;
@@ -620,14 +628,14 @@ body {
                 height: 43px;
                 padding: 0 10px;
 
-                border: 2px groove transparent;
+                border: 3px solid $buttonColor;
                 transition: 0.3s;
 
                 &:hover {
-                  border: 2px groove white;
+                  border: 3px groove white;
                 }
                 &.active {
-                  border: 2px groove white;
+                  border: 3px groove white;
                 }
                 @media screen and (max-width: 1080px) {
                   &.other.countries {
