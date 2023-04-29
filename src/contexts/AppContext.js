@@ -4,19 +4,6 @@ export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
   const [flags, setFlags] = useState([]);
-  const [red, setRed] = useState(false);
-  const [white, setWhite] = useState(false);
-  const [black, setBlack] = useState(false);
-  const [yellow, setYellow] = useState(false);
-  const [blue, setBlue] = useState(false);
-  const [navyBlue, setNavyBlue] = useState(false);
-  const [green, setGreen] = useState(false);
-  const [orange, setOrange] = useState(false);
-  const [claret, setClaret] = useState(false);
-  const [verticalStripes, setVerticalStripes] = useState(false);
-  const [horizontalStripes, setHorizontalStripes] = useState(false);
-  const [otherShapes, setOtherShapes] = useState(false);
-  const [symbols, setSymbols] = useState(false);
   const [regions, setRegions] = useState([]);
   const [isCountrySelected, setIsCountrySelected] = useState(false);
   const [selectedSmallOne, setSelectedSmallOne] = useState(null);
@@ -24,37 +11,11 @@ export const AppProvider = ({ children }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedShapes, setSelectedShapes] = useState([]);
-  // const [selectedColors, setSelectedColors] = useState([]);
+  const [selectedColors, setSelectedColors] = useState([]);
 
   const providerValue = {
     flags,
     setFlags,
-    red,
-    setRed,
-    claret,
-    setClaret,
-    white,
-    setWhite,
-    black,
-    setBlack,
-    yellow,
-    setYellow,
-    blue,
-    setBlue,
-    navyBlue,
-    setNavyBlue,
-    green,
-    setGreen,
-    orange,
-    setOrange,
-    verticalStripes,
-    setVerticalStripes,
-    horizontalStripes,
-    setHorizontalStripes,
-    otherShapes,
-    setOtherShapes,
-    symbols,
-    setSymbols,
     regions,
     setRegions,
     isCountrySelected,
@@ -67,8 +28,8 @@ export const AppProvider = ({ children }) => {
     setInputValue,
     windowWidth,
     setWindowWidth,
-    // selectedColors,
-    // setSelectedColors,
+    selectedColors,
+    setSelectedColors,
     selectedShapes,
     setSelectedShapes,
   };

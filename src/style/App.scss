@@ -21,14 +21,6 @@ $buttonColor: #7e78a35e;
   );
 }
 
-// background: repeating-linear-gradient(
-//   45deg,
-//   #606dbc,
-//   #606dbc 8px,
-//   #1d2349 8px,
-//   #1d2349 16px
-// );
-
 @mixin description-center {
   width: 100%;
   text-align: center;
@@ -487,89 +479,6 @@ body {
                 }
               }
             }
-            .selectors__stripes {
-              margin: 0 auto;
-              display: flex;
-              flex-direction: column;
-              gap: 10px;
-              max-width: 260px;
-
-              &-description {
-                @include description-center;
-                color: #ccc;
-              }
-
-              &__button-box {
-                display: flex;
-                justify-content: center;
-
-                button {
-                  width: 43px;
-                  height: 43px;
-                  margin: 0 4px;
-                  border: 2px groove transparent;
-                  transition: 0.3s;
-
-                  &:hover {
-                    border: 2px groove white;
-                  }
-                  &.active {
-                    border: 2px groove white;
-                  }
-
-                  &.vertical {
-                    background: $stripesBackgroundColor;
-                    @include stripeGradient($deg: 90deg);
-                    border-radius: 50%;
-                  }
-                  &.horizontal {
-                    background: $stripesBackgroundColor;
-
-                    @include stripeGradient;
-                    border-radius: 50%;
-                  }
-
-                  &.other-shapes {
-                    position: relative;
-                    background: $buttonColor;
-                    font-size: 16px;
-
-                    p {
-                      position: absolute;
-                      width: auto;
-                      top: 50%;
-                      left: 50%;
-                      transform: translate(-50%, -50%);
-                    }
-                  }
-
-                  &.symbols {
-                    position: relative;
-                    width: 70px;
-                    background: $buttonColor;
-                    font-size: 16px;
-                    p {
-                      position: absolute;
-                      width: auto;
-                      top: 50%;
-                      left: 50%;
-                      transform: translate(-50%, -50%);
-                    }
-                  }
-                }
-              }
-              @media screen and (max-width: 320px) {
-                max-width: 140px;
-                &__button-box {
-                  flex-wrap: wrap;
-                  gap: 5px;
-                  button {
-                    height: 40px;
-                    width: 40px;
-                  }
-                }
-              }
-            }
 
             .selectors__shapes {
               margin: 0 auto;
@@ -592,12 +501,6 @@ body {
                 overflow: hidden;
                 border: 2px solid $buttonColor;
                 transition: 0.5s;
-                // &:hover {
-                //   border: 2px solid white;
-                //   img {
-                //     transform: translateY(20px);
-                //   }
-                // }
 
                 img {
                   filter: brightness(0) invert(1);
