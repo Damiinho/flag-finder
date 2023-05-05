@@ -2,9 +2,11 @@ import React, { useContext, useEffect, useState } from "react";
 import FullList from "./FullList";
 import { AppContext } from "../contexts/AppContext";
 import SelectionBox from "./SelectionBox";
+import Game from "./Game";
 
 const Main = () => {
-  const { setFlags, windowWidth, selectedSmallOne } = useContext(AppContext);
+  const { setFlags, windowWidth, selectedSmallOne, isGame } =
+    useContext(AppContext);
   const [isLoading, setIsLoading] = useState(true);
   const [isSelectors, setIsSelectors] = useState(false);
 
@@ -27,44 +29,50 @@ const Main = () => {
   };
 
   return (
-    <div
-      className={`main ${
-        selectedSmallOne && windowWidth < 550 ? "flag-selected" : ""
-      }`}
-    >
-      {windowWidth > 670 ? (
-        <div className="main__select">
-          <div className="main__select-box">
-            <SelectionBox />
-          </div>
-        </div>
+    <>
+      {isGame ? (
+        <Game />
       ) : (
         <div
-          className="main__select"
-          style={
-            selectedSmallOne && windowWidth < 550 ? { top: "170px" } : null
-          }
-          onClick={handleSelectClick}
+          className={`main ${
+            selectedSmallOne && windowWidth < 550 ? "flag-selected" : ""
+          }`}
         >
-          {isSelectors ? "pokaż listę krajów" : "pokaż opcje wyboru"}
-        </div>
-      )}
-      <div className="main-list">
-        {isSelectors && !(windowWidth > 670) ? (
-          <SelectionBox />
-        ) : (
-          <div className="main-list__full-list">
-            {isLoading ? (
-              <div className="full-list__preloader-box">
-                <div className="full-list__preloader-box-preloader"></div>
+          {windowWidth > 670 ? (
+            <div className="main__select">
+              <div className="main__select-box">
+                <SelectionBox />
               </div>
+            </div>
+          ) : (
+            <div
+              className="main__select"
+              style={
+                selectedSmallOne && windowWidth < 550 ? { top: "170px" } : null
+              }
+              onClick={handleSelectClick}
+            >
+              {isSelectors ? "pokaż listę krajów" : "pokaż opcje wyboru"}
+            </div>
+          )}
+          <div className="main-list">
+            {isSelectors && !(windowWidth > 670) ? (
+              <SelectionBox />
             ) : (
-              <FullList />
+              <div className="main-list__full-list">
+                {isLoading ? (
+                  <div className="full-list__preloader-box">
+                    <div className="full-list__preloader-box-preloader"></div>
+                  </div>
+                ) : (
+                  <FullList />
+                )}
+              </div>
             )}
           </div>
-        )}
-      </div>
-    </div>
+        </div>
+      )}
+    </>
   );
 };
 
