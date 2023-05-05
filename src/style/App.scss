@@ -873,11 +873,56 @@ body {
       }
     }
     .main-game {
+      position: relative;
       height: 80%;
       width: 80%;
       min-width: 250px;
       margin: 15px auto 0;
-      text-align: center;
+
+      &__quiz {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        .quiz__img-box {
+          // height: 250px;
+          &__img {
+            max-width: 320px;
+            max-height: 250px;
+          }
+        }
+        .quiz__answers {
+          margin-top: 30px;
+          height: 300px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          &-item {
+            &__button {
+              text-transform: uppercase;
+              width: 300px;
+              height: 60px;
+              background-color: rgba(8, 8, 56, 0.827);
+              font-family: "Poiret One", cursive;
+              font-size: 20px;
+              color: #f0f4ef;
+              // border: 3px groove white;
+              cursor: pointer;
+
+              &.correct {
+                border: 3px solid green;
+              }
+              &.incorrect {
+                border: 3px groove red;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
