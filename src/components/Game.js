@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../contexts/AppContext";
 
 const Game = () => {
@@ -8,6 +8,9 @@ const Game = () => {
   const [currentFlag, setCurrentFlag] = useState({});
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [score, setScore] = useState(0);
+  const [lastScore, setLastScore] = useState(null);
+  const [bestScore, setBestScore] = useState(0);
+  const [showResult, setShowResult] = useState(false);
   const gameFlagList = flags.filter((item) => item.country === true);
 
   const handleStartStop = (value) => {
@@ -15,12 +18,23 @@ const Game = () => {
     setSelectedAnswer(null);
     if (value) {
       generateQuizList();
+      setScore(0);
     }
   };
 
   const handleNext = () => {
     setSelectedAnswer(null);
     generateQuizList();
+  };
+
+  const handleRestart = () => {
+    setSelectedAnswer(null);
+    generateQuizList();
+    setLastScore(score);
+    if (score > bestScore) {
+      setBestScore(score);
+    }
+    setScore(0);
   };
 
   const generateQuizList = () => {
@@ -47,11 +61,13 @@ const Game = () => {
   };
 
   const handleAnswerClick = (value) => {
-    setSelectedAnswer(value.name);
+    if (!selectedAnswer) {
+      setSelectedAnswer(value.name);
 
-    if (value.correct === true) {
-      setScore(score + 1);
-    } else setScore(score);
+      if (value.correct === true) {
+        setScore(score + 1);
+      }
+    }
   };
 
   const AnswerButton = (props) => {
@@ -101,15 +117,62 @@ const Game = () => {
   return (
     <div className="main-game">
       {!start && (
-        <button onClick={() => handleStartStop(true)}>Rozpocznij</button>
+        <button
+          className="main-game__start-button"
+          onClick={() => handleStartStop(true)}
+        >
+          Rozpocznij
+        </button>
+      )}
+      {start && (
+        <div className="main-game__score-box">
+          <div className="main-game__score-box__current">
+            <p>wynik:</p>
+            <p>{score}</p>
+          </div>
+          {bestScore || lastScore ? (
+            <div className="main-game__score-box__second">
+              {bestScore > 0 && (
+                <div className="main-game__score-box__best-score">
+                  najlepszy: {bestScore}
+                </div>
+              )}
+              {lastScore !== null && (
+                <div className="main-game__score-box__last-score">
+                  ostatni: {lastScore}
+                </div>
+              )}
+            </div>
+          ) : null}
+        </div>
+      )}
+      {selectedAnswer === currentFlag.name && (
+        <div className="main-game__handle-box">
+          <button onClick={handleNext}>Następna flaga</button>
+        </div>
+      )}
+      {selectedAnswer && selectedAnswer !== currentFlag.name ? (
+        <div className="main-game__handle-box">
+          <button onClick={handleRestart}>Rozpocznij od nowa</button>
+        </div>
+      ) : null}
+
+      {selectedAnswer === currentFlag.name && (
+        <div className="main-game__result good">DOBRZE</div>
+      )}
+      {selectedAnswer && selectedAnswer !== currentFlag.name && (
+        <div className={`main-game__result bad`}>BŁĄD</div>
       )}
 
-      {start && <h1>Wynik: {score}</h1>}
       {start && quiz()}
       {start && (
         <>
-          <button onClick={() => handleStartStop(false)}>Zatrzymaj</button>
-          <button onClick={handleNext}>Następna flaga</button>
+          <button
+            className="main-game__stop-button"
+            onClick={() => handleStartStop(false)}
+          >
+            Przerwij
+          </button>
         </>
       )}
     </div>

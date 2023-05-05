@@ -873,11 +873,98 @@ body {
       }
     }
     .main-game {
+      @mixin for-button {
+        text-transform: uppercase;
+        width: 300px;
+        height: 60px;
+        background-color: rgba(8, 8, 56, 0.827);
+        font-family: "Poiret One", cursive;
+        font-size: 20px;
+        color: #f0f4ef;
+        cursor: pointer;
+        border-color: white;
+      }
+
       position: relative;
       height: 80%;
       width: 80%;
       min-width: 250px;
       margin: 15px auto 0;
+
+      &__start-button {
+        @include for-button;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &__stop-button {
+        @include for-button;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &__score-box {
+        margin: 0 auto;
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        &__current {
+          text-align: center;
+          p:nth-of-type(2) {
+            font-size: 35px;
+          }
+        }
+        &__second {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          padding: 5px 0;
+        }
+      }
+      &__handle-box {
+        margin-top: 20px;
+        text-align: center;
+        button {
+          @include for-button;
+        }
+      }
+      &__result {
+        &.good {
+          color: green;
+          margin-top: 5px;
+          font-size: 40px;
+          animation: resultFadeOut 2s forwards;
+          text-align: center;
+        }
+        &.bad {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 100px;
+          z-index: 1;
+          color: #cd2424;
+          text-shadow: 0px 0px 50px #690000, 0px 0px 50px #690000,
+            0px 0px 50px #690000, 0px 0px 50px #690000, 0px 0px 50px #690000,
+            0px 0px 50px #690000;
+        }
+        &.hidden {
+          display: none;
+        }
+      }
+      @keyframes resultFadeOut {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
 
       &__quiz {
         position: absolute;
@@ -909,6 +996,8 @@ body {
               background-color: rgba(8, 8, 56, 0.827);
               font-family: "Poiret One", cursive;
               font-size: 20px;
+              letter-spacing: 2px;
+              font-weight: bold;
               color: #f0f4ef;
               // border: 3px groove white;
               cursor: pointer;
@@ -917,7 +1006,7 @@ body {
                 border: 3px solid green;
               }
               &.incorrect {
-                border: 3px groove red;
+                border: 3px solid red;
               }
             }
           }
