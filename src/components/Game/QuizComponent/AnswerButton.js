@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { GameContext } from "../../contexts/GameContext";
+import { GameContext } from "../../../contexts/GameContext";
 
 const AnswerButton = (props) => {
   const { selectedAnswer, currentFlag, setSelectedAnswer, setScore, score } =

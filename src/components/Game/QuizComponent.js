@@ -1,16 +1,45 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { GameContext } from "../../contexts/GameContext";
-import ScoreComponent from "./ScoreComponent";
-import QuestionBox from "./QuestionBox";
+import ScoreComponent from "./QuizComponent/ScoreComponent";
+import QuestionBox from "./QuizComponent/QuestionBox";
+import LoadingBox from "./QuizComponent/LoadingBox";
 
 const QuizComponent = () => {
   const {
     currentFlag,
     handleStartStop,
     selectedAnswer,
-    handleNext,
-    handleRestart,
+    setSelectedAnswer,
+    generateQuizList,
+    setLastScore,
+    score,
+    bestScore,
+    setBestScore,
+    setScore,
+    settingsTime,
+    setCurrentTime,
   } = useContext(GameContext);
+  const [isQuizLoading, setIsQuizLoading] = useState(true);
+
+  const handleNext = () => {
+    setSelectedAnswer(null);
+    generateQuizList();
+
+    setCurrentTime(settingsTime);
+  };
+  const handleRestart = () => {
+    setSelectedAnswer(null);
+    generateQuizList();
+    setLastScore(score);
+    if (score > bestScore) {
+      setBestScore(score);
+    }
+    setScore(0);
+    setIsQuizLoading(true);
+    setTimeout(() => {
+      setIsQuizLoading(false);
+    }, 3000);
+  };
 
   const HandleButton = (props) => (
     <div className="main-game__handle-box">
@@ -24,28 +53,42 @@ const QuizComponent = () => {
     </div>
   );
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsQuizLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
-      <ScoreComponent />
-      {selectedAnswer === currentFlag.name && (
+      {isQuizLoading ? (
+        <LoadingBox />
+      ) : (
         <>
-          <HandleButton click={handleNext} name="Następna flaga" />
-          <ResultBox result="good" />
+          <ScoreComponent />
+          {selectedAnswer === currentFlag.name && (
+            <>
+              <HandleButton click={handleNext} name="Następna flaga" />
+              <ResultBox result="good" />
+            </>
+          )}
+          {selectedAnswer && selectedAnswer !== currentFlag.name && (
+            <>
+              <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
+              <ResultBox result="bad" />
+            </>
+          )}
+          <QuestionBox />
+          <button
+            className="main-game__stop-button"
+            onClick={() => handleStartStop(false)}
+          >
+            Przerwij
+          </button>
         </>
       )}
-      {selectedAnswer && selectedAnswer !== currentFlag.name ? (
-        <>
-          <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
-          <ResultBox result="bad" />
-        </>
-      ) : null}
-      <QuestionBox />
-      <button
-        className="main-game__stop-button"
-        onClick={() => handleStartStop(false)}
-      >
-        Przerwij
-      </button>
     </>
   );
 };

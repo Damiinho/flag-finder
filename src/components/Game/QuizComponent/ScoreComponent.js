@@ -1,8 +1,26 @@
-import { useContext } from "react";
-import { GameContext } from "../../contexts/GameContext";
+import { useContext, useEffect } from "react";
+import { GameContext } from "../../../contexts/GameContext";
 
 const ScoreComponent = () => {
-  const { score, bestScore, lastScore } = useContext(GameContext);
+  const {
+    score,
+    bestScore,
+    lastScore,
+    currentTime,
+    setCurrentTime,
+    settingsTime,
+  } = useContext(GameContext);
+
+  useEffect(() => {
+    setCurrentTime(settingsTime);
+  }, [setCurrentTime, settingsTime]);
+
+  useEffect(() => {
+    if (currentTime > 0) {
+      const timer = setTimeout(() => setCurrentTime(currentTime - 1), 1000);
+      return () => clearTimeout(timer);
+    }
+  }, [currentTime, setCurrentTime]);
 
   return (
     <div className="main-game__score-box">
@@ -24,6 +42,9 @@ const ScoreComponent = () => {
           )}
         </div>
       ) : null}
+      <div className="main-game__score-box__last-score">
+        Pozostały czas: {currentTime}
+      </div>
     </div>
   );
 };

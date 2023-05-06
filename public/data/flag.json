@@ -5839,7 +5839,7 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": false
     },
     {
         "id": 248,

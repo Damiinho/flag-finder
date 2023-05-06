@@ -12,10 +12,13 @@ export const GameProvider = ({ children }) => {
   const [score, setScore] = useState(0);
   const [lastScore, setLastScore] = useState(null);
   const [bestScore, setBestScore] = useState(0);
+  const [settingsVariants, setSettingsVariants] = useState(4);
+  const [settingsTime, setSettingsTime] = useState(10);
+  const [currentTime, setCurrentTime] = useState(null);
   const gameFlagList = flags.filter((item) => item.country === true);
   const generateQuizList = () => {
     const randomIndexes = [];
-    while (randomIndexes.length < 4) {
+    while (randomIndexes.length < settingsVariants) {
       const randomIndex = Math.floor(Math.random() * gameFlagList.length);
       if (!randomIndexes.includes(randomIndex)) {
         randomIndexes.push(randomIndex);
@@ -41,21 +44,12 @@ export const GameProvider = ({ children }) => {
     setSelectedAnswer(null);
     if (value) {
       generateQuizList();
+      setLastScore(score);
       setScore(0);
+      if (score > bestScore) {
+        setBestScore(score);
+      }
     }
-  };
-  const handleNext = () => {
-    setSelectedAnswer(null);
-    generateQuizList();
-  };
-  const handleRestart = () => {
-    setSelectedAnswer(null);
-    generateQuizList();
-    setLastScore(score);
-    if (score > bestScore) {
-      setBestScore(score);
-    }
-    setScore(0);
   };
 
   const providerValue = {
@@ -76,8 +70,12 @@ export const GameProvider = ({ children }) => {
     gameFlagList,
     generateQuizList,
     handleStartStop,
-    handleNext,
-    handleRestart,
+    settingsVariants,
+    settingsTime,
+    setSettingsTime,
+    setSettingsVariants,
+    currentTime,
+    setCurrentTime,
   };
 
   return (
