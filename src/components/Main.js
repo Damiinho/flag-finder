@@ -3,6 +3,7 @@ import FullList from "./FullList";
 import { AppContext } from "../contexts/AppContext";
 import SelectionBox from "./SelectionBox";
 import Game from "./Game";
+import GameProvider from "../contexts/GameContext";
 
 const Main = () => {
   const { setFlags, windowWidth, selectedSmallOne, isGame } =
@@ -31,7 +32,9 @@ const Main = () => {
   return (
     <>
       {isGame ? (
-        <Game />
+        <GameProvider>
+          <Game />
+        </GameProvider>
       ) : (
         <div
           className={`main ${
