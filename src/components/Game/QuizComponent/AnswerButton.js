@@ -10,6 +10,8 @@ const AnswerButton = (props) => {
     score,
     currentTime,
     setTimerRunning,
+    currentMistakes,
+    setCurrentMistakes,
   } = useContext(GameContext);
 
   const handleAnswerClick = (value) => {
@@ -19,6 +21,10 @@ const AnswerButton = (props) => {
 
         if (value.correct === true) {
           setScore(score + 1);
+        } else {
+          if (currentMistakes > 0) {
+            setCurrentMistakes(currentMistakes - 1);
+          }
         }
       }
       setTimerRunning(false);

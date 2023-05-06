@@ -20,6 +20,7 @@ const QuizComponent = () => {
     setCurrentTime,
     currentTime,
     setTimerRunning,
+    currentMistakes,
   } = useContext(GameContext);
   const [isQuizLoading, setIsQuizLoading] = useState(true);
 
@@ -77,14 +78,32 @@ const QuizComponent = () => {
           )}
           {selectedAnswer && selectedAnswer !== currentFlag.name && (
             <>
-              <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
               <ResultBox result="bad" name="BŁĄD" />
             </>
           )}
+          {selectedAnswer &&
+            selectedAnswer !== currentFlag.name &&
+            currentMistakes === 0 && (
+              <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
+            )}
+          {selectedAnswer &&
+            selectedAnswer !== currentFlag.name &&
+            currentMistakes > 0 && (
+              <HandleButton click={handleNext} name="Następna flaga" />
+            )}
           {currentTime === 0 && (
             <>
-              <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
               <ResultBox result="bad" name="CZAS MINĄŁ" />
+            </>
+          )}
+          {currentTime === 0 && currentMistakes === 0 && (
+            <>
+              <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
+            </>
+          )}
+          {currentTime === 0 && currentMistakes > 0 && (
+            <>
+              <HandleButton click={handleNext} name="Następna flaga" />
             </>
           )}
           <QuestionBox />

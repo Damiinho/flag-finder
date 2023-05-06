@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useRef } from "react";
 import { GameContext } from "../../../contexts/GameContext";
 
 const ScoreComponent = () => {
@@ -10,18 +10,29 @@ const ScoreComponent = () => {
     setCurrentTime,
     settingsTime,
     timerRunning,
+    settingsMistakes,
+    currentMistakes,
+    setCurrentMistakes,
   } = useContext(GameContext);
 
   useEffect(() => {
     setCurrentTime(settingsTime);
-  }, [setCurrentTime, settingsTime]);
+    setCurrentMistakes(settingsMistakes);
+  }, [setCurrentTime, settingsTime, setCurrentMistakes, settingsMistakes]);
+
+  const currentMistakesRef = useRef(currentMistakes);
+  useEffect(() => {
+    currentMistakesRef.current = currentMistakes;
+  }, [currentMistakes]);
 
   useEffect(() => {
     if (currentTime > 0 && timerRunning) {
       const timer = setTimeout(() => setCurrentTime(currentTime - 1), 1000);
       return () => clearTimeout(timer);
+    } else if (currentTime === 0 && currentMistakesRef.current > 0) {
+      setCurrentMistakes(currentMistakesRef.current - 1);
     }
-  }, [currentTime, setCurrentTime, timerRunning]);
+  }, [currentTime, setCurrentTime, timerRunning, setCurrentMistakes]);
 
   return (
     <div className="main-game__score-box">
@@ -43,9 +54,14 @@ const ScoreComponent = () => {
           )}
         </div>
       ) : null}
-      <div className="main-game__score-box__last-score">
+      <div className="main-game__score-box__time">
         Pozostały czas: {currentTime}
       </div>
+      {settingsMistakes > 0 && (
+        <div className="main-game__score-box__mistakes">
+          Liczba żyć: {currentMistakes}
+        </div>
+      )}
     </div>
   );
 };

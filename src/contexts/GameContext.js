@@ -14,6 +14,8 @@ export const GameProvider = ({ children }) => {
   const [bestScore, setBestScore] = useState(0);
   const [settingsVariants, setSettingsVariants] = useState(4);
   const [settingsTime, setSettingsTime] = useState(10);
+  const [settingsMistakes, setSettingsMistakes] = useState(0);
+  const [currentMistakes, setCurrentMistakes] = useState(null);
   const [currentTime, setCurrentTime] = useState(null);
   const [timerRunning, setTimerRunning] = useState(true);
   const gameFlagList = flags.filter((item) => item.country === true);
@@ -81,6 +83,10 @@ export const GameProvider = ({ children }) => {
     setCurrentTime,
     timerRunning,
     setTimerRunning,
+    settingsMistakes,
+    setSettingsMistakes,
+    currentMistakes,
+    setCurrentMistakes,
   };
 
   return (
