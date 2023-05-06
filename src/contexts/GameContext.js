@@ -15,6 +15,7 @@ export const GameProvider = ({ children }) => {
   const [settingsVariants, setSettingsVariants] = useState(4);
   const [settingsTime, setSettingsTime] = useState(10);
   const [currentTime, setCurrentTime] = useState(null);
+  const [timerRunning, setTimerRunning] = useState(true);
   const gameFlagList = flags.filter((item) => item.country === true);
   const generateQuizList = () => {
     const randomIndexes = [];
@@ -49,6 +50,8 @@ export const GameProvider = ({ children }) => {
       if (score > bestScore) {
         setBestScore(score);
       }
+
+      setTimerRunning(true);
     }
   };
 
@@ -76,6 +79,8 @@ export const GameProvider = ({ children }) => {
     setSettingsVariants,
     currentTime,
     setCurrentTime,
+    timerRunning,
+    setTimerRunning,
   };
 
   return (

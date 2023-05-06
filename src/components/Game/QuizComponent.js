@@ -18,14 +18,16 @@ const QuizComponent = () => {
     setScore,
     settingsTime,
     setCurrentTime,
+    currentTime,
+    setTimerRunning,
   } = useContext(GameContext);
   const [isQuizLoading, setIsQuizLoading] = useState(true);
 
   const handleNext = () => {
     setSelectedAnswer(null);
     generateQuizList();
-
     setCurrentTime(settingsTime);
+    setTimerRunning(true);
   };
   const handleRestart = () => {
     setSelectedAnswer(null);
@@ -39,6 +41,7 @@ const QuizComponent = () => {
     setTimeout(() => {
       setIsQuizLoading(false);
     }, 3000);
+    setTimerRunning(true);
   };
 
   const HandleButton = (props) => (
@@ -48,9 +51,7 @@ const QuizComponent = () => {
   );
 
   const ResultBox = (props) => (
-    <div className={`main-game__result ${props.result}`}>
-      {props.result === "good" ? "DOBRZE" : "BŁĄD"}
-    </div>
+    <div className={`main-game__result ${props.result}`}>{props.name}</div>
   );
 
   useEffect(() => {
@@ -71,13 +72,19 @@ const QuizComponent = () => {
           {selectedAnswer === currentFlag.name && (
             <>
               <HandleButton click={handleNext} name="Następna flaga" />
-              <ResultBox result="good" />
+              <ResultBox result="good" name="DOBRZE" />
             </>
           )}
           {selectedAnswer && selectedAnswer !== currentFlag.name && (
             <>
               <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
-              <ResultBox result="bad" />
+              <ResultBox result="bad" name="BŁĄD" />
+            </>
+          )}
+          {currentTime === 0 && (
+            <>
+              <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
+              <ResultBox result="bad" name="CZAS MINĄŁ" />
             </>
           )}
           <QuestionBox />

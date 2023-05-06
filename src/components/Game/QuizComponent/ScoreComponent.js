@@ -9,6 +9,7 @@ const ScoreComponent = () => {
     currentTime,
     setCurrentTime,
     settingsTime,
+    timerRunning,
   } = useContext(GameContext);
 
   useEffect(() => {
@@ -16,11 +17,11 @@ const ScoreComponent = () => {
   }, [setCurrentTime, settingsTime]);
 
   useEffect(() => {
-    if (currentTime > 0) {
+    if (currentTime > 0 && timerRunning) {
       const timer = setTimeout(() => setCurrentTime(currentTime - 1), 1000);
       return () => clearTimeout(timer);
     }
-  }, [currentTime, setCurrentTime]);
+  }, [currentTime, setCurrentTime, timerRunning]);
 
   return (
     <div className="main-game__score-box">

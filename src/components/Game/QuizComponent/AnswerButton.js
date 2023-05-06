@@ -2,16 +2,26 @@ import { useContext } from "react";
 import { GameContext } from "../../../contexts/GameContext";
 
 const AnswerButton = (props) => {
-  const { selectedAnswer, currentFlag, setSelectedAnswer, setScore, score } =
-    useContext(GameContext);
+  const {
+    selectedAnswer,
+    currentFlag,
+    setSelectedAnswer,
+    setScore,
+    score,
+    currentTime,
+    setTimerRunning,
+  } = useContext(GameContext);
 
   const handleAnswerClick = (value) => {
-    if (!selectedAnswer) {
-      setSelectedAnswer(value.name);
+    if (currentTime !== 0) {
+      if (!selectedAnswer) {
+        setSelectedAnswer(value.name);
 
-      if (value.correct === true) {
-        setScore(score + 1);
+        if (value.correct === true) {
+          setScore(score + 1);
+        }
       }
+      setTimerRunning(false);
     }
   };
 
