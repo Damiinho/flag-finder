@@ -21,6 +21,7 @@ const QuizComponent = () => {
     currentTime,
     setTimerRunning,
     currentMistakes,
+    setInputAnswer,
   } = useContext(GameContext);
   const [isQuizLoading, setIsQuizLoading] = useState(true);
 
@@ -29,6 +30,7 @@ const QuizComponent = () => {
     generateQuizList();
     setCurrentTime(settingsTime);
     setTimerRunning(true);
+    setInputAnswer("");
   };
   const handleRestart = () => {
     setSelectedAnswer(null);
@@ -44,6 +46,7 @@ const QuizComponent = () => {
     }, 3000);
     setTimerRunning(true);
     setCurrentTime(settingsTime);
+    setInputAnswer("");
   };
 
   const HandleButton = (props) => (
@@ -71,24 +74,26 @@ const QuizComponent = () => {
       ) : (
         <>
           <ScoreComponent />
-          {selectedAnswer === currentFlag.name && (
-            <>
-              <HandleButton click={handleNext} name="Następna flaga" />
-              <ResultBox result="good" name="DOBRZE" />
-            </>
-          )}
-          {selectedAnswer && selectedAnswer !== currentFlag.name && (
-            <>
-              <ResultBox result="bad" name="BŁĄD" />
-            </>
-          )}
           {selectedAnswer &&
-            selectedAnswer !== currentFlag.name &&
+            selectedAnswer.toLowerCase() === currentFlag.name.toLowerCase() && (
+              <>
+                <HandleButton click={handleNext} name="Następna flaga" />
+                <ResultBox result="good" name="DOBRZE" />
+              </>
+            )}
+          {selectedAnswer &&
+            selectedAnswer.toLowerCase() !== currentFlag.name.toLowerCase() && (
+              <>
+                <ResultBox result="bad" name="BŁĄD" />
+              </>
+            )}
+          {selectedAnswer &&
+            selectedAnswer.toLowerCase() !== currentFlag.name.toLowerCase() &&
             currentMistakes === 0 && (
               <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
             )}
           {selectedAnswer &&
-            selectedAnswer !== currentFlag.name &&
+            selectedAnswer.toLowerCase() !== currentFlag.name.toLowerCase() &&
             currentMistakes > 0 && (
               <HandleButton click={handleNext} name="Następna flaga" />
             )}

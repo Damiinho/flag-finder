@@ -3,6 +3,7 @@ import { GameContext } from "../../contexts/GameContext";
 import SelectVariants from "./StartScreen/SelectVariants";
 import SelectTime from "./StartScreen/SelectTime";
 import SelectMistakes from "./StartScreen/SelectMistakes";
+import SelectMode from "./StartScreen/SelectMode";
 
 const StartScreen = () => {
   const { handleStartStop } = useContext(GameContext);
@@ -13,7 +14,7 @@ const StartScreen = () => {
         {/* <div className="main-game__settings-box__mode">
           Wybierz tryb: własny, łatwy, średni, trudny, ekstremalny
         </div> */}
-
+        <SelectMode />
         <SelectVariants />
         <SelectTime />
         <SelectMistakes />

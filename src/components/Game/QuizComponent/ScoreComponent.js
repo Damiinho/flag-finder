@@ -27,7 +27,7 @@ const ScoreComponent = () => {
   }, [currentMistakes]);
 
   useEffect(() => {
-    if (currentTime > 0 && timerRunning) {
+    if (currentTime > 0 && timerRunning && settingsTime !== 11) {
       const timer = setTimeout(() => {
         const newTime = Number((currentTime - 0.1).toFixed(1));
         setCurrentTime(newTime);
@@ -90,7 +90,7 @@ const ScoreComponent = () => {
           </div>
         ) : null}
 
-        {settingsMistakes > 0 && (
+        {settingsMistakes > 1 && (
           <div className="main-game__score-box__mistakes">
             <p>liczba żyć:</p>
             <div className="main-game__score-box__mistakes-flags">
@@ -98,17 +98,19 @@ const ScoreComponent = () => {
             </div>
           </div>
         )}
-        <div className="main-game__score-box__time">
-          <div className="main-game__score-box__time-box">
-            <div className="main-game__score-box__time-box__value">
-              {currentTime} s
+        {settingsTime !== 11 && (
+          <div className="main-game__score-box__time">
+            <div className="main-game__score-box__time-box">
+              <div className="main-game__score-box__time-box__value">
+                {currentTime} s
+              </div>
+              <div
+                className="main-game__score-box__time-box__progress"
+                style={{ width: `${progressBar}%` }}
+              ></div>
             </div>
-            <div
-              className="main-game__score-box__time-box__progress"
-              style={{ width: `${progressBar}%` }}
-            ></div>
           </div>
-        </div>
+        )}
       </div>
     </>
   );

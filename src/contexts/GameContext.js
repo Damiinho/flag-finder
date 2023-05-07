@@ -18,14 +18,23 @@ export const GameProvider = ({ children }) => {
   const [currentMistakes, setCurrentMistakes] = useState(null);
   const [currentTime, setCurrentTime] = useState(null);
   const [timerRunning, setTimerRunning] = useState(true);
+  const [settingsMode, setSettingsMode] = useState(null);
+
+  const [inputAnswer, setInputAnswer] = useState("");
   const gameFlagList = flags.filter((item) => item.country === true);
   const generateQuizList = () => {
     const randomIndexes = [];
-    while (randomIndexes.length < settingsVariants) {
-      const randomIndex = Math.floor(Math.random() * gameFlagList.length);
-      if (!randomIndexes.includes(randomIndex)) {
-        randomIndexes.push(randomIndex);
+
+    if (settingsVariants !== 7) {
+      while (randomIndexes.length < settingsVariants) {
+        const randomIndex = Math.floor(Math.random() * gameFlagList.length);
+        if (!randomIndexes.includes(randomIndex)) {
+          randomIndexes.push(randomIndex);
+        }
       }
+    } else {
+      const randomIndex = Math.floor(Math.random() * gameFlagList.length);
+      randomIndexes.push(randomIndex);
     }
 
     const randomCurrentIndex = Math.floor(Math.random() * randomIndexes.length);
@@ -52,6 +61,7 @@ export const GameProvider = ({ children }) => {
       setScore(0);
       setTimerRunning(true);
       setCurrentTime(settingsTime);
+      setInputAnswer("");
       if (score > bestScore) {
         setBestScore(score);
       }
@@ -88,6 +98,10 @@ export const GameProvider = ({ children }) => {
     setSettingsMistakes,
     currentMistakes,
     setCurrentMistakes,
+    settingsMode,
+    setSettingsMode,
+    inputAnswer,
+    setInputAnswer,
   };
 
   return (
