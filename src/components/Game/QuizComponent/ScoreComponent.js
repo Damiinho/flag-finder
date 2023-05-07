@@ -37,7 +37,13 @@ const ScoreComponent = () => {
     } else if (currentTime === 0 && currentMistakesRef.current > 0) {
       setCurrentMistakes(currentMistakesRef.current - 1);
     }
-  }, [currentTime, setCurrentTime, timerRunning, setCurrentMistakes]);
+  }, [
+    currentTime,
+    setCurrentTime,
+    timerRunning,
+    setCurrentMistakes,
+    settingsTime,
+  ]);
 
   const mistakesFlags = () => {
     const greenFlags = currentMistakes;
