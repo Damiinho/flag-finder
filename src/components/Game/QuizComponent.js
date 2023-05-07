@@ -43,6 +43,7 @@ const QuizComponent = () => {
       setIsQuizLoading(false);
     }, 3000);
     setTimerRunning(true);
+    setCurrentTime(settingsTime);
   };
 
   const HandleButton = (props) => (

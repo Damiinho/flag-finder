@@ -10,7 +10,10 @@ const SelectVariants = () => {
 
   return (
     <div className="main-game__settings-box__variants">
-      Wybierz liczbę wariantów odpowiedzi: {settingsVariants}
+      <div className="main-game__settings-box__variants-title">
+        <p>Liczba wariantów odpowiedzi:</p>
+        <p>{settingsVariants}</p>
+      </div>
       <input
         type="range"
         onChange={handleChange}

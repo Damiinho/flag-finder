@@ -10,7 +10,10 @@ const SelectTime = () => {
 
   return (
     <div className="main-game__settings-box__time">
-      Limit sekund na odpowiedź: {settingsTime}
+      <div className="main-game__settings-box__time-title">
+        <p>Limit sekund na odpowiedź:</p>
+        <p>{settingsTime}</p>
+      </div>
       <input
         type="range"
         onChange={handleChange}

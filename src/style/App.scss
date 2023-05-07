@@ -944,12 +944,51 @@ body {
       &__start-button {
         @include for-button;
       }
+      &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        gap: 50px;
+      }
 
       &__settings-box {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 20px;
+        font-family: "Poiret One", cursive;
+        width: 270px;
+        &__title {
+          font-size: 40px;
+          font-weight: bold;
+        }
+
+        @mixin for-settings-box-range {
+          width: 100%;
+          &-title {
+            display: flex;
+            font-size: 18px;
+            justify-content: space-between;
+            // padding: 0 5px;
+            margin-bottom: 5px;
+          }
+        }
+
+        &__variants {
+          @include for-settings-box-range;
+        }
+        &__time {
+          @include for-settings-box-range;
+        }
+        &__mistakes {
+          @include for-settings-box-range;
+        }
       }
 
       &__stop-button {
@@ -960,22 +999,70 @@ body {
         transform: translateX(-50%);
       }
       &__score-box {
+        // background-color: red;
+        position: relative;
         margin: 0 auto;
-        width: 200px;
+        width: 300px;
         display: flex;
         justify-content: center;
-        gap: 30px;
+        align-items: center;
+        // gap: 30px;
         &__current {
           text-align: center;
+          width: 70px;
+
           p:nth-of-type(2) {
             font-size: 35px;
           }
         }
-        &__second {
+        &__lastbest {
           display: flex;
           flex-direction: column;
           justify-content: space-around;
+          font-size: 13px;
+          width: 100px;
           padding: 5px 0;
+        }
+        &__mistakes {
+          img.green {
+            width: 20px;
+            height: 20px;
+            filter: hue-rotate(120deg);
+          }
+          img.red {
+            width: 20px;
+            height: 20px;
+            filter: hue-rotate(0deg);
+          }
+        }
+
+        &__time {
+          position: absolute;
+          top: 100%;
+          &-box {
+            position: relative;
+            width: 300px;
+            height: 20px;
+            background-color: red;
+
+            &__progress {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 20px;
+              background-color: #006b00;
+              transition: 0.1s;
+            }
+            &__value {
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              color: white;
+              z-index: 1;
+            }
+          }
         }
       }
       &__handle-box {
@@ -1074,13 +1161,13 @@ body {
 .custom-slider {
   width: 100%;
   height: 30px;
-  background: #eee;
+  background: #030218b6;
   opacity: 0.8;
   outline: none;
   transition: 0.3s;
   -webkit-appearance: none;
   appearance: none;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .custom-slider:hover {

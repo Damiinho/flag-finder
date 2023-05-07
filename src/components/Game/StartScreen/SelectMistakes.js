@@ -10,7 +10,10 @@ const SelectMistakes = () => {
 
   return (
     <div className="main-game__settings-box__mistakes">
-      Liczba dopuszczalnych błędów: {settingsMistakes}
+      <div className="main-game__settings-box__mistakes-title">
+        <p>Liczba dopuszczalnych błędów:</p>
+        <p>{settingsMistakes}</p>
+      </div>
       <input
         type="range"
         onChange={handleChange}

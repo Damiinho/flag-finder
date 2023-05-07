@@ -45,15 +45,16 @@ export const GameProvider = ({ children }) => {
   const handleStartStop = (value) => {
     setStart(value);
     setSelectedAnswer(null);
+    setCurrentMistakes(settingsMistakes);
     if (value) {
       generateQuizList();
       setLastScore(score);
       setScore(0);
+      setTimerRunning(true);
+      setCurrentTime(settingsTime);
       if (score > bestScore) {
         setBestScore(score);
       }
-
-      setTimerRunning(true);
     }
   };
 
