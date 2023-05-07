@@ -17,11 +17,14 @@ const QuestionBox = () => {
     setCurrentMistakes,
     currentTime,
     setTimerRunning,
+    polishCharsMap,
   } = useContext(GameContext);
 
   const inputRef = useRef(null);
   useEffect(() => {
-    inputRef.current.focus();
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
   }, [currentFlag]);
 
   const handleInputChange = (e) => {
@@ -34,9 +37,16 @@ const QuestionBox = () => {
     e.preventDefault();
 
     if (currentTime !== 0) {
-      if (!selectedAnswer) {
+      if (!selectedAnswer && inputAnswer) {
         setSelectedAnswer(inputAnswer);
-        if (inputAnswer.toLowerCase() === quizList[0].name.toLowerCase()) {
+        if (
+          inputAnswer
+            .toLowerCase()
+            .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) ===
+          quizList[0].name
+            .toLowerCase()
+            .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match])
+        ) {
           setScore(score + 1);
         } else {
           if (currentMistakes > 0) {

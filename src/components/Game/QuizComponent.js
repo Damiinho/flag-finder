@@ -22,6 +22,7 @@ const QuizComponent = () => {
     setTimerRunning,
     currentMistakes,
     setInputAnswer,
+    polishCharsMap,
   } = useContext(GameContext);
   const [isQuizLoading, setIsQuizLoading] = useState(true);
 
@@ -75,25 +76,45 @@ const QuizComponent = () => {
         <>
           <ScoreComponent />
           {selectedAnswer &&
-            selectedAnswer.toLowerCase() === currentFlag.name.toLowerCase() && (
+            selectedAnswer
+              .toLowerCase()
+              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) ===
+              currentFlag.name
+                .toLowerCase()
+                .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) && (
               <>
                 <HandleButton click={handleNext} name="Następna flaga" />
                 <ResultBox result="good" name="DOBRZE" />
               </>
             )}
           {selectedAnswer &&
-            selectedAnswer.toLowerCase() !== currentFlag.name.toLowerCase() && (
+            selectedAnswer
+              .toLowerCase()
+              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) !==
+              currentFlag.name
+                .toLowerCase()
+                .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) && (
               <>
                 <ResultBox result="bad" name="BŁĄD" />
               </>
             )}
           {selectedAnswer &&
-            selectedAnswer.toLowerCase() !== currentFlag.name.toLowerCase() &&
+            selectedAnswer
+              .toLowerCase()
+              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) !==
+              currentFlag.name
+                .toLowerCase()
+                .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) &&
             currentMistakes === 0 && (
               <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
             )}
           {selectedAnswer &&
-            selectedAnswer.toLowerCase() !== currentFlag.name.toLowerCase() &&
+            selectedAnswer
+              .toLowerCase()
+              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) !==
+              currentFlag.name
+                .toLowerCase()
+                .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) &&
             currentMistakes > 0 && (
               <HandleButton click={handleNext} name="Następna flaga" />
             )}
