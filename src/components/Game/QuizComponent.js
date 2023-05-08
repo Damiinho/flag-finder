@@ -23,6 +23,7 @@ const QuizComponent = () => {
     gameFlagList,
     isEmpty,
     setIsEmpty,
+    setCurrentFlagCounter,
   } = useContext(GameContext);
   const [isQuizLoading, setIsQuizLoading] = useState(true);
 
@@ -36,7 +37,7 @@ const QuizComponent = () => {
   const handleRestart = () => {
     handleStartStop(true);
     setIsEmpty(false);
-
+    setCurrentFlagCounter(gameFlagList.length);
     setIsQuizLoading(true);
     setTimeout(() => {
       setIsQuizLoading(false);
@@ -51,6 +52,10 @@ const QuizComponent = () => {
 
   const ResultBox = (props) => (
     <div className={`main-game__result ${props.result}`}>{props.name}</div>
+  );
+
+  const CorrectAnswer = () => (
+    <div className={`main-game__result correct`}>{correctFlag.name}</div>
   );
 
   useEffect(() => {
@@ -97,6 +102,7 @@ const QuizComponent = () => {
                 .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) && (
               <>
                 <ResultBox result="bad" name="BŁĄD" />
+                <CorrectAnswer />
               </>
             )}
           {selectedAnswer &&
@@ -126,6 +132,7 @@ const QuizComponent = () => {
           {currentTime === 0 && (
             <>
               <ResultBox result="bad" name="CZAS MINĄŁ" />
+              <CorrectAnswer />
             </>
           )}
 

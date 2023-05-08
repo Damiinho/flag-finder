@@ -21,6 +21,7 @@ const QuestionBox = () => {
     setCurrentGameFlagList,
     currentGameFlagList,
     gameFlagList,
+    setCurrentFlagCounter,
   } = useContext(GameContext);
 
   const inputRef = useRef(null);
@@ -53,6 +54,10 @@ const QuestionBox = () => {
           setScore(score + 1);
           setCurrentGameFlagList(
             currentGameFlagList.filter((flag) => flag.name !== correctFlag.name)
+          );
+          setCurrentFlagCounter(
+            currentGameFlagList.filter((flag) => flag.name !== correctFlag.name)
+              .length
           );
         } else {
           if (currentMistakes === 1) {

@@ -1038,6 +1038,9 @@ body {
             filter: hue-rotate(0deg);
           }
         }
+        &__flag-counter {
+          font-size: 20px;
+        }
 
         &__time {
           position: absolute;
@@ -1082,12 +1085,17 @@ body {
         }
       }
       &__result {
+        text-align: center;
         &.good {
           color: green;
           margin-top: 5px;
           font-size: 40px;
           animation: resultFadeOut 2s forwards;
-          text-align: center;
+        }
+        &.correct {
+          color: white;
+          margin-top: 35px;
+          font-size: 25px;
         }
         &.bad {
           position: absolute;

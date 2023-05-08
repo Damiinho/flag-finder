@@ -19,14 +19,16 @@ export const GameProvider = ({ children }) => {
   const [timerRunning, setTimerRunning] = useState(true);
   const [settingsMode, setSettingsMode] = useState(null);
   const [correctFlag, setCorrectFlag] = useState(null);
-
-  const [isEmpty, setIsEmpty] = useState(false);
-
-  const [inputAnswer, setInputAnswer] = useState("");
   const gameFlagList = flags.filter((item) => item.country === true);
   const [currentGameFlagList, setCurrentGameFlagList] = useState([
     ...gameFlagList,
   ]);
+  const [currentFlagCounter, setCurrentFlagCounter] = useState(
+    gameFlagList.length
+  );
+  const [isEmpty, setIsEmpty] = useState(false);
+
+  const [inputAnswer, setInputAnswer] = useState("");
 
   const generateQuizList = () => {
     const randomIndexes = [];
@@ -91,6 +93,7 @@ export const GameProvider = ({ children }) => {
       if (score > bestScore) {
         setBestScore(score);
       }
+      setCurrentFlagCounter(gameFlagList.length);
     }
   };
 
@@ -145,6 +148,8 @@ export const GameProvider = ({ children }) => {
     setCorrectFlag,
     isEmpty,
     setIsEmpty,
+    currentFlagCounter,
+    setCurrentFlagCounter,
   };
 
   return (

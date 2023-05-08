@@ -15,6 +15,7 @@ const AnswerButton = (props) => {
     setCurrentGameFlagList,
     currentGameFlagList,
     gameFlagList,
+    setCurrentFlagCounter,
   } = useContext(GameContext);
 
   const handleAnswerClick = (value) => {
@@ -26,6 +27,10 @@ const AnswerButton = (props) => {
           setScore(score + 1);
           setCurrentGameFlagList(
             currentGameFlagList.filter((flag) => flag.name !== correctFlag.name)
+          );
+          setCurrentFlagCounter(
+            currentGameFlagList.filter((flag) => flag.name !== correctFlag.name)
+              .length
           );
         } else {
           if (currentMistakes === 1) {
