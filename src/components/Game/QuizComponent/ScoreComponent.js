@@ -73,10 +73,6 @@ const ScoreComponent = () => {
   return (
     <>
       <div className="main-game__score-box">
-        <div className="main-game__score-box__current">
-          <p>wynik:</p>
-          <p>{score}</p>
-        </div>
         {bestScore || lastScore ? (
           <div className="main-game__score-box__lastbest">
             {bestScore > 0 && (
@@ -91,15 +87,10 @@ const ScoreComponent = () => {
             )}
           </div>
         ) : null}
-
-        {settingsMistakes > 1 && (
-          <div className="main-game__score-box__mistakes">
-            <p>życia:</p>
-            <div className="main-game__score-box__mistakes-flags">
-              {mistakesFlags()}
-            </div>
-          </div>
-        )}
+        <div className="main-game__score-box__current">
+          <p>wynik</p>
+          <p>{score}</p>
+        </div>
         {settingsTime !== 11 && (
           <div className="main-game__score-box__time">
             <div className="main-game__score-box__time-box">
@@ -113,10 +104,19 @@ const ScoreComponent = () => {
             </div>
           </div>
         )}
-        <div className="main-game__score-box__flag-counter">
-          <p>
-            {currentFlagCounter}/{gameFlagList.length}
-          </p>
+        <div className="main-game__score-box__counters-box">
+          <div className="main-game__score-box__flag-counter">
+            <p>
+              {currentFlagCounter}/{gameFlagList.length}
+            </p>
+          </div>
+          {settingsMistakes > 1 && (
+            <div className="main-game__score-box__mistakes">
+              <div className="main-game__score-box__mistakes-flags">
+                {mistakesFlags()}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </>

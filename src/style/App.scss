@@ -1007,7 +1007,7 @@ body {
         margin: 0 auto;
         width: 300px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         // gap: 30px;
         &__current {
@@ -1026,20 +1026,33 @@ body {
           width: 100px;
           padding: 5px 0;
         }
-        &__mistakes {
-          img.green {
-            width: 20px;
-            height: 20px;
-            filter: hue-rotate(120deg);
-          }
-          img.red {
-            width: 20px;
-            height: 20px;
-            filter: hue-rotate(0deg);
-          }
+        &__counters-box {
+          height: 55px;
+          width: 100px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 5px;
         }
         &__flag-counter {
           font-size: 20px;
+          text-align: center;
+        }
+        &__mistakes {
+          &-flags {
+            display: flex;
+            justify-content: center;
+            img.green {
+              width: 20px;
+              height: 20px;
+              filter: hue-rotate(120deg);
+            }
+            img.red {
+              width: 20px;
+              height: 20px;
+              filter: hue-rotate(0deg);
+            }
+          }
         }
 
         &__time {
@@ -1069,7 +1082,7 @@ body {
               position: absolute;
               top: 50%;
               left: 50%;
-              transform: translate(-50%, -50%);
+              transform: translate(-50%, calc(-50% - 1px));
               color: white;
               z-index: 1;
               font-size: 16px;
@@ -1082,6 +1095,10 @@ body {
         text-align: center;
         button {
           @include for-button;
+          position: absolute;
+          bottom: 100px;
+          left: 50%;
+          transform: translateX(-50%);
         }
       }
       &__result {
@@ -1095,7 +1112,7 @@ body {
         &.correct {
           color: white;
           margin-top: 35px;
-          font-size: 25px;
+          font-size: 20px;
         }
         &.bad {
           position: absolute;
@@ -1174,11 +1191,22 @@ body {
           }
         }
         .quiz__answers {
-          margin-top: 30px;
-          height: 300px;
+          // height: 300px;
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
+          justify-content: center;
+          gap: 10px;
+          &.many {
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            .quiz__answers-item__button {
+              width: 200px;
+              height: auto;
+              min-height: 60px;
+            }
+          }
           &-item {
             &__button {
               text-transform: uppercase;
