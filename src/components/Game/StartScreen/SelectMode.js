@@ -82,7 +82,7 @@ const SelectMode = () => {
     if (item.value === "hard") {
       setSettingsMistakes(1);
       setSettingsTime(4);
-      setSettingsVariants(2);
+      setSettingsVariants(6);
     }
     if (item.value === "extreme") {
       setSettingsMistakes(1);

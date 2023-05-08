@@ -4,7 +4,7 @@ import AnswerButton from "./AnswerButton";
 
 const QuestionBox = () => {
   const {
-    currentFlag,
+    correctFlag,
     quizList,
     settingsVariants,
     selectedAnswer,
@@ -18,6 +18,9 @@ const QuestionBox = () => {
     currentTime,
     setTimerRunning,
     polishCharsMap,
+    setCurrentGameFlagList,
+    currentGameFlagList,
+    gameFlagList,
   } = useContext(GameContext);
 
   const inputRef = useRef(null);
@@ -25,7 +28,7 @@ const QuestionBox = () => {
     if (inputRef.current) {
       inputRef.current.focus();
     }
-  }, [currentFlag]);
+  }, [correctFlag]);
 
   const handleInputChange = (e) => {
     if (!selectedAnswer) {
@@ -43,19 +46,25 @@ const QuestionBox = () => {
           inputAnswer
             .toLowerCase()
             .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) ===
-          quizList[0].name
+          correctFlag.name
             .toLowerCase()
             .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match])
         ) {
           setScore(score + 1);
+          setCurrentGameFlagList(
+            currentGameFlagList.filter((flag) => flag.name !== correctFlag.name)
+          );
         } else {
-          if (currentMistakes > 0) {
-            setCurrentMistakes(currentMistakes - 1);
+          if (currentMistakes === 1) {
+            setCurrentGameFlagList([...gameFlagList]);
           }
+          setCurrentMistakes(currentMistakes - 1);
         }
       }
 
-      setTimerRunning(false);
+      if (inputAnswer !== "") {
+        setTimerRunning(false);
+      }
     }
     if (document.querySelector(".main-game__handle-box button")) {
       document.querySelector(".main-game__handle-box button").click();
@@ -75,7 +84,7 @@ const QuestionBox = () => {
               ? "quiz__question-box__img"
               : "quiz__img-box__img"
           }`}
-          src={currentFlag.img}
+          src={correctFlag.img}
           alt="flag"
         />
         {settingsVariants === 7 && (
@@ -93,9 +102,9 @@ const QuestionBox = () => {
       </div>
       {settingsVariants !== 7 && (
         <div className="quiz__answers">
-          {quizList.map((item, index) => (
-            <AnswerButton key={index} item={item} />
-          ))}
+          {quizList.map((item, index) => {
+            return <AnswerButton key={index} item={item} />;
+          })}
         </div>
       )}
     </div>

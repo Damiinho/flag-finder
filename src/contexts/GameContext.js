@@ -7,40 +7,27 @@ export const GameProvider = ({ children }) => {
   const { flags } = useContext(AppContext);
   const [start, setStart] = useState(false);
   const [quizList, setQuizList] = useState([]);
-  const [currentFlag, setCurrentFlag] = useState({});
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [score, setScore] = useState(0);
   const [lastScore, setLastScore] = useState(null);
   const [bestScore, setBestScore] = useState(0);
   const [settingsVariants, setSettingsVariants] = useState(4);
   const [settingsTime, setSettingsTime] = useState(10);
-  const [settingsMistakes, setSettingsMistakes] = useState(0);
+  const [settingsMistakes, setSettingsMistakes] = useState(2);
   const [currentMistakes, setCurrentMistakes] = useState(null);
   const [currentTime, setCurrentTime] = useState(null);
   const [timerRunning, setTimerRunning] = useState(true);
   const [settingsMode, setSettingsMode] = useState(null);
+  const [correctFlag, setCorrectFlag] = useState(null);
+
+  const [isEmpty, setIsEmpty] = useState(false);
 
   const [inputAnswer, setInputAnswer] = useState("");
   const gameFlagList = flags.filter((item) => item.country === true);
   const [currentGameFlagList, setCurrentGameFlagList] = useState([
     ...gameFlagList,
   ]);
-  // const [currentGameFlagList, setCurrentGameFlagList] = useState([
-  //   {
-  //     id: 0,
-  //     active: true,
-  //     name: "Andora",
-  //     colors: ["navyblue", "yellow", "red"],
-  //     shapes: ["vertical", "emblem"],
-  //     img: "./assets/ad.png",
-  //     regions: ["europe"],
-  //     verticalStripes: true,
-  //     horizontalStripes: false,
-  //     otherShapes: false,
-  //     symbols: true,
-  //     country: true,
-  //   },
-  // ]);
+
   const generateQuizList = () => {
     const randomIndexes = [];
     const availableIndexes = [];
@@ -78,25 +65,21 @@ export const GameProvider = ({ children }) => {
 
     // utwórz nową listę pytań
     const newQuizList = randomIndexes.map((index, i) => {
-      const isCorrect = i === 0;
-      return { name: gameFlagList[index].name, correct: isCorrect };
+      return { name: gameFlagList[index].name };
     });
 
     // ustaw stan komponentu
     setQuizList(newQuizList);
-    setCurrentFlag({
-      name: randomCurrentFlag.name,
-      img: randomCurrentFlag.img,
-    });
-    setCurrentGameFlagList(
-      currentGameFlagList.filter((flag) => flag.name !== randomCurrentFlag.name)
-    );
+    setCorrectFlag(randomCurrentFlag);
   };
 
   const handleStartStop = (value) => {
     setStart(value);
     setSelectedAnswer(null);
     setCurrentMistakes(settingsMistakes);
+    if (!value) {
+      setCurrentGameFlagList([...gameFlagList]);
+    }
     if (value) {
       generateQuizList();
       setLastScore(score);
@@ -104,6 +87,7 @@ export const GameProvider = ({ children }) => {
       setTimerRunning(true);
       setCurrentTime(settingsTime);
       setInputAnswer("");
+      setIsEmpty(false);
       if (score > bestScore) {
         setBestScore(score);
       }
@@ -127,8 +111,6 @@ export const GameProvider = ({ children }) => {
     setStart,
     quizList,
     setQuizList,
-    currentFlag,
-    setCurrentFlag,
     selectedAnswer,
     setSelectedAnswer,
     score,
@@ -159,6 +141,10 @@ export const GameProvider = ({ children }) => {
     polishCharsMap,
     currentGameFlagList,
     setCurrentGameFlagList,
+    correctFlag,
+    setCorrectFlag,
+    isEmpty,
+    setIsEmpty,
   };
 
   return (

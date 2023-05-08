@@ -6,16 +6,11 @@ import LoadingBox from "./QuizComponent/LoadingBox";
 
 const QuizComponent = () => {
   const {
-    currentFlag,
+    correctFlag,
     handleStartStop,
     selectedAnswer,
     setSelectedAnswer,
     generateQuizList,
-    setLastScore,
-    score,
-    bestScore,
-    setBestScore,
-    setScore,
     settingsTime,
     setCurrentTime,
     currentTime,
@@ -23,6 +18,11 @@ const QuizComponent = () => {
     currentMistakes,
     setInputAnswer,
     polishCharsMap,
+    setCurrentGameFlagList,
+    currentGameFlagList,
+    gameFlagList,
+    isEmpty,
+    setIsEmpty,
   } = useContext(GameContext);
   const [isQuizLoading, setIsQuizLoading] = useState(true);
 
@@ -34,20 +34,13 @@ const QuizComponent = () => {
     setInputAnswer("");
   };
   const handleRestart = () => {
-    setSelectedAnswer(null);
-    generateQuizList();
-    setLastScore(score);
-    if (score > bestScore) {
-      setBestScore(score);
-    }
-    setScore(0);
+    handleStartStop(true);
+    setIsEmpty(false);
+
     setIsQuizLoading(true);
     setTimeout(() => {
       setIsQuizLoading(false);
     }, 3000);
-    setTimerRunning(true);
-    setCurrentTime(settingsTime);
-    setInputAnswer("");
   };
 
   const HandleButton = (props) => (
@@ -68,6 +61,13 @@ const QuizComponent = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    if (currentGameFlagList.length === 0) {
+      setIsEmpty(true);
+      setCurrentGameFlagList([...gameFlagList]);
+    }
+  }, [currentGameFlagList, setCurrentGameFlagList, gameFlagList, setIsEmpty]);
+
   return (
     <>
       {isQuizLoading ? (
@@ -79,9 +79,10 @@ const QuizComponent = () => {
             selectedAnswer
               .toLowerCase()
               .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) ===
-              currentFlag.name
+              correctFlag.name
                 .toLowerCase()
-                .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) && (
+                .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) &&
+            !isEmpty && (
               <>
                 <HandleButton click={handleNext} name="Następna flaga" />
                 <ResultBox result="good" name="DOBRZE" />
@@ -91,7 +92,7 @@ const QuizComponent = () => {
             selectedAnswer
               .toLowerCase()
               .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) !==
-              currentFlag.name
+              correctFlag.name
                 .toLowerCase()
                 .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) && (
               <>
@@ -102,20 +103,24 @@ const QuizComponent = () => {
             selectedAnswer
               .toLowerCase()
               .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) !==
-              currentFlag.name
+              correctFlag.name
                 .toLowerCase()
                 .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) &&
             currentMistakes === 0 && (
               <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
             )}
+          {isEmpty && (
+            <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
+          )}
           {selectedAnswer &&
             selectedAnswer
               .toLowerCase()
               .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) !==
-              currentFlag.name
+              correctFlag.name
                 .toLowerCase()
                 .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) &&
-            currentMistakes > 0 && (
+            currentMistakes > 0 &&
+            !isEmpty && (
               <HandleButton click={handleNext} name="Następna flaga" />
             )}
           {currentTime === 0 && (
@@ -123,12 +128,18 @@ const QuizComponent = () => {
               <ResultBox result="bad" name="CZAS MINĄŁ" />
             </>
           )}
+
+          {isEmpty && (
+            <>
+              <ResultBox result="bad" name="Koniec" />
+            </>
+          )}
           {currentTime === 0 && currentMistakes === 0 && (
             <>
               <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
             </>
           )}
-          {currentTime === 0 && currentMistakes > 0 && (
+          {currentTime === 0 && currentMistakes > 0 && !isEmpty && (
             <>
               <HandleButton click={handleNext} name="Następna flaga" />
             </>

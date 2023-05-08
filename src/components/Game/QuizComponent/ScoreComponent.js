@@ -15,6 +15,8 @@ const ScoreComponent = () => {
     currentMistakes,
     setCurrentMistakes,
     currentGameFlagList,
+    isEmpty,
+    gameFlagList,
   } = useContext(GameContext);
   const [progressBar, setProgressBar] = useState(100);
 
@@ -113,8 +115,10 @@ const ScoreComponent = () => {
           </div>
         )}
         <div className="main-game__score-box__flag-counter">
-          <p>Pozostało flag</p>
-          <p>{currentGameFlagList.length}</p>
+          <p>Do odgadnięcia:</p>
+          <p>
+            {isEmpty ? "0" : currentGameFlagList.length}/{gameFlagList.length}
+          </p>
         </div>
       </div>
     </>

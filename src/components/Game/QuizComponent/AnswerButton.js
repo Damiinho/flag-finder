@@ -4,7 +4,7 @@ import { GameContext } from "../../../contexts/GameContext";
 const AnswerButton = (props) => {
   const {
     selectedAnswer,
-    currentFlag,
+    correctFlag,
     setSelectedAnswer,
     setScore,
     score,
@@ -12,6 +12,9 @@ const AnswerButton = (props) => {
     setTimerRunning,
     currentMistakes,
     setCurrentMistakes,
+    setCurrentGameFlagList,
+    currentGameFlagList,
+    gameFlagList,
   } = useContext(GameContext);
 
   const handleAnswerClick = (value) => {
@@ -19,12 +22,16 @@ const AnswerButton = (props) => {
       if (!selectedAnswer) {
         setSelectedAnswer(value.name);
 
-        if (value.correct === true) {
+        if (value.name === correctFlag.name) {
           setScore(score + 1);
+          setCurrentGameFlagList(
+            currentGameFlagList.filter((flag) => flag.name !== correctFlag.name)
+          );
         } else {
-          if (currentMistakes > 0) {
-            setCurrentMistakes(currentMistakes - 1);
+          if (currentMistakes === 1) {
+            setCurrentGameFlagList([...gameFlagList]);
           }
+          setCurrentMistakes(currentMistakes - 1);
         }
       }
       setTimerRunning(false);
@@ -36,14 +43,14 @@ const AnswerButton = (props) => {
       <button
         className={`quiz__answers-item__button ${
           selectedAnswer &&
-          (selectedAnswer === currentFlag.name
-            ? currentFlag.name === props.item.name
+          (selectedAnswer === correctFlag.name
+            ? correctFlag.name === props.item.name
               ? "correct"
               : ""
-            : currentFlag.name === props.item.name
+            : correctFlag.name === props.item.name
             ? "correct"
             : selectedAnswer === props.item.name &&
-              selectedAnswer !== currentFlag.name
+              selectedAnswer !== correctFlag.name
             ? "incorrect"
             : "")
         }`}
