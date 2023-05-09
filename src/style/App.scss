@@ -900,6 +900,11 @@ body {
       min-width: 250px;
       margin: 15px auto 0;
 
+      @media screen and (max-height: 830px) {
+        margin: 0 auto;
+        height: 90%;
+      }
+
       &__loading {
         height: 85%;
         display: flex;
@@ -1095,6 +1100,13 @@ body {
               font-size: 16px;
             }
           }
+          @media screen and (max-width: 400px) {
+            left: 50%;
+            transform: translateX(-50%);
+            &-box {
+              width: 200px;
+            }
+          }
         }
       }
       &__handle-box {
@@ -1125,6 +1137,9 @@ body {
           color: white;
           margin-top: 35px;
           font-size: 20px;
+          @media screen and (max-height: 830px) {
+            font-size: 15px;
+          }
         }
         &.bad {
           position: absolute;
@@ -1239,6 +1254,20 @@ body {
                 min-height: auto;
               }
             }
+
+            @media screen and (max-width: 450px) {
+              margin: 0 50px;
+              gap: 7px;
+              .quiz__answers-item__button {
+                width: 100%;
+                height: auto;
+                background-color: transparent;
+                font-family: "Poiret One", cursive;
+                border-radius: 0px;
+                font-weight: normal;
+                border-width: 2px;
+              }
+            }
           }
           &-item {
             &__button {
@@ -1251,7 +1280,6 @@ body {
               letter-spacing: 2px;
               font-weight: bold;
               color: #f0f4ef;
-              // border: 3px groove white;
               cursor: pointer;
 
               &.correct {
@@ -1262,11 +1290,24 @@ body {
               }
 
               @media screen and (max-height: 830px) {
-                width: 200px;
+                min-width: 200px;
+                width: auto;
                 height: auto;
                 padding: 10px;
                 border-radius: 10px;
                 font-size: 15px;
+                overflow: hidden;
+              }
+              @media screen and (max-width: 450px) {
+                min-width: auto;
+
+                width: 100%;
+                height: auto;
+                background-color: transparent;
+                font-family: "Poiret One", cursive;
+                border-radius: 0px;
+                font-weight: normal;
+                border-width: 2px;
               }
             }
           }

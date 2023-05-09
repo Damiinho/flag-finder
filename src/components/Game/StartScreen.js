@@ -28,7 +28,7 @@ const StartScreen = () => {
       >
         Rozpocznij
       </button>
-      {windowHeight < 801 && <button>wróć do ekranu głównego</button>}
+      {windowHeight < 831 && <button>wróć do ekranu głównego</button>}
     </div>
   );
 };

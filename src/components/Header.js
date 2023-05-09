@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className="App__header">
       {isGame ? (
-        windowHeight > 800 && <TitleBox />
+        windowHeight > 830 && <TitleBox />
       ) : (
         <>
           {windowWidth < 900 && selectedSmallOne ? null : (
