@@ -885,6 +885,13 @@ body {
         color: #f0f4ef;
         cursor: pointer;
         border-color: white;
+        @media screen and (max-height: 830px) {
+          width: 200px;
+          height: auto;
+          padding: 10px;
+          border-radius: 10px;
+          font-size: 15px;
+        }
       }
 
       position: relative;
@@ -1099,15 +1106,20 @@ body {
           bottom: 100px;
           left: 50%;
           transform: translateX(-50%);
+          @media screen and (max-height: 830px) {
+            bottom: 60px;
+          }
         }
       }
       &__result {
         text-align: center;
         &.good {
           color: green;
+          text-shadow: 3px 3px 3px black;
           margin-top: 5px;
           font-size: 40px;
           animation: resultFadeOut 2s forwards;
+          z-index: 1;
         }
         &.correct {
           color: white;
@@ -1151,11 +1163,25 @@ body {
         justify-content: center;
         align-items: center;
         gap: 40px;
+
+        @media screen and (max-height: 830px) {
+          flex-direction: column;
+          .quiz__img-box {
+            &__img {
+              max-width: 250px;
+              max-height: 150px;
+            }
+          }
+        }
+
         .quiz__img-box {
-          // height: 250px;
           &__img {
             max-width: 320px;
             max-height: 250px;
+            @media screen and (max-height: 830px) {
+              max-width: 250px;
+              max-height: 150px;
+            }
           }
         }
         .quiz__question-box {
@@ -1191,20 +1217,27 @@ body {
           }
         }
         .quiz__answers {
-          // height: 300px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
+          display: grid;
           gap: 10px;
-          &.many {
-            height: auto;
-            display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          @media screen and (max-height: 830px) {
             grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
+            align-items: center;
+          }
+          &.many {
+            grid-template-columns: repeat(2, 1fr);
             .quiz__answers-item__button {
               width: 200px;
               height: auto;
               min-height: 60px;
+            }
+            @media screen and (max-height: 830px) {
+              grid-template-columns: repeat(2, 1fr);
+              align-items: center;
+
+              .quiz__answers-item__button {
+                min-height: auto;
+              }
             }
           }
           &-item {
@@ -1226,6 +1259,14 @@ body {
               }
               &.incorrect {
                 border: 3px solid red;
+              }
+
+              @media screen and (max-height: 830px) {
+                width: 200px;
+                height: auto;
+                padding: 10px;
+                border-radius: 10px;
+                font-size: 15px;
               }
             }
           }

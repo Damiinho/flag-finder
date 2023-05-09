@@ -5,12 +5,13 @@ import { AppContext } from "../contexts/AppContext";
 import TitleBox from "./TitleBox";
 
 const Header = () => {
-  const { selectedSmallOne, windowWidth, isGame } = useContext(AppContext);
+  const { selectedSmallOne, windowWidth, windowHeight, isGame } =
+    useContext(AppContext);
 
   return (
     <header className="App__header">
       {isGame ? (
-        <TitleBox />
+        windowHeight > 800 && <TitleBox />
       ) : (
         <>
           {windowWidth < 900 && selectedSmallOne ? null : (

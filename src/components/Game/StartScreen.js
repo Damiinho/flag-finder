@@ -4,9 +4,11 @@ import SelectVariants from "./StartScreen/SelectVariants";
 import SelectTime from "./StartScreen/SelectTime";
 import SelectMistakes from "./StartScreen/SelectMistakes";
 import SelectMode from "./StartScreen/SelectMode";
+import { AppContext } from "../../contexts/AppContext";
 
 const StartScreen = () => {
   const { handleStartStop } = useContext(GameContext);
+  const { windowHeight } = useContext(AppContext);
   return (
     <div className="main-game__wrapper">
       <div className="main-game__settings-box">
@@ -26,6 +28,7 @@ const StartScreen = () => {
       >
         Rozpocznij
       </button>
+      {windowHeight < 801 && <button>wróć do ekranu głównego</button>}
     </div>
   );
 };

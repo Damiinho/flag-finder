@@ -9,6 +9,7 @@ export const AppProvider = ({ children }) => {
   const [selectedSmallOne, setSelectedSmallOne] = useState(null);
   const [inputValue, setInputValue] = useState("");
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedShapes, setSelectedShapes] = useState([]);
   const [selectedColors, setSelectedColors] = useState([]);
@@ -29,6 +30,8 @@ export const AppProvider = ({ children }) => {
     setInputValue,
     windowWidth,
     setWindowWidth,
+    windowHeight,
+    setWindowHeight,
     selectedColors,
     setSelectedColors,
     selectedShapes,
@@ -38,7 +41,10 @@ export const AppProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+      setWindowHeight(window.innerHeight);
+    };
     window.addEventListener("resize", handleResize);
 
     return () => {
