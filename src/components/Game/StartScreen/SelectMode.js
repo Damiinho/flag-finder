@@ -94,7 +94,7 @@ const SelectMode = () => {
   return (
     <div className="main-game__settings-box__mode">
       <div className="main-game__settings-box__mode-title">
-        <p>Wybierz tryb gry lub ustaw go ręcznie</p>
+        <p>Wybierz tryb gry lub ustaw ręcznie</p>
       </div>
 
       <Select

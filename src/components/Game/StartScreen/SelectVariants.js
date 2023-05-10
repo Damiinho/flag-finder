@@ -14,7 +14,7 @@ const SelectVariants = () => {
   return (
     <div className="main-game__settings-box__variants">
       <div className="main-game__settings-box__variants-title">
-        <p>Liczba wariantów odpowiedzi:</p>
+        <p>Warianty odpowiedzi:</p>
         <p>{settingsVariants === 7 ? "brak" : settingsVariants}</p>
       </div>
       <input

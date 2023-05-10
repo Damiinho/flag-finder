@@ -28,7 +28,9 @@ const StartScreen = () => {
       >
         Rozpocznij
       </button>
-      {windowHeight < 831 && <button>wróć do ekranu głównego</button>}
+      {windowHeight < 831 && (
+        <button className="main-game__back-button">powrót</button>
+      )}
     </div>
   );
 };

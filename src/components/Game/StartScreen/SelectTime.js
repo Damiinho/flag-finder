@@ -13,8 +13,8 @@ const SelectTime = () => {
   return (
     <div className="main-game__settings-box__time">
       <div className="main-game__settings-box__time-title">
-        <p>Limit sekund na odpowiedź:</p>
-        <p>{settingsTime === 11 ? "brak" : settingsTime}</p>
+        <p>Czas na odpowiedź:</p>
+        <p>{settingsTime === 11 ? "brak" : `${settingsTime} s`}</p>
       </div>
       <input
         type="range"
