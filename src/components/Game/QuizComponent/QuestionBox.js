@@ -106,7 +106,11 @@ const QuestionBox = () => {
         )}
       </div>
       {settingsVariants !== 7 && (
-        <div className={`quiz__answers ${settingsVariants > 5 && "many"}`}>
+        <div
+          className={`quiz__answers ${
+            settingsVariants > 5 ? "many" : "little"
+          }`}
+        >
           {quizList.map((item, index) => {
             return <AnswerButton key={index} item={item} />;
           })}

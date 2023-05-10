@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 
-import Detail from "./Detail";
+import Detail from "./Header/Detail";
 import { AppContext } from "../contexts/AppContext";
-import TitleBox from "./TitleBox";
+import TitleBox from "./Header/TitleBox";
 
 const Header = () => {
   const { selectedSmallOne, windowWidth, windowHeight, isGame } =
@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className="App__header">
       {isGame ? (
-        windowHeight > 1000 && <TitleBox />
+        windowHeight > 829 && <TitleBox />
       ) : (
         <>
           {windowWidth < 900 && selectedSmallOne ? null : (

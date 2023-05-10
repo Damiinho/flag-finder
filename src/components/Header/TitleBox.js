@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { AppContext } from "../contexts/AppContext";
+import { AppContext } from "../../contexts/AppContext";
 
 const TitleBox = () => {
   const { isGame, setIsGame } = useContext(AppContext);
