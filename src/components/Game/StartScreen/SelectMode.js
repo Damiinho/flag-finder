@@ -71,7 +71,7 @@ const SelectMode = () => {
     setSettingsMode(item);
     if (item.value === "easy") {
       setSettingsMistakes(5);
-      setSettingsTime(10);
+      setSettingsTime(11);
       setSettingsVariants(3);
     }
     if (item.value === "medium") {
@@ -86,7 +86,7 @@ const SelectMode = () => {
     }
     if (item.value === "extreme") {
       setSettingsMistakes(1);
-      setSettingsTime(2);
+      setSettingsTime(5);
       setSettingsVariants(7);
     }
   };
