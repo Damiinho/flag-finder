@@ -32,6 +32,7 @@ const SelectShape = () => {
   const ButtonShape = (props) => {
     return (
       <button
+        title={props.title}
         onClick={() => handleClick(props.shape)}
         className={`shape ${props.shape} ${
           selectedShapes.includes(props.shape) ? "active" : ""
@@ -51,29 +52,29 @@ const SelectShape = () => {
     <div className="selectors__shapes">
       <p className="selectors__shapes-description">wybierz kształty</p>
       <div className="selectors__shapes__button-box">
-        <ButtonShape shape="vertical" />
-        <ButtonShape shape="horizontal" />
-        <ButtonShape shape="diagonal" />
+        <ButtonShape shape="vertical" title="paski poziome" />
+        <ButtonShape shape="horizontal" title="paski pionowe" />
+        <ButtonShape shape="diagonal" title="paski poprzeczne" />
       </div>
       <div
         className={`selectors__shapes__button-box second ${
           isShow ? "active" : "inactive"
         }`}
       >
-        <ButtonShape shape="cross" img={CrossIMG} />
-        <ButtonShape shape="triangle" img={TriangleIMG} />
-        <ButtonShape shape="circle" img={CircleIMG} />
-        <ButtonShape shape="emblem" img={EmblemIMG} />
-        <ButtonShape shape="word" img={WordIMG} />
-        <ButtonShape shape="sun" img={SunIMG} />
-        <ButtonShape shape="moon" img={MoonIMG} />
-        <ButtonShape shape="star" img={StarIMG} />
-        <ButtonShape shape="plant" img={PlantIMG} />
-        <ButtonShape shape="animal" img={AnimalIMG} />
-        <ButtonShape shape="weapon" img={WeaponIMG} />
-        <ButtonShape shape="contours" img={ContoursIMG} />
-        <ButtonShape shape="building" img={BuildingIMG} />
-        <ButtonShape shape="other" content="inne" />
+        <ButtonShape shape="cross" img={CrossIMG} title="krzyż" />
+        <ButtonShape shape="triangle" img={TriangleIMG} title="trójkąt" />
+        <ButtonShape shape="circle" img={CircleIMG} title="koło" />
+        <ButtonShape shape="emblem" img={EmblemIMG} title="herb" />
+        <ButtonShape shape="word" img={WordIMG} title="słowa" />
+        <ButtonShape shape="sun" img={SunIMG} title="słońce" />
+        <ButtonShape shape="moon" img={MoonIMG} title="księżyc" />
+        <ButtonShape shape="star" img={StarIMG} title="gwiazda" />
+        <ButtonShape shape="plant" img={PlantIMG} title="roślina" />
+        <ButtonShape shape="animal" img={AnimalIMG} title="zwierzę" />
+        <ButtonShape shape="weapon" img={WeaponIMG} title="broń" />
+        <ButtonShape shape="contours" img={ContoursIMG} title="kontury kraju" />
+        <ButtonShape shape="building" img={BuildingIMG} title="budynki" />
+        <ButtonShape shape="other" content="inne" title="inne" />
       </div>
       <div
         className={`selectors__shapes__showhide ${isShow ? "show" : "hide"}`}
