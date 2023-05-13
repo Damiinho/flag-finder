@@ -99,14 +99,21 @@ export const GameProvider = ({ children }) => {
 
   const polishCharsMap = {
     ą: "a",
+    å: "a",
+    ã: "a",
     ć: "c",
+    ç: "c",
     ę: "e",
+    é: "e",
+    í: "i",
     ł: "l",
     ń: "n",
+    ñ: "n",
     ó: "o",
     ś: "s",
     ź: "z",
     ż: "z",
+    ʻ: "'",
   };
 
   const providerValue = {
