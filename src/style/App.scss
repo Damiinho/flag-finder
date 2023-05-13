@@ -719,58 +719,54 @@ body {
       }
 
       .main-list {
-        width: 70%;
-        height: 100%;
+        width: 100%;
+        height: auto;
 
-        @media screen and (max-width: 670px) {
-          width: 100%;
-          height: auto;
+        @media screen and (min-width: 670px) {
+          width: 70%;
+          height: 100%;
         }
 
         &__full-list {
           margin: 0 auto;
           max-width: 1024px;
-          padding: 20px;
           overflow-y: auto;
-          gap: 10px;
           height: auto;
           justify-content: space-between;
           max-height: 100%;
           display: grid;
-          grid-template-columns: repeat(6, 1fr);
+          grid-template-columns: repeat(2, 1fr);
+          padding: 40px 20px 20px 20px;
+          width: 100%;
+          gap: 5px;
 
-          @media screen and (max-width: 1000px) {
-            grid-template-columns: repeat(5, 1fr);
-          }
-
-          @media screen and (max-width: 910px) {
-            gap: 5px;
-          }
-
-          @media screen and (max-width: 890px) {
-            grid-template-columns: repeat(4, 1fr);
-          }
-
-          @media screen and (max-width: 800px) {
+          @media screen and (min-width: 300px) {
             grid-template-columns: repeat(3, 1fr);
           }
-
-          @media screen and (max-width: 670px) {
-            grid-template-columns: repeat(5, 1fr);
-            padding-top: 40px;
-            width: 100%;
-          }
-
-          @media screen and (max-width: 590px) {
+          @media screen and (min-width: 485px) {
             grid-template-columns: repeat(4, 1fr);
           }
+          @media screen and (min-width: 590px) {
+            grid-template-columns: repeat(5, 1fr);
+          }
+          @media screen and (min-width: 670px) {
+            padding: 20px;
+            width: auto;
 
-          @media screen and (max-width: 485px) {
             grid-template-columns: repeat(3, 1fr);
           }
+          @media screen and (min-width: 800px) {
+            grid-template-columns: repeat(4, 1fr);
+          }
+          @media screen and (min-width: 890px) {
+          }
 
-          @media screen and (max-width: 300px) {
-            grid-template-columns: repeat(2, 1fr);
+          @media screen and (min-width: 910px) {
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+          }
+          @media screen and (min-width: 1000px) {
+            grid-template-columns: repeat(6, 1fr);
           }
 
           .full-list__preloader-box {
