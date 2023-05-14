@@ -1,6 +1,6 @@
 # Flag Finder
 
-Available [here](https://damiinho.github.io/flag-finder/) thanks to GitHub Pages. A
+Available [here](https://damiinho.github.io/flag-finder/) thanks to GitHub Pages.
 
 ## Brief app description
 
