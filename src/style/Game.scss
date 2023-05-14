@@ -27,6 +27,37 @@
     gap: 10px;
     margin-bottom: 30px;
 
+    .custom-slider {
+      width: 100%;
+      height: 30px;
+      background: #030218b6;
+      opacity: 0.8;
+      outline: none;
+      transition: 0.3s;
+      -webkit-appearance: none;
+      appearance: none;
+      border-radius: 5px;
+      &:hover {
+        opacity: 1;
+      }
+      &::-webkit-slider-thumb {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 30px;
+        height: 30px;
+        background: #4caf50;
+        cursor: pointer;
+        border-radius: 20px;
+      }
+      &::-moz-range-thumb {
+        width: 30px;
+        height: 30px;
+        background: #4caf50;
+        cursor: pointer;
+        border-radius: 20px;
+      }
+    }
+
     &__title {
       font-size: 30px;
       margin-bottom: 20px;

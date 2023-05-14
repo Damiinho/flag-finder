@@ -35,30 +35,6 @@ $stripesColor: #7e78a35e;
   box-sizing: border-box;
 }
 
-*::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset #161530;
-  background-color: #161530;
-  border-radius: 30px;
-}
-
-*::-webkit-scrollbar {
-  width: 10px;
-  background-color: #161530;
-  border-radius: 30px;
-}
-
-*::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.44, rgb(27, 52, 102)),
-    color-stop(0.72, rgb(39, 83, 136)),
-    color-stop(0.86, rgb(31, 39, 66))
-  );
-}
-
 body {
   margin: 0;
   font-family: "Roboto Slab", serif;
@@ -828,14 +804,13 @@ body {
           .smallitem {
             margin: 0 auto;
             display: block;
-            max-width: 100px;
-            max-height: 50px;
+            max-width: 80px;
+            max-height: 40px;
             cursor: pointer;
             transition: 0.2s;
             transform: scale(1);
 
             &:hover {
-              // filter: brightness(50%);
               transform: scale(1.3);
               z-index: 1;
             }
@@ -844,58 +819,44 @@ body {
               filter: brightness(50%);
             }
 
-            @media screen and (max-width: 370px) {
-              max-width: 80px;
-              max-height: 40px;
+            @media screen and (min-width: 370px) {
+              max-width: 100px;
+              max-height: 50px;
             }
           }
         }
 
         .main__select-box__selectors {
-          justify-content: space-evenly;
+          justify-content: flex-start;
           margin-top: 40px;
           padding-bottom: 40px;
           overflow-y: auto;
-
-          @media screen and (max-height: 725px) {
-            justify-content: flex-start;
-          }
         }
       }
     }
   }
 }
 
-.custom-slider {
-  width: 100%;
-  height: 30px;
-  background: #030218b6;
-  opacity: 0.8;
-  outline: none;
-  transition: 0.3s;
-  -webkit-appearance: none;
-  appearance: none;
-  border-radius: 5px;
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset #161530;
+  background-color: #161530;
+  border-radius: 30px;
 }
 
-.custom-slider:hover {
-  opacity: 1;
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: #161530;
+  border-radius: 30px;
 }
 
-.custom-slider::-webkit-slider-thumb {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 30px;
-  height: 30px;
-  background: #4caf50;
-  cursor: pointer;
-  border-radius: 20px;
-}
-
-.custom-slider::-moz-range-thumb {
-  width: 30px;
-  height: 30px;
-  background: #4caf50;
-  cursor: pointer;
-  border-radius: 20px;
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, rgb(27, 52, 102)),
+    color-stop(0.72, rgb(39, 83, 136)),
+    color-stop(0.86, rgb(31, 39, 66))
+  );
 }
