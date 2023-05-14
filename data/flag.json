@@ -20,7 +20,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Andora "
+        ]
     },
     {
         "id": 1,
@@ -44,7 +47,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Abu Dhabi"
+        ]
     },
     {
         "id": 2,
@@ -65,7 +71,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Kabul"
+        ]
     },
     {
         "id": 3,
@@ -91,7 +100,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Saint John's"
+        ]
     },
     {
         "id": 4,
@@ -116,7 +128,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "The Valley"
+        ]
     },
     {
         "id": 5,
@@ -138,7 +153,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Tirana"
+        ]
     },
     {
         "id": 6,
@@ -162,7 +180,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Erywań"
+        ]
     },
     {
         "id": 7,
@@ -187,7 +208,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Luanda"
+        ]
     },
     {
         "id": 8,
@@ -208,7 +232,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": false,
-        "country": false
+        "country": false,
+        "capital": [
+            "brak"
+        ]
     },
     {
         "id": 9,
@@ -231,7 +258,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Buenos Aires"
+        ]
     },
     {
         "id": 10,
@@ -254,7 +284,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": false,
-        "country": false
+        "country": false,
+        "capital": [
+            "Pago Pago"
+        ]
     },
     {
         "id": 11,
@@ -275,7 +308,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Wiedeń"
+        ]
     },
     {
         "id": 12,
@@ -298,7 +334,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Canberra"
+        ]
     },
     {
         "id": 13,
@@ -321,7 +360,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": false,
-        "country": false
+        "country": false,
+        "capital": [
+            "Oranjestad"
+        ]
     },
     {
         "id": 14,
@@ -343,7 +385,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Maarianhamina"
+        ]
     },
     {
         "id": 15,
@@ -368,7 +413,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Baku"
+        ]
     },
     {
         "id": 16,
@@ -391,7 +439,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Sarajewo"
+        ]
     },
     {
         "id": 17,
@@ -413,7 +464,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Bridgetown"
+        ]
     },
     {
         "id": 18,
@@ -434,7 +488,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Dhaka"
+        ]
     },
     {
         "id": 19,
@@ -456,7 +513,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Bruksela"
+        ]
     },
     {
         "id": 20,
@@ -479,7 +539,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Wagadugu"
+        ]
     },
     {
         "id": 21,
@@ -501,7 +564,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Sofia"
+        ]
     },
     {
         "id": 22,
@@ -523,7 +589,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Manama"
+        ]
     },
     {
         "id": 23,
@@ -547,7 +616,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Gitega"
+        ]
     },
     {
         "id": 24,
@@ -570,12 +642,15 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Porto-Novo"
+        ]
     },
     {
         "id": 25,
         "active": true,
-        "name": "Wspólnota Saint-Barthélemy",
+        "name": "Saint-Barthélemy",
         "colors": [
             "navyblue",
             "yellow",
@@ -599,7 +674,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Gustavia"
+        ]
     },
     {
         "id": 26,
@@ -624,7 +702,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Hamilton"
+        ]
     },
     {
         "id": 27,
@@ -650,7 +731,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Bandar Seri Begawan"
+        ]
     },
     {
         "id": 28,
@@ -672,7 +756,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Sucre"
+        ]
     },
     {
         "id": 29,
@@ -696,7 +783,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Kralendijk"
+        ]
     },
     {
         "id": 30,
@@ -721,7 +811,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Brasília"
+        ]
     },
     {
         "id": 31,
@@ -745,7 +838,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Nassau"
+        ]
     },
     {
         "id": 32,
@@ -768,7 +864,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Thimphu"
+        ]
     },
     {
         "id": 33,
@@ -790,7 +889,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Gaborone"
+        ]
     },
     {
         "id": 34,
@@ -813,7 +915,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Mińsk"
+        ]
     },
     {
         "id": 35,
@@ -839,7 +944,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Belmopan"
+        ]
     },
     {
         "id": 36,
@@ -861,7 +969,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Ottawa"
+        ]
     },
     {
         "id": 37,
@@ -885,7 +996,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "West Island"
+        ]
     },
     {
         "id": 38,
@@ -908,7 +1022,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Kinszasa"
+        ]
     },
     {
         "id": 39,
@@ -934,7 +1051,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Bangi"
+        ]
     },
     {
         "id": 40,
@@ -957,7 +1077,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Brazzaville"
+        ]
     },
     {
         "id": 41,
@@ -978,7 +1101,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Berno"
+        ]
     },
     {
         "id": 42,
@@ -1001,7 +1127,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Jamusukro"
+        ]
     },
     {
         "id": 43,
@@ -1024,7 +1153,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Avarua"
+        ]
     },
     {
         "id": 44,
@@ -1048,7 +1180,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Santiago"
+        ]
     },
     {
         "id": 45,
@@ -1071,7 +1206,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Jaunde"
+        ]
     },
     {
         "id": 46,
@@ -1092,7 +1230,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Pekin"
+        ]
     },
     {
         "id": 47,
@@ -1114,7 +1255,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Bogota"
+        ]
     },
     {
         "id": 48,
@@ -1137,7 +1281,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "San Jose"
+        ]
     },
     {
         "id": 49,
@@ -1161,7 +1308,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Hawana"
+        ]
     },
     {
         "id": 50,
@@ -1184,7 +1334,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Praia"
+        ]
     },
     {
         "id": 51,
@@ -1207,12 +1360,15 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Willemstad"
+        ]
     },
     {
         "id": 52,
         "active": true,
-        "name": "Wyspy Bożego Narodzenia",
+        "name": "Wyspa Bożego Narodzenia",
         "colors": [
             "green",
             "navyblue",
@@ -1234,7 +1390,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Flying Fish Cove"
+        ]
     },
     {
         "id": 53,
@@ -1257,7 +1416,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Nikozja"
+        ]
     },
     {
         "id": 54,
@@ -1280,7 +1442,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Praga"
+        ]
     },
     {
         "id": 55,
@@ -1302,7 +1467,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Berlin"
+        ]
     },
     {
         "id": 56,
@@ -1327,7 +1495,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Dżibuti"
+        ]
     },
     {
         "id": 57,
@@ -1348,7 +1519,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Kopenhaga"
+        ]
     },
     {
         "id": 58,
@@ -1374,7 +1548,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Roseau"
+        ]
     },
     {
         "id": 59,
@@ -1397,7 +1574,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Santo Domingo"
+        ]
     },
     {
         "id": 60,
@@ -1421,7 +1601,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Algier"
+        ]
     },
     {
         "id": 61,
@@ -1446,7 +1629,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Quito"
+        ]
     },
     {
         "id": 62,
@@ -1468,7 +1654,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Tallinn"
+        ]
     },
     {
         "id": 63,
@@ -1493,7 +1682,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Kair"
+        ]
     },
     {
         "id": 64,
@@ -1519,7 +1711,11 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Al-Ujun",
+            "Tifariti"
+        ]
     },
     {
         "id": 65,
@@ -1543,7 +1739,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Asmara"
+        ]
     },
     {
         "id": 66,
@@ -1566,7 +1765,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Madryt"
+        ]
     },
     {
         "id": 67,
@@ -1591,7 +1793,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Addis Abeba"
+        ]
     },
     {
         "id": 68,
@@ -1613,7 +1818,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Helsinki"
+        ]
     },
     {
         "id": 69,
@@ -1639,7 +1847,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Suva"
+        ]
     },
     {
         "id": 70,
@@ -1665,7 +1876,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Port Stanley"
+        ]
     },
     {
         "id": 71,
@@ -1686,7 +1900,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Palikir"
+        ]
     },
     {
         "id": 72,
@@ -1708,7 +1925,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": false,
-        "country": false
+        "country": false,
+        "capital": [
+            "Thorshavn"
+        ]
     },
     {
         "id": 73,
@@ -1730,7 +1950,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Paryż"
+        ]
     },
     {
         "id": 74,
@@ -1752,7 +1975,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Libreville"
+        ]
     },
     {
         "id": 75,
@@ -1774,7 +2000,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Londyn"
+        ]
     },
     {
         "id": 76,
@@ -1795,7 +2024,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Londyn"
+        ]
     },
     {
         "id": 77,
@@ -1818,7 +2050,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Belfast"
+        ]
     },
     {
         "id": 78,
@@ -1839,7 +2074,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Edynburg"
+        ]
     },
     {
         "id": 79,
@@ -1862,7 +2100,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Cardiff"
+        ]
     },
     {
         "id": 80,
@@ -1886,7 +2127,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Saint George's"
+        ]
     },
     {
         "id": 81,
@@ -1908,7 +2152,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Tbilisi"
+        ]
     },
     {
         "id": 82,
@@ -1932,7 +2179,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Kajenna"
+        ]
     },
     {
         "id": 83,
@@ -1953,7 +2203,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Saint Peter Port"
+        ]
     },
     {
         "id": 84,
@@ -1977,12 +2230,15 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Akra"
+        ]
     },
     {
         "id": 85,
         "active": true,
-        "name": "Giblartar",
+        "name": "Gibraltar",
         "colors": [
             "white",
             "red"
@@ -2000,7 +2256,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Gibraltar"
+        ]
     },
     {
         "id": 86,
@@ -2022,7 +2281,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": false,
-        "country": false
+        "country": false,
+        "capital": [
+            "Nuuk"
+        ]
     },
     {
         "id": 87,
@@ -2045,7 +2307,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Bandżul"
+        ]
     },
     {
         "id": 88,
@@ -2067,7 +2332,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Konakry"
+        ]
     },
     {
         "id": 89,
@@ -2092,7 +2360,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            ""
+        ]
     },
     {
         "id": 90,
@@ -2119,7 +2390,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Basse-Terre"
+        ]
     },
     {
         "id": 91,
@@ -2141,12 +2415,15 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Ateny"
+        ]
     },
     {
         "id": 92,
         "active": true,
-        "name": "Georgia Południowa",
+        "name": "Georgia Południowa i Sandwich Południowy",
         "colors": [
             "navyblue",
             "red"
@@ -2164,7 +2441,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "King Edward Point"
+        ]
     },
     {
         "id": 93,
@@ -2189,7 +2469,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Gwatemala"
+        ]
     },
     {
         "id": 94,
@@ -2212,7 +2495,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Hagåtña"
+        ]
     },
     {
         "id": 95,
@@ -2236,7 +2522,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Bissau"
+        ]
     },
     {
         "id": 96,
@@ -2258,7 +2547,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Georgetown"
+        ]
     },
     {
         "id": 97,
@@ -2280,7 +2572,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Hongkong"
+        ]
     },
     {
         "id": 98,
@@ -2302,7 +2597,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Tegucigalpa"
+        ]
     },
     {
         "id": 99,
@@ -2325,7 +2623,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Zagrzeb"
+        ]
     },
     {
         "id": 100,
@@ -2347,7 +2648,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Port-au-Prince"
+        ]
     },
     {
         "id": 101,
@@ -2369,7 +2673,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Budapeszt"
+        ]
     },
     {
         "id": 102,
@@ -2391,7 +2698,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Dżakarta"
+        ]
     },
     {
         "id": 103,
@@ -2413,7 +2723,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Dublin"
+        ]
     },
     {
         "id": 104,
@@ -2435,7 +2748,11 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Jerozolima",
+            "Tel Awiw"
+        ]
     },
     {
         "id": 105,
@@ -2456,7 +2773,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Douglas"
+        ]
     },
     {
         "id": 106,
@@ -2481,7 +2801,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Nowe Delhi"
+        ]
     },
     {
         "id": 107,
@@ -2500,13 +2823,16 @@
         ],
         "img": "./assets/io.png",
         "regions": [
-            "oceania"
+            "asia"
         ],
         "verticalStripes": false,
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Diego Garcia"
+        ]
     },
     {
         "id": 108,
@@ -2530,7 +2856,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Bagdad"
+        ]
     },
     {
         "id": 109,
@@ -2554,7 +2883,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Teheran"
+        ]
     },
     {
         "id": 110,
@@ -2577,7 +2909,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Reykjavík"
+        ]
     },
     {
         "id": 111,
@@ -2599,12 +2934,15 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Rzym"
+        ]
     },
     {
         "id": 112,
         "active": true,
-        "name": "Wyspa Jersey",
+        "name": "Jersey",
         "colors": [
             "white",
             "red"
@@ -2622,7 +2960,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Saint Helier"
+        ]
     },
     {
         "id": 113,
@@ -2645,7 +2986,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Kingston"
+        ]
     },
     {
         "id": 114,
@@ -2670,7 +3014,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Amman"
+        ]
     },
     {
         "id": 115,
@@ -2692,7 +3039,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Tokio"
+        ]
     },
     {
         "id": 116,
@@ -2716,7 +3066,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Nairobi"
+        ]
     },
     {
         "id": 117,
@@ -2737,7 +3090,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Biszkek"
+        ]
     },
     {
         "id": 118,
@@ -2760,7 +3116,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Phnom Penh"
+        ]
     },
     {
         "id": 119,
@@ -2785,7 +3144,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Bairiki"
+        ]
     },
     {
         "id": 120,
@@ -2812,7 +3174,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Moroni"
+        ]
     },
     {
         "id": 121,
@@ -2838,7 +3203,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Basseterre"
+        ]
     },
     {
         "id": 122,
@@ -2862,7 +3230,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Pjongjang"
+        ]
     },
     {
         "id": 123,
@@ -2887,7 +3258,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Seul"
+        ]
     },
     {
         "id": 124,
@@ -2911,7 +3285,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Kuwejt"
+        ]
     },
     {
         "id": 125,
@@ -2937,7 +3314,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "George Town"
+        ]
     },
     {
         "id": 126,
@@ -2961,7 +3341,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Astana"
+        ]
     },
     {
         "id": 127,
@@ -2984,7 +3367,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Wientian"
+        ]
     },
     {
         "id": 128,
@@ -3007,7 +3393,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Bejrut"
+        ]
     },
     {
         "id": 129,
@@ -3029,7 +3418,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Castries"
+        ]
     },
     {
         "id": 130,
@@ -3051,7 +3443,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Vaduz"
+        ]
     },
     {
         "id": 131,
@@ -3076,7 +3471,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Sri Dźajawardanapura Kotte"
+        ]
     },
     {
         "id": 132,
@@ -3099,7 +3497,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Monrovia"
+        ]
     },
     {
         "id": 133,
@@ -3123,7 +3524,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Maseru"
+        ]
     },
     {
         "id": 134,
@@ -3145,7 +3549,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Wilno"
+        ]
     },
     {
         "id": 135,
@@ -3167,7 +3574,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Luksemburg"
+        ]
     },
     {
         "id": 136,
@@ -3188,7 +3598,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Ryga"
+        ]
     },
     {
         "id": 137,
@@ -3213,7 +3626,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Trypolis"
+        ]
     },
     {
         "id": 138,
@@ -3234,7 +3650,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Rabat"
+        ]
     },
     {
         "id": 139,
@@ -3255,7 +3674,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Monako"
+        ]
     },
     {
         "id": 140,
@@ -3280,7 +3702,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Kiszyniów"
+        ]
     },
     {
         "id": 141,
@@ -3302,7 +3727,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Podgorica"
+        ]
     },
     {
         "id": 142,
@@ -3325,7 +3753,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Antananarywa"
+        ]
     },
     {
         "id": 143,
@@ -3348,7 +3779,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Delap"
+        ]
     },
     {
         "id": 144,
@@ -3370,7 +3804,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Bamako"
+        ]
     },
     {
         "id": 145,
@@ -3393,7 +3830,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Skopje"
+        ]
     },
     {
         "id": 146,
@@ -3417,7 +3857,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Naypyidaw"
+        ]
     },
     {
         "id": 147,
@@ -3444,7 +3887,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Ułan Bator"
+        ]
     },
     {
         "id": 148,
@@ -3468,7 +3914,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Makau"
+        ]
     },
     {
         "id": 149,
@@ -3494,7 +3943,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Capitol Hill"
+        ]
     },
     {
         "id": 150,
@@ -3518,7 +3970,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Nawakszut"
+        ]
     },
     {
         "id": 151,
@@ -3541,7 +3996,11 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Plymouth",
+            "Brades"
+        ]
     },
     {
         "id": 152,
@@ -3563,7 +4022,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Valetta"
+        ]
     },
     {
         "id": 153,
@@ -3586,7 +4048,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Port Louis"
+        ]
     },
     {
         "id": 154,
@@ -3609,7 +4074,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Male"
+        ]
     },
     {
         "id": 155,
@@ -3632,7 +4100,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Lilongwe"
+        ]
     },
     {
         "id": 156,
@@ -3656,7 +4127,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Meksyk"
+        ]
     },
     {
         "id": 157,
@@ -3680,7 +4154,11 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Kuala Lumpur",
+            "Putrajaya"
+        ]
     },
     {
         "id": 158,
@@ -3708,7 +4186,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Maputo"
+        ]
     },
     {
         "id": 159,
@@ -3734,7 +4215,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Windhuk"
+        ]
     },
     {
         "id": 160,
@@ -3760,7 +4244,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Numea"
+        ]
     },
     {
         "id": 161,
@@ -3783,7 +4270,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Niamey"
+        ]
     },
     {
         "id": 162,
@@ -3805,7 +4295,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Kingston"
+        ]
     },
     {
         "id": 163,
@@ -3826,7 +4319,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Abudża"
+        ]
     },
     {
         "id": 164,
@@ -3850,7 +4346,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Managua"
+        ]
     },
     {
         "id": 165,
@@ -3872,7 +4371,11 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Amsterdam",
+            "Haga"
+        ]
     },
     {
         "id": 166,
@@ -3894,7 +4397,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Oslo"
+        ]
     },
     {
         "id": 167,
@@ -3918,7 +4424,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Katmandu"
+        ]
     },
     {
         "id": 168,
@@ -3941,7 +4450,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Yaren"
+        ]
     },
     {
         "id": 169,
@@ -3965,7 +4477,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Alofi"
+        ]
     },
     {
         "id": 170,
@@ -3988,7 +4503,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Wellington"
+        ]
     },
     {
         "id": 171,
@@ -4013,7 +4531,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Maskat"
+        ]
     },
     {
         "id": 172,
@@ -4036,7 +4557,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Panama"
+        ]
     },
     {
         "id": 173,
@@ -4057,7 +4581,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Lima"
+        ]
     },
     {
         "id": 174,
@@ -4082,7 +4609,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Papeete"
+        ]
     },
     {
         "id": 175,
@@ -4107,7 +4637,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Port Moresby"
+        ]
     },
     {
         "id": 176,
@@ -4133,7 +4666,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Manila"
+        ]
     },
     {
         "id": 177,
@@ -4156,7 +4692,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Islamabad"
+        ]
     },
     {
         "id": 178,
@@ -4177,7 +4716,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Warszawa"
+        ]
     },
     {
         "id": 179,
@@ -4204,7 +4746,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Saint-Pierre"
+        ]
     },
     {
         "id": 180,
@@ -4228,7 +4773,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "San Juan"
+        ]
     },
     {
         "id": 181,
@@ -4252,7 +4800,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Ramallah"
+        ]
     },
     {
         "id": 182,
@@ -4277,7 +4828,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Lizbona"
+        ]
     },
     {
         "id": 183,
@@ -4298,7 +4852,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Ngerulmud"
+        ]
     },
     {
         "id": 184,
@@ -4324,7 +4881,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Asunción"
+        ]
     },
     {
         "id": 185,
@@ -4346,7 +4906,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Doha"
+        ]
     },
     {
         "id": 186,
@@ -4369,7 +4932,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": false,
-        "country": false
+        "country": false,
+        "capital": [
+            "Saint-Denis"
+        ]
     },
     {
         "id": 187,
@@ -4391,7 +4957,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Bukareszt"
+        ]
     },
     {
         "id": 188,
@@ -4415,7 +4984,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Belgrad"
+        ]
     },
     {
         "id": 189,
@@ -4439,7 +5011,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Moskwa"
+        ]
     },
     {
         "id": 190,
@@ -4462,7 +5037,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Kigali"
+        ]
     },
     {
         "id": 191,
@@ -4484,7 +5062,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Rijad"
+        ]
     },
     {
         "id": 192,
@@ -4509,7 +5090,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Honiara"
+        ]
     },
     {
         "id": 193,
@@ -4535,7 +5119,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Victoria"
+        ]
     },
     {
         "id": 194,
@@ -4559,7 +5146,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Chartum"
+        ]
     },
     {
         "id": 195,
@@ -4580,7 +5170,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Sztokholm"
+        ]
     },
     {
         "id": 196,
@@ -4603,7 +5196,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Singapur"
+        ]
     },
     {
         "id": 197,
@@ -4628,7 +5224,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Jamestown"
+        ]
     },
     {
         "id": 198,
@@ -4652,7 +5251,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Lublana"
+        ]
     },
     {
         "id": 199,
@@ -4676,7 +5278,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Bratysława"
+        ]
     },
     {
         "id": 200,
@@ -4698,7 +5303,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Freetown"
+        ]
     },
     {
         "id": 201,
@@ -4723,7 +5331,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "San Marino"
+        ]
     },
     {
         "id": 202,
@@ -4746,7 +5357,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Dakar"
+        ]
     },
     {
         "id": 203,
@@ -4767,7 +5381,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Mogadiszu"
+        ]
     },
     {
         "id": 204,
@@ -4791,7 +5408,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Paramaribo"
+        ]
     },
     {
         "id": 205,
@@ -4819,7 +5439,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Dżuba"
+        ]
     },
     {
         "id": 206,
@@ -4844,7 +5467,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "São Tomé"
+        ]
     },
     {
         "id": 207,
@@ -4871,7 +5497,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "San Salvador"
+        ]
     },
     {
         "id": 208,
@@ -4897,7 +5526,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Philipsburg"
+        ]
     },
     {
         "id": 209,
@@ -4921,7 +5553,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Damaszek"
+        ]
     },
     {
         "id": 210,
@@ -4946,7 +5581,11 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Mbabane",
+            "Lobamba"
+        ]
     },
     {
         "id": 211,
@@ -4971,7 +5610,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Cockburn Town"
+        ]
     },
     {
         "id": 212,
@@ -4993,7 +5635,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Ndżamena"
+        ]
     },
     {
         "id": 213,
@@ -5017,7 +5662,11 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Saint-Pierre",
+            "Port-aux-Français"
+        ]
     },
     {
         "id": 214,
@@ -5041,7 +5690,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Lomé"
+        ]
     },
     {
         "id": 215,
@@ -5063,7 +5715,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Bangkok"
+        ]
     },
     {
         "id": 216,
@@ -5088,7 +5743,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Duszanbe"
+        ]
     },
     {
         "id": 217,
@@ -5111,7 +5769,11 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Atafu",
+            "brak"
+        ]
     },
     {
         "id": 218,
@@ -5135,7 +5797,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Dili"
+        ]
     },
     {
         "id": 219,
@@ -5162,7 +5827,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Aszchabad"
+        ]
     },
     {
         "id": 220,
@@ -5185,7 +5853,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Tunis"
+        ]
     },
     {
         "id": 221,
@@ -5208,7 +5879,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Nukuʻalofa"
+        ]
     },
     {
         "id": 222,
@@ -5231,7 +5905,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Ankara"
+        ]
     },
     {
         "id": 223,
@@ -5254,7 +5931,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Port-of-Spain"
+        ]
     },
     {
         "id": 224,
@@ -5279,7 +5959,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Vaiaku"
+        ]
     },
     {
         "id": 225,
@@ -5302,7 +5985,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Tajpej"
+        ]
     },
     {
         "id": 226,
@@ -5326,7 +6012,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Dodoma"
+        ]
     },
     {
         "id": 227,
@@ -5347,7 +6036,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Kijów"
+        ]
     },
     {
         "id": 228,
@@ -5371,7 +6063,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Kampala"
+        ]
     },
     {
         "id": 229,
@@ -5395,7 +6090,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Waszyngton"
+        ]
     },
     {
         "id": 230,
@@ -5418,7 +6116,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Montevideo"
+        ]
     },
     {
         "id": 231,
@@ -5443,7 +6144,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Taszkent"
+        ]
     },
     {
         "id": 232,
@@ -5466,7 +6170,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Watykan"
+        ]
     },
     {
         "id": 233,
@@ -5489,7 +6196,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Kingstown"
+        ]
     },
     {
         "id": 234,
@@ -5513,7 +6223,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Caracas"
+        ]
     },
     {
         "id": 235,
@@ -5539,7 +6252,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Road Town"
+        ]
     },
     {
         "id": 236,
@@ -5568,7 +6284,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Charlotte Amalie"
+        ]
     },
     {
         "id": 237,
@@ -5589,7 +6308,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Hanoi"
+        ]
     },
     {
         "id": 238,
@@ -5615,7 +6337,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Port Vila"
+        ]
     },
     {
         "id": 239,
@@ -5639,7 +6364,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Mata Utu"
+        ]
     },
     {
         "id": 240,
@@ -5663,7 +6391,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Apia"
+        ]
     },
     {
         "id": 241,
@@ -5687,7 +6418,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Prisztina"
+        ]
     },
     {
         "id": 242,
@@ -5710,7 +6444,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Sana"
+        ]
     },
     {
         "id": 243,
@@ -5737,7 +6474,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": false,
-        "country": false
+        "country": false,
+        "capital": [
+            "Mamoudzou"
+        ]
     },
     {
         "id": 244,
@@ -5763,7 +6503,12 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": false,
-        "country": true
+        "country": true,
+        "capital": [
+            "Pretoria",
+            "Bloemfontein",
+            "Kapsztad"
+        ]
     },
     {
         "id": 245,
@@ -5787,7 +6532,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Lusaka"
+        ]
     },
     {
         "id": 246,
@@ -5814,7 +6562,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": true
+        "country": true,
+        "capital": [
+            "Harare"
+        ]
     },
     {
         "id": 247,
@@ -5839,7 +6590,10 @@
         "horizontalStripes": false,
         "otherShapes": false,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Kabul"
+        ]
     },
     {
         "id": 248,
@@ -5862,7 +6616,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": false
+        "country": false,
+        "capital": [
+            "Fort-de-France"
+        ]
     },
     {
         "id": 249,
@@ -5888,7 +6645,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": false
+        "country": false,
+        "capital": [
+            "Adamstown"
+        ]
     },
     {
         "id": 250,
@@ -5912,7 +6672,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Suchumi"
+        ]
     },
     {
         "id": 251,
@@ -5936,7 +6699,11 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Nikozja",
+            "Nikozja Północna"
+        ]
     },
     {
         "id": 252,
@@ -5961,7 +6728,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": false,
-        "country": false
+        "country": false,
+        "capital": [
+            "Stepanakert"
+        ]
     },
     {
         "id": 253,
@@ -5983,7 +6753,10 @@
         "horizontalStripes": true,
         "otherShapes": false,
         "symbols": false,
-        "country": false
+        "country": false,
+        "capital": [
+            "Cchinwali"
+        ]
     },
     {
         "id": 254,
@@ -6008,7 +6781,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Oranjestad"
+        ]
     },
     {
         "id": 255,
@@ -6033,7 +6809,10 @@
         "horizontalStripes": false,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "The Bottom"
+        ]
     },
     {
         "id": 256,
@@ -6057,7 +6836,10 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Tyraspol"
+        ]
     },
     {
         "id": 257,
@@ -6082,6 +6864,9 @@
         "horizontalStripes": true,
         "otherShapes": true,
         "symbols": true,
-        "country": false
+        "country": false,
+        "capital": [
+            "Hargejsa"
+        ]
     }
 ]
