@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Flag Finder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Available [here](https://damiinho.github.io/flag-finder/) thanks to GitHub Pages. A
 
-## Available Scripts
+## Brief app description
 
-In the project directory, you can run:
+Have you seen a flag, but don't know which country it belongs to? Do you know its colors or remember a specific shape? This application can help you!
+Or maybe you feel like flags hold no secrets for you and you would like to test yourself in a game? You can do that too!
+This application allows you to search for the right flag based on your settings and also includes a game to test your knowledge of flags.
 
-### `npm start`
+## Finder view
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+In this view (which is the default), you can search for the appropriate flag by providing partial information such as colors or direction of stripes used on the flag. It also allows you to search by individual elements present on it, such as:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- crosses
+- triangles
+- circles
+- coats of arms
+- texts (or letters)
+- suns
+- moons
+- stars
+- plants
+- animals
+- weapons
+- country borders
+- buildings
+- and more.
 
-### `npm test`
+By using the search engine, you can enter the name of a country and find out what its flag looks like. You can also select the appropriate region and see all the flags in the database that correspond to it.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The database of available flags includes all countries and dependent territories and is continuously expanding. If you want to search only the database of countries, simply select the appropriate option.
 
-### `npm run build`
+## Game view
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Here you can test your knowledge about the appearance of flags of individual countries. At the beginning, select the appropriate mode (easy, medium, hard, or extreme) or set the game options yourself:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- the number of answer options (from 2 to 6) or none (then you must enter the appropriate country name)
+- time limit for response (from 2 to 10 seconds) or no time limit
+- number of lives (from 1 to 5).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+When you click the "start" button, the countdown will begin (one of several interesting facts about flags will also be displayed), and after that, the actual game screen will appear, with the flag and answer options (or a field to enter the answer). If you run out of time, as well as if your answer is incorrect, it will be indicated by a message. A wrong answer and running out of time result in the loss of a life. The number of remaining lives is displayed graphically (green and red flags), and the number of remaining flags to guess, the current score, and (if available) the best and last game scores are also visible.
 
-### `npm run eject`
+## Technologies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The application was built using React with functional components and createContext for state management. To create the selection lists, I used the React Select library.
+Flags are described in a separate JSON file.
+The page styles are written using SCSS.
