@@ -49,7 +49,7 @@ const Main = () => {
             </div>
           ) : (
             <div
-              className="main__select"
+              className="main__is-selectors-button"
               style={
                 selectedSmallOne && windowWidth < 550 ? { top: "170px" } : null
               }

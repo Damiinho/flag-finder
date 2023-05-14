@@ -6,21 +6,21 @@ const Detail = () => {
 
   let region = "";
   if (selectedSmallOne) {
-    if (selectedSmallOne.region === "europe") {
+    if (selectedSmallOne.regions[0] === "europe") {
       region = "Europa";
-    } else if (selectedSmallOne.region === "south-america") {
+    } else if (selectedSmallOne.regions[0] === "south-america") {
       region = "Ameryka Południowa";
-    } else if (selectedSmallOne.region === "north-america") {
+    } else if (selectedSmallOne.regions[0] === "north-america") {
       region = "Ameryka Północna";
-    } else if (selectedSmallOne.region === "asia") {
+    } else if (selectedSmallOne.regions[0] === "asia") {
       region = "Azja";
-    } else if (selectedSmallOne.region === "africa") {
+    } else if (selectedSmallOne.regions[0] === "africa") {
       region = "Afryka";
-    } else if (selectedSmallOne.region === "oceania") {
+    } else if (selectedSmallOne.regions[0] === "oceania") {
       region = "Australia/Oceania";
-    } else if (selectedSmallOne.region === "carraibean") {
+    } else if (selectedSmallOne.regions[0] === "carraibean") {
       region = "Karaiby";
-    } else if (selectedSmallOne.region === "antarctica") {
+    } else if (selectedSmallOne.regions[0] === "antarctica") {
       region = "Antarktyka";
     }
   }
