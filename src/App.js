@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import AppProvider from "./contexts/AppContext";
 import Load from "./components/Load";
+import FlagDetail from "./components/FlagDetail";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -23,6 +24,7 @@ function App() {
         <Load />
       ) : (
         <div className="App">
+          <FlagDetail />
           <Header />
           <Main />
         </div>

@@ -133,6 +133,17 @@ body {
     position: relative;
     color: white;
 
+    &__flag-detail {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 50vh;
+      width: 80vw;
+      background-color: red;
+      z-index: 1;
+    }
+
     header {
       width: 100%;
       // height: 72px;
