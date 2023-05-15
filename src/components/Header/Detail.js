@@ -1,8 +1,15 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../contexts/AppContext";
+import SettingsIMG from "../../img/settings.svg";
 
 const Detail = () => {
-  const { selectedSmallOne } = useContext(AppContext);
+  const { selectedSmallOne, setSelectedSmallOne, setIsSelectors, windowWidth } =
+    useContext(AppContext);
+
+  const handleClick = () => {
+    setSelectedSmallOne("");
+    setIsSelectors(true);
+  };
 
   let region = "";
   if (selectedSmallOne) {
@@ -28,6 +35,14 @@ const Detail = () => {
   if (selectedSmallOne) {
     return (
       <>
+        {!(windowWidth < 670) ? (
+          ""
+        ) : (
+          <div onClick={handleClick} className="header__detail-box__settings">
+            <img src={SettingsIMG} alt="settings" />
+            <p>opcje</p>
+          </div>
+        )}
         <div className="header__datail-box__text">
           <h1 className="header__datail-box__text-title">
             {selectedSmallOne.name}

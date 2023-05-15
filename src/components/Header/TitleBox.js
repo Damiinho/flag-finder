@@ -1,30 +1,32 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { AppContext } from "../../contexts/AppContext";
 
 const TitleBox = () => {
-  const { isGame, setIsGame } = useContext(AppContext);
-  const [hover, setHover] = useState(false);
+  const { isGame, windowWidth, setIsSelectors, isSelectors } =
+    useContext(AppContext);
 
-  const handleTitleBox = () => {
-    setIsGame(!isGame);
-  };
-
-  const handleHover = (value) => {
-    setHover(value);
+  const handleClick = () => {
+    if (!(windowWidth > 669)) {
+      if (isSelectors) {
+        setIsSelectors(false);
+      } else setIsSelectors(true);
+    }
   };
 
   return (
     <div
-      className={`header__title-box ${isGame ? "game" : ""}`}
-      onClick={handleTitleBox}
-      onMouseEnter={() => handleHover(true)}
-      onMouseLeave={() => handleHover(false)}
+      onClick={handleClick}
+      className={`header__title-box ${
+        isGame ? "game" : !(windowWidth > 669) ? "switcher" : ""
+      }`}
     >
-      {isGame ? (
-        <>{hover ? "Włącz „znajdź flagę”" : "Czyja to flaga? – gra"}</>
-      ) : (
-        <>{hover ? "Włącz grę" : "Znajdź flagę"}</>
-      )}
+      {isGame
+        ? "Czyja to flaga? – gra"
+        : !(windowWidth > 669)
+        ? isSelectors
+          ? "pokaż flagi"
+          : "pokaż ustawienia"
+        : "Znajdź flagę"}
     </div>
   );
 };

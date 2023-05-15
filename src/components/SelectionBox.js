@@ -1,18 +1,22 @@
-import SelectColor from "./SelectColor";
-import SelectRegion from "./SelectRegion";
-import SelectOther from "./SelectOther";
-import SelectSearch from "./SelectSearch";
-import SelectShape from "./SelectShape";
+import SelectColor from "./SelectionBox/SelectColor";
+import SelectRegion from "./SelectionBox/SelectRegion";
+import SelectOther from "./SelectionBox/SelectOther";
+import SelectSearch from "./SelectionBox/SelectSearch";
+import SelectShape from "./SelectionBox/SelectShape";
+import SelectGame from "./SelectionBox/SelectGame";
 
 const SelectionBox = () => {
   return (
-    <div className="main__select-box__selectors">
-      <SelectSearch />
-      <SelectRegion />
-      <SelectColor />
-      <SelectShape />
-      <SelectOther />
-    </div>
+    <>
+      <div className="main__select-box__selectors">
+        <SelectGame />
+        <SelectSearch />
+        <SelectRegion />
+        <SelectColor />
+        <SelectShape />
+        <SelectOther />
+      </div>
+    </>
   );
 };
 

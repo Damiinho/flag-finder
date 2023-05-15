@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import SmallOne from "./SmallOne";
-import { AppContext } from "../contexts/AppContext";
+import { AppContext } from "../../contexts/AppContext";
 
 const FullList = () => {
   const {

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import { AppContext } from "../contexts/AppContext";
-import checkmarkIMG from "../img/checkmark.png";
-import checkmarkBlackIMG from "../img/checkmarkBlack.png";
+import { AppContext } from "../../contexts/AppContext";
+import checkmarkIMG from "../../img/checkmark.png";
+import checkmarkBlackIMG from "../../img/checkmarkBlack.png";
 
 const SelectColor = () => {
   const { selectedColors, setSelectedColors } = useContext(AppContext);

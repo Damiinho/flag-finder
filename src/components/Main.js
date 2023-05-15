@@ -1,15 +1,14 @@
 import React, { useContext, useEffect, useState } from "react";
-import FullList from "./FullList";
+import FullList from "./Main/FullList";
 import { AppContext } from "../contexts/AppContext";
 import SelectionBox from "./SelectionBox";
 import Game from "./Game";
 import GameProvider from "../contexts/GameContext";
 
 const Main = () => {
-  const { setFlags, windowWidth, selectedSmallOne, isGame } =
+  const { setFlags, windowWidth, selectedSmallOne, isGame, isSelectors } =
     useContext(AppContext);
   const [isLoading, setIsLoading] = useState(true);
-  const [isSelectors, setIsSelectors] = useState(false);
 
   useEffect(() => {
     fetch("data/flag.json")
@@ -25,10 +24,6 @@ const Main = () => {
     return () => clearTimeout(timer);
   }, [setFlags]);
 
-  const handleSelectClick = () => {
-    setIsSelectors(!isSelectors);
-  };
-
   return (
     <>
       {isGame ? (
@@ -41,25 +36,17 @@ const Main = () => {
             selectedSmallOne && windowWidth < 550 ? "flag-selected" : ""
           }`}
         >
-          {windowWidth > 670 ? (
+          {windowWidth > 669 ? (
             <div className="main__select">
               <div className="main__select-box">
                 <SelectionBox />
               </div>
             </div>
           ) : (
-            <div
-              className="main__is-selectors-button"
-              style={
-                selectedSmallOne && windowWidth < 550 ? { top: "170px" } : null
-              }
-              onClick={handleSelectClick}
-            >
-              {isSelectors ? "pokaż listę krajów" : "pokaż opcje wyboru"}
-            </div>
+            ""
           )}
           <div className="main-list">
-            {isSelectors && !(windowWidth > 670) ? (
+            {isSelectors && !(windowWidth > 669) ? (
               <SelectionBox />
             ) : (
               <div className="main-list__full-list">

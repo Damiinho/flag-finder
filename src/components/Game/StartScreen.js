@@ -8,7 +8,7 @@ import { AppContext } from "../../contexts/AppContext";
 
 const StartScreen = () => {
   const { handleStartStop } = useContext(GameContext);
-  const { windowHeight, setIsGame } = useContext(AppContext);
+  const { setIsGame } = useContext(AppContext);
 
   const handleBackClick = () => {
     setIsGame(false);
@@ -32,11 +32,10 @@ const StartScreen = () => {
       >
         Rozpocznij
       </button>
-      {windowHeight < 831 && (
-        <button onClick={handleBackClick} className="main-game__back-button">
-          powrót
-        </button>
-      )}
+
+      <button onClick={handleBackClick} className="main-game__back-button">
+        powrót
+      </button>
     </div>
   );
 };

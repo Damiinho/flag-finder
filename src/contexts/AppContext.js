@@ -14,6 +14,7 @@ export const AppProvider = ({ children }) => {
   const [selectedShapes, setSelectedShapes] = useState([]);
   const [selectedColors, setSelectedColors] = useState([]);
   const [isGame, setIsGame] = useState(false);
+  const [isSelectors, setIsSelectors] = useState(false);
 
   const providerValue = {
     flags,
@@ -38,6 +39,8 @@ export const AppProvider = ({ children }) => {
     setSelectedShapes,
     isGame,
     setIsGame,
+    isSelectors,
+    setIsSelectors,
   };
 
   useEffect(() => {

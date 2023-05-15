@@ -1,20 +1,20 @@
 import { useContext, useState } from "react";
-import { AppContext } from "../contexts/AppContext";
+import { AppContext } from "../../contexts/AppContext";
 
-import CrossIMG from "../img/cross.svg";
-import TriangleIMG from "../img/triangle.svg";
-import CircleIMG from "../img/circle.svg";
-import EmblemIMG from "../img/emblem.svg";
-import WordIMG from "../img/word.svg";
-import SunIMG from "../img/sun.svg";
-import MoonIMG from "../img/moon.svg";
-import StarIMG from "../img/star.svg";
-import PlantIMG from "../img/plant.svg";
-import AnimalIMG from "../img/animal.svg";
-import WeaponIMG from "../img/weapon.svg";
-import ContoursIMG from "../img/contours.svg";
-import BuildingIMG from "../img/building.svg";
-import ArrowDownImg from "../img/arrow-down-icon.svg";
+import CrossIMG from "../../img/cross.svg";
+import TriangleIMG from "../../img/triangle.svg";
+import CircleIMG from "../../img/circle.svg";
+import EmblemIMG from "../../img/emblem.svg";
+import WordIMG from "../../img/word.svg";
+import SunIMG from "../../img/sun.svg";
+import MoonIMG from "../../img/moon.svg";
+import StarIMG from "../../img/star.svg";
+import PlantIMG from "../../img/plant.svg";
+import AnimalIMG from "../../img/animal.svg";
+import WeaponIMG from "../../img/weapon.svg";
+import ContoursIMG from "../../img/contours.svg";
+import BuildingIMG from "../../img/building.svg";
+import ArrowDownImg from "../../img/arrow-down-icon.svg";
 
 const SelectShape = () => {
   const { selectedShapes, setSelectedShapes } = useContext(AppContext);
