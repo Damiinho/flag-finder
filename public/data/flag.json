@@ -22,8 +22,9 @@
         "symbols": true,
         "country": true,
         "capital": [
-            "Andora "
-        ]
+            "Andora"
+        ],
+        "englishName": "Andorra"
     },
     {
         "id": 1,
@@ -50,7 +51,8 @@
         "country": true,
         "capital": [
             "Abu Dhabi"
-        ]
+        ],
+        "englishName": "United Arab Emirates"
     },
     {
         "id": 2,
@@ -74,7 +76,8 @@
         "country": true,
         "capital": [
             "Kabul"
-        ]
+        ],
+        "englishName": "Afghanistan"
     },
     {
         "id": 3,
@@ -103,7 +106,8 @@
         "country": true,
         "capital": [
             "Saint John's"
-        ]
+        ],
+        "englishName": "Antigua and Barbuda"
     },
     {
         "id": 4,
@@ -131,7 +135,8 @@
         "country": false,
         "capital": [
             "The Valley"
-        ]
+        ],
+        "englishName": "British Overseas Territory of Anguilla"
     },
     {
         "id": 5,
@@ -156,7 +161,8 @@
         "country": true,
         "capital": [
             "Tirana"
-        ]
+        ],
+        "englishName": "Albania"
     },
     {
         "id": 6,
@@ -183,7 +189,8 @@
         "country": true,
         "capital": [
             "Erywań"
-        ]
+        ],
+        "englishName": "Armenia"
     },
     {
         "id": 7,
@@ -211,7 +218,8 @@
         "country": true,
         "capital": [
             "Luanda"
-        ]
+        ],
+        "englishName": "Angola"
     },
     {
         "id": 8,
@@ -235,7 +243,8 @@
         "country": false,
         "capital": [
             "brak"
-        ]
+        ],
+        "englishName": "Antarctica"
     },
     {
         "id": 9,
@@ -261,7 +270,8 @@
         "country": true,
         "capital": [
             "Buenos Aires"
-        ]
+        ],
+        "englishName": "Argentina"
     },
     {
         "id": 10,
@@ -287,7 +297,8 @@
         "country": false,
         "capital": [
             "Pago Pago"
-        ]
+        ],
+        "englishName": "American Samoa"
     },
     {
         "id": 11,
@@ -311,7 +322,8 @@
         "country": true,
         "capital": [
             "Wiedeń"
-        ]
+        ],
+        "englishName": "Austria"
     },
     {
         "id": 12,
@@ -337,7 +349,8 @@
         "country": true,
         "capital": [
             "Canberra"
-        ]
+        ],
+        "englishName": "Australia"
     },
     {
         "id": 13,
@@ -363,7 +376,8 @@
         "country": false,
         "capital": [
             "Oranjestad"
-        ]
+        ],
+        "englishName": "Aruba"
     },
     {
         "id": 14,
@@ -388,7 +402,8 @@
         "country": false,
         "capital": [
             "Maarianhamina"
-        ]
+        ],
+        "englishName": "Aland Islands"
     },
     {
         "id": 15,
@@ -416,7 +431,8 @@
         "country": true,
         "capital": [
             "Baku"
-        ]
+        ],
+        "englishName": "Azerbaijan"
     },
     {
         "id": 16,
@@ -442,7 +458,8 @@
         "country": true,
         "capital": [
             "Sarajewo"
-        ]
+        ],
+        "englishName": "Bosnia and Herzegovina"
     },
     {
         "id": 17,
@@ -467,7 +484,8 @@
         "country": true,
         "capital": [
             "Bridgetown"
-        ]
+        ],
+        "englishName": "Barbados"
     },
     {
         "id": 18,
@@ -491,7 +509,8 @@
         "country": true,
         "capital": [
             "Dhaka"
-        ]
+        ],
+        "englishName": "Bangladesh"
     },
     {
         "id": 19,
@@ -516,7 +535,8 @@
         "country": true,
         "capital": [
             "Bruksela"
-        ]
+        ],
+        "englishName": "Belgium"
     },
     {
         "id": 20,
@@ -542,7 +562,8 @@
         "country": true,
         "capital": [
             "Wagadugu"
-        ]
+        ],
+        "englishName": "Burkina Faso"
     },
     {
         "id": 21,
@@ -567,7 +588,8 @@
         "country": true,
         "capital": [
             "Sofia"
-        ]
+        ],
+        "englishName": "Bulgaria"
     },
     {
         "id": 22,
@@ -592,7 +614,8 @@
         "country": true,
         "capital": [
             "Manama"
-        ]
+        ],
+        "englishName": "Bahrain"
     },
     {
         "id": 23,
@@ -619,7 +642,8 @@
         "country": true,
         "capital": [
             "Gitega"
-        ]
+        ],
+        "englishName": "Burundi"
     },
     {
         "id": 24,
@@ -645,7 +669,8 @@
         "country": true,
         "capital": [
             "Porto-Novo"
-        ]
+        ],
+        "englishName": "Benin"
     },
     {
         "id": 25,
@@ -677,7 +702,8 @@
         "country": false,
         "capital": [
             "Gustavia"
-        ]
+        ],
+        "englishName": "Saint Barthelemy"
     },
     {
         "id": 26,
@@ -705,7 +731,8 @@
         "country": false,
         "capital": [
             "Hamilton"
-        ]
+        ],
+        "englishName": "Bermuda"
     },
     {
         "id": 27,
@@ -734,7 +761,8 @@
         "country": true,
         "capital": [
             "Bandar Seri Begawan"
-        ]
+        ],
+        "englishName": "Brunei"
     },
     {
         "id": 28,
@@ -759,7 +787,8 @@
         "country": true,
         "capital": [
             "Sucre"
-        ]
+        ],
+        "englishName": "Bolivia"
     },
     {
         "id": 29,
@@ -786,7 +815,8 @@
         "country": false,
         "capital": [
             "Kralendijk"
-        ]
+        ],
+        "englishName": "Bonaire"
     },
     {
         "id": 30,
@@ -814,7 +844,8 @@
         "country": true,
         "capital": [
             "Brasília"
-        ]
+        ],
+        "englishName": "Brazil"
     },
     {
         "id": 31,
@@ -841,7 +872,8 @@
         "country": true,
         "capital": [
             "Nassau"
-        ]
+        ],
+        "englishName": "Bahamas"
     },
     {
         "id": 32,
@@ -867,7 +899,8 @@
         "country": true,
         "capital": [
             "Thimphu"
-        ]
+        ],
+        "englishName": "Bhutan"
     },
     {
         "id": 33,
@@ -892,7 +925,8 @@
         "country": true,
         "capital": [
             "Gaborone"
-        ]
+        ],
+        "englishName": "Botswana"
     },
     {
         "id": 34,
@@ -918,7 +952,8 @@
         "country": true,
         "capital": [
             "Mińsk"
-        ]
+        ],
+        "englishName": "Belarus"
     },
     {
         "id": 35,
@@ -947,7 +982,8 @@
         "country": true,
         "capital": [
             "Belmopan"
-        ]
+        ],
+        "englishName": "Belize"
     },
     {
         "id": 36,
@@ -972,7 +1008,8 @@
         "country": true,
         "capital": [
             "Ottawa"
-        ]
+        ],
+        "englishName": "Canada"
     },
     {
         "id": 37,
@@ -999,7 +1036,8 @@
         "country": false,
         "capital": [
             "West Island"
-        ]
+        ],
+        "englishName": "Cocos Islands"
     },
     {
         "id": 38,
@@ -1025,7 +1063,8 @@
         "country": true,
         "capital": [
             "Kinszasa"
-        ]
+        ],
+        "englishName": "Democratic Republic of Congo"
     },
     {
         "id": 39,
@@ -1054,7 +1093,8 @@
         "country": true,
         "capital": [
             "Bangi"
-        ]
+        ],
+        "englishName": "The Central African Republic"
     },
     {
         "id": 40,
@@ -1080,7 +1120,8 @@
         "country": true,
         "capital": [
             "Brazzaville"
-        ]
+        ],
+        "englishName": "Congo"
     },
     {
         "id": 41,
@@ -1104,7 +1145,8 @@
         "country": true,
         "capital": [
             "Berno"
-        ]
+        ],
+        "englishName": "Switzerland"
     },
     {
         "id": 42,
@@ -1130,7 +1172,8 @@
         "country": true,
         "capital": [
             "Jamusukro"
-        ]
+        ],
+        "englishName": "Côte d’Ivoire"
     },
     {
         "id": 43,
@@ -1156,7 +1199,8 @@
         "country": false,
         "capital": [
             "Avarua"
-        ]
+        ],
+        "englishName": "Cook Islands"
     },
     {
         "id": 44,
@@ -1183,7 +1227,8 @@
         "country": true,
         "capital": [
             "Santiago"
-        ]
+        ],
+        "englishName": "Chile"
     },
     {
         "id": 45,
@@ -1209,7 +1254,8 @@
         "country": true,
         "capital": [
             "Jaunde"
-        ]
+        ],
+        "englishName": "Cameroon"
     },
     {
         "id": 46,
@@ -1233,7 +1279,8 @@
         "country": true,
         "capital": [
             "Pekin"
-        ]
+        ],
+        "englishName": "China"
     },
     {
         "id": 47,
@@ -1258,7 +1305,8 @@
         "country": true,
         "capital": [
             "Bogota"
-        ]
+        ],
+        "englishName": "Colombia"
     },
     {
         "id": 48,
@@ -1284,7 +1332,8 @@
         "country": true,
         "capital": [
             "San Jose"
-        ]
+        ],
+        "englishName": "Costa Rica"
     },
     {
         "id": 49,
@@ -1311,7 +1360,8 @@
         "country": true,
         "capital": [
             "Hawana"
-        ]
+        ],
+        "englishName": "Cuba"
     },
     {
         "id": 50,
@@ -1337,7 +1387,8 @@
         "country": true,
         "capital": [
             "Praia"
-        ]
+        ],
+        "englishName": "Cape Verde"
     },
     {
         "id": 51,
@@ -1363,7 +1414,8 @@
         "country": false,
         "capital": [
             "Willemstad"
-        ]
+        ],
+        "englishName": "Curacao"
     },
     {
         "id": 52,
@@ -1393,7 +1445,8 @@
         "country": false,
         "capital": [
             "Flying Fish Cove"
-        ]
+        ],
+        "englishName": "Christmas Island"
     },
     {
         "id": 53,
@@ -1419,7 +1472,8 @@
         "country": true,
         "capital": [
             "Nikozja"
-        ]
+        ],
+        "englishName": "Cyprus"
     },
     {
         "id": 54,
@@ -1445,7 +1499,8 @@
         "country": true,
         "capital": [
             "Praga"
-        ]
+        ],
+        "englishName": "Czech Republic"
     },
     {
         "id": 55,
@@ -1470,7 +1525,8 @@
         "country": true,
         "capital": [
             "Berlin"
-        ]
+        ],
+        "englishName": "Germany"
     },
     {
         "id": 56,
@@ -1498,7 +1554,8 @@
         "country": true,
         "capital": [
             "Dżibuti"
-        ]
+        ],
+        "englishName": "Djibouti"
     },
     {
         "id": 57,
@@ -1522,7 +1579,8 @@
         "country": true,
         "capital": [
             "Kopenhaga"
-        ]
+        ],
+        "englishName": "Denmark"
     },
     {
         "id": 58,
@@ -1551,7 +1609,8 @@
         "country": true,
         "capital": [
             "Roseau"
-        ]
+        ],
+        "englishName": "Commonwealth of Dominica"
     },
     {
         "id": 59,
@@ -1577,7 +1636,8 @@
         "country": true,
         "capital": [
             "Santo Domingo"
-        ]
+        ],
+        "englishName": "Dominican Republic"
     },
     {
         "id": 60,
@@ -1604,7 +1664,8 @@
         "country": true,
         "capital": [
             "Algier"
-        ]
+        ],
+        "englishName": "Algeria"
     },
     {
         "id": 61,
@@ -1632,7 +1693,8 @@
         "country": true,
         "capital": [
             "Quito"
-        ]
+        ],
+        "englishName": "Ecuador"
     },
     {
         "id": 62,
@@ -1657,7 +1719,8 @@
         "country": true,
         "capital": [
             "Tallinn"
-        ]
+        ],
+        "englishName": "Estonia"
     },
     {
         "id": 63,
@@ -1685,7 +1748,8 @@
         "country": true,
         "capital": [
             "Kair"
-        ]
+        ],
+        "englishName": "Egypt"
     },
     {
         "id": 64,
@@ -1715,7 +1779,8 @@
         "capital": [
             "Al-Ujun",
             "Tifariti"
-        ]
+        ],
+        "englishName": "Western Sahara"
     },
     {
         "id": 65,
@@ -1742,7 +1807,8 @@
         "country": true,
         "capital": [
             "Asmara"
-        ]
+        ],
+        "englishName": "Eritrea"
     },
     {
         "id": 66,
@@ -1768,7 +1834,8 @@
         "country": true,
         "capital": [
             "Madryt"
-        ]
+        ],
+        "englishName": "Spain"
     },
     {
         "id": 67,
@@ -1796,7 +1863,8 @@
         "country": true,
         "capital": [
             "Addis Abeba"
-        ]
+        ],
+        "englishName": "Ethiopia"
     },
     {
         "id": 68,
@@ -1821,7 +1889,8 @@
         "country": true,
         "capital": [
             "Helsinki"
-        ]
+        ],
+        "englishName": "Finland"
     },
     {
         "id": 69,
@@ -1850,7 +1919,8 @@
         "country": true,
         "capital": [
             "Suva"
-        ]
+        ],
+        "englishName": "Fiji"
     },
     {
         "id": 70,
@@ -1879,7 +1949,8 @@
         "country": false,
         "capital": [
             "Port Stanley"
-        ]
+        ],
+        "englishName": "Falkland Islands"
     },
     {
         "id": 71,
@@ -1903,7 +1974,8 @@
         "country": true,
         "capital": [
             "Palikir"
-        ]
+        ],
+        "englishName": "Micronesia"
     },
     {
         "id": 72,
@@ -1928,7 +2000,8 @@
         "country": false,
         "capital": [
             "Thorshavn"
-        ]
+        ],
+        "englishName": "Faroe Islands"
     },
     {
         "id": 73,
@@ -1953,7 +2026,8 @@
         "country": true,
         "capital": [
             "Paryż"
-        ]
+        ],
+        "englishName": "France"
     },
     {
         "id": 74,
@@ -1978,7 +2052,8 @@
         "country": true,
         "capital": [
             "Libreville"
-        ]
+        ],
+        "englishName": "Gabon"
     },
     {
         "id": 75,
@@ -2003,7 +2078,8 @@
         "country": true,
         "capital": [
             "Londyn"
-        ]
+        ],
+        "englishName": "United Kingdom"
     },
     {
         "id": 76,
@@ -2027,7 +2103,8 @@
         "country": false,
         "capital": [
             "Londyn"
-        ]
+        ],
+        "englishName": "England"
     },
     {
         "id": 77,
@@ -2053,7 +2130,8 @@
         "country": false,
         "capital": [
             "Belfast"
-        ]
+        ],
+        "englishName": "Northern Ireland"
     },
     {
         "id": 78,
@@ -2077,7 +2155,8 @@
         "country": false,
         "capital": [
             "Edynburg"
-        ]
+        ],
+        "englishName": "Scotland"
     },
     {
         "id": 79,
@@ -2103,7 +2182,8 @@
         "country": false,
         "capital": [
             "Cardiff"
-        ]
+        ],
+        "englishName": "Wales"
     },
     {
         "id": 80,
@@ -2130,7 +2210,8 @@
         "country": true,
         "capital": [
             "Saint George's"
-        ]
+        ],
+        "englishName": "Grenada"
     },
     {
         "id": 81,
@@ -2155,7 +2236,8 @@
         "country": true,
         "capital": [
             "Tbilisi"
-        ]
+        ],
+        "englishName": "Georgia"
     },
     {
         "id": 82,
@@ -2182,7 +2264,8 @@
         "country": false,
         "capital": [
             "Kajenna"
-        ]
+        ],
+        "englishName": "French Guiana"
     },
     {
         "id": 83,
@@ -2206,7 +2289,8 @@
         "country": false,
         "capital": [
             "Saint Peter Port"
-        ]
+        ],
+        "englishName": "Guernsey"
     },
     {
         "id": 84,
@@ -2233,7 +2317,8 @@
         "country": true,
         "capital": [
             "Akra"
-        ]
+        ],
+        "englishName": "Ghana"
     },
     {
         "id": 85,
@@ -2259,7 +2344,8 @@
         "country": false,
         "capital": [
             "Gibraltar"
-        ]
+        ],
+        "englishName": "Gibraltar"
     },
     {
         "id": 86,
@@ -2284,7 +2370,8 @@
         "country": false,
         "capital": [
             "Nuuk"
-        ]
+        ],
+        "englishName": "Greenland"
     },
     {
         "id": 87,
@@ -2310,7 +2397,8 @@
         "country": true,
         "capital": [
             "Bandżul"
-        ]
+        ],
+        "englishName": "Gambia"
     },
     {
         "id": 88,
@@ -2335,7 +2423,8 @@
         "country": true,
         "capital": [
             "Konakry"
-        ]
+        ],
+        "englishName": "Guinea"
     },
     {
         "id": 89,
@@ -2363,7 +2452,8 @@
         "country": false,
         "capital": [
             ""
-        ]
+        ],
+        "englishName": "Guadeloupe"
     },
     {
         "id": 90,
@@ -2393,7 +2483,8 @@
         "country": true,
         "capital": [
             "Basse-Terre"
-        ]
+        ],
+        "englishName": "Equatorial Guinea"
     },
     {
         "id": 91,
@@ -2418,7 +2509,8 @@
         "country": true,
         "capital": [
             "Ateny"
-        ]
+        ],
+        "englishName": "Greece"
     },
     {
         "id": 92,
@@ -2444,7 +2536,8 @@
         "country": false,
         "capital": [
             "King Edward Point"
-        ]
+        ],
+        "englishName": "South Georgia and South Sandwich Islands"
     },
     {
         "id": 93,
@@ -2472,7 +2565,8 @@
         "country": true,
         "capital": [
             "Gwatemala"
-        ]
+        ],
+        "englishName": "Guatemala"
     },
     {
         "id": 94,
@@ -2498,7 +2592,8 @@
         "country": false,
         "capital": [
             "Hagåtña"
-        ]
+        ],
+        "englishName": "Guam"
     },
     {
         "id": 95,
@@ -2525,7 +2620,8 @@
         "country": true,
         "capital": [
             "Bissau"
-        ]
+        ],
+        "englishName": "Guinea-Bissau"
     },
     {
         "id": 96,
@@ -2550,7 +2646,8 @@
         "country": true,
         "capital": [
             "Georgetown"
-        ]
+        ],
+        "englishName": "Guyana"
     },
     {
         "id": 97,
@@ -2575,7 +2672,8 @@
         "country": false,
         "capital": [
             "Hongkong"
-        ]
+        ],
+        "englishName": "Hongkong"
     },
     {
         "id": 98,
@@ -2600,7 +2698,8 @@
         "country": true,
         "capital": [
             "Tegucigalpa"
-        ]
+        ],
+        "englishName": "Honduras"
     },
     {
         "id": 99,
@@ -2626,7 +2725,8 @@
         "country": true,
         "capital": [
             "Zagrzeb"
-        ]
+        ],
+        "englishName": "Croatia"
     },
     {
         "id": 100,
@@ -2651,7 +2751,8 @@
         "country": true,
         "capital": [
             "Port-au-Prince"
-        ]
+        ],
+        "englishName": "Haiti"
     },
     {
         "id": 101,
@@ -2676,7 +2777,8 @@
         "country": true,
         "capital": [
             "Budapeszt"
-        ]
+        ],
+        "englishName": "Hungary"
     },
     {
         "id": 102,
@@ -2701,7 +2803,8 @@
         "country": true,
         "capital": [
             "Dżakarta"
-        ]
+        ],
+        "englishName": "Indonesia"
     },
     {
         "id": 103,
@@ -2726,7 +2829,8 @@
         "country": true,
         "capital": [
             "Dublin"
-        ]
+        ],
+        "englishName": "Ireland"
     },
     {
         "id": 104,
@@ -2752,7 +2856,8 @@
         "capital": [
             "Jerozolima",
             "Tel Awiw"
-        ]
+        ],
+        "englishName": "Israel"
     },
     {
         "id": 105,
@@ -2776,7 +2881,8 @@
         "country": false,
         "capital": [
             "Douglas"
-        ]
+        ],
+        "englishName": "Isle Of Man"
     },
     {
         "id": 106,
@@ -2804,7 +2910,8 @@
         "country": true,
         "capital": [
             "Nowe Delhi"
-        ]
+        ],
+        "englishName": "India"
     },
     {
         "id": 107,
@@ -2832,7 +2939,8 @@
         "country": false,
         "capital": [
             "Diego Garcia"
-        ]
+        ],
+        "englishName": "British Indian Ocean Territory"
     },
     {
         "id": 108,
@@ -2859,7 +2967,8 @@
         "country": true,
         "capital": [
             "Bagdad"
-        ]
+        ],
+        "englishName": "Iraq"
     },
     {
         "id": 109,
@@ -2886,7 +2995,8 @@
         "country": true,
         "capital": [
             "Teheran"
-        ]
+        ],
+        "englishName": "Iran"
     },
     {
         "id": 110,
@@ -2912,7 +3022,8 @@
         "country": true,
         "capital": [
             "Reykjavík"
-        ]
+        ],
+        "englishName": "Iceland"
     },
     {
         "id": 111,
@@ -2937,7 +3048,8 @@
         "country": true,
         "capital": [
             "Rzym"
-        ]
+        ],
+        "englishName": "Italy"
     },
     {
         "id": 112,
@@ -2963,7 +3075,8 @@
         "country": false,
         "capital": [
             "Saint Helier"
-        ]
+        ],
+        "englishName": "Jersey"
     },
     {
         "id": 113,
@@ -2989,7 +3102,8 @@
         "country": true,
         "capital": [
             "Kingston"
-        ]
+        ],
+        "englishName": "Jamaica"
     },
     {
         "id": 114,
@@ -3017,7 +3131,8 @@
         "country": true,
         "capital": [
             "Amman"
-        ]
+        ],
+        "englishName": "Jordan"
     },
     {
         "id": 115,
@@ -3042,7 +3157,8 @@
         "country": true,
         "capital": [
             "Tokio"
-        ]
+        ],
+        "englishName": "Japan"
     },
     {
         "id": 116,
@@ -3069,7 +3185,8 @@
         "country": true,
         "capital": [
             "Nairobi"
-        ]
+        ],
+        "englishName": "Kenya"
     },
     {
         "id": 117,
@@ -3093,7 +3210,8 @@
         "country": true,
         "capital": [
             "Biszkek"
-        ]
+        ],
+        "englishName": "Kyrgyzstan"
     },
     {
         "id": 118,
@@ -3119,7 +3237,8 @@
         "country": true,
         "capital": [
             "Phnom Penh"
-        ]
+        ],
+        "englishName": "Cambodia"
     },
     {
         "id": 119,
@@ -3147,7 +3266,8 @@
         "country": true,
         "capital": [
             "Bairiki"
-        ]
+        ],
+        "englishName": "Kiribati"
     },
     {
         "id": 120,
@@ -3177,7 +3297,8 @@
         "country": true,
         "capital": [
             "Moroni"
-        ]
+        ],
+        "englishName": "Chambers"
     },
     {
         "id": 121,
@@ -3206,7 +3327,8 @@
         "country": true,
         "capital": [
             "Basseterre"
-        ]
+        ],
+        "englishName": "Saint Kitts and Nevis"
     },
     {
         "id": 122,
@@ -3233,7 +3355,8 @@
         "country": true,
         "capital": [
             "Pjongjang"
-        ]
+        ],
+        "englishName": "North Korea"
     },
     {
         "id": 123,
@@ -3261,7 +3384,8 @@
         "country": true,
         "capital": [
             "Seul"
-        ]
+        ],
+        "englishName": "South Korea"
     },
     {
         "id": 124,
@@ -3288,7 +3412,8 @@
         "country": true,
         "capital": [
             "Kuwejt"
-        ]
+        ],
+        "englishName": "Kuwait"
     },
     {
         "id": 125,
@@ -3317,7 +3442,8 @@
         "country": false,
         "capital": [
             "George Town"
-        ]
+        ],
+        "englishName": "Cayman Islands"
     },
     {
         "id": 126,
@@ -3344,7 +3470,8 @@
         "country": true,
         "capital": [
             "Astana"
-        ]
+        ],
+        "englishName": "Kazakhstan"
     },
     {
         "id": 127,
@@ -3370,7 +3497,8 @@
         "country": true,
         "capital": [
             "Wientian"
-        ]
+        ],
+        "englishName": "Laos"
     },
     {
         "id": 128,
@@ -3396,7 +3524,8 @@
         "country": true,
         "capital": [
             "Bejrut"
-        ]
+        ],
+        "englishName": "Lebanon"
     },
     {
         "id": 129,
@@ -3421,7 +3550,8 @@
         "country": true,
         "capital": [
             "Castries"
-        ]
+        ],
+        "englishName": "Saint Lucia"
     },
     {
         "id": 130,
@@ -3446,7 +3576,8 @@
         "country": true,
         "capital": [
             "Vaduz"
-        ]
+        ],
+        "englishName": "Liechtenstein"
     },
     {
         "id": 131,
@@ -3474,7 +3605,8 @@
         "country": true,
         "capital": [
             "Sri Dźajawardanapura Kotte"
-        ]
+        ],
+        "englishName": "Sri Lanka"
     },
     {
         "id": 132,
@@ -3500,7 +3632,8 @@
         "country": true,
         "capital": [
             "Monrovia"
-        ]
+        ],
+        "englishName": "Liberia"
     },
     {
         "id": 133,
@@ -3527,7 +3660,8 @@
         "country": true,
         "capital": [
             "Maseru"
-        ]
+        ],
+        "englishName": "Lesotho"
     },
     {
         "id": 134,
@@ -3552,7 +3686,8 @@
         "country": true,
         "capital": [
             "Wilno"
-        ]
+        ],
+        "englishName": "Lithuania"
     },
     {
         "id": 135,
@@ -3577,7 +3712,8 @@
         "country": true,
         "capital": [
             "Luksemburg"
-        ]
+        ],
+        "englishName": "Luxembourg"
     },
     {
         "id": 136,
@@ -3601,7 +3737,8 @@
         "country": true,
         "capital": [
             "Ryga"
-        ]
+        ],
+        "englishName": "Latvia"
     },
     {
         "id": 137,
@@ -3629,7 +3766,8 @@
         "country": true,
         "capital": [
             "Trypolis"
-        ]
+        ],
+        "englishName": "Libya"
     },
     {
         "id": 138,
@@ -3653,7 +3791,8 @@
         "country": true,
         "capital": [
             "Rabat"
-        ]
+        ],
+        "englishName": "Morocco"
     },
     {
         "id": 139,
@@ -3677,7 +3816,8 @@
         "country": true,
         "capital": [
             "Monako"
-        ]
+        ],
+        "englishName": "Monaco"
     },
     {
         "id": 140,
@@ -3705,7 +3845,8 @@
         "country": true,
         "capital": [
             "Kiszyniów"
-        ]
+        ],
+        "englishName": "Moldova"
     },
     {
         "id": 141,
@@ -3730,7 +3871,8 @@
         "country": true,
         "capital": [
             "Podgorica"
-        ]
+        ],
+        "englishName": "Montenegro"
     },
     {
         "id": 142,
@@ -3756,7 +3898,8 @@
         "country": true,
         "capital": [
             "Antananarywa"
-        ]
+        ],
+        "englishName": "Madagascar"
     },
     {
         "id": 143,
@@ -3782,7 +3925,8 @@
         "country": true,
         "capital": [
             "Delap"
-        ]
+        ],
+        "englishName": "Marshall Islands"
     },
     {
         "id": 144,
@@ -3807,7 +3951,8 @@
         "country": true,
         "capital": [
             "Bamako"
-        ]
+        ],
+        "englishName": "Mali"
     },
     {
         "id": 145,
@@ -3833,7 +3978,8 @@
         "country": true,
         "capital": [
             "Skopje"
-        ]
+        ],
+        "englishName": "North Macedonia"
     },
     {
         "id": 146,
@@ -3860,7 +4006,8 @@
         "country": true,
         "capital": [
             "Naypyidaw"
-        ]
+        ],
+        "englishName": "Myanmar"
     },
     {
         "id": 147,
@@ -3890,7 +4037,8 @@
         "country": true,
         "capital": [
             "Ułan Bator"
-        ]
+        ],
+        "englishName": "Mongolia"
     },
     {
         "id": 148,
@@ -3917,7 +4065,8 @@
         "country": false,
         "capital": [
             "Makau"
-        ]
+        ],
+        "englishName": "Macao"
     },
     {
         "id": 149,
@@ -3946,7 +4095,8 @@
         "country": false,
         "capital": [
             "Capitol Hill"
-        ]
+        ],
+        "englishName": "Northern Mariana Islands"
     },
     {
         "id": 150,
@@ -3973,7 +4123,8 @@
         "country": true,
         "capital": [
             "Nawakszut"
-        ]
+        ],
+        "englishName": "Mauritania"
     },
     {
         "id": 151,
@@ -4000,7 +4151,8 @@
         "capital": [
             "Plymouth",
             "Brades"
-        ]
+        ],
+        "englishName": "Montserrat"
     },
     {
         "id": 152,
@@ -4025,7 +4177,8 @@
         "country": true,
         "capital": [
             "Valetta"
-        ]
+        ],
+        "englishName": "Malta"
     },
     {
         "id": 153,
@@ -4051,7 +4204,8 @@
         "country": true,
         "capital": [
             "Port Louis"
-        ]
+        ],
+        "englishName": "Mauritius"
     },
     {
         "id": 154,
@@ -4077,7 +4231,8 @@
         "country": true,
         "capital": [
             "Male"
-        ]
+        ],
+        "englishName": "The Maldives"
     },
     {
         "id": 155,
@@ -4103,7 +4258,8 @@
         "country": true,
         "capital": [
             "Lilongwe"
-        ]
+        ],
+        "englishName": "Malawi"
     },
     {
         "id": 156,
@@ -4130,7 +4286,8 @@
         "country": true,
         "capital": [
             "Meksyk"
-        ]
+        ],
+        "englishName": "Mexico"
     },
     {
         "id": 157,
@@ -4158,7 +4315,8 @@
         "capital": [
             "Kuala Lumpur",
             "Putrajaya"
-        ]
+        ],
+        "englishName": "Malaysia"
     },
     {
         "id": 158,
@@ -4189,7 +4347,8 @@
         "country": true,
         "capital": [
             "Maputo"
-        ]
+        ],
+        "englishName": "Mozambique"
     },
     {
         "id": 159,
@@ -4218,7 +4377,8 @@
         "country": true,
         "capital": [
             "Windhuk"
-        ]
+        ],
+        "englishName": "Namibia"
     },
     {
         "id": 160,
@@ -4247,7 +4407,8 @@
         "country": false,
         "capital": [
             "Numea"
-        ]
+        ],
+        "englishName": "New Caledonia"
     },
     {
         "id": 161,
@@ -4273,7 +4434,8 @@
         "country": true,
         "capital": [
             "Niamey"
-        ]
+        ],
+        "englishName": "Niger"
     },
     {
         "id": 162,
@@ -4298,7 +4460,8 @@
         "country": false,
         "capital": [
             "Kingston"
-        ]
+        ],
+        "englishName": "Norfolk Island"
     },
     {
         "id": 163,
@@ -4322,7 +4485,8 @@
         "country": true,
         "capital": [
             "Abudża"
-        ]
+        ],
+        "englishName": "Nigeria"
     },
     {
         "id": 164,
@@ -4349,7 +4513,8 @@
         "country": true,
         "capital": [
             "Managua"
-        ]
+        ],
+        "englishName": "Nicaragua"
     },
     {
         "id": 165,
@@ -4375,7 +4540,8 @@
         "capital": [
             "Amsterdam",
             "Haga"
-        ]
+        ],
+        "englishName": "Netherlands"
     },
     {
         "id": 166,
@@ -4400,7 +4566,8 @@
         "country": true,
         "capital": [
             "Oslo"
-        ]
+        ],
+        "englishName": "Norway"
     },
     {
         "id": 167,
@@ -4427,7 +4594,8 @@
         "country": true,
         "capital": [
             "Katmandu"
-        ]
+        ],
+        "englishName": "Nepal"
     },
     {
         "id": 168,
@@ -4453,7 +4621,8 @@
         "country": true,
         "capital": [
             "Yaren"
-        ]
+        ],
+        "englishName": "Nauru"
     },
     {
         "id": 169,
@@ -4480,7 +4649,8 @@
         "country": false,
         "capital": [
             "Alofi"
-        ]
+        ],
+        "englishName": "Niue"
     },
     {
         "id": 170,
@@ -4506,7 +4676,8 @@
         "country": true,
         "capital": [
             "Wellington"
-        ]
+        ],
+        "englishName": "New Zealand"
     },
     {
         "id": 171,
@@ -4534,7 +4705,8 @@
         "country": true,
         "capital": [
             "Maskat"
-        ]
+        ],
+        "englishName": "Oman"
     },
     {
         "id": 172,
@@ -4560,7 +4732,8 @@
         "country": true,
         "capital": [
             "Panama"
-        ]
+        ],
+        "englishName": "Panama"
     },
     {
         "id": 173,
@@ -4584,7 +4757,8 @@
         "country": true,
         "capital": [
             "Lima"
-        ]
+        ],
+        "englishName": "Peru"
     },
     {
         "id": 174,
@@ -4612,7 +4786,8 @@
         "country": false,
         "capital": [
             "Papeete"
-        ]
+        ],
+        "englishName": "French Polynesia"
     },
     {
         "id": 175,
@@ -4640,7 +4815,8 @@
         "country": true,
         "capital": [
             "Port Moresby"
-        ]
+        ],
+        "englishName": "Papua New Guinea"
     },
     {
         "id": 176,
@@ -4669,7 +4845,8 @@
         "country": true,
         "capital": [
             "Manila"
-        ]
+        ],
+        "englishName": "Philippines"
     },
     {
         "id": 177,
@@ -4695,7 +4872,8 @@
         "country": true,
         "capital": [
             "Islamabad"
-        ]
+        ],
+        "englishName": "Pakistan"
     },
     {
         "id": 178,
@@ -4719,7 +4897,8 @@
         "country": true,
         "capital": [
             "Warszawa"
-        ]
+        ],
+        "englishName": "Poland"
     },
     {
         "id": 179,
@@ -4749,7 +4928,8 @@
         "country": false,
         "capital": [
             "Saint-Pierre"
-        ]
+        ],
+        "englishName": "Saint Pierre and Miquelon"
     },
     {
         "id": 180,
@@ -4776,7 +4956,8 @@
         "country": false,
         "capital": [
             "San Juan"
-        ]
+        ],
+        "englishName": "Portugal"
     },
     {
         "id": 181,
@@ -4803,7 +4984,8 @@
         "country": true,
         "capital": [
             "Ramallah"
-        ]
+        ],
+        "englishName": "Palestine"
     },
     {
         "id": 182,
@@ -4831,7 +5013,8 @@
         "country": true,
         "capital": [
             "Lizbona"
-        ]
+        ],
+        "englishName": "Portugal"
     },
     {
         "id": 183,
@@ -4855,7 +5038,8 @@
         "country": true,
         "capital": [
             "Ngerulmud"
-        ]
+        ],
+        "englishName": "Palau"
     },
     {
         "id": 184,
@@ -4884,7 +5068,8 @@
         "country": true,
         "capital": [
             "Asunción"
-        ]
+        ],
+        "englishName": "Paraguay"
     },
     {
         "id": 185,
@@ -4909,7 +5094,8 @@
         "country": true,
         "capital": [
             "Doha"
-        ]
+        ],
+        "englishName": "Qatar"
     },
     {
         "id": 186,
@@ -4935,7 +5121,8 @@
         "country": false,
         "capital": [
             "Saint-Denis"
-        ]
+        ],
+        "englishName": "Reunion"
     },
     {
         "id": 187,
@@ -4960,7 +5147,8 @@
         "country": true,
         "capital": [
             "Bukareszt"
-        ]
+        ],
+        "englishName": "Romanian"
     },
     {
         "id": 188,
@@ -4987,7 +5175,8 @@
         "country": true,
         "capital": [
             "Belgrad"
-        ]
+        ],
+        "englishName": "Serbia"
     },
     {
         "id": 189,
@@ -5014,7 +5203,8 @@
         "country": true,
         "capital": [
             "Moskwa"
-        ]
+        ],
+        "englishName": "Russia"
     },
     {
         "id": 190,
@@ -5040,7 +5230,8 @@
         "country": true,
         "capital": [
             "Kigali"
-        ]
+        ],
+        "englishName": "Rwanda"
     },
     {
         "id": 191,
@@ -5065,7 +5256,8 @@
         "country": true,
         "capital": [
             "Rijad"
-        ]
+        ],
+        "englishName": "Saudi Arabia"
     },
     {
         "id": 192,
@@ -5093,7 +5285,8 @@
         "country": true,
         "capital": [
             "Honiara"
-        ]
+        ],
+        "englishName": "Solomon Islands"
     },
     {
         "id": 193,
@@ -5122,7 +5315,8 @@
         "country": true,
         "capital": [
             "Victoria"
-        ]
+        ],
+        "englishName": "Seychelles"
     },
     {
         "id": 194,
@@ -5149,7 +5343,8 @@
         "country": true,
         "capital": [
             "Chartum"
-        ]
+        ],
+        "englishName": "Sudan"
     },
     {
         "id": 195,
@@ -5173,7 +5368,8 @@
         "country": true,
         "capital": [
             "Sztokholm"
-        ]
+        ],
+        "englishName": "Sweden"
     },
     {
         "id": 196,
@@ -5199,7 +5395,8 @@
         "country": true,
         "capital": [
             "Singapur"
-        ]
+        ],
+        "englishName": "Singapore"
     },
     {
         "id": 197,
@@ -5227,7 +5424,8 @@
         "country": false,
         "capital": [
             "Jamestown"
-        ]
+        ],
+        "englishName": "Saint Helena"
     },
     {
         "id": 198,
@@ -5254,7 +5452,8 @@
         "country": true,
         "capital": [
             "Lublana"
-        ]
+        ],
+        "englishName": "Slovenia"
     },
     {
         "id": 199,
@@ -5281,7 +5480,8 @@
         "country": true,
         "capital": [
             "Bratysława"
-        ]
+        ],
+        "englishName": "Slovakia"
     },
     {
         "id": 200,
@@ -5306,7 +5506,8 @@
         "country": true,
         "capital": [
             "Freetown"
-        ]
+        ],
+        "englishName": "Sierra Leone"
     },
     {
         "id": 201,
@@ -5334,7 +5535,8 @@
         "country": true,
         "capital": [
             "San Marino"
-        ]
+        ],
+        "englishName": "San Marino"
     },
     {
         "id": 202,
@@ -5360,7 +5562,8 @@
         "country": true,
         "capital": [
             "Dakar"
-        ]
+        ],
+        "englishName": "Senegal"
     },
     {
         "id": 203,
@@ -5384,7 +5587,8 @@
         "country": true,
         "capital": [
             "Mogadiszu"
-        ]
+        ],
+        "englishName": "Somalia"
     },
     {
         "id": 204,
@@ -5411,7 +5615,8 @@
         "country": true,
         "capital": [
             "Paramaribo"
-        ]
+        ],
+        "englishName": "Surinam"
     },
     {
         "id": 205,
@@ -5442,7 +5647,8 @@
         "country": true,
         "capital": [
             "Dżuba"
-        ]
+        ],
+        "englishName": "South Sudan"
     },
     {
         "id": 206,
@@ -5470,7 +5676,8 @@
         "country": true,
         "capital": [
             "São Tomé"
-        ]
+        ],
+        "englishName": "Sao Tome and Principe"
     },
     {
         "id": 207,
@@ -5500,7 +5707,8 @@
         "country": true,
         "capital": [
             "San Salvador"
-        ]
+        ],
+        "englishName": "El Salvador"
     },
     {
         "id": 208,
@@ -5529,7 +5737,8 @@
         "country": false,
         "capital": [
             "Philipsburg"
-        ]
+        ],
+        "englishName": "Sint Maarten"
     },
     {
         "id": 209,
@@ -5556,7 +5765,8 @@
         "country": true,
         "capital": [
             "Damaszek"
-        ]
+        ],
+        "englishName": "Syria"
     },
     {
         "id": 210,
@@ -5585,7 +5795,8 @@
         "capital": [
             "Mbabane",
             "Lobamba"
-        ]
+        ],
+        "englishName": "Eswatini"
     },
     {
         "id": 211,
@@ -5613,7 +5824,8 @@
         "country": false,
         "capital": [
             "Cockburn Town"
-        ]
+        ],
+        "englishName": "Turks and Caicos Islands"
     },
     {
         "id": 212,
@@ -5638,7 +5850,8 @@
         "country": true,
         "capital": [
             "Ndżamena"
-        ]
+        ],
+        "englishName": "Chad"
     },
     {
         "id": 213,
@@ -5666,7 +5879,8 @@
         "capital": [
             "Saint-Pierre",
             "Port-aux-Français"
-        ]
+        ],
+        "englishName": "French Southern and Antarctic Lands"
     },
     {
         "id": 214,
@@ -5693,7 +5907,8 @@
         "country": true,
         "capital": [
             "Lomé"
-        ]
+        ],
+        "englishName": "Togo"
     },
     {
         "id": 215,
@@ -5718,7 +5933,8 @@
         "country": true,
         "capital": [
             "Bangkok"
-        ]
+        ],
+        "englishName": "Thailand"
     },
     {
         "id": 216,
@@ -5746,7 +5962,8 @@
         "country": true,
         "capital": [
             "Duszanbe"
-        ]
+        ],
+        "englishName": "Tajikistan"
     },
     {
         "id": 217,
@@ -5773,7 +5990,8 @@
         "capital": [
             "Atafu",
             "brak"
-        ]
+        ],
+        "englishName": "Tokelau"
     },
     {
         "id": 218,
@@ -5800,7 +6018,8 @@
         "country": true,
         "capital": [
             "Dili"
-        ]
+        ],
+        "englishName": "East Timor"
     },
     {
         "id": 219,
@@ -5830,7 +6049,8 @@
         "country": true,
         "capital": [
             "Aszchabad"
-        ]
+        ],
+        "englishName": "Turkmenistan"
     },
     {
         "id": 220,
@@ -5856,7 +6076,8 @@
         "country": true,
         "capital": [
             "Tunis"
-        ]
+        ],
+        "englishName": "Tunisia"
     },
     {
         "id": 221,
@@ -5882,7 +6103,8 @@
         "country": true,
         "capital": [
             "Nukuʻalofa"
-        ]
+        ],
+        "englishName": "Tonga"
     },
     {
         "id": 222,
@@ -5908,7 +6130,8 @@
         "country": true,
         "capital": [
             "Ankara"
-        ]
+        ],
+        "englishName": "Türkiye"
     },
     {
         "id": 223,
@@ -5934,7 +6157,8 @@
         "country": true,
         "capital": [
             "Port-of-Spain"
-        ]
+        ],
+        "englishName": "Trinidad and Tobago"
     },
     {
         "id": 224,
@@ -5962,7 +6186,8 @@
         "country": true,
         "capital": [
             "Vaiaku"
-        ]
+        ],
+        "englishName": "Tuvalu"
     },
     {
         "id": 225,
@@ -5988,7 +6213,8 @@
         "country": true,
         "capital": [
             "Tajpej"
-        ]
+        ],
+        "englishName": "Taiwan"
     },
     {
         "id": 226,
@@ -6015,7 +6241,8 @@
         "country": true,
         "capital": [
             "Dodoma"
-        ]
+        ],
+        "englishName": "Tanzania"
     },
     {
         "id": 227,
@@ -6039,7 +6266,8 @@
         "country": true,
         "capital": [
             "Kijów"
-        ]
+        ],
+        "englishName": "Ukraine"
     },
     {
         "id": 228,
@@ -6066,7 +6294,8 @@
         "country": true,
         "capital": [
             "Kampala"
-        ]
+        ],
+        "englishName": "Uganda"
     },
     {
         "id": 229,
@@ -6093,7 +6322,8 @@
         "country": true,
         "capital": [
             "Waszyngton"
-        ]
+        ],
+        "englishName": "United States"
     },
     {
         "id": 230,
@@ -6119,7 +6349,8 @@
         "country": true,
         "capital": [
             "Montevideo"
-        ]
+        ],
+        "englishName": "Uruguay"
     },
     {
         "id": 231,
@@ -6147,7 +6378,8 @@
         "country": true,
         "capital": [
             "Taszkent"
-        ]
+        ],
+        "englishName": "Uzbekistan"
     },
     {
         "id": 232,
@@ -6173,7 +6405,8 @@
         "country": true,
         "capital": [
             "Watykan"
-        ]
+        ],
+        "englishName": "Vatican City"
     },
     {
         "id": 233,
@@ -6199,7 +6432,8 @@
         "country": true,
         "capital": [
             "Kingstown"
-        ]
+        ],
+        "englishName": "Saint Vincent and the Grenadines"
     },
     {
         "id": 234,
@@ -6226,7 +6460,8 @@
         "country": true,
         "capital": [
             "Caracas"
-        ]
+        ],
+        "englishName": "Venezuela"
     },
     {
         "id": 235,
@@ -6255,7 +6490,8 @@
         "country": false,
         "capital": [
             "Road Town"
-        ]
+        ],
+        "englishName": "Virgin Islands, British"
     },
     {
         "id": 236,
@@ -6287,7 +6523,8 @@
         "country": false,
         "capital": [
             "Charlotte Amalie"
-        ]
+        ],
+        "englishName": "Virgin Islands, United States"
     },
     {
         "id": 237,
@@ -6311,7 +6548,8 @@
         "country": true,
         "capital": [
             "Hanoi"
-        ]
+        ],
+        "englishName": "Vietnam"
     },
     {
         "id": 238,
@@ -6340,7 +6578,8 @@
         "country": true,
         "capital": [
             "Port Vila"
-        ]
+        ],
+        "englishName": "Vanuatu"
     },
     {
         "id": 239,
@@ -6367,7 +6606,8 @@
         "country": false,
         "capital": [
             "Mata Utu"
-        ]
+        ],
+        "englishName": "Wallis and Futuna"
     },
     {
         "id": 240,
@@ -6394,7 +6634,8 @@
         "country": true,
         "capital": [
             "Apia"
-        ]
+        ],
+        "englishName": "Samoa"
     },
     {
         "id": 241,
@@ -6421,7 +6662,8 @@
         "country": true,
         "capital": [
             "Prisztina"
-        ]
+        ],
+        "englishName": "Kosovo"
     },
     {
         "id": 242,
@@ -6447,7 +6689,8 @@
         "country": true,
         "capital": [
             "Sana"
-        ]
+        ],
+        "englishName": "Yemen"
     },
     {
         "id": 243,
@@ -6477,7 +6720,8 @@
         "country": false,
         "capital": [
             "Mamoudzou"
-        ]
+        ],
+        "englishName": "Mayotte"
     },
     {
         "id": 244,
@@ -6508,7 +6752,8 @@
             "Pretoria",
             "Bloemfontein",
             "Kapsztad"
-        ]
+        ],
+        "englishName": "South Africa"
     },
     {
         "id": 245,
@@ -6535,7 +6780,8 @@
         "country": true,
         "capital": [
             "Lusaka"
-        ]
+        ],
+        "englishName": "Zambia"
     },
     {
         "id": 246,
@@ -6565,7 +6811,8 @@
         "country": true,
         "capital": [
             "Harare"
-        ]
+        ],
+        "englishName": "Zimbabwe"
     },
     {
         "id": 247,
@@ -6593,7 +6840,8 @@
         "country": false,
         "capital": [
             "Kabul"
-        ]
+        ],
+        "englishName": "Afghanistan (old flag)"
     },
     {
         "id": 248,
@@ -6619,7 +6867,8 @@
         "country": false,
         "capital": [
             "Fort-de-France"
-        ]
+        ],
+        "englishName": "Martinique"
     },
     {
         "id": 249,
@@ -6648,7 +6897,8 @@
         "country": false,
         "capital": [
             "Adamstown"
-        ]
+        ],
+        "englishName": "Pitcairn"
     },
     {
         "id": 250,
@@ -6675,7 +6925,8 @@
         "country": false,
         "capital": [
             "Suchumi"
-        ]
+        ],
+        "englishName": "Abkhazia"
     },
     {
         "id": 251,
@@ -6703,7 +6954,8 @@
         "capital": [
             "Nikozja",
             "Nikozja Północna"
-        ]
+        ],
+        "englishName": "Northern Cyprus"
     },
     {
         "id": 252,
@@ -6731,7 +6983,8 @@
         "country": false,
         "capital": [
             "Stepanakert"
-        ]
+        ],
+        "englishName": "Nagorno-Karabakh"
     },
     {
         "id": 253,
@@ -6756,7 +7009,8 @@
         "country": false,
         "capital": [
             "Cchinwali"
-        ]
+        ],
+        "englishName": "South Ossetia"
     },
     {
         "id": 254,
@@ -6784,7 +7038,8 @@
         "country": false,
         "capital": [
             "Oranjestad"
-        ]
+        ],
+        "englishName": "Sint Eustatius"
     },
     {
         "id": 255,
@@ -6812,7 +7067,8 @@
         "country": false,
         "capital": [
             "The Bottom"
-        ]
+        ],
+        "englishName": "Saba"
     },
     {
         "id": 256,
@@ -6839,7 +7095,8 @@
         "country": false,
         "capital": [
             "Tyraspol"
-        ]
+        ],
+        "englishName": "Transnistria"
     },
     {
         "id": 257,
@@ -6867,6 +7124,7 @@
         "country": false,
         "capital": [
             "Hargejsa"
-        ]
+        ],
+        "englishName": "Somaliland"
     }
 ]
