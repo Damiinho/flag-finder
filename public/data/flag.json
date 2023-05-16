@@ -24,7 +24,8 @@
         "capital": [
             "Andora"
         ],
-        "englishName": "Andorra"
+        "englishName": "Andorra",
+        "alpha-3": "AND"
     },
     {
         "id": 1,
@@ -52,7 +53,8 @@
         "capital": [
             "Abu Dhabi"
         ],
-        "englishName": "United Arab Emirates"
+        "englishName": "United Arab Emirates",
+        "alpha-3": "ARE"
     },
     {
         "id": 2,
@@ -77,7 +79,8 @@
         "capital": [
             "Kabul"
         ],
-        "englishName": "Afghanistan"
+        "englishName": "Afghanistan",
+        "alpha-3": "AFG"
     },
     {
         "id": 3,
@@ -107,7 +110,8 @@
         "capital": [
             "Saint John's"
         ],
-        "englishName": "Antigua and Barbuda"
+        "englishName": "Antigua and Barbuda",
+        "alpha-3": "ATG"
     },
     {
         "id": 4,
@@ -136,7 +140,8 @@
         "capital": [
             "The Valley"
         ],
-        "englishName": "British Overseas Territory of Anguilla"
+        "englishName": "British Overseas Territory of Anguilla",
+        "alpha-3": "AIA"
     },
     {
         "id": 5,
@@ -162,7 +167,8 @@
         "capital": [
             "Tirana"
         ],
-        "englishName": "Albania"
+        "englishName": "Albania",
+        "alpha-3": "ALB"
     },
     {
         "id": 6,
@@ -190,7 +196,8 @@
         "capital": [
             "Erywań"
         ],
-        "englishName": "Armenia"
+        "englishName": "Armenia",
+        "alpha-3": "ARM"
     },
     {
         "id": 7,
@@ -219,7 +226,8 @@
         "capital": [
             "Luanda"
         ],
-        "englishName": "Angola"
+        "englishName": "Angola",
+        "alpha-3": "AGO"
     },
     {
         "id": 8,
@@ -244,7 +252,8 @@
         "capital": [
             "brak"
         ],
-        "englishName": "Antarctica"
+        "englishName": "Antarctica",
+        "alpha-3": "ATA"
     },
     {
         "id": 9,
@@ -271,7 +280,8 @@
         "capital": [
             "Buenos Aires"
         ],
-        "englishName": "Argentina"
+        "englishName": "Argentina",
+        "alpha-3": "ARG"
     },
     {
         "id": 10,
@@ -298,7 +308,8 @@
         "capital": [
             "Pago Pago"
         ],
-        "englishName": "American Samoa"
+        "englishName": "American Samoa",
+        "alpha-3": "ASM"
     },
     {
         "id": 11,
@@ -323,7 +334,8 @@
         "capital": [
             "Wiedeń"
         ],
-        "englishName": "Austria"
+        "englishName": "Austria",
+        "alpha-3": "AUT"
     },
     {
         "id": 12,
@@ -350,7 +362,8 @@
         "capital": [
             "Canberra"
         ],
-        "englishName": "Australia"
+        "englishName": "Australia",
+        "alpha-3": "AUS"
     },
     {
         "id": 13,
@@ -377,7 +390,8 @@
         "capital": [
             "Oranjestad"
         ],
-        "englishName": "Aruba"
+        "englishName": "Aruba",
+        "alpha-3": "ABW"
     },
     {
         "id": 14,
@@ -403,7 +417,8 @@
         "capital": [
             "Maarianhamina"
         ],
-        "englishName": "Aland Islands"
+        "englishName": "Aland Islands",
+        "alpha-3": "ALA"
     },
     {
         "id": 15,
@@ -432,7 +447,8 @@
         "capital": [
             "Baku"
         ],
-        "englishName": "Azerbaijan"
+        "englishName": "Azerbaijan",
+        "alpha-3": "AZE"
     },
     {
         "id": 16,
@@ -459,7 +475,8 @@
         "capital": [
             "Sarajewo"
         ],
-        "englishName": "Bosnia and Herzegovina"
+        "englishName": "Bosnia and Herzegovina",
+        "alpha-3": "BIH"
     },
     {
         "id": 17,
@@ -485,7 +502,8 @@
         "capital": [
             "Bridgetown"
         ],
-        "englishName": "Barbados"
+        "englishName": "Barbados",
+        "alpha-3": "BRB"
     },
     {
         "id": 18,
@@ -510,7 +528,8 @@
         "capital": [
             "Dhaka"
         ],
-        "englishName": "Bangladesh"
+        "englishName": "Bangladesh",
+        "alpha-3": "BGD"
     },
     {
         "id": 19,
@@ -536,7 +555,8 @@
         "capital": [
             "Bruksela"
         ],
-        "englishName": "Belgium"
+        "englishName": "Belgium",
+        "alpha-3": "BEL"
     },
     {
         "id": 20,
@@ -563,7 +583,8 @@
         "capital": [
             "Wagadugu"
         ],
-        "englishName": "Burkina Faso"
+        "englishName": "Burkina Faso",
+        "alpha-3": "BFA"
     },
     {
         "id": 21,
@@ -589,7 +610,8 @@
         "capital": [
             "Sofia"
         ],
-        "englishName": "Bulgaria"
+        "englishName": "Bulgaria",
+        "alpha-3": "BGR"
     },
     {
         "id": 22,
@@ -615,7 +637,8 @@
         "capital": [
             "Manama"
         ],
-        "englishName": "Bahrain"
+        "englishName": "Bahrain",
+        "alpha-3": "BHR"
     },
     {
         "id": 23,
@@ -643,7 +666,8 @@
         "capital": [
             "Gitega"
         ],
-        "englishName": "Burundi"
+        "englishName": "Burundi",
+        "alpha-3": "BDI"
     },
     {
         "id": 24,
@@ -670,7 +694,8 @@
         "capital": [
             "Porto-Novo"
         ],
-        "englishName": "Benin"
+        "englishName": "Benin",
+        "alpha-3": "BEN"
     },
     {
         "id": 25,
@@ -703,7 +728,8 @@
         "capital": [
             "Gustavia"
         ],
-        "englishName": "Saint Barthelemy"
+        "englishName": "Saint Barthelemy",
+        "alpha-3": "BLM"
     },
     {
         "id": 26,
@@ -732,7 +758,8 @@
         "capital": [
             "Hamilton"
         ],
-        "englishName": "Bermuda"
+        "englishName": "Bermuda",
+        "alpha-3": "BMU"
     },
     {
         "id": 27,
@@ -762,7 +789,8 @@
         "capital": [
             "Bandar Seri Begawan"
         ],
-        "englishName": "Brunei"
+        "englishName": "Brunei",
+        "alpha-3": "BRN"
     },
     {
         "id": 28,
@@ -788,7 +816,8 @@
         "capital": [
             "Sucre"
         ],
-        "englishName": "Bolivia"
+        "englishName": "Bolivia",
+        "alpha-3": "BOL"
     },
     {
         "id": 29,
@@ -816,7 +845,8 @@
         "capital": [
             "Kralendijk"
         ],
-        "englishName": "Bonaire"
+        "englishName": "Bonaire",
+        "alpha-3": "BES"
     },
     {
         "id": 30,
@@ -845,7 +875,8 @@
         "capital": [
             "Brasília"
         ],
-        "englishName": "Brazil"
+        "englishName": "Brazil",
+        "alpha-3": "BRA"
     },
     {
         "id": 31,
@@ -873,7 +904,8 @@
         "capital": [
             "Nassau"
         ],
-        "englishName": "Bahamas"
+        "englishName": "Bahamas",
+        "alpha-3": "BHS"
     },
     {
         "id": 32,
@@ -900,7 +932,8 @@
         "capital": [
             "Thimphu"
         ],
-        "englishName": "Bhutan"
+        "englishName": "Bhutan",
+        "alpha-3": "BTN"
     },
     {
         "id": 33,
@@ -926,7 +959,8 @@
         "capital": [
             "Gaborone"
         ],
-        "englishName": "Botswana"
+        "englishName": "Botswana",
+        "alpha-3": "BWA"
     },
     {
         "id": 34,
@@ -953,7 +987,8 @@
         "capital": [
             "Mińsk"
         ],
-        "englishName": "Belarus"
+        "englishName": "Belarus",
+        "alpha-3": "BLR"
     },
     {
         "id": 35,
@@ -983,7 +1018,8 @@
         "capital": [
             "Belmopan"
         ],
-        "englishName": "Belize"
+        "englishName": "Belize",
+        "alpha-3": "BLZ"
     },
     {
         "id": 36,
@@ -1009,7 +1045,8 @@
         "capital": [
             "Ottawa"
         ],
-        "englishName": "Canada"
+        "englishName": "Canada",
+        "alpha-3": "CAN"
     },
     {
         "id": 37,
@@ -1037,7 +1074,8 @@
         "capital": [
             "West Island"
         ],
-        "englishName": "Cocos Islands"
+        "englishName": "Cocos Islands",
+        "alpha-3": "CCK"
     },
     {
         "id": 38,
@@ -1064,7 +1102,8 @@
         "capital": [
             "Kinszasa"
         ],
-        "englishName": "Democratic Republic of Congo"
+        "englishName": "Democratic Republic of the Congo",
+        "alpha-3": "COD"
     },
     {
         "id": 39,
@@ -1094,7 +1133,8 @@
         "capital": [
             "Bangi"
         ],
-        "englishName": "The Central African Republic"
+        "englishName": "Central African Republic",
+        "alpha-3": "CAF"
     },
     {
         "id": 40,
@@ -1121,7 +1161,8 @@
         "capital": [
             "Brazzaville"
         ],
-        "englishName": "Congo"
+        "englishName": "Congo",
+        "alpha-3": "COG"
     },
     {
         "id": 41,
@@ -1146,7 +1187,8 @@
         "capital": [
             "Berno"
         ],
-        "englishName": "Switzerland"
+        "englishName": "Switzerland",
+        "alpha-3": "CHE"
     },
     {
         "id": 42,
@@ -1173,7 +1215,8 @@
         "capital": [
             "Jamusukro"
         ],
-        "englishName": "Côte d’Ivoire"
+        "englishName": "Ivory Coast",
+        "alpha-3": "CIV"
     },
     {
         "id": 43,
@@ -1200,7 +1243,8 @@
         "capital": [
             "Avarua"
         ],
-        "englishName": "Cook Islands"
+        "englishName": "Cook Islands",
+        "alpha-3": "COK"
     },
     {
         "id": 44,
@@ -1228,7 +1272,8 @@
         "capital": [
             "Santiago"
         ],
-        "englishName": "Chile"
+        "englishName": "Chile",
+        "alpha-3": "CHL"
     },
     {
         "id": 45,
@@ -1255,7 +1300,8 @@
         "capital": [
             "Jaunde"
         ],
-        "englishName": "Cameroon"
+        "englishName": "Cameroon",
+        "alpha-3": "CMR"
     },
     {
         "id": 46,
@@ -1280,7 +1326,8 @@
         "capital": [
             "Pekin"
         ],
-        "englishName": "China"
+        "englishName": "China",
+        "alpha-3": "TWN"
     },
     {
         "id": 47,
@@ -1306,7 +1353,8 @@
         "capital": [
             "Bogota"
         ],
-        "englishName": "Colombia"
+        "englishName": "Colombia",
+        "alpha-3": "COL"
     },
     {
         "id": 48,
@@ -1333,7 +1381,8 @@
         "capital": [
             "San Jose"
         ],
-        "englishName": "Costa Rica"
+        "englishName": "Costa Rica",
+        "alpha-3": "CRI"
     },
     {
         "id": 49,
@@ -1361,7 +1410,8 @@
         "capital": [
             "Hawana"
         ],
-        "englishName": "Cuba"
+        "englishName": "Cuba",
+        "alpha-3": "CUB"
     },
     {
         "id": 50,
@@ -1388,7 +1438,8 @@
         "capital": [
             "Praia"
         ],
-        "englishName": "Cape Verde"
+        "englishName": "Cape Verde",
+        "alpha-3": "CPV"
     },
     {
         "id": 51,
@@ -1415,7 +1466,8 @@
         "capital": [
             "Willemstad"
         ],
-        "englishName": "Curacao"
+        "englishName": "Curacao",
+        "alpha-3": "CUW"
     },
     {
         "id": 52,
@@ -1446,7 +1498,8 @@
         "capital": [
             "Flying Fish Cove"
         ],
-        "englishName": "Christmas Island"
+        "englishName": "Christmas Island",
+        "alpha-3": "CXR"
     },
     {
         "id": 53,
@@ -1473,7 +1526,8 @@
         "capital": [
             "Nikozja"
         ],
-        "englishName": "Cyprus"
+        "englishName": "Cyprus",
+        "alpha-3": "CYP"
     },
     {
         "id": 54,
@@ -1500,7 +1554,8 @@
         "capital": [
             "Praga"
         ],
-        "englishName": "Czech Republic"
+        "englishName": "Czech Republic",
+        "alpha-3": "CZE"
     },
     {
         "id": 55,
@@ -1526,7 +1581,8 @@
         "capital": [
             "Berlin"
         ],
-        "englishName": "Germany"
+        "englishName": "Germany",
+        "alpha-3": "DEU"
     },
     {
         "id": 56,
@@ -1555,7 +1611,8 @@
         "capital": [
             "Dżibuti"
         ],
-        "englishName": "Djibouti"
+        "englishName": "Djibouti",
+        "alpha-3": "DJI"
     },
     {
         "id": 57,
@@ -1580,7 +1637,8 @@
         "capital": [
             "Kopenhaga"
         ],
-        "englishName": "Denmark"
+        "englishName": "Denmark",
+        "alpha-3": "DNK"
     },
     {
         "id": 58,
@@ -1610,7 +1668,8 @@
         "capital": [
             "Roseau"
         ],
-        "englishName": "Commonwealth of Dominica"
+        "englishName": "Commonwealth of Dominica",
+        "alpha-3": "DMA"
     },
     {
         "id": 59,
@@ -1637,7 +1696,8 @@
         "capital": [
             "Santo Domingo"
         ],
-        "englishName": "Dominican Republic"
+        "englishName": "Dominican Republic",
+        "alpha-3": "DOM"
     },
     {
         "id": 60,
@@ -1665,7 +1725,8 @@
         "capital": [
             "Algier"
         ],
-        "englishName": "Algeria"
+        "englishName": "Algeria",
+        "alpha-3": "DZA"
     },
     {
         "id": 61,
@@ -1694,7 +1755,8 @@
         "capital": [
             "Quito"
         ],
-        "englishName": "Ecuador"
+        "englishName": "Ecuador",
+        "alpha-3": "ECU"
     },
     {
         "id": 62,
@@ -1720,7 +1782,8 @@
         "capital": [
             "Tallinn"
         ],
-        "englishName": "Estonia"
+        "englishName": "Estonia",
+        "alpha-3": "EST"
     },
     {
         "id": 63,
@@ -1749,7 +1812,8 @@
         "capital": [
             "Kair"
         ],
-        "englishName": "Egypt"
+        "englishName": "Egypt",
+        "alpha-3": "EGY"
     },
     {
         "id": 64,
@@ -1780,7 +1844,8 @@
             "Al-Ujun",
             "Tifariti"
         ],
-        "englishName": "Western Sahara"
+        "englishName": "Western Sahara",
+        "alpha-3": "ESH"
     },
     {
         "id": 65,
@@ -1808,7 +1873,8 @@
         "capital": [
             "Asmara"
         ],
-        "englishName": "Eritrea"
+        "englishName": "Eritrea",
+        "alpha-3": "ERI"
     },
     {
         "id": 66,
@@ -1835,7 +1901,8 @@
         "capital": [
             "Madryt"
         ],
-        "englishName": "Spain"
+        "englishName": "Spain",
+        "alpha-3": "ESP"
     },
     {
         "id": 67,
@@ -1864,7 +1931,8 @@
         "capital": [
             "Addis Abeba"
         ],
-        "englishName": "Ethiopia"
+        "englishName": "Ethiopia",
+        "alpha-3": "ETH"
     },
     {
         "id": 68,
@@ -1890,7 +1958,8 @@
         "capital": [
             "Helsinki"
         ],
-        "englishName": "Finland"
+        "englishName": "Finland",
+        "alpha-3": "FIN"
     },
     {
         "id": 69,
@@ -1920,7 +1989,8 @@
         "capital": [
             "Suva"
         ],
-        "englishName": "Fiji"
+        "englishName": "Fiji",
+        "alpha-3": "FJI"
     },
     {
         "id": 70,
@@ -1950,7 +2020,8 @@
         "capital": [
             "Port Stanley"
         ],
-        "englishName": "Falkland Islands"
+        "englishName": "Falkland Islands",
+        "alpha-3": "FLK"
     },
     {
         "id": 71,
@@ -1975,7 +2046,8 @@
         "capital": [
             "Palikir"
         ],
-        "englishName": "Micronesia"
+        "englishName": "Micronesia",
+        "alpha-3": "FSM"
     },
     {
         "id": 72,
@@ -2001,7 +2073,8 @@
         "capital": [
             "Thorshavn"
         ],
-        "englishName": "Faroe Islands"
+        "englishName": "Faroe Islands",
+        "alpha-3": "FRO"
     },
     {
         "id": 73,
@@ -2027,7 +2100,8 @@
         "capital": [
             "Paryż"
         ],
-        "englishName": "France"
+        "englishName": "France",
+        "alpha-3": "FRA"
     },
     {
         "id": 74,
@@ -2053,7 +2127,8 @@
         "capital": [
             "Libreville"
         ],
-        "englishName": "Gabon"
+        "englishName": "Gabon",
+        "alpha-3": "GAB"
     },
     {
         "id": 75,
@@ -2079,7 +2154,8 @@
         "capital": [
             "Londyn"
         ],
-        "englishName": "United Kingdom"
+        "englishName": "United Kingdom",
+        "alpha-3": "GBR"
     },
     {
         "id": 76,
@@ -2104,7 +2180,8 @@
         "capital": [
             "Londyn"
         ],
-        "englishName": "England"
+        "englishName": "England",
+        "alpha-3": ""
     },
     {
         "id": 77,
@@ -2131,7 +2208,8 @@
         "capital": [
             "Belfast"
         ],
-        "englishName": "Northern Ireland"
+        "englishName": "Northern Ireland",
+        "alpha-3": "GBR"
     },
     {
         "id": 78,
@@ -2156,7 +2234,8 @@
         "capital": [
             "Edynburg"
         ],
-        "englishName": "Scotland"
+        "englishName": "Scotland",
+        "alpha-3": ""
     },
     {
         "id": 79,
@@ -2183,7 +2262,8 @@
         "capital": [
             "Cardiff"
         ],
-        "englishName": "Wales"
+        "englishName": "Wales",
+        "alpha-3": ""
     },
     {
         "id": 80,
@@ -2211,7 +2291,8 @@
         "capital": [
             "Saint George's"
         ],
-        "englishName": "Grenada"
+        "englishName": "Grenada",
+        "alpha-3": "GRD"
     },
     {
         "id": 81,
@@ -2237,7 +2318,8 @@
         "capital": [
             "Tbilisi"
         ],
-        "englishName": "Georgia"
+        "englishName": "Georgia",
+        "alpha-3": "GEO"
     },
     {
         "id": 82,
@@ -2265,7 +2347,8 @@
         "capital": [
             "Kajenna"
         ],
-        "englishName": "French Guiana"
+        "englishName": "French Guiana",
+        "alpha-3": "GUF"
     },
     {
         "id": 83,
@@ -2290,7 +2373,8 @@
         "capital": [
             "Saint Peter Port"
         ],
-        "englishName": "Guernsey"
+        "englishName": "Guernsey",
+        "alpha-3": "GGY"
     },
     {
         "id": 84,
@@ -2318,7 +2402,8 @@
         "capital": [
             "Akra"
         ],
-        "englishName": "Ghana"
+        "englishName": "Ghana",
+        "alpha-3": "GHA"
     },
     {
         "id": 85,
@@ -2345,7 +2430,8 @@
         "capital": [
             "Gibraltar"
         ],
-        "englishName": "Gibraltar"
+        "englishName": "Gibraltar",
+        "alpha-3": "GIB"
     },
     {
         "id": 86,
@@ -2371,7 +2457,8 @@
         "capital": [
             "Nuuk"
         ],
-        "englishName": "Greenland"
+        "englishName": "Greenland",
+        "alpha-3": "GRL"
     },
     {
         "id": 87,
@@ -2398,7 +2485,8 @@
         "capital": [
             "Bandżul"
         ],
-        "englishName": "Gambia"
+        "englishName": "Gambia",
+        "alpha-3": "GMB"
     },
     {
         "id": 88,
@@ -2424,7 +2512,8 @@
         "capital": [
             "Konakry"
         ],
-        "englishName": "Guinea"
+        "englishName": "Guinea",
+        "alpha-3": "PNG"
     },
     {
         "id": 89,
@@ -2453,7 +2542,8 @@
         "capital": [
             ""
         ],
-        "englishName": "Guadeloupe"
+        "englishName": "Guadeloupe",
+        "alpha-3": "GLP"
     },
     {
         "id": 90,
@@ -2484,7 +2574,8 @@
         "capital": [
             "Basse-Terre"
         ],
-        "englishName": "Equatorial Guinea"
+        "englishName": "Equatorial Guinea",
+        "alpha-3": "GNQ"
     },
     {
         "id": 91,
@@ -2510,7 +2601,8 @@
         "capital": [
             "Ateny"
         ],
-        "englishName": "Greece"
+        "englishName": "Greece",
+        "alpha-3": "GRC"
     },
     {
         "id": 92,
@@ -2537,7 +2629,8 @@
         "capital": [
             "King Edward Point"
         ],
-        "englishName": "South Georgia and South Sandwich Islands"
+        "englishName": "South Georgia and South Sandwich Islands",
+        "alpha-3": "SGS"
     },
     {
         "id": 93,
@@ -2566,7 +2659,8 @@
         "capital": [
             "Gwatemala"
         ],
-        "englishName": "Guatemala"
+        "englishName": "Guatemala",
+        "alpha-3": "GTM"
     },
     {
         "id": 94,
@@ -2593,7 +2687,8 @@
         "capital": [
             "Hagåtña"
         ],
-        "englishName": "Guam"
+        "englishName": "Guam",
+        "alpha-3": "GUM"
     },
     {
         "id": 95,
@@ -2621,7 +2716,8 @@
         "capital": [
             "Bissau"
         ],
-        "englishName": "Guinea-Bissau"
+        "englishName": "Guinea-Bissau",
+        "alpha-3": "GNB"
     },
     {
         "id": 96,
@@ -2647,7 +2743,8 @@
         "capital": [
             "Georgetown"
         ],
-        "englishName": "Guyana"
+        "englishName": "Guyana",
+        "alpha-3": "GUY"
     },
     {
         "id": 97,
@@ -2673,7 +2770,8 @@
         "capital": [
             "Hongkong"
         ],
-        "englishName": "Hongkong"
+        "englishName": "Hong Kong",
+        "alpha-3": "HKG"
     },
     {
         "id": 98,
@@ -2699,7 +2797,8 @@
         "capital": [
             "Tegucigalpa"
         ],
-        "englishName": "Honduras"
+        "englishName": "Honduras",
+        "alpha-3": "HND"
     },
     {
         "id": 99,
@@ -2726,7 +2825,8 @@
         "capital": [
             "Zagrzeb"
         ],
-        "englishName": "Croatia"
+        "englishName": "Croatia",
+        "alpha-3": "HRV"
     },
     {
         "id": 100,
@@ -2752,7 +2852,8 @@
         "capital": [
             "Port-au-Prince"
         ],
-        "englishName": "Haiti"
+        "englishName": "Haiti",
+        "alpha-3": "HTI"
     },
     {
         "id": 101,
@@ -2778,7 +2879,8 @@
         "capital": [
             "Budapeszt"
         ],
-        "englishName": "Hungary"
+        "englishName": "Hungary",
+        "alpha-3": "HUN"
     },
     {
         "id": 102,
@@ -2804,7 +2906,8 @@
         "capital": [
             "Dżakarta"
         ],
-        "englishName": "Indonesia"
+        "englishName": "Indonesia",
+        "alpha-3": "IDN"
     },
     {
         "id": 103,
@@ -2830,7 +2933,8 @@
         "capital": [
             "Dublin"
         ],
-        "englishName": "Ireland"
+        "englishName": "Ireland",
+        "alpha-3": "IRL"
     },
     {
         "id": 104,
@@ -2857,7 +2961,8 @@
             "Jerozolima",
             "Tel Awiw"
         ],
-        "englishName": "Israel"
+        "englishName": "Israel",
+        "alpha-3": "ISR"
     },
     {
         "id": 105,
@@ -2882,7 +2987,8 @@
         "capital": [
             "Douglas"
         ],
-        "englishName": "Isle Of Man"
+        "englishName": "Isle Of Man",
+        "alpha-3": "IMN"
     },
     {
         "id": 106,
@@ -2911,7 +3017,8 @@
         "capital": [
             "Nowe Delhi"
         ],
-        "englishName": "India"
+        "englishName": "India",
+        "alpha-3": "IOT"
     },
     {
         "id": 107,
@@ -2940,7 +3047,8 @@
         "capital": [
             "Diego Garcia"
         ],
-        "englishName": "British Indian Ocean Territory"
+        "englishName": "British Indian Ocean Territory",
+        "alpha-3": "IOT"
     },
     {
         "id": 108,
@@ -2968,7 +3076,8 @@
         "capital": [
             "Bagdad"
         ],
-        "englishName": "Iraq"
+        "englishName": "Iraq",
+        "alpha-3": "IRQ"
     },
     {
         "id": 109,
@@ -2996,7 +3105,8 @@
         "capital": [
             "Teheran"
         ],
-        "englishName": "Iran"
+        "englishName": "Iran",
+        "alpha-3": "IRN"
     },
     {
         "id": 110,
@@ -3023,7 +3133,8 @@
         "capital": [
             "Reykjavík"
         ],
-        "englishName": "Iceland"
+        "englishName": "Iceland",
+        "alpha-3": "ISL"
     },
     {
         "id": 111,
@@ -3049,7 +3160,8 @@
         "capital": [
             "Rzym"
         ],
-        "englishName": "Italy"
+        "englishName": "Italy",
+        "alpha-3": "ITA"
     },
     {
         "id": 112,
@@ -3076,7 +3188,8 @@
         "capital": [
             "Saint Helier"
         ],
-        "englishName": "Jersey"
+        "englishName": "Jersey",
+        "alpha-3": "JEY"
     },
     {
         "id": 113,
@@ -3103,7 +3216,8 @@
         "capital": [
             "Kingston"
         ],
-        "englishName": "Jamaica"
+        "englishName": "Jamaica",
+        "alpha-3": "JAM"
     },
     {
         "id": 114,
@@ -3132,7 +3246,8 @@
         "capital": [
             "Amman"
         ],
-        "englishName": "Jordan"
+        "englishName": "Jordan",
+        "alpha-3": "JOR"
     },
     {
         "id": 115,
@@ -3158,7 +3273,8 @@
         "capital": [
             "Tokio"
         ],
-        "englishName": "Japan"
+        "englishName": "Japan",
+        "alpha-3": "JPN"
     },
     {
         "id": 116,
@@ -3186,7 +3302,8 @@
         "capital": [
             "Nairobi"
         ],
-        "englishName": "Kenya"
+        "englishName": "Kenya",
+        "alpha-3": "KEN"
     },
     {
         "id": 117,
@@ -3211,7 +3328,8 @@
         "capital": [
             "Biszkek"
         ],
-        "englishName": "Kyrgyzstan"
+        "englishName": "Kyrgyzstan",
+        "alpha-3": "KGZ"
     },
     {
         "id": 118,
@@ -3238,7 +3356,8 @@
         "capital": [
             "Phnom Penh"
         ],
-        "englishName": "Cambodia"
+        "englishName": "Cambodia",
+        "alpha-3": "KHM"
     },
     {
         "id": 119,
@@ -3267,7 +3386,8 @@
         "capital": [
             "Bairiki"
         ],
-        "englishName": "Kiribati"
+        "englishName": "Kiribati",
+        "alpha-3": "KIR"
     },
     {
         "id": 120,
@@ -3298,7 +3418,8 @@
         "capital": [
             "Moroni"
         ],
-        "englishName": "Chambers"
+        "englishName": "Comoros",
+        "alpha-3": "COM"
     },
     {
         "id": 121,
@@ -3328,7 +3449,8 @@
         "capital": [
             "Basseterre"
         ],
-        "englishName": "Saint Kitts and Nevis"
+        "englishName": "Saint Kitts and Nevis",
+        "alpha-3": "KNA"
     },
     {
         "id": 122,
@@ -3356,7 +3478,8 @@
         "capital": [
             "Pjongjang"
         ],
-        "englishName": "North Korea"
+        "englishName": "North Korea",
+        "alpha-3": "PRK"
     },
     {
         "id": 123,
@@ -3385,7 +3508,8 @@
         "capital": [
             "Seul"
         ],
-        "englishName": "South Korea"
+        "englishName": "South Korea",
+        "alpha-3": "KOR"
     },
     {
         "id": 124,
@@ -3413,7 +3537,8 @@
         "capital": [
             "Kuwejt"
         ],
-        "englishName": "Kuwait"
+        "englishName": "Kuwait",
+        "alpha-3": "KWT"
     },
     {
         "id": 125,
@@ -3443,7 +3568,8 @@
         "capital": [
             "George Town"
         ],
-        "englishName": "Cayman Islands"
+        "englishName": "Cayman Islands",
+        "alpha-3": "CYM"
     },
     {
         "id": 126,
@@ -3471,7 +3597,8 @@
         "capital": [
             "Astana"
         ],
-        "englishName": "Kazakhstan"
+        "englishName": "Kazakhstan",
+        "alpha-3": "KAZ"
     },
     {
         "id": 127,
@@ -3498,7 +3625,8 @@
         "capital": [
             "Wientian"
         ],
-        "englishName": "Laos"
+        "englishName": "Laos",
+        "alpha-3": "LAO"
     },
     {
         "id": 128,
@@ -3525,7 +3653,8 @@
         "capital": [
             "Bejrut"
         ],
-        "englishName": "Lebanon"
+        "englishName": "Lebanon",
+        "alpha-3": "LBN"
     },
     {
         "id": 129,
@@ -3551,7 +3680,8 @@
         "capital": [
             "Castries"
         ],
-        "englishName": "Saint Lucia"
+        "englishName": "Saint Lucia",
+        "alpha-3": "LCA"
     },
     {
         "id": 130,
@@ -3577,7 +3707,8 @@
         "capital": [
             "Vaduz"
         ],
-        "englishName": "Liechtenstein"
+        "englishName": "Liechtenstein",
+        "alpha-3": "LIE"
     },
     {
         "id": 131,
@@ -3606,7 +3737,8 @@
         "capital": [
             "Sri Dźajawardanapura Kotte"
         ],
-        "englishName": "Sri Lanka"
+        "englishName": "Sri Lanka",
+        "alpha-3": "LKA"
     },
     {
         "id": 132,
@@ -3633,7 +3765,8 @@
         "capital": [
             "Monrovia"
         ],
-        "englishName": "Liberia"
+        "englishName": "Liberia",
+        "alpha-3": "LBR"
     },
     {
         "id": 133,
@@ -3661,7 +3794,8 @@
         "capital": [
             "Maseru"
         ],
-        "englishName": "Lesotho"
+        "englishName": "Lesotho",
+        "alpha-3": "LSO"
     },
     {
         "id": 134,
@@ -3687,7 +3821,8 @@
         "capital": [
             "Wilno"
         ],
-        "englishName": "Lithuania"
+        "englishName": "Lithuania",
+        "alpha-3": "LTU"
     },
     {
         "id": 135,
@@ -3713,7 +3848,8 @@
         "capital": [
             "Luksemburg"
         ],
-        "englishName": "Luxembourg"
+        "englishName": "Luxembourg",
+        "alpha-3": "LUX"
     },
     {
         "id": 136,
@@ -3738,7 +3874,8 @@
         "capital": [
             "Ryga"
         ],
-        "englishName": "Latvia"
+        "englishName": "Latvia",
+        "alpha-3": "LVA"
     },
     {
         "id": 137,
@@ -3767,7 +3904,8 @@
         "capital": [
             "Trypolis"
         ],
-        "englishName": "Libya"
+        "englishName": "Libya",
+        "alpha-3": "LBY"
     },
     {
         "id": 138,
@@ -3792,7 +3930,8 @@
         "capital": [
             "Rabat"
         ],
-        "englishName": "Morocco"
+        "englishName": "Morocco",
+        "alpha-3": "MAR"
     },
     {
         "id": 139,
@@ -3817,7 +3956,8 @@
         "capital": [
             "Monako"
         ],
-        "englishName": "Monaco"
+        "englishName": "Monaco",
+        "alpha-3": "MCO"
     },
     {
         "id": 140,
@@ -3846,7 +3986,8 @@
         "capital": [
             "Kiszyniów"
         ],
-        "englishName": "Moldova"
+        "englishName": "Moldova",
+        "alpha-3": "MDA"
     },
     {
         "id": 141,
@@ -3872,7 +4013,8 @@
         "capital": [
             "Podgorica"
         ],
-        "englishName": "Montenegro"
+        "englishName": "Montenegro",
+        "alpha-3": "MNE"
     },
     {
         "id": 142,
@@ -3899,7 +4041,8 @@
         "capital": [
             "Antananarywa"
         ],
-        "englishName": "Madagascar"
+        "englishName": "Madagascar",
+        "alpha-3": "MDG"
     },
     {
         "id": 143,
@@ -3926,7 +4069,8 @@
         "capital": [
             "Delap"
         ],
-        "englishName": "Marshall Islands"
+        "englishName": "Marshall Islands",
+        "alpha-3": "MHL"
     },
     {
         "id": 144,
@@ -3952,7 +4096,8 @@
         "capital": [
             "Bamako"
         ],
-        "englishName": "Mali"
+        "englishName": "Mali",
+        "alpha-3": "SOM"
     },
     {
         "id": 145,
@@ -3979,7 +4124,8 @@
         "capital": [
             "Skopje"
         ],
-        "englishName": "North Macedonia"
+        "englishName": "North Macedonia",
+        "alpha-3": "MKD"
     },
     {
         "id": 146,
@@ -4007,7 +4153,8 @@
         "capital": [
             "Naypyidaw"
         ],
-        "englishName": "Myanmar"
+        "englishName": "Myanmar",
+        "alpha-3": "MMR"
     },
     {
         "id": 147,
@@ -4038,7 +4185,8 @@
         "capital": [
             "Ułan Bator"
         ],
-        "englishName": "Mongolia"
+        "englishName": "Mongolia",
+        "alpha-3": "MNG"
     },
     {
         "id": 148,
@@ -4066,7 +4214,8 @@
         "capital": [
             "Makau"
         ],
-        "englishName": "Macao"
+        "englishName": "Macao",
+        "alpha-3": "MAC"
     },
     {
         "id": 149,
@@ -4096,7 +4245,8 @@
         "capital": [
             "Capitol Hill"
         ],
-        "englishName": "Northern Mariana Islands"
+        "englishName": "Northern Mariana Islands",
+        "alpha-3": "MNP"
     },
     {
         "id": 150,
@@ -4124,7 +4274,8 @@
         "capital": [
             "Nawakszut"
         ],
-        "englishName": "Mauritania"
+        "englishName": "Mauritania",
+        "alpha-3": "MRT"
     },
     {
         "id": 151,
@@ -4152,7 +4303,8 @@
             "Plymouth",
             "Brades"
         ],
-        "englishName": "Montserrat"
+        "englishName": "Montserrat",
+        "alpha-3": "MSR"
     },
     {
         "id": 152,
@@ -4178,7 +4330,8 @@
         "capital": [
             "Valetta"
         ],
-        "englishName": "Malta"
+        "englishName": "Malta",
+        "alpha-3": "MLT"
     },
     {
         "id": 153,
@@ -4205,7 +4358,8 @@
         "capital": [
             "Port Louis"
         ],
-        "englishName": "Mauritius"
+        "englishName": "Mauritius",
+        "alpha-3": "MUS"
     },
     {
         "id": 154,
@@ -4232,7 +4386,8 @@
         "capital": [
             "Male"
         ],
-        "englishName": "The Maldives"
+        "englishName": "The Maldives",
+        "alpha-3": "MDV"
     },
     {
         "id": 155,
@@ -4259,7 +4414,8 @@
         "capital": [
             "Lilongwe"
         ],
-        "englishName": "Malawi"
+        "englishName": "Malawi",
+        "alpha-3": "MWI"
     },
     {
         "id": 156,
@@ -4287,7 +4443,8 @@
         "capital": [
             "Meksyk"
         ],
-        "englishName": "Mexico"
+        "englishName": "Mexico",
+        "alpha-3": "MEX"
     },
     {
         "id": 157,
@@ -4316,7 +4473,8 @@
             "Kuala Lumpur",
             "Putrajaya"
         ],
-        "englishName": "Malaysia"
+        "englishName": "Malaysia",
+        "alpha-3": "MYS"
     },
     {
         "id": 158,
@@ -4348,7 +4506,8 @@
         "capital": [
             "Maputo"
         ],
-        "englishName": "Mozambique"
+        "englishName": "Mozambique",
+        "alpha-3": "MOZ"
     },
     {
         "id": 159,
@@ -4378,7 +4537,8 @@
         "capital": [
             "Windhuk"
         ],
-        "englishName": "Namibia"
+        "englishName": "Namibia",
+        "alpha-3": "NAM"
     },
     {
         "id": 160,
@@ -4408,7 +4568,8 @@
         "capital": [
             "Numea"
         ],
-        "englishName": "New Caledonia"
+        "englishName": "New Caledonia",
+        "alpha-3": "NCL"
     },
     {
         "id": 161,
@@ -4435,7 +4596,8 @@
         "capital": [
             "Niamey"
         ],
-        "englishName": "Niger"
+        "englishName": "Niger",
+        "alpha-3": "NGA"
     },
     {
         "id": 162,
@@ -4461,7 +4623,8 @@
         "capital": [
             "Kingston"
         ],
-        "englishName": "Norfolk Island"
+        "englishName": "Norfolk Island",
+        "alpha-3": "NFK"
     },
     {
         "id": 163,
@@ -4486,7 +4649,8 @@
         "capital": [
             "Abudża"
         ],
-        "englishName": "Nigeria"
+        "englishName": "Nigeria",
+        "alpha-3": "NGA"
     },
     {
         "id": 164,
@@ -4514,7 +4678,8 @@
         "capital": [
             "Managua"
         ],
-        "englishName": "Nicaragua"
+        "englishName": "Nicaragua",
+        "alpha-3": "NIC"
     },
     {
         "id": 165,
@@ -4541,7 +4706,8 @@
             "Amsterdam",
             "Haga"
         ],
-        "englishName": "Netherlands"
+        "englishName": "Netherlands",
+        "alpha-3": "NLD"
     },
     {
         "id": 166,
@@ -4567,7 +4733,8 @@
         "capital": [
             "Oslo"
         ],
-        "englishName": "Norway"
+        "englishName": "Norway",
+        "alpha-3": "NOR"
     },
     {
         "id": 167,
@@ -4595,7 +4762,8 @@
         "capital": [
             "Katmandu"
         ],
-        "englishName": "Nepal"
+        "englishName": "Nepal",
+        "alpha-3": "NPL"
     },
     {
         "id": 168,
@@ -4622,7 +4790,8 @@
         "capital": [
             "Yaren"
         ],
-        "englishName": "Nauru"
+        "englishName": "Nauru",
+        "alpha-3": "NRU"
     },
     {
         "id": 169,
@@ -4650,7 +4819,8 @@
         "capital": [
             "Alofi"
         ],
-        "englishName": "Niue"
+        "englishName": "Niue",
+        "alpha-3": "NIU"
     },
     {
         "id": 170,
@@ -4677,7 +4847,8 @@
         "capital": [
             "Wellington"
         ],
-        "englishName": "New Zealand"
+        "englishName": "New Zealand",
+        "alpha-3": "NZL"
     },
     {
         "id": 171,
@@ -4706,7 +4877,8 @@
         "capital": [
             "Maskat"
         ],
-        "englishName": "Oman"
+        "englishName": "Oman",
+        "alpha-3": "OMN"
     },
     {
         "id": 172,
@@ -4733,7 +4905,8 @@
         "capital": [
             "Panama"
         ],
-        "englishName": "Panama"
+        "englishName": "Panama",
+        "alpha-3": "PAN"
     },
     {
         "id": 173,
@@ -4758,7 +4931,8 @@
         "capital": [
             "Lima"
         ],
-        "englishName": "Peru"
+        "englishName": "Peru",
+        "alpha-3": "PER"
     },
     {
         "id": 174,
@@ -4787,7 +4961,8 @@
         "capital": [
             "Papeete"
         ],
-        "englishName": "French Polynesia"
+        "englishName": "French Polynesia",
+        "alpha-3": "PYF"
     },
     {
         "id": 175,
@@ -4816,7 +4991,8 @@
         "capital": [
             "Port Moresby"
         ],
-        "englishName": "Papua New Guinea"
+        "englishName": "Papua New Guinea",
+        "alpha-3": "PNG"
     },
     {
         "id": 176,
@@ -4846,7 +5022,8 @@
         "capital": [
             "Manila"
         ],
-        "englishName": "Philippines"
+        "englishName": "Philippines",
+        "alpha-3": "PHL"
     },
     {
         "id": 177,
@@ -4873,7 +5050,8 @@
         "capital": [
             "Islamabad"
         ],
-        "englishName": "Pakistan"
+        "englishName": "Pakistan",
+        "alpha-3": "PAK"
     },
     {
         "id": 178,
@@ -4898,7 +5076,8 @@
         "capital": [
             "Warszawa"
         ],
-        "englishName": "Poland"
+        "englishName": "Poland",
+        "alpha-3": "POL"
     },
     {
         "id": 179,
@@ -4929,7 +5108,8 @@
         "capital": [
             "Saint-Pierre"
         ],
-        "englishName": "Saint Pierre and Miquelon"
+        "englishName": "Saint Pierre and Miquelon",
+        "alpha-3": "SPM"
     },
     {
         "id": 180,
@@ -4957,7 +5137,8 @@
         "capital": [
             "San Juan"
         ],
-        "englishName": "Portugal"
+        "englishName": "Portugal",
+        "alpha-3": "PRT"
     },
     {
         "id": 181,
@@ -4985,7 +5166,8 @@
         "capital": [
             "Ramallah"
         ],
-        "englishName": "Palestine"
+        "englishName": "Palestine",
+        "alpha-3": "PSE"
     },
     {
         "id": 182,
@@ -5014,7 +5196,8 @@
         "capital": [
             "Lizbona"
         ],
-        "englishName": "Portugal"
+        "englishName": "Portugal",
+        "alpha-3": "PRT"
     },
     {
         "id": 183,
@@ -5039,7 +5222,8 @@
         "capital": [
             "Ngerulmud"
         ],
-        "englishName": "Palau"
+        "englishName": "Palau",
+        "alpha-3": "PLW"
     },
     {
         "id": 184,
@@ -5069,7 +5253,8 @@
         "capital": [
             "Asunción"
         ],
-        "englishName": "Paraguay"
+        "englishName": "Paraguay",
+        "alpha-3": "PRY"
     },
     {
         "id": 185,
@@ -5095,7 +5280,8 @@
         "capital": [
             "Doha"
         ],
-        "englishName": "Qatar"
+        "englishName": "Qatar",
+        "alpha-3": "QAT"
     },
     {
         "id": 186,
@@ -5122,7 +5308,8 @@
         "capital": [
             "Saint-Denis"
         ],
-        "englishName": "Reunion"
+        "englishName": "Reunion",
+        "alpha-3": "REU"
     },
     {
         "id": 187,
@@ -5148,7 +5335,8 @@
         "capital": [
             "Bukareszt"
         ],
-        "englishName": "Romanian"
+        "englishName": "Romania",
+        "alpha-3": "ROU"
     },
     {
         "id": 188,
@@ -5176,7 +5364,8 @@
         "capital": [
             "Belgrad"
         ],
-        "englishName": "Serbia"
+        "englishName": "Serbia",
+        "alpha-3": "SRB"
     },
     {
         "id": 189,
@@ -5204,7 +5393,8 @@
         "capital": [
             "Moskwa"
         ],
-        "englishName": "Russia"
+        "englishName": "Russia",
+        "alpha-3": "RUS"
     },
     {
         "id": 190,
@@ -5231,7 +5421,8 @@
         "capital": [
             "Kigali"
         ],
-        "englishName": "Rwanda"
+        "englishName": "Rwanda",
+        "alpha-3": "RWA"
     },
     {
         "id": 191,
@@ -5257,7 +5448,8 @@
         "capital": [
             "Rijad"
         ],
-        "englishName": "Saudi Arabia"
+        "englishName": "Saudi Arabia",
+        "alpha-3": "SAU"
     },
     {
         "id": 192,
@@ -5286,7 +5478,8 @@
         "capital": [
             "Honiara"
         ],
-        "englishName": "Solomon Islands"
+        "englishName": "Solomon Islands",
+        "alpha-3": "SLB"
     },
     {
         "id": 193,
@@ -5316,7 +5509,8 @@
         "capital": [
             "Victoria"
         ],
-        "englishName": "Seychelles"
+        "englishName": "Seychelles",
+        "alpha-3": "SYC"
     },
     {
         "id": 194,
@@ -5344,7 +5538,8 @@
         "capital": [
             "Chartum"
         ],
-        "englishName": "Sudan"
+        "englishName": "Sudan",
+        "alpha-3": "SSD"
     },
     {
         "id": 195,
@@ -5369,7 +5564,8 @@
         "capital": [
             "Sztokholm"
         ],
-        "englishName": "Sweden"
+        "englishName": "Sweden",
+        "alpha-3": "SWE"
     },
     {
         "id": 196,
@@ -5396,7 +5592,8 @@
         "capital": [
             "Singapur"
         ],
-        "englishName": "Singapore"
+        "englishName": "Singapore",
+        "alpha-3": "SGP"
     },
     {
         "id": 197,
@@ -5425,7 +5622,8 @@
         "capital": [
             "Jamestown"
         ],
-        "englishName": "Saint Helena"
+        "englishName": "Saint Helena",
+        "alpha-3": "SHN"
     },
     {
         "id": 198,
@@ -5453,7 +5651,8 @@
         "capital": [
             "Lublana"
         ],
-        "englishName": "Slovenia"
+        "englishName": "Slovenia",
+        "alpha-3": "SVN"
     },
     {
         "id": 199,
@@ -5481,7 +5680,8 @@
         "capital": [
             "Bratysława"
         ],
-        "englishName": "Slovakia"
+        "englishName": "Slovakia",
+        "alpha-3": "SVK"
     },
     {
         "id": 200,
@@ -5507,7 +5707,8 @@
         "capital": [
             "Freetown"
         ],
-        "englishName": "Sierra Leone"
+        "englishName": "Sierra Leone",
+        "alpha-3": "SLE"
     },
     {
         "id": 201,
@@ -5536,7 +5737,8 @@
         "capital": [
             "San Marino"
         ],
-        "englishName": "San Marino"
+        "englishName": "San Marino",
+        "alpha-3": "SMR"
     },
     {
         "id": 202,
@@ -5563,7 +5765,8 @@
         "capital": [
             "Dakar"
         ],
-        "englishName": "Senegal"
+        "englishName": "Senegal",
+        "alpha-3": "SEN"
     },
     {
         "id": 203,
@@ -5588,7 +5791,8 @@
         "capital": [
             "Mogadiszu"
         ],
-        "englishName": "Somalia"
+        "englishName": "Somalia",
+        "alpha-3": "SOM"
     },
     {
         "id": 204,
@@ -5616,7 +5820,8 @@
         "capital": [
             "Paramaribo"
         ],
-        "englishName": "Surinam"
+        "englishName": "Surinam",
+        "alpha-3": "SUR"
     },
     {
         "id": 205,
@@ -5648,7 +5853,8 @@
         "capital": [
             "Dżuba"
         ],
-        "englishName": "South Sudan"
+        "englishName": "South Sudan",
+        "alpha-3": "SSD"
     },
     {
         "id": 206,
@@ -5677,7 +5883,8 @@
         "capital": [
             "São Tomé"
         ],
-        "englishName": "Sao Tome and Principe"
+        "englishName": "Sao Tome and Principe",
+        "alpha-3": "STP"
     },
     {
         "id": 207,
@@ -5708,7 +5915,8 @@
         "capital": [
             "San Salvador"
         ],
-        "englishName": "El Salvador"
+        "englishName": "El Salvador",
+        "alpha-3": "SLV"
     },
     {
         "id": 208,
@@ -5738,7 +5946,8 @@
         "capital": [
             "Philipsburg"
         ],
-        "englishName": "Sint Maarten"
+        "englishName": "Sint Maarten",
+        "alpha-3": "SXM"
     },
     {
         "id": 209,
@@ -5766,7 +5975,8 @@
         "capital": [
             "Damaszek"
         ],
-        "englishName": "Syria"
+        "englishName": "Syria",
+        "alpha-3": "SYR"
     },
     {
         "id": 210,
@@ -5796,7 +6006,8 @@
             "Mbabane",
             "Lobamba"
         ],
-        "englishName": "Eswatini"
+        "englishName": "Eswatini",
+        "alpha-3": "SWZ"
     },
     {
         "id": 211,
@@ -5825,7 +6036,8 @@
         "capital": [
             "Cockburn Town"
         ],
-        "englishName": "Turks and Caicos Islands"
+        "englishName": "Turks and Caicos Islands",
+        "alpha-3": "TCA"
     },
     {
         "id": 212,
@@ -5851,7 +6063,8 @@
         "capital": [
             "Ndżamena"
         ],
-        "englishName": "Chad"
+        "englishName": "Chad",
+        "alpha-3": "TCD"
     },
     {
         "id": 213,
@@ -5880,7 +6093,8 @@
             "Saint-Pierre",
             "Port-aux-Français"
         ],
-        "englishName": "French Southern and Antarctic Lands"
+        "englishName": "French Southern and Antarctic Lands",
+        "alpha-3": "ATF"
     },
     {
         "id": 214,
@@ -5908,7 +6122,8 @@
         "capital": [
             "Lomé"
         ],
-        "englishName": "Togo"
+        "englishName": "Togo",
+        "alpha-3": "TGO"
     },
     {
         "id": 215,
@@ -5934,7 +6149,8 @@
         "capital": [
             "Bangkok"
         ],
-        "englishName": "Thailand"
+        "englishName": "Thailand",
+        "alpha-3": "THA"
     },
     {
         "id": 216,
@@ -5963,7 +6179,8 @@
         "capital": [
             "Duszanbe"
         ],
-        "englishName": "Tajikistan"
+        "englishName": "Tajikistan",
+        "alpha-3": "TJK"
     },
     {
         "id": 217,
@@ -5991,7 +6208,8 @@
             "Atafu",
             "brak"
         ],
-        "englishName": "Tokelau"
+        "englishName": "Tokelau",
+        "alpha-3": "TKL"
     },
     {
         "id": 218,
@@ -6019,7 +6237,8 @@
         "capital": [
             "Dili"
         ],
-        "englishName": "East Timor"
+        "englishName": "East Timor",
+        "alpha-3": "TLS"
     },
     {
         "id": 219,
@@ -6050,7 +6269,8 @@
         "capital": [
             "Aszchabad"
         ],
-        "englishName": "Turkmenistan"
+        "englishName": "Turkmenistan",
+        "alpha-3": "TKM"
     },
     {
         "id": 220,
@@ -6077,7 +6297,8 @@
         "capital": [
             "Tunis"
         ],
-        "englishName": "Tunisia"
+        "englishName": "Tunisia",
+        "alpha-3": "TUN"
     },
     {
         "id": 221,
@@ -6104,7 +6325,8 @@
         "capital": [
             "Nukuʻalofa"
         ],
-        "englishName": "Tonga"
+        "englishName": "Tonga",
+        "alpha-3": "TON"
     },
     {
         "id": 222,
@@ -6131,7 +6353,8 @@
         "capital": [
             "Ankara"
         ],
-        "englishName": "Türkiye"
+        "englishName": "Türkiye",
+        "alpha-3": "TUR"
     },
     {
         "id": 223,
@@ -6158,7 +6381,8 @@
         "capital": [
             "Port-of-Spain"
         ],
-        "englishName": "Trinidad and Tobago"
+        "englishName": "Trinidad and Tobago",
+        "alpha-3": "TTO"
     },
     {
         "id": 224,
@@ -6187,7 +6411,8 @@
         "capital": [
             "Vaiaku"
         ],
-        "englishName": "Tuvalu"
+        "englishName": "Tuvalu",
+        "alpha-3": "TUV"
     },
     {
         "id": 225,
@@ -6214,7 +6439,8 @@
         "capital": [
             "Tajpej"
         ],
-        "englishName": "Taiwan"
+        "englishName": "Taiwan",
+        "alpha-3": "TWN"
     },
     {
         "id": 226,
@@ -6242,7 +6468,8 @@
         "capital": [
             "Dodoma"
         ],
-        "englishName": "Tanzania"
+        "englishName": "Tanzania",
+        "alpha-3": "TZA"
     },
     {
         "id": 227,
@@ -6267,7 +6494,8 @@
         "capital": [
             "Kijów"
         ],
-        "englishName": "Ukraine"
+        "englishName": "Ukraine",
+        "alpha-3": "UKR"
     },
     {
         "id": 228,
@@ -6295,7 +6523,8 @@
         "capital": [
             "Kampala"
         ],
-        "englishName": "Uganda"
+        "englishName": "Uganda",
+        "alpha-3": "UGA"
     },
     {
         "id": 229,
@@ -6323,7 +6552,8 @@
         "capital": [
             "Waszyngton"
         ],
-        "englishName": "United States"
+        "englishName": "United States",
+        "alpha-3": "USA"
     },
     {
         "id": 230,
@@ -6350,7 +6580,8 @@
         "capital": [
             "Montevideo"
         ],
-        "englishName": "Uruguay"
+        "englishName": "Uruguay",
+        "alpha-3": "URY"
     },
     {
         "id": 231,
@@ -6379,7 +6610,8 @@
         "capital": [
             "Taszkent"
         ],
-        "englishName": "Uzbekistan"
+        "englishName": "Uzbekistan",
+        "alpha-3": "UZB"
     },
     {
         "id": 232,
@@ -6406,7 +6638,8 @@
         "capital": [
             "Watykan"
         ],
-        "englishName": "Vatican City"
+        "englishName": "Vatican City",
+        "alpha-3": "VAT"
     },
     {
         "id": 233,
@@ -6433,7 +6666,8 @@
         "capital": [
             "Kingstown"
         ],
-        "englishName": "Saint Vincent and the Grenadines"
+        "englishName": "Saint Vincent and the Grenadines",
+        "alpha-3": "VCT"
     },
     {
         "id": 234,
@@ -6461,7 +6695,8 @@
         "capital": [
             "Caracas"
         ],
-        "englishName": "Venezuela"
+        "englishName": "Venezuela",
+        "alpha-3": "VEN"
     },
     {
         "id": 235,
@@ -6491,7 +6726,8 @@
         "capital": [
             "Road Town"
         ],
-        "englishName": "Virgin Islands, British"
+        "englishName": "Virgin Islands, British",
+        "alpha-3": "VGB"
     },
     {
         "id": 236,
@@ -6524,7 +6760,8 @@
         "capital": [
             "Charlotte Amalie"
         ],
-        "englishName": "Virgin Islands, United States"
+        "englishName": "United States Virgin Islands",
+        "alpha-3": "ISV"
     },
     {
         "id": 237,
@@ -6549,7 +6786,8 @@
         "capital": [
             "Hanoi"
         ],
-        "englishName": "Vietnam"
+        "englishName": "Vietnam",
+        "alpha-3": "VNM"
     },
     {
         "id": 238,
@@ -6579,7 +6817,8 @@
         "capital": [
             "Port Vila"
         ],
-        "englishName": "Vanuatu"
+        "englishName": "Vanuatu",
+        "alpha-3": "VUT"
     },
     {
         "id": 239,
@@ -6607,7 +6846,8 @@
         "capital": [
             "Mata Utu"
         ],
-        "englishName": "Wallis and Futuna"
+        "englishName": "Wallis and Futuna",
+        "alpha-3": "WLF"
     },
     {
         "id": 240,
@@ -6635,7 +6875,8 @@
         "capital": [
             "Apia"
         ],
-        "englishName": "Samoa"
+        "englishName": "Samoa",
+        "alpha-3": "ASM"
     },
     {
         "id": 241,
@@ -6663,7 +6904,8 @@
         "capital": [
             "Prisztina"
         ],
-        "englishName": "Kosovo"
+        "englishName": "Kosovo",
+        "alpha-3": "UNK"
     },
     {
         "id": 242,
@@ -6690,7 +6932,8 @@
         "capital": [
             "Sana"
         ],
-        "englishName": "Yemen"
+        "englishName": "Yemen",
+        "alpha-3": "YEM"
     },
     {
         "id": 243,
@@ -6721,7 +6964,8 @@
         "capital": [
             "Mamoudzou"
         ],
-        "englishName": "Mayotte"
+        "englishName": "Mayotte",
+        "alpha-3": "MYT"
     },
     {
         "id": 244,
@@ -6753,7 +6997,8 @@
             "Bloemfontein",
             "Kapsztad"
         ],
-        "englishName": "South Africa"
+        "englishName": "South Africa",
+        "alpha-3": "ZAF"
     },
     {
         "id": 245,
@@ -6781,7 +7026,8 @@
         "capital": [
             "Lusaka"
         ],
-        "englishName": "Zambia"
+        "englishName": "Zambia",
+        "alpha-3": "ZMB"
     },
     {
         "id": 246,
@@ -6812,7 +7058,8 @@
         "capital": [
             "Harare"
         ],
-        "englishName": "Zimbabwe"
+        "englishName": "Zimbabwe",
+        "alpha-3": "ZWE"
     },
     {
         "id": 247,
@@ -6841,7 +7088,8 @@
         "capital": [
             "Kabul"
         ],
-        "englishName": "Afghanistan (old flag)"
+        "englishName": "Afghanistan (old flag)",
+        "alpha-3": "AFG"
     },
     {
         "id": 248,
@@ -6868,7 +7116,8 @@
         "capital": [
             "Fort-de-France"
         ],
-        "englishName": "Martinique"
+        "englishName": "Martinique",
+        "alpha-3": "MTQ"
     },
     {
         "id": 249,
@@ -6898,7 +7147,8 @@
         "capital": [
             "Adamstown"
         ],
-        "englishName": "Pitcairn"
+        "englishName": "Pitcairn",
+        "alpha-3": "PCN"
     },
     {
         "id": 250,
@@ -6926,7 +7176,8 @@
         "capital": [
             "Suchumi"
         ],
-        "englishName": "Abkhazia"
+        "englishName": "Abkhazia",
+        "alpha-3": ""
     },
     {
         "id": 251,
@@ -6955,7 +7206,8 @@
             "Nikozja",
             "Nikozja Północna"
         ],
-        "englishName": "Northern Cyprus"
+        "englishName": "Northern Cyprus",
+        "alpha-3": ""
     },
     {
         "id": 252,
@@ -6984,7 +7236,8 @@
         "capital": [
             "Stepanakert"
         ],
-        "englishName": "Nagorno-Karabakh"
+        "englishName": "Nagorno-Karabakh",
+        "alpha-3": ""
     },
     {
         "id": 253,
@@ -7010,7 +7263,8 @@
         "capital": [
             "Cchinwali"
         ],
-        "englishName": "South Ossetia"
+        "englishName": "South Ossetia",
+        "alpha-3": ""
     },
     {
         "id": 254,
@@ -7039,7 +7293,8 @@
         "capital": [
             "Oranjestad"
         ],
-        "englishName": "Sint Eustatius"
+        "englishName": "Sint Eustatius",
+        "alpha-3": "BES"
     },
     {
         "id": 255,
@@ -7068,7 +7323,8 @@
         "capital": [
             "The Bottom"
         ],
-        "englishName": "Saba"
+        "englishName": "Saba",
+        "alpha-3": "BES"
     },
     {
         "id": 256,
@@ -7096,7 +7352,8 @@
         "capital": [
             "Tyraspol"
         ],
-        "englishName": "Transnistria"
+        "englishName": "Transnistria",
+        "alpha-3": ""
     },
     {
         "id": 257,
@@ -7125,6 +7382,7 @@
         "capital": [
             "Hargejsa"
         ],
-        "englishName": "Somaliland"
+        "englishName": "Somaliland",
+        "alpha-3": ""
     }
 ]
