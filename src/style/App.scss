@@ -114,7 +114,7 @@ body {
     position: relative;
   }
 
-  div.App {
+  .App {
     position: absolute;
     left: 50%;
     top: 50vh;
@@ -150,6 +150,7 @@ body {
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
+      font-size: 12px;
       h1 {
         width: 90%;
         margin: 20px auto;
@@ -159,33 +160,152 @@ body {
           font-size: 40px;
         }
       }
-      img {
+      &__img-flag {
         max-width: 70%;
         max-height: 150px;
       }
-      &__link {
+      &__linkbox {
+        // display: flex;
+        // width: 90%;
+        // height: 30px;
+        // &-img {
+        //   width: 50px;
+        //   position: relative;
+        //   img {
+        //     height: 20px;
+        //     position: absolute;
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translate(-50%, -50%);
+        //   }
+        // }
+        // p {
+        //   text-decoration: none;
+        //   color: white;
+        //   line-height: 27px;
+        //   &:hover {
+        //     color: rgb(49, 131, 255);
+        //   }
+        // }
         display: flex;
-        width: 90%;
-        height: 30px;
-        &-img {
-          width: 50px;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10px;
+        margin: 0 auto;
+
+        &-title {
+          width: 60px;
+          text-align: center;
           position: relative;
-          img {
-            height: 20px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-          }
+          top: 3px;
         }
-        a {
-          font-size: 12px;
-          text-decoration: none;
+
+        &-link {
+          width: 50px;
           color: white;
-          line-height: 27px;
+          text-decoration: none;
           &:hover {
             color: rgb(49, 131, 255);
           }
+          &__img {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+          p {
+            display: none;
+          }
+        }
+      }
+      &__timezones {
+        height: 40px;
+        display: flex;
+        flex-direction: flex-start;
+        img {
+          height: 30px;
+        }
+        &-description {
+          min-width: 80px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      &__capital {
+        height: 40px;
+        display: flex;
+        flex-direction: flex-start;
+        img {
+          height: 30px;
+        }
+        &-description {
+          min-width: 80px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      &__landlocked {
+        height: 40px;
+        display: flex;
+        flex-direction: flex-start;
+        img {
+          height: 30px;
+        }
+        &-description {
+          min-width: 80px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      &__carside {
+        &-wrapper {
+          position: relative;
+          width: 50px;
+        }
+        &-road {
+          height: 50px;
+          width: 50px;
+        }
+        &-car {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          height: 35px;
+          &.left {
+            left: 0;
+          }
+          &.right {
+            right: 0;
+          }
+        }
+      }
+      &__un {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        &-img {
+          height: 50px;
+          width: 50px;
+          filter: hue-rotate(160deg) brightness(0.7) contrast(1.5);
+        }
+        &-detail {
+          text-align: center;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 50px;
+          font-size: 10px;
         }
       }
     }

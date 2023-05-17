@@ -4,6 +4,11 @@ import wikipediaIMG from "../img/Wikipedia.svg";
 import OSMapIMG from "../img/Openstreetmap.svg";
 import GMapsIMG from "../img/Google_Maps.svg";
 import TimezoneIMG from "../img/time-zone.png";
+import capitolIMG from "../img/capitol-building.svg";
+import seaIMG from "../img/Blue_sea_wave.svg";
+import roadIMG from "../img/road2.png";
+import carIMG from "../img/car.png";
+import UNIMG from "../img/UN_emblem_blue.svg";
 
 const FlagDetail = () => {
   const { selectedSmallOne } = useContext(AppContext);
@@ -26,19 +31,21 @@ const FlagDetail = () => {
   // Wikipedia section //
   ///////////////////////
   useEffect(() => {
-    const page = selectedSmallOne.name;
-    const apiURL = `https://pl.wikipedia.org/api/rest_v1/page/summary/${page}`;
-    fetch(apiURL)
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.title === "Not found.") {
+    if (selectedSmallOne) {
+      const page = selectedSmallOne.name;
+      const apiURL = `https://pl.wikipedia.org/api/rest_v1/page/summary/${page}`;
+      fetch(apiURL)
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.title === "Not found.") {
+            setWikipediaData(null);
+          } else setWikipediaData(data);
+        })
+        .catch((error) => {
           setWikipediaData(null);
-        } else setWikipediaData(data);
-      })
-      .catch((error) => {
-        setWikipediaData(null);
-        console.error("Błąd pobierania z Wikipedii", error);
-      });
+          console.error("Błąd pobierania z Wikipedii", error);
+        });
+    }
   }, [selectedSmallOne]);
 
   console.log(wikipediaData);
@@ -75,7 +82,12 @@ const FlagDetail = () => {
             const officialName = getOfficialName(data);
             setOfficialName(officialName);
             setUNMember(data[0]?.UNMember || false);
-            setLandlocked(data[0]?.landlocked || "brak danych");
+            setLandlocked(
+              data[0]?.hasOwnProperty("landlocked")
+                ? data[0].landlocked
+                : "brak danych"
+            );
+
             setArea(data[0]?.area || 0);
 
             const getBorders = async (data) => {
@@ -150,6 +162,15 @@ const FlagDetail = () => {
       fetchData();
     } else {
       setOpenStreetMapLink("");
+      setOfficialName("");
+      setUNMember(false);
+      setLandlocked("brak danych");
+      setArea(0);
+      setBorders([]);
+      setPopulation(0);
+      setCarSide("");
+      setTld("");
+      setCurrencies("");
     }
   }, [selectedSmallOne, openStreetMapLink]);
 
@@ -219,88 +240,213 @@ const FlagDetail = () => {
   const TimeZone = () => {
     return (
       <div className="App__flag-detail__timezones">
-        <div className="App__flag-detail__timezones-img">
-          <img src={TimezoneIMG} alt="timezones" />
+        <img
+          className="App__flag-detail__timezones-img"
+          src={TimezoneIMG}
+          alt="timezones"
+        />
+        <div className="App__flag-detail__timezones-description">
+          <p>czas w stolicy:</p>
+          <p>{time}</p>
         </div>
-        {time}
       </div>
     );
   };
   const Link = (props) => (
-    <div className="App__flag-detail__link">
-      <div className="App__flag-detail__link-img">
+    <a href={props.link} className="App__flag-detail__linkbox-link">
+      <div className="App__flag-detail__linkbox-link__img">
         <img src={props.img} alt={props.alt} />
       </div>
-      <a href={props.link}>{props.title}</a>
+      <p>{props.title}</p>
+    </a>
+  );
+  const Linkbox = () => (
+    <div className="App__flag-detail__linkbox">
+      <div className="App__flag-detail__linkbox-title">zobacz więcej:</div>
+      <Link
+        img={wikipediaIMG}
+        alt="wikipedia"
+        link={`https://pl.wikipedia.org/wiki/${selectedSmallOne.name}`}
+        title="Wikipedia"
+      />
+      <Link
+        img={GMapsIMG}
+        alt="google"
+        link={`https://www.google.com/maps/place/${selectedSmallOne.name}`}
+        title="Google Maps"
+      />
+
+      {openStreetMapLink && (
+        <Link
+          img={OSMapIMG}
+          alt="osmap"
+          link={openStreetMapLink}
+          title="OpenStreetMap"
+        />
+      )}
     </div>
   );
 
+  const Capital = () => (
+    <div className="App__flag-detail__capital">
+      <img
+        className="App__flag-detail__capital-img"
+        src={capitolIMG}
+        alt="capital"
+      />
+      <div className="App__flag-detail__capital-description">
+        <p>stolica:</p>
+        <p>{selectedSmallOne.capital.join(", ")}</p>
+      </div>
+    </div>
+  );
+
+  const MainFlag = () => (
+    <img
+      className="App__flag-detail__img-flag"
+      src={selectedSmallOne.img}
+      alt=""
+    />
+  );
+
+  const Borders = () => (
+    <>
+      {selectedSmallOne.country ? (
+        <div className="App__flag-detail__borders">
+          graniczy z:{" "}
+          {borders.length > 0 ? borders.join(", ") : "brak granic lądowych"}
+        </div>
+      ) : (
+        ""
+      )}
+    </>
+  );
+
+  const UnitedNations = () => (
+    <div className="App__flag-detail__un">
+      <img className="App__flag-detail__un-img" src={UNIMG} alt="un" />
+      <div className="App__flag-detail__un-detail">
+        <p>{UNMember ? "w ONZ" : "poza ONZ"}</p>
+      </div>
+    </div>
+  );
+
+  const Landlocked = () => (
+    <>
+      {landlocked === "brak danych" ? (
+        ""
+      ) : (
+        <div className="App__flag-detail__landlocked">
+          <img
+            className="App__flag-detail__landlocked-img"
+            src={seaIMG}
+            alt="sea"
+          />
+          <div className="App__flag-detail__landlocked-description">
+            <p>Dostęp do morza</p>
+            <p>
+              {console.log(landlocked)}
+              {landlocked ? "brak dostępu do morza" : "dostęp"}
+            </p>
+          </div>
+        </div>
+      )}
+    </>
+  );
+
+  const Area = () => (
+    <>
+      {area > 0 ? (
+        <div className="App__flag-detail__area">
+          <p>powierzchnia:</p>
+          <p>
+            {area < 1000
+              ? area
+              : `${(((area / 1000) * 10) / 10).toFixed(2)} tys. `}
+            km²
+          </p>
+        </div>
+      ) : (
+        ""
+      )}
+    </>
+  );
+  const Population = () => (
+    <>
+      {population > 0 ? (
+        <div className="App__flag-detail__population">
+          <p>populacja:</p>
+          <p>
+            {population < 1000
+              ? `${population}`
+              : `${(((population / 1000000) * 10) / 10).toFixed(2)} mln `}
+            osób
+          </p>
+        </div>
+      ) : (
+        ""
+      )}
+    </>
+  );
+  const CarSide = () => (
+    <>
+      {carSide ? (
+        <div className="App__flag-detail__carside">
+          <p>ruch uliczny</p>
+          <div className="App__flag-detail__carside-wrapper">
+            <img
+              className="App__flag-detail__carside-road"
+              src={roadIMG}
+              alt="road"
+            />
+            <img
+              className={`App__flag-detail__carside-car ${
+                carSide === "left" ? "left" : ""
+              } ${carSide === "right" ? "right" : ""}`}
+              src={carIMG}
+              alt="car"
+            />
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
+    </>
+  );
+  const TLD = () => (
+    <>{tld ? <div className="App__flag-detail__tld">{tld}</div> : ""}</>
+  );
+  const Currencies = () => (
+    <>
+      {currencies ? (
+        <div>
+          Waluta? <p>Key: {currencies.key}</p>
+          <p>Currency Name: {currencies.name}</p>
+          <p>Symbol: {currencies.symbol}</p>
+        </div>
+      ) : (
+        ""
+      )}
+    </>
+  );
   return (
     <>
       {selectedSmallOne ? (
         <div className="App__flag-detail">
           <h1>{selectedSmallOne.name}</h1>
           {officialName && <h4>{officialName}</h4>}
-          <img src={selectedSmallOne.img} alt="" />
-          {selectedSmallOne.capital.length !== 0 && (
-            <p>stolica: {selectedSmallOne.capital.join(", ")}</p>
-          )}
-          <div>
-            Granice?{" "}
-            {borders.length > 0
-              ? borders.join(", ")
-              : selectedSmallOne.country === true
-              ? "bez granic lądowych"
-              : "to nie państwo"}
-          </div>
-          <Link
-            img={wikipediaIMG}
-            alt="wikipedia"
-            link={`https://pl.wikipedia.org/wiki/${selectedSmallOne.name}`}
-            title="Wikipedia"
-          />
-          <Link
-            img={GMapsIMG}
-            alt="google"
-            link={`https://www.google.com/maps/place/${selectedSmallOne.name}`}
-            title="Google Maps"
-          />
-
-          {openStreetMapLink && (
-            <Link
-              img={OSMapIMG}
-              alt="osmap"
-              link={openStreetMapLink}
-              title="OpenStreetMap"
-            />
-          )}
+          <MainFlag />
+          <CarSide />
+          {selectedSmallOne.capital.length !== 0 && <Capital />}
           {time && <TimeZone />}
-
-          <div>Członek ONZ?: {UNMember ? "tak" : "nie"}</div>
-          <div>
-            Dostęp do morza?:{" "}
-            {landlocked
-              ? landlocked === "brak danych"
-                ? "brak danych"
-                : "nie"
-              : "tak"}
-          </div>
-          <div>Powierzchnia? {area > 0 ? area : "brak danych"}</div>
-          <div>Populacja? {population > 0 ? population : "brak danych"}</div>
-          <div>Strona drogi? {carSide ? carSide : "brak danych"}</div>
-          <div>Domena internetowa? {tld ? tld : "brak danych"}</div>
-          <div>
-            Waluta?{" "}
-            {currencies ? (
-              <>
-                <p>Key: {currencies.key}</p>
-                <p>Currency Name: {currencies.name}</p>
-                <p>Symbol: {currencies.symbol}</p>
-              </>
-            ) : (
-              "brak danych"
-            )}
-          </div>
+          <Linkbox />
+          <UnitedNations />
+          <Borders />
+          <Landlocked />
+          <Area />
+          <Population />
+          <TLD />
+          <Currencies />
         </div>
       ) : null}
     </>
