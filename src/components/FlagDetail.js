@@ -7,6 +7,7 @@ import TimezoneIMG from "../img/time-zone.png";
 
 const FlagDetail = () => {
   const { selectedSmallOne } = useContext(AppContext);
+  const [wikipediaData, setWikipediaData] = useState(null);
   const [openStreetMapLink, setOpenStreetMapLink] = useState("");
   const [officialName, setOfficialName] = useState("");
   const [UNMember, setUNMember] = useState(false);
@@ -20,6 +21,27 @@ const FlagDetail = () => {
   const [lat, setLat] = useState("");
   const [lng, setLng] = useState("");
   const [time, setTime] = useState("");
+
+  ///////////////////////
+  // Wikipedia section //
+  ///////////////////////
+  useEffect(() => {
+    const page = selectedSmallOne.name;
+    const apiURL = `https://pl.wikipedia.org/api/rest_v1/page/summary/${page}`;
+    fetch(apiURL)
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.title === "Not found.") {
+          setWikipediaData(null);
+        } else setWikipediaData(data);
+      })
+      .catch((error) => {
+        setWikipediaData(null);
+        console.error("Błąd pobierania z Wikipedii", error);
+      });
+  }, [selectedSmallOne]);
+
+  console.log(wikipediaData);
 
   ///////////////////////////
   // restcountries section //
