@@ -1,17 +1,28 @@
 {
   "files": {
-    "main.css": "/flag-finder/static/css/main.772fbea6.css",
-    "main.js": "/flag-finder/static/js/main.29938c47.js",
+    "main.css": "/flag-finder/static/css/main.4b277b5a.css",
+    "main.js": "/flag-finder/static/js/main.9e2c5ee7.js",
     "static/js/787.c318f016.chunk.js": "/flag-finder/static/js/787.c318f016.chunk.js",
     "static/media/worldbackground.png": "/flag-finder/static/media/worldbackground.f23a7ebb7757a3d8c2a4.png",
+    "static/media/Wikipedia.svg": "/flag-finder/static/media/Wikipedia.7024fe85136a59602e5f3f8b3cde9ab7.svg",
+    "static/media/car.png": "/flag-finder/static/media/car.f2d27ad2eb2e86e795ee.png",
+    "static/media/Openstreetmap.svg": "/flag-finder/static/media/Openstreetmap.4e503c1b099edf9223654aa3c36b504b.svg",
     "static/media/defaultFlag.png": "/flag-finder/static/media/defaultFlag.915d4422e4613a14fe54.png",
+    "static/media/time-zone.png": "/flag-finder/static/media/time-zone.9730d481d580fb07a8c8.png",
+    "static/media/UN_emblem_blue.svg": "/flag-finder/static/media/UN_emblem_blue.977627a10f959b04ea118eec3fdc2736.svg",
+    "static/media/road2.png": "/flag-finder/static/media/road2.ce3919512586187cd677.png",
     "static/media/contours.svg": "/flag-finder/static/media/contours.b314ba928ebf1ea0daed8f529f3b2a5e.svg",
+    "static/media/Blue_sea_wave.svg": "/flag-finder/static/media/Blue_sea_wave.bf956b059b906257183f043a2661a934.svg",
     "static/media/animal.svg": "/flag-finder/static/media/animal.cc4c27ea2a45a77822ef12277c5ee7bb.svg",
+    "static/media/capitol-building.svg": "/flag-finder/static/media/capitol-building.df658f614b4d60ce9cf046bc60c992df.svg",
     "static/media/emblem.svg": "/flag-finder/static/media/emblem.56c573b2d02a4731e4d72d79457404fe.svg",
     "static/media/sun.svg": "/flag-finder/static/media/sun.90e7202167492af0de67dddac9532739.svg",
     "static/media/plant.svg": "/flag-finder/static/media/plant.73c0aaeb4c2cd47616ecf75d08bb93aa.svg",
     "static/media/weapon.svg": "/flag-finder/static/media/weapon.0a0c17a822ca46a0a6e6065eb33bf5e2.svg",
+    "static/media/game.svg": "/flag-finder/static/media/game.adc17baab0e06b91ec7363a68df16bf9.svg",
+    "static/media/settings.svg": "/flag-finder/static/media/settings.49453835b5d3de6ee3fddf330cb7dd69.svg",
     "static/media/building.svg": "/flag-finder/static/media/building.b4ad53dfdfc9fde7f4c5fad179b0a984.svg",
+    "static/media/Google_Maps.svg": "/flag-finder/static/media/Google_Maps.24b2bcb94349710b7f203c999d593810.svg",
     "static/media/miniFlag.svg": "/flag-finder/static/media/miniFlag.d3fae3cba9bb172f392a32b9ddcd0ed8.svg",
     "index.html": "/flag-finder/index.html",
     "static/media/triangle.svg": "/flag-finder/static/media/triangle.6f7ffc6f15a846436aa9f0748af28538.svg",
@@ -21,12 +32,12 @@
     "static/media/star.svg": "/flag-finder/static/media/star.0b2b733025d3c123092b5a066ccb8753.svg",
     "static/media/circle.svg": "/flag-finder/static/media/circle.826dabebd6f3bd713ad109ac62bee3ef.svg",
     "static/media/cross.svg": "/flag-finder/static/media/cross.2cce26b83be11a0f764c5e8d8684f2ce.svg",
-    "main.772fbea6.css.map": "/flag-finder/static/css/main.772fbea6.css.map",
-    "main.29938c47.js.map": "/flag-finder/static/js/main.29938c47.js.map",
+    "main.4b277b5a.css.map": "/flag-finder/static/css/main.4b277b5a.css.map",
+    "main.9e2c5ee7.js.map": "/flag-finder/static/js/main.9e2c5ee7.js.map",
     "787.c318f016.chunk.js.map": "/flag-finder/static/js/787.c318f016.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.772fbea6.css",
-    "static/js/main.29938c47.js"
+    "static/css/main.4b277b5a.css",
+    "static/js/main.9e2c5ee7.js"
   ]
 }
