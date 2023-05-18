@@ -9,6 +9,10 @@ import seaIMG from "../img/Blue_sea_wave.svg";
 import roadIMG from "../img/road2.png";
 import carIMG from "../img/car.png";
 import UNIMG from "../img/UN_emblem_blue.svg";
+import IslandIMG from "../img/Island_with_Trees_Flat_Icon_Vector.svg";
+import CurrenciesIMG from "../img/currencies.svg";
+import PopulationIMG from "../img/population.svg";
+import WebIMG from "../img/web-icon.svg";
 
 const FlagDetail = () => {
   const { selectedSmallOne } = useContext(AppContext);
@@ -48,7 +52,7 @@ const FlagDetail = () => {
     }
   }, [selectedSmallOne]);
 
-  console.log(wikipediaData);
+  // console.log(wikipediaData);
 
   ///////////////////////////
   // restcountries section //
@@ -81,7 +85,7 @@ const FlagDetail = () => {
             };
             const officialName = getOfficialName(data);
             setOfficialName(officialName);
-            setUNMember(data[0]?.UNMember || false);
+            setUNMember(data[0]?.unMember);
             setLandlocked(
               data[0]?.hasOwnProperty("landlocked")
                 ? data[0].landlocked
@@ -326,8 +330,18 @@ const FlagDetail = () => {
     <>
       {selectedSmallOne.country ? (
         <div className="App__flag-detail__borders">
-          graniczy z:{" "}
-          {borders.length > 0 ? borders.join(", ") : "brak granic lądowych"}
+          {borders.length > 0 ? (
+            <div className="App__flag-detail__borders-full">
+              graniczy z: {borders.join(", ")}
+            </div>
+          ) : (
+            <>
+              <div className="App__flag-detail__borders-empty">
+                <img src={IslandIMG} alt="island" />
+                <p>wyspy</p>
+              </div>
+            </>
+          )}
         </div>
       ) : (
         ""
@@ -337,7 +351,11 @@ const FlagDetail = () => {
 
   const UnitedNations = () => (
     <div className="App__flag-detail__un">
-      <img className="App__flag-detail__un-img" src={UNIMG} alt="un" />
+      <img
+        className={`App__flag-detail__un-img ${UNMember ? "" : "non-member"}`}
+        src={UNIMG}
+        alt="un"
+      />
       <div className="App__flag-detail__un-detail">
         <p>{UNMember ? "w ONZ" : "poza ONZ"}</p>
       </div>
@@ -356,11 +374,7 @@ const FlagDetail = () => {
             alt="sea"
           />
           <div className="App__flag-detail__landlocked-description">
-            <p>Dostęp do morza</p>
-            <p>
-              {console.log(landlocked)}
-              {landlocked ? "brak dostępu do morza" : "dostęp"}
-            </p>
+            <p>{landlocked ? "śródlądowe" : "nadmorskie"}</p>
           </div>
         </div>
       )}
@@ -371,11 +385,10 @@ const FlagDetail = () => {
     <>
       {area > 0 ? (
         <div className="App__flag-detail__area">
-          <p>powierzchnia:</p>
           <p>
             {area < 1000
               ? area
-              : `${(((area / 1000) * 10) / 10).toFixed(2)} tys. `}
+              : `${(((area / 1000) * 10) / 10).toFixed(1)} tys. `}
             km²
           </p>
         </div>
@@ -388,13 +401,14 @@ const FlagDetail = () => {
     <>
       {population > 0 ? (
         <div className="App__flag-detail__population">
-          <p>populacja:</p>
           <p>
-            {population < 1000
-              ? `${population}`
-              : `${(((population / 1000000) * 10) / 10).toFixed(2)} mln `}
-            osób
+            {population < 100000
+              ? population < 1000
+                ? `${population}`
+                : `${(((population / 1000) * 10) / 10).toFixed(1)} tys. `
+              : `${(((population / 1000000) * 10) / 10).toFixed(1)} mln `}
           </p>
+          <img src={PopulationIMG} alt="population" />
         </div>
       ) : (
         ""
@@ -405,7 +419,6 @@ const FlagDetail = () => {
     <>
       {carSide ? (
         <div className="App__flag-detail__carside">
-          <p>ruch uliczny</p>
           <div className="App__flag-detail__carside-wrapper">
             <img
               className="App__flag-detail__carside-road"
@@ -427,21 +440,36 @@ const FlagDetail = () => {
     </>
   );
   const TLD = () => (
-    <>{tld ? <div className="App__flag-detail__tld">{tld}</div> : ""}</>
-  );
-  const Currencies = () => (
     <>
-      {currencies ? (
-        <div>
-          Waluta? <p>Key: {currencies.key}</p>
-          <p>Currency Name: {currencies.name}</p>
-          <p>Symbol: {currencies.symbol}</p>
+      {tld ? (
+        <div className="App__flag-detail__tld">
+          <img src={WebIMG} alt="www" />
+          <p>{tld}</p>
         </div>
       ) : (
         ""
       )}
     </>
   );
+  const Currencies = () => (
+    <>
+      {currencies ? (
+        <div className="App__flag-detail__currencies">
+          <div className="currencies-wrapper">
+            <img src={CurrenciesIMG} alt="currencies" />
+            <div className="currencies-wrapper__box">
+              <p>{currencies.key}</p>
+              <p>{currencies.symbol}</p>
+            </div>
+          </div>
+          {/* <p>{currencies.name}</p> */}
+        </div>
+      ) : (
+        ""
+      )}
+    </>
+  );
+
   return (
     <>
       {selectedSmallOne ? (
@@ -453,16 +481,21 @@ const FlagDetail = () => {
             <Capital />
             <TimeZone />
           </div>
+          <div className="App__flag-detail__land-box">
+            <div className="App__flag-detail__land-box__info">
+              <Area />
+              <Population />
+            </div>
+            <UnitedNations />
+            <Currencies />
 
-          <Linkbox />
-          <UnitedNations />
-          <CarSide />
+            <Landlocked />
+            <CarSide />
+            <TLD />
+          </div>
+
           <Borders />
-          <Landlocked />
-          <Area />
-          <Population />
-          <TLD />
-          <Currencies />
+          <Linkbox />
         </div>
       ) : null}
     </>
