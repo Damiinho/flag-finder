@@ -238,22 +238,32 @@ const FlagDetail = () => {
     }
   }, [lat, lng, selectedSmallOne]);
   const TimeZone = () => {
-    return (
-      <div className="App__flag-detail__timezones">
-        <img
-          className="App__flag-detail__timezones-img"
-          src={TimezoneIMG}
-          alt="timezones"
-        />
-        <div className="App__flag-detail__timezones-description">
-          <p>czas w stolicy:</p>
-          <p>{time}</p>
+    if (time) {
+      const [date, hour] = time.split(" ");
+      const parts = date.split("-");
+      const formattedDate = `${parts[2]}.${parts[1]}.${parts[0].substring(2)}`;
+
+      return (
+        <div className="App__flag-detail__timezones">
+          <img
+            className="App__flag-detail__timezones-img"
+            src={TimezoneIMG}
+            alt="timezones"
+          />
+          <div className="App__flag-detail__timezones-description">
+            <p>{formattedDate}</p>
+            <p>{hour}</p>
+          </div>
         </div>
-      </div>
-    );
+      );
+    }
   };
   const Link = (props) => (
-    <a href={props.link} className="App__flag-detail__linkbox-link">
+    <a
+      href={props.link}
+      target="blank"
+      className="App__flag-detail__linkbox-link"
+    >
       <div className="App__flag-detail__linkbox-link__img">
         <img src={props.img} alt={props.alt} />
       </div>
@@ -287,19 +297,22 @@ const FlagDetail = () => {
     </div>
   );
 
-  const Capital = () => (
-    <div className="App__flag-detail__capital">
-      <img
-        className="App__flag-detail__capital-img"
-        src={capitolIMG}
-        alt="capital"
-      />
-      <div className="App__flag-detail__capital-description">
-        <p>stolica:</p>
-        <p>{selectedSmallOne.capital.join(", ")}</p>
-      </div>
-    </div>
-  );
+  const Capital = () => {
+    if (selectedSmallOne.capital.length !== 0) {
+      return (
+        <div className="App__flag-detail__capital">
+          <img
+            className="App__flag-detail__capital-img"
+            src={capitolIMG}
+            alt="capital"
+          />
+          <div className="App__flag-detail__capital-description">
+            <p>{selectedSmallOne.capital.join(", ")}</p>
+          </div>
+        </div>
+      );
+    }
+  };
 
   const MainFlag = () => (
     <img
@@ -436,11 +449,14 @@ const FlagDetail = () => {
           <h1>{selectedSmallOne.name}</h1>
           {officialName && <h4>{officialName}</h4>}
           <MainFlag />
-          <CarSide />
-          {selectedSmallOne.capital.length !== 0 && <Capital />}
-          {time && <TimeZone />}
+          <div className="App__flag-detail__capital-box">
+            <Capital />
+            <TimeZone />
+          </div>
+
           <Linkbox />
           <UnitedNations />
+          <CarSide />
           <Borders />
           <Landlocked />
           <Area />

@@ -201,7 +201,7 @@ body {
         }
 
         &-link {
-          width: 50px;
+          width: 40px;
           color: white;
           text-decoration: none;
           &:hover {
@@ -224,14 +224,15 @@ body {
         }
       }
       &__timezones {
-        height: 40px;
         display: flex;
-        flex-direction: flex-start;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         img {
           height: 30px;
         }
         &-description {
-          min-width: 80px;
+          min-width: 60px;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -239,9 +240,11 @@ body {
         }
       }
       &__capital {
-        height: 40px;
+        // width: 100px;
         display: flex;
-        flex-direction: flex-start;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         img {
           height: 30px;
         }
@@ -251,6 +254,7 @@ body {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          text-align: center;
         }
       }
       &__landlocked {
@@ -282,6 +286,7 @@ body {
           top: 50%;
           transform: translateY(-50%);
           height: 35px;
+          transition: 0.3s;
           &.left {
             left: 0;
           }
@@ -307,6 +312,16 @@ body {
           width: 50px;
           font-size: 10px;
         }
+      }
+
+      &__capital-box {
+        margin: 10px 0;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
       }
     }
 
