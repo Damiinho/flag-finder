@@ -13,6 +13,7 @@ import IslandIMG from "../img/Island_with_Trees_Flat_Icon_Vector.svg";
 import CurrenciesIMG from "../img/currencies.svg";
 import PopulationIMG from "../img/population.svg";
 import WebIMG from "../img/web-icon.svg";
+import XIMG from "../img/x.svg";
 
 const FlagDetail = () => {
   const { selectedSmallOne } = useContext(AppContext);
@@ -30,6 +31,27 @@ const FlagDetail = () => {
   const [lat, setLat] = useState("");
   const [lng, setLng] = useState("");
   const [time, setTime] = useState("");
+
+  let region = "";
+  if (selectedSmallOne) {
+    if (selectedSmallOne.regions[0] === "europe") {
+      region = "Europa";
+    } else if (selectedSmallOne.regions[0] === "south-america") {
+      region = "Ameryka Południowa";
+    } else if (selectedSmallOne.regions[0] === "north-america") {
+      region = "Ameryka Północna";
+    } else if (selectedSmallOne.regions[0] === "asia") {
+      region = "Azja";
+    } else if (selectedSmallOne.regions[0] === "africa") {
+      region = "Afryka";
+    } else if (selectedSmallOne.regions[0] === "oceania") {
+      region = "Australia/Oceania";
+    } else if (selectedSmallOne.regions[0] === "carraibean") {
+      region = "Karaiby";
+    } else if (selectedSmallOne.regions[0] === "antarctica") {
+      region = "Antarktyka";
+    }
+  }
 
   ///////////////////////
   // Wikipedia section //
@@ -108,7 +130,7 @@ const FlagDetail = () => {
 
                     if (response.ok) {
                       const responseData = await response.json();
-                      name = responseData[0].name?.common || "";
+                      name = responseData[0].translations?.pol?.common || "";
                       countryNames.push(name);
                     } else {
                       setBorders([]);
@@ -332,7 +354,9 @@ const FlagDetail = () => {
         <div className="App__flag-detail__borders">
           {borders.length > 0 ? (
             <div className="App__flag-detail__borders-full">
-              graniczy z: {borders.join(", ")}
+              <div className="App__flag-detail__borders-full__content">
+                granice: {borders.join(", ")}
+              </div>
             </div>
           ) : (
             <>
@@ -373,9 +397,13 @@ const FlagDetail = () => {
             src={seaIMG}
             alt="sea"
           />
-          <div className="App__flag-detail__landlocked-description">
-            <p>{landlocked ? "śródlądowe" : "nadmorskie"}</p>
-          </div>
+          {landlocked ? (
+            <img
+              src={XIMG}
+              alt=""
+              className="App__flag-detail__landlocked-description"
+            />
+          ) : null}
         </div>
       )}
     </>
@@ -444,7 +472,7 @@ const FlagDetail = () => {
       {tld ? (
         <div className="App__flag-detail__tld">
           <img src={WebIMG} alt="www" />
-          <p>{tld}</p>
+          <p>{tld[0]}</p>
         </div>
       ) : (
         ""
@@ -476,19 +504,20 @@ const FlagDetail = () => {
         <div className="App__flag-detail">
           <h1>{selectedSmallOne.name}</h1>
           {officialName && <h4>{officialName}</h4>}
+          <h4>{region}</h4>
           <MainFlag />
           <div className="App__flag-detail__capital-box">
             <Capital />
-            <TimeZone />
           </div>
           <div className="App__flag-detail__land-box">
             <div className="App__flag-detail__land-box__info">
-              <Area />
               <Population />
+              <Area />
             </div>
             <UnitedNations />
-            <Currencies />
+            <TimeZone />
 
+            <Currencies />
             <Landlocked />
             <CarSide />
             <TLD />
