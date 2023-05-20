@@ -267,7 +267,7 @@ const FlagDetail = () => {
     if (time) {
       const [date, hour] = time.split(" ");
       const parts = date.split("-");
-      const formattedDate = `${parts[2]}.${parts[1]}.${parts[0].substring(2)}`;
+      const formattedDate = `${parts[2]}.${parts[1]}.${parts[0]}`;
 
       return (
         <div className="App__flag-detail__timezones">
@@ -277,8 +277,10 @@ const FlagDetail = () => {
             alt="timezones"
           />
           <div className="App__flag-detail__timezones-description">
-            <p>{formattedDate}</p>
-            <p>{hour}</p>
+            <p>data i godzina:</p>
+            <p>
+              {formattedDate}, {hour}
+            </p>
           </div>
         </div>
       );
@@ -381,7 +383,7 @@ const FlagDetail = () => {
         alt="un"
       />
       <div className="App__flag-detail__un-detail">
-        <p>{UNMember ? "w ONZ" : "poza ONZ"}</p>
+        <p>{UNMember ? "należy do ONZ" : "nie należy do ONZ"}</p>
       </div>
     </div>
   );
@@ -392,18 +394,13 @@ const FlagDetail = () => {
         ""
       ) : (
         <div className="App__flag-detail__landlocked">
-          <img
-            className="App__flag-detail__landlocked-img"
-            src={seaIMG}
-            alt="sea"
-          />
-          {landlocked ? (
-            <img
-              src={XIMG}
-              alt=""
-              className="App__flag-detail__landlocked-description"
-            />
-          ) : null}
+          <div className="App__flag-detail__landlocked-img">
+            <img src={seaIMG} alt="sea" />
+            {landlocked ? <img src={XIMG} alt="" /> : null}
+          </div>
+          <div className="App__flag-detail__landlocked-description">
+            {landlocked ? "brak dostępu do morza" : "dostęp do morza"}
+          </div>
         </div>
       )}
     </>
@@ -414,9 +411,10 @@ const FlagDetail = () => {
       {area > 0 ? (
         <div className="App__flag-detail__area">
           <p>
+            powierzchnia:{" "}
             {area < 1000
               ? area
-              : `${(((area / 1000) * 10) / 10).toFixed(1)} tys. `}
+              : `${(((area / 1000) * 10) / 10).toFixed(1)} tys.`}{" "}
             km²
           </p>
         </div>
@@ -429,14 +427,15 @@ const FlagDetail = () => {
     <>
       {population > 0 ? (
         <div className="App__flag-detail__population">
+          <img src={PopulationIMG} alt="population" />
           <p>
+            ludność:{" "}
             {population < 100000
               ? population < 1000
                 ? `${population}`
                 : `${(((population / 1000) * 10) / 10).toFixed(1)} tys. `
               : `${(((population / 1000000) * 10) / 10).toFixed(1)} mln `}
           </p>
-          <img src={PopulationIMG} alt="population" />
         </div>
       ) : (
         ""
@@ -509,16 +508,16 @@ const FlagDetail = () => {
           <div className="App__flag-detail__capital-box">
             <Capital />
           </div>
+          <TimeZone />
           <div className="App__flag-detail__land-box">
             <div className="App__flag-detail__land-box__info">
               <Population />
               <Area />
             </div>
             <UnitedNations />
-            <TimeZone />
+            <Landlocked />
 
             <Currencies />
-            <Landlocked />
             <CarSide />
             <TLD />
           </div>

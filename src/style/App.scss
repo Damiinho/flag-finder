@@ -156,7 +156,7 @@ body {
         margin: 10px auto;
         padding: 0 10px;
         text-align: center;
-        font-size: calc(70vw / 10);
+        font-size: 25px;
         @media screen and (min-width: 550px) {
           font-size: 40px;
         }
@@ -164,7 +164,7 @@ body {
       h4 {
         width: 90%;
         text-align: center;
-        margin: 5px auto;
+        margin: 0 auto 5px;
       }
       &__img-flag {
         max-width: 70%;
@@ -237,9 +237,10 @@ body {
       }
       &__timezones {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
+        width: 163px;
+        justify-content: space-between;
         img {
           height: 30px;
         }
@@ -273,24 +274,28 @@ body {
         }
       }
       &__landlocked {
-        position: relative;
-        width: 50px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
         align-items: center;
+        font-size: 10px;
         &-img {
-          width: 35px;
-          height: 35px;
+          position: relative;
+          img {
+            width: 25px;
+            height: 25px;
+          }
+          img:nth-of-type(2) {
+            position: absolute;
+            width: 15px;
+            color: red;
+            font-weight: bold;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
         }
         &-description {
-          width: 25px;
-          color: red;
-          font-weight: bold;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          margin-left: 10px;
         }
       }
       &__carside {
@@ -347,30 +352,31 @@ body {
       &__un {
         position: relative;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
         &-img {
-          height: 50px;
-          width: 50px;
+          height: 30px;
+          width: 30px;
           &.non-member {
             filter: hue-rotate(160deg) brightness(0.7) contrast(1.5);
           }
         }
         &-detail {
-          text-align: center;
-          width: 50px;
+          margin-left: 10px;
           font-size: 10px;
         }
       }
       &__population {
         display: flex;
         flex-direction: row;
-        justify-content: center;
         align-items: center;
+        font-size: 10px;
         img {
+          margin-right: 5px;
           width: 20px;
         }
+      }
+      &__area {
+        font-size: 10px;
       }
       &__borders {
         display: flex;
@@ -402,38 +408,36 @@ body {
 
       &__currencies {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         .currencies-wrapper {
           display: flex;
-          flex-direction: row;
           img {
             height: 30px;
             width: 30px;
           }
-          p {
-            text-align: center;
+
+          &__box {
+            align-items: center;
+            display: flex;
+            p {
+              margin-left: 5px;
+              text-align: center;
+            }
           }
         }
       }
 
       &__land-box {
-        margin: 15px 0;
+        margin: 15px auto;
+        width: 75%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        // align-items: center;
+        flex-direction: column;
         gap: 10px;
 
         &__info {
           display: flex;
           flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          p {
-            text-align: center;
-          }
         }
       }
     }
