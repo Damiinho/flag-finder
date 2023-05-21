@@ -151,7 +151,7 @@ body {
       justify-content: flex-start;
       align-items: center;
       font-size: 12px;
-      h1 {
+      &__name {
         width: 90%;
         margin: 10px auto;
         padding: 0 10px;
@@ -161,95 +161,14 @@ body {
           font-size: 40px;
         }
       }
-      h4 {
+      &__official-name,
+      &__region {
         width: 90%;
         text-align: center;
         margin: 0 auto 5px;
       }
       &__img-flag {
         max-height: 75px;
-      }
-      &__linkbox {
-        // display: flex;
-        // width: 90%;
-        // height: 30px;
-        // &-img {
-        //   width: 50px;
-        //   position: relative;
-        //   img {
-        //     height: 20px;
-        //     position: absolute;
-        //     top: 50%;
-        //     left: 50%;
-        //     transform: translate(-50%, -50%);
-        //   }
-        // }
-        // p {
-        //   text-decoration: none;
-        //   color: white;
-        //   line-height: 27px;
-        //   &:hover {
-        //     color: rgb(49, 131, 255);
-        //   }
-        // }
-        position: absolute;
-        bottom: 5px;
-        display: flex;
-        flex-direction: row;
-
-        &-title {
-          width: 60px;
-          text-align: center;
-          position: relative;
-          top: 3px;
-        }
-
-        &-link {
-          color: white;
-          text-decoration: none;
-          display: flex;
-          flex-direction: row;
-
-          justify-content: center;
-          align-items: center;
-          &:hover {
-            color: rgb(49, 131, 255);
-          }
-          &__img {
-            width: 40px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img {
-              width: 30px;
-              height: 30px;
-            }
-          }
-          p {
-            display: none;
-            @media screen and (min-width: 600px) {
-              display: inline;
-            }
-          }
-        }
-      }
-      &__timezones {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 163px;
-        justify-content: space-between;
-        img {
-          height: 30px;
-        }
-        &-description {
-          min-width: 60px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
       }
       &__capital {
         margin: 10px 0;
@@ -272,7 +191,62 @@ body {
           font-size: 15px;
         }
       }
+      &__timezones {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 163px;
+        justify-content: space-between;
+        img {
+          height: 30px;
+        }
+        &-description {
+          min-width: 60px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      &__land-box {
+        margin: 15px auto;
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        // align-items: center;
+        flex-direction: column;
+        gap: 10px;
 
+        &__info {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      &__population {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 10px;
+        img {
+          margin-right: 5px;
+          width: 20px;
+        }
+      }
+      &__area {
+        font-size: 10px;
+      }
+
+      &__element-box {
+        width: 200px;
+        // background-color: red;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        &.hide {
+        }
+      }
       &__element {
         display: flex;
         flex-direction: row;
@@ -287,6 +261,14 @@ body {
           display: flex;
           flex-direction: column;
           justify-content: center;
+        }
+        &-hide {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          height: 30px;
         }
       }
       .un {
@@ -335,19 +317,6 @@ body {
         }
       }
 
-      &__population {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        font-size: 10px;
-        img {
-          margin-right: 5px;
-          width: 20px;
-        }
-      }
-      &__area {
-        font-size: 10px;
-      }
       &__borders {
         display: flex;
         flex-direction: column;
@@ -374,18 +343,47 @@ body {
         }
       }
 
-      &__land-box {
-        margin: 15px auto;
-        width: 75%;
+      &__linkbox {
+        position: absolute;
+        bottom: 5px;
         display: flex;
-        flex-wrap: wrap;
-        // align-items: center;
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: row;
 
-        &__info {
+        &-title {
+          width: 60px;
+          text-align: center;
+          position: relative;
+          top: 3px;
+        }
+
+        &-link {
+          color: white;
+          text-decoration: none;
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
+
+          justify-content: center;
+          align-items: center;
+          &:hover {
+            color: rgb(49, 131, 255);
+          }
+          &__img {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+          p {
+            display: none;
+            @media screen and (min-width: 600px) {
+              display: inline;
+            }
+          }
         }
       }
     }

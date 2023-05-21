@@ -31,7 +31,11 @@ const FlagDetail = () => {
   const [lat, setLat] = useState("");
   const [lng, setLng] = useState("");
   const [time, setTime] = useState("");
+  const [moreInfoShow, setMoreInfoShow] = useState(false);
 
+  ///////////////////////
+  // region translator //
+  ///////////////////////
   let region = "";
   if (selectedSmallOne) {
     if (selectedSmallOne.regions[0] === "europe") {
@@ -53,9 +57,9 @@ const FlagDetail = () => {
     }
   }
 
-  ///////////////////////
-  // Wikipedia section //
-  ///////////////////////
+  //////////////////////
+  // Wikipedia effect //
+  //////////////////////
   useEffect(() => {
     if (selectedSmallOne) {
       const page = selectedSmallOne.name;
@@ -76,9 +80,9 @@ const FlagDetail = () => {
 
   // console.log(wikipediaData);
 
-  ///////////////////////////
-  // restcountries section //
-  ///////////////////////////
+  //////////////////////////
+  // restcountries effect //
+  //////////////////////////
   useEffect(() => {
     if (selectedSmallOne && selectedSmallOne.alpha3 !== "") {
       const fetchData = async () => {
@@ -200,9 +204,9 @@ const FlagDetail = () => {
     }
   }, [selectedSmallOne, openStreetMapLink]);
 
-  //////////////////////
-  // TimeZone section //
-  //////////////////////
+  /////////////////////
+  // TimeZone effect //
+  /////////////////////
   useEffect(() => {
     const geonamesUsername = "damiinho";
     if (selectedSmallOne) {
@@ -263,6 +267,42 @@ const FlagDetail = () => {
       } else setTime("");
     }
   }, [lat, lng, selectedSmallOne]);
+
+  const NameSection = () => (
+    <>
+      <div className="App__flag-detail__name">{selectedSmallOne.name}</div>
+      {officialName && (
+        <div className="App__flag-detail__official-name">{officialName}</div>
+      )}
+      <div className="App__flag-detail__region">{region}</div>
+    </>
+  );
+
+  const MainFlag = () => (
+    <img
+      className="App__flag-detail__img-flag"
+      src={selectedSmallOne.img}
+      alt=""
+    />
+  );
+
+  const Capital = () => {
+    if (selectedSmallOne.capital.length !== 0) {
+      return (
+        <div className="App__flag-detail__capital">
+          <img
+            className="App__flag-detail__capital-img"
+            src={capitolIMG}
+            alt="capital"
+          />
+          <div className="App__flag-detail__capital-description">
+            <p>{selectedSmallOne.capital.join(", ")}</p>
+          </div>
+        </div>
+      );
+    }
+  };
+
   const TimeZone = () => {
     if (time) {
       const [date, hour] = time.split(" ");
@@ -286,54 +326,48 @@ const FlagDetail = () => {
       );
     }
   };
-  const Link = (props) => (
-    <a
-      href={props.link}
-      target="blank"
-      className="App__flag-detail__linkbox-link"
-    >
-      <div className="App__flag-detail__linkbox-link__img">
-        <img src={props.img} alt={props.alt} />
-      </div>
-      <p>{props.title}</p>
-    </a>
-  );
-  const LinkBox = () => (
-    <div className="App__flag-detail__linkbox">
-      <div className="App__flag-detail__linkbox-title">zobacz więcej:</div>
-      <Link
-        img={wikipediaIMG}
-        alt="wikipedia"
-        link={`https://pl.wikipedia.org/wiki/${selectedSmallOne.name}`}
-        title="Wikipedia"
-      />
-      <Link
-        img={GMapsIMG}
-        alt="google"
-        link={`https://www.google.com/maps/place/${selectedSmallOne.name}`}
-        title="Google Maps"
-      />
 
-      {openStreetMapLink && (
-        <Link
-          img={OSMapIMG}
-          alt="osmap"
-          link={openStreetMapLink}
-          title="OpenStreetMap"
-        />
-      )}
-    </div>
-  );
-
-  const InfoComponent = (props) => (
-    <div className={`App__flag-detail__element ${props.className}`}>
-      <div className="App__flag-detail__element-logo">{props.logo}</div>
-      <div className="App__flag-detail__element-detail">
-        <div className="App__flag-detail__element-detail__top">{props.top}</div>
-        <div className="App__flag-detail__element-detail__bottom">
-          {props.bottom}
+  const Population = () => (
+    <>
+      {population > 0 ? (
+        <div className="App__flag-detail__population">
+          <img src={PopulationIMG} alt="population" />
+          <p>
+            ludność:{" "}
+            {population < 100000
+              ? population < 1000
+                ? `${population}`
+                : `${(((population / 1000) * 10) / 10).toFixed(1)} tys. `
+              : `${(((population / 1000000) * 10) / 10).toFixed(1)} mln `}
+          </p>
         </div>
-      </div>
+      ) : (
+        ""
+      )}
+    </>
+  );
+  const Area = () => (
+    <>
+      {area > 0 ? (
+        <div className="App__flag-detail__area">
+          <p>
+            powierzchnia:{" "}
+            {area < 1000
+              ? area
+              : `${(((area / 1000) * 10) / 10).toFixed(1)} tys.`}{" "}
+            km²
+          </p>
+        </div>
+      ) : (
+        ""
+      )}
+    </>
+  );
+
+  const InfoBox = () => (
+    <div className="App__flag-detail__land-box__info">
+      <Population />
+      <Area />
     </div>
   );
 
@@ -384,9 +418,38 @@ const FlagDetail = () => {
     </div>
   );
 
+  const InfoComponent = (props) => (
+    <div className={`App__flag-detail__element ${props.className}`}>
+      {moreInfoShow ? (
+        <>
+          {" "}
+          <div className="App__flag-detail__element-logo">{props.logo}</div>
+          <div className="App__flag-detail__element-detail">
+            <div className="App__flag-detail__element-detail__top">
+              {props.top}
+            </div>
+            <div className="App__flag-detail__element-detail__bottom">
+              {props.bottom}
+            </div>
+          </div>
+        </>
+      ) : (
+        <div className="App__flag-detail__element-hide">{props.hideView}</div>
+      )}
+    </div>
+  );
+
   const MoreInfoBox = () => (
-    <>
-      <InfoComponent className="un" logo={logoUN} top={detailUN} bottom="" />
+    <div
+      className={`App__flag-detail__element-box ${moreInfoShow ? "" : "hide"}`}
+    >
+      <InfoComponent
+        className="un"
+        logo={logoUN}
+        top={detailUN}
+        bottom=""
+        hideView={logoUN}
+      />
       {landlocked === "brak danych" ? (
         ""
       ) : (
@@ -395,6 +458,7 @@ const FlagDetail = () => {
           logo={logoLandlocked}
           top={landlocked ? "brak dostępu do morza" : "dostęp do morza"}
           bottom=""
+          hideView={logoLandlocked}
         />
       )}
       {currencies ? (
@@ -403,6 +467,7 @@ const FlagDetail = () => {
           logo={<img src={CurrenciesIMG} alt="currencies" />}
           top="waluta:"
           bottom={detailCurrencies}
+          hideView={currencies.key}
         />
       ) : (
         ""
@@ -413,6 +478,7 @@ const FlagDetail = () => {
           logo={logoCarside}
           top={detailCarside}
           bottom=""
+          hideView={logoCarside}
         />
       ) : (
         ""
@@ -423,36 +489,12 @@ const FlagDetail = () => {
           logo={<img src={WebIMG} alt="www" />}
           top={<p>domena internetowa: {tld[0]}</p>}
           bottom=""
+          hideView={tld[0]}
         />
       ) : (
         ""
       )}
-    </>
-  );
-
-  const Capital = () => {
-    if (selectedSmallOne.capital.length !== 0) {
-      return (
-        <div className="App__flag-detail__capital">
-          <img
-            className="App__flag-detail__capital-img"
-            src={capitolIMG}
-            alt="capital"
-          />
-          <div className="App__flag-detail__capital-description">
-            <p>{selectedSmallOne.capital.join(", ")}</p>
-          </div>
-        </div>
-      );
-    }
-  };
-
-  const MainFlag = () => (
-    <img
-      className="App__flag-detail__img-flag"
-      src={selectedSmallOne.img}
-      alt=""
-    />
+    </div>
   );
 
   const Borders = () => (
@@ -480,64 +522,59 @@ const FlagDetail = () => {
     </>
   );
 
-  const Area = () => (
-    <>
-      {area > 0 ? (
-        <div className="App__flag-detail__area">
-          <p>
-            powierzchnia:{" "}
-            {area < 1000
-              ? area
-              : `${(((area / 1000) * 10) / 10).toFixed(1)} tys.`}{" "}
-            km²
-          </p>
-        </div>
-      ) : (
-        ""
-      )}
-    </>
+  const Link = (props) => (
+    <a
+      href={props.link}
+      target="blank"
+      className="App__flag-detail__linkbox-link"
+    >
+      <div className="App__flag-detail__linkbox-link__img">
+        <img src={props.img} alt={props.alt} />
+      </div>
+      <p>{props.title}</p>
+    </a>
   );
-  const Population = () => (
-    <>
-      {population > 0 ? (
-        <div className="App__flag-detail__population">
-          <img src={PopulationIMG} alt="population" />
-          <p>
-            ludność:{" "}
-            {population < 100000
-              ? population < 1000
-                ? `${population}`
-                : `${(((population / 1000) * 10) / 10).toFixed(1)} tys. `
-              : `${(((population / 1000000) * 10) / 10).toFixed(1)} mln `}
-          </p>
-        </div>
-      ) : (
-        ""
+  const LinkBox = () => (
+    <div className="App__flag-detail__linkbox">
+      <div className="App__flag-detail__linkbox-title">zobacz więcej:</div>
+      <Link
+        img={wikipediaIMG}
+        alt="wikipedia"
+        link={`https://pl.wikipedia.org/wiki/${selectedSmallOne.name}`}
+        title="Wikipedia"
+      />
+      <Link
+        img={GMapsIMG}
+        alt="google"
+        link={`https://www.google.com/maps/place/${selectedSmallOne.name}`}
+        title="Google Maps"
+      />
+
+      {openStreetMapLink && (
+        <Link
+          img={OSMapIMG}
+          alt="osmap"
+          link={openStreetMapLink}
+          title="OpenStreetMap"
+        />
       )}
-    </>
+    </div>
   );
 
   return (
     <>
       {selectedSmallOne ? (
         <div className="App__flag-detail">
-          <h1>{selectedSmallOne.name}</h1>
-          {officialName && <h4>{officialName}</h4>}
-          <h4>{region}</h4>
+          <NameSection />
           <MainFlag />
-          <div className="App__flag-detail__capital-box">
-            <Capital />
-          </div>
+          <Capital />
           <TimeZone />
           <div className="App__flag-detail__land-box">
-            <div className="App__flag-detail__land-box__info">
-              <Population />
-              <Area />
-            </div>
+            <InfoBox />
             <MoreInfoBox />
+            <Borders />
           </div>
 
-          <Borders />
           <LinkBox />
         </div>
       ) : null}
