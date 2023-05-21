@@ -277,7 +277,7 @@ const FlagDetail = () => {
             alt="timezones"
           />
           <div className="App__flag-detail__timezones-description">
-            <p>data i godzina:</p>
+            <p>data i czas lokalny:</p>
             <p>
               {formattedDate}, {hour}
             </p>
@@ -298,7 +298,7 @@ const FlagDetail = () => {
       <p>{props.title}</p>
     </a>
   );
-  const Linkbox = () => (
+  const LinkBox = () => (
     <div className="App__flag-detail__linkbox">
       <div className="App__flag-detail__linkbox-title">zobacz więcej:</div>
       <Link
@@ -323,6 +323,111 @@ const FlagDetail = () => {
         />
       )}
     </div>
+  );
+
+  const InfoComponent = (props) => (
+    <div className={`App__flag-detail__element ${props.className}`}>
+      <div className="App__flag-detail__element-logo">{props.logo}</div>
+      <div className="App__flag-detail__element-detail">
+        <div className="App__flag-detail__element-detail__top">{props.top}</div>
+        <div className="App__flag-detail__element-detail__bottom">
+          {props.bottom}
+        </div>
+      </div>
+    </div>
+  );
+
+  const logoUN = (
+    <img
+      className={`App__flag-detail__element-logo ${
+        UNMember ? "" : "non-member"
+      }`}
+      src={UNIMG}
+      alt="un"
+    />
+  );
+  const detailUN = <p>{UNMember ? "należy do ONZ" : "nie należy do ONZ"}</p>;
+  const logoLandlocked = (
+    <>
+      <img src={seaIMG} alt="sea" />
+      {landlocked ? <img className="negative" src={XIMG} alt="" /> : null}
+    </>
+  );
+  const logoCarside = (
+    <>
+      <img className="carside-road" src={roadIMG} alt="road" />
+      <img
+        className={`carside-car ${carSide === "left" ? "left" : ""} ${
+          carSide === "right" ? "right" : ""
+        }`}
+        src={carIMG}
+        alt="car"
+      />
+    </>
+  );
+  const detailCarside = (
+    <>
+      <p>
+        {carSide === "left"
+          ? "ruch lewostronny"
+          : carSide === "right"
+          ? "ruch prawostronny"
+          : ""}
+      </p>
+    </>
+  );
+  const detailCurrencies = (
+    <div className="currencies-bottom">
+      <p>{currencies.key}</p>
+      <p>({currencies.symbol})</p>
+      <p>{currencies.name}</p>
+    </div>
+  );
+
+  const MoreInfoBox = () => (
+    <>
+      <InfoComponent className="un" logo={logoUN} top={detailUN} bottom="" />
+      {landlocked === "brak danych" ? (
+        ""
+      ) : (
+        <InfoComponent
+          className="landlocked"
+          logo={logoLandlocked}
+          top={landlocked ? "brak dostępu do morza" : "dostęp do morza"}
+          bottom=""
+        />
+      )}
+      {currencies ? (
+        <InfoComponent
+          className="currencies"
+          logo={<img src={CurrenciesIMG} alt="currencies" />}
+          top="waluta:"
+          bottom={detailCurrencies}
+        />
+      ) : (
+        ""
+      )}
+      {carSide ? (
+        <InfoComponent
+          className="carside"
+          logo={logoCarside}
+          top={detailCarside}
+          bottom=""
+        />
+      ) : (
+        ""
+      )}
+      {tld ? (
+        <InfoComponent
+          className="tld"
+          logo={<img src={WebIMG} alt="www" />}
+          top={<p>domena internetowa: {tld[0]}</p>}
+          bottom=""
+        />
+      ) : (
+        ""
+      )}
+    </>
   );
 
   const Capital = () => {
@@ -375,37 +480,6 @@ const FlagDetail = () => {
     </>
   );
 
-  const UnitedNations = () => (
-    <div className="App__flag-detail__un">
-      <img
-        className={`App__flag-detail__un-img ${UNMember ? "" : "non-member"}`}
-        src={UNIMG}
-        alt="un"
-      />
-      <div className="App__flag-detail__un-detail">
-        <p>{UNMember ? "należy do ONZ" : "nie należy do ONZ"}</p>
-      </div>
-    </div>
-  );
-
-  const Landlocked = () => (
-    <>
-      {landlocked === "brak danych" ? (
-        ""
-      ) : (
-        <div className="App__flag-detail__landlocked">
-          <div className="App__flag-detail__landlocked-img">
-            <img src={seaIMG} alt="sea" />
-            {landlocked ? <img src={XIMG} alt="" /> : null}
-          </div>
-          <div className="App__flag-detail__landlocked-description">
-            {landlocked ? "brak dostępu do morza" : "dostęp do morza"}
-          </div>
-        </div>
-      )}
-    </>
-  );
-
   const Area = () => (
     <>
       {area > 0 ? (
@@ -442,60 +516,6 @@ const FlagDetail = () => {
       )}
     </>
   );
-  const CarSide = () => (
-    <>
-      {carSide ? (
-        <div className="App__flag-detail__carside">
-          <div className="App__flag-detail__carside-wrapper">
-            <img
-              className="App__flag-detail__carside-road"
-              src={roadIMG}
-              alt="road"
-            />
-            <img
-              className={`App__flag-detail__carside-car ${
-                carSide === "left" ? "left" : ""
-              } ${carSide === "right" ? "right" : ""}`}
-              src={carIMG}
-              alt="car"
-            />
-          </div>
-        </div>
-      ) : (
-        ""
-      )}
-    </>
-  );
-  const TLD = () => (
-    <>
-      {tld ? (
-        <div className="App__flag-detail__tld">
-          <img src={WebIMG} alt="www" />
-          <p>{tld[0]}</p>
-        </div>
-      ) : (
-        ""
-      )}
-    </>
-  );
-  const Currencies = () => (
-    <>
-      {currencies ? (
-        <div className="App__flag-detail__currencies">
-          <div className="currencies-wrapper">
-            <img src={CurrenciesIMG} alt="currencies" />
-            <div className="currencies-wrapper__box">
-              <p>{currencies.key}</p>
-              <p>{currencies.symbol}</p>
-            </div>
-          </div>
-          {/* <p>{currencies.name}</p> */}
-        </div>
-      ) : (
-        ""
-      )}
-    </>
-  );
 
   return (
     <>
@@ -514,16 +534,11 @@ const FlagDetail = () => {
               <Population />
               <Area />
             </div>
-            <UnitedNations />
-            <Landlocked />
-
-            <Currencies />
-            <CarSide />
-            <TLD />
+            <MoreInfoBox />
           </div>
 
           <Borders />
-          <Linkbox />
+          <LinkBox />
         </div>
       ) : null}
     </>
