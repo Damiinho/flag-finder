@@ -167,8 +167,7 @@ body {
         margin: 0 auto 5px;
       }
       &__img-flag {
-        max-width: 70%;
-        max-height: 150px;
+        max-height: 75px;
       }
       &__linkbox {
         // display: flex;
@@ -273,48 +272,59 @@ body {
           font-size: 15px;
         }
       }
-      &__landlocked {
+
+      &__element {
         display: flex;
         flex-direction: row;
-        align-items: center;
         font-size: 10px;
-        &-img {
+        &-logo {
           position: relative;
-          img {
-            width: 25px;
-            height: 25px;
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+        }
+        &-detail {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+      .un {
+        img {
+          &.non-member {
+            filter: hue-rotate(160deg) brightness(0.7) contrast(1.5);
           }
-          img:nth-of-type(2) {
+        }
+      }
+      .landlocked {
+        img {
+          &.negative {
             position: absolute;
             width: 15px;
-            color: red;
-            font-weight: bold;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
           }
         }
-        &-description {
-          margin-left: 10px;
+      }
+      .currencies {
+        &-bottom {
+          display: flex;
+          flex-direction: row;
+          gap: 5px;
         }
       }
-      &__carside {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        &-wrapper {
-          position: relative;
-          width: 50px;
-        }
+      .carside {
         &-road {
-          height: 50px;
-          width: 50px;
+          position: relative;
+          height: 30px;
+          width: 30px;
         }
         &-car {
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
-          height: 35px;
+          height: 20px;
           transition: 0.3s;
           &.left {
             left: 0;
@@ -324,47 +334,7 @@ body {
           }
         }
       }
-      &__tld {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        img {
-          // display: none;
-          width: 35px;
-        }
-        p {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: rgb(97, 20, 20);
-          font-weight: bold;
-          font-size: 20px;
-          text-shadow: 2px 2px 0 #f0ff20, 2px -2px 0 #f0ff20, -2px 2px 0 #f0ff20,
-            -2px -2px 0 #f0ff20, 2px 0px 0 #f0ff20, 0px 2px 0 #f0ff20,
-            -2px 0px 0 #f0ff20, 0px -2px 0 #f0ff20;
-          z-index: 1;
-        }
-      }
-      &__un {
-        position: relative;
-        display: flex;
-        align-items: center;
-        &-img {
-          height: 30px;
-          width: 30px;
-          &.non-member {
-            filter: hue-rotate(160deg) brightness(0.7) contrast(1.5);
-          }
-        }
-        &-detail {
-          margin-left: 10px;
-          font-size: 10px;
-        }
-      }
+
       &__population {
         display: flex;
         flex-direction: row;
@@ -381,14 +351,13 @@ body {
       &__borders {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        font-size: 10px;
         &-empty {
           width: 50px;
           height: 70px;
 
           p {
-            font-size: 12px;
             text-align: center;
           }
           img {
@@ -399,29 +368,8 @@ body {
         &-full {
           margin: 10px 0;
           width: 100%;
-          text-align: center;
           &__content {
             max-width: 250px;
-          }
-        }
-      }
-
-      &__currencies {
-        display: flex;
-        .currencies-wrapper {
-          display: flex;
-          img {
-            height: 30px;
-            width: 30px;
-          }
-
-          &__box {
-            align-items: center;
-            display: flex;
-            p {
-              margin-left: 5px;
-              text-align: center;
-            }
           }
         }
       }
