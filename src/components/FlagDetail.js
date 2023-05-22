@@ -120,6 +120,7 @@ const FlagDetail = () => {
 
             setArea(data[0]?.area || 0);
 
+            // console.log(data);
             const getBorders = async (data) => {
               const countryCodes = data[0]?.borders || [];
               let countryNames = [];
@@ -383,7 +384,7 @@ const FlagDetail = () => {
   const detailUN = <p>{UNMember ? "należy do ONZ" : "nie należy do ONZ"}</p>;
   const logoLandlocked = (
     <>
-      <img src={seaIMG} alt="sea" />
+      <img className="wave" src={seaIMG} alt="sea" />
       {landlocked ? <img className="negative" src={XIMG} alt="" /> : null}
     </>
   );
@@ -440,59 +441,71 @@ const FlagDetail = () => {
   );
 
   const MoreInfoBox = () => (
-    <div
-      className={`App__flag-detail__element-box ${moreInfoShow ? "" : "hide"}`}
-    >
-      <InfoComponent
-        className="un"
-        logo={logoUN}
-        top={detailUN}
-        bottom=""
-        hideView={logoUN}
-      />
-      {landlocked === "brak danych" ? (
-        ""
-      ) : (
+    <div className={`App__flag-detail__elements`}>
+      <div
+        className={`App__flag-detail__element-box ${
+          moreInfoShow ? "" : "hide"
+        }`}
+      >
         <InfoComponent
-          className="landlocked"
-          logo={logoLandlocked}
-          top={landlocked ? "brak dostępu do morza" : "dostęp do morza"}
+          className="un"
+          logo={logoUN}
+          top={detailUN}
           bottom=""
-          hideView={logoLandlocked}
+          hideView={logoUN}
         />
-      )}
-      {currencies ? (
-        <InfoComponent
-          className="currencies"
-          logo={<img src={CurrenciesIMG} alt="currencies" />}
-          top="waluta:"
-          bottom={detailCurrencies}
-          hideView={currencies.key}
-        />
-      ) : (
+        {landlocked === "brak danych" ? (
+          ""
+        ) : (
+          <InfoComponent
+            className="landlocked"
+            logo={logoLandlocked}
+            top={landlocked ? "brak dostępu do morza" : "dostęp do morza"}
+            bottom=""
+            hideView={logoLandlocked}
+          />
+        )}
+
+        {carSide ? (
+          <InfoComponent
+            className="carside"
+            logo={logoCarside}
+            top={detailCarside}
+            bottom=""
+            hideView={logoCarside}
+          />
+        ) : (
+          ""
+        )}
+        {currencies ? (
+          <InfoComponent
+            className="currencies"
+            logo={<img src={CurrenciesIMG} alt="currencies" />}
+            top="waluta:"
+            bottom={detailCurrencies}
+            hideView={currencies.key}
+          />
+        ) : (
+          ""
+        )}
+        {tld ? (
+          <InfoComponent
+            className="tld"
+            logo={<img src={WebIMG} alt="www" />}
+            top={<p>domena internetowa: {tld[0]}</p>}
+            bottom=""
+            hideView={tld[0]}
+          />
+        ) : (
+          ""
+        )}
+      </div>
+      {moreInfoShow ? (
         ""
-      )}
-      {carSide ? (
-        <InfoComponent
-          className="carside"
-          logo={logoCarside}
-          top={detailCarside}
-          bottom=""
-          hideView={logoCarside}
-        />
       ) : (
-        ""
-      )}
-      {tld ? (
-        <InfoComponent
-          className="tld"
-          logo={<img src={WebIMG} alt="www" />}
-          top={<p>domena internetowa: {tld[0]}</p>}
-          bottom=""
-          hideView={tld[0]}
-        />
-      ) : (
-        ""
+        <div className="App__flag-detail__element-box__show">
+          rozwiń informacje
+        </div>
       )}
     </div>
   );
@@ -561,22 +574,56 @@ const FlagDetail = () => {
     </div>
   );
 
+  // function setClockHands() {
+  //   const currentTime = new Date();
+  //   const hour = currentTime.getHours() % 12;
+  //   const minute = currentTime.getMinutes();
+  //   const second = currentTime.getSeconds();
+
+  //   const hourHand = document.querySelector(".hour-hand");
+  //   const minuteHand = document.querySelector(".minute-hand");
+  //   const secondHand = document.querySelector(".second-hand");
+
+  //   const hourRotation = hour * 30 + minute * 0.5; // 360/12 = 30, 30 degrees for each hour
+  //   const minuteRotation = minute * 6 + second * 0.1; // 360/60 = 6, 6 degrees for each minute
+  //   const secondRotation = second * 6; // 360/60 = 6, 6 degrees for each second
+
+  //   hourHand.style.transform = `rotate(${hourRotation}deg)`;
+  //   minuteHand.style.transform = `rotate(${minuteRotation}deg)`;
+  //   secondHand.style.transform = `rotate(${secondRotation}deg)`;
+  // }
+
+  // // Ustaw zegar co sekundę
+  // setInterval(setClockHands, 1000);
+
+  // // Ustaw wskazówki zegara na początku
+  // setClockHands();
+
   return (
     <>
       {selectedSmallOne ? (
-        <div className="App__flag-detail">
-          <NameSection />
-          <MainFlag />
-          <Capital />
-          <TimeZone />
-          <div className="App__flag-detail__land-box">
-            <InfoBox />
-            <MoreInfoBox />
-            <Borders />
+        <>
+          <div class="clock">
+            <div class="hour-hand"></div>
+            <div class="minute-hand"></div>
+            <div class="second-hand"></div>
+            <div class="center-dot"></div>
           </div>
+          <div className="App__flag-detail">
+            <NameSection />
+            <MainFlag />
+            <Capital />
+            <TimeZone />
 
-          <LinkBox />
-        </div>
+            <div className="App__flag-detail__land-box">
+              <InfoBox />
+              <MoreInfoBox />
+              <Borders />
+            </div>
+
+            <LinkBox />
+          </div>
+        </>
       ) : null}
     </>
   );

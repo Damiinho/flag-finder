@@ -226,6 +226,7 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         font-size: 10px;
         img {
           margin-right: 5px;
@@ -234,17 +235,30 @@ body {
       }
       &__area {
         font-size: 10px;
+        text-align: center;
       }
 
+      &__elements {
+        cursor: pointer;
+        // background-color: red;
+      }
       &__element-box {
-        width: 200px;
+        width: 110px;
+        margin: 0 auto;
         // background-color: red;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        gap: 10px;
 
         &.hide {
+        }
+        &__show {
+          margin-top: 10px;
+          width: 100%;
+          text-align: center;
         }
       }
       &__element {
@@ -290,6 +304,7 @@ body {
         }
       }
       .currencies {
+        font-size: 20px;
         &-bottom {
           display: flex;
           flex-direction: row;
@@ -315,6 +330,9 @@ body {
             right: 0;
           }
         }
+      }
+      .tld {
+        font-size: 20px;
       }
 
       &__borders {
@@ -1251,3 +1269,51 @@ body {
     color-stop(0.86, rgb(31, 39, 66))
   );
 }
+
+// .clock {
+//   position: relative;
+//   width: 200px;
+//   height: 200px;
+//   border-radius: 50%;
+//   border: 2px solid #000;
+//   background-color: #fff;
+// }
+
+// .hour-hand,
+// .minute-hand,
+// .second-hand {
+//   position: absolute;
+//   background-color: #000;
+//   transform-origin: bottom center;
+// }
+
+// .hour-hand {
+//   width: 6px;
+//   height: 70px;
+//   left: calc(50% - 3px);
+//   top: 30px;
+// }
+
+// .minute-hand {
+//   width: 4px;
+//   height: 90px;
+//   left: calc(50% - 2px);
+//   top: 5px;
+// }
+
+// .second-hand {
+//   width: 2px;
+//   height: 100px;
+//   left: calc(50% - 1px);
+//   top: 0px;
+// }
+
+// .center-dot {
+//   position: absolute;
+//   width: 12px;
+//   height: 12px;
+//   background-color: #000;
+//   border-radius: 50%;
+//   left: calc(50% - 6px);
+//   top: calc(50% - 6px);
+// }
