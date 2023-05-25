@@ -440,8 +440,15 @@ const FlagDetail = () => {
     </div>
   );
 
+  const handleMoreInfoBoxClick = () => {
+    console.log("powinien się rozwijać");
+  };
+
   const MoreInfoBox = () => (
-    <div className={`App__flag-detail__elements`}>
+    <div
+      className={`App__flag-detail__elements`}
+      onClick={handleMoreInfoBoxClick}
+    >
       <div
         className={`App__flag-detail__element-box ${
           moreInfoShow ? "" : "hide"
@@ -603,12 +610,12 @@ const FlagDetail = () => {
     <>
       {selectedSmallOne ? (
         <>
-          <div class="clock">
-            <div class="hour-hand"></div>
-            <div class="minute-hand"></div>
-            <div class="second-hand"></div>
-            <div class="center-dot"></div>
-          </div>
+          {/* <div className="clock">
+            <div className="hour-hand"></div>
+            <div className="minute-hand"></div>
+            <div className="second-hand"></div>
+            <div className="center-dot"></div>
+          </div> */}
           <div className="App__flag-detail">
             <NameSection />
             <MainFlag />
