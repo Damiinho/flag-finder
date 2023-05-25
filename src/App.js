@@ -4,6 +4,7 @@ import Main from "./components/Main";
 import AppProvider from "./contexts/AppContext";
 import Load from "./components/Load";
 import FlagDetail from "./components/FlagDetail";
+import FlagDetailProvider from "./contexts/FlagDetailContext";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,7 +25,9 @@ function App() {
         <Load />
       ) : (
         <div className="App">
-          <FlagDetail />
+          <FlagDetailProvider>
+            <FlagDetail />
+          </FlagDetailProvider>
           <Header />
           <Main />
         </div>

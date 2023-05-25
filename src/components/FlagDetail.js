@@ -1,61 +1,45 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { AppContext } from "../contexts/AppContext";
-import wikipediaIMG from "../img/Wikipedia.svg";
-import OSMapIMG from "../img/Openstreetmap.svg";
-import GMapsIMG from "../img/Google_Maps.svg";
-import TimezoneIMG from "../img/time-zone.png";
-import capitolIMG from "../img/capitol-building.svg";
-import seaIMG from "../img/Blue_sea_wave.svg";
-import roadIMG from "../img/road2.png";
-import carIMG from "../img/car.png";
-import UNIMG from "../img/UN_emblem_blue.svg";
-import IslandIMG from "../img/Island_with_Trees_Flat_Icon_Vector.svg";
-import CurrenciesIMG from "../img/currencies.svg";
-import PopulationIMG from "../img/population.svg";
-import WebIMG from "../img/web-icon.svg";
-import XIMG from "../img/x.svg";
+
+import LinkBox from "./FlagDetail/LinkBox";
+import { FlagDetailContext } from "../contexts/FlagDetailContext";
+import MoreInfoBox from "./FlagDetail/MoreInfoBox";
+import InfoBox from "./FlagDetail/InfoBox";
+import Borders from "./FlagDetail/Borders";
+import NameSection from "./FlagDetail/NameSection";
+import MainFlag from "./FlagDetail/MainFlag";
+import TimeZone from "./FlagDetail/TimeZone";
+import Capital from "./FlagDetail/Capital";
 
 const FlagDetail = () => {
+  const {
+    openStreetMapLink,
+    setOpenStreetMapLink,
+    setWikipediaData,
+    setOfficialName,
+    setUNMember,
+
+    setLandlocked,
+    setArea,
+    setBorders,
+    setPopulation,
+
+    setCarSide,
+
+    setCurrencies,
+
+    setTld,
+    lat,
+    setLat,
+    lng,
+    setLng,
+    setTime,
+  } = useContext(FlagDetailContext);
   const { selectedSmallOne } = useContext(AppContext);
-  const [wikipediaData, setWikipediaData] = useState(null);
-  const [openStreetMapLink, setOpenStreetMapLink] = useState("");
-  const [officialName, setOfficialName] = useState("");
-  const [UNMember, setUNMember] = useState(false);
-  const [landlocked, setLandlocked] = useState(false);
-  const [area, setArea] = useState(0);
-  const [borders, setBorders] = useState([]);
-  const [population, setPopulation] = useState(0);
-  const [carSide, setCarSide] = useState("");
-  const [currencies, setCurrencies] = useState("");
-  const [tld, setTld] = useState("");
-  const [lat, setLat] = useState("");
-  const [lng, setLng] = useState("");
-  const [time, setTime] = useState("");
-  const [moreInfoShow, setMoreInfoShow] = useState(false);
 
   ///////////////////////
   // region translator //
   ///////////////////////
-  let region = "";
-  if (selectedSmallOne) {
-    if (selectedSmallOne.regions[0] === "europe") {
-      region = "Europa";
-    } else if (selectedSmallOne.regions[0] === "south-america") {
-      region = "Ameryka Południowa";
-    } else if (selectedSmallOne.regions[0] === "north-america") {
-      region = "Ameryka Północna";
-    } else if (selectedSmallOne.regions[0] === "asia") {
-      region = "Azja";
-    } else if (selectedSmallOne.regions[0] === "africa") {
-      region = "Afryka";
-    } else if (selectedSmallOne.regions[0] === "oceania") {
-      region = "Australia/Oceania";
-    } else if (selectedSmallOne.regions[0] === "carraibean") {
-      region = "Karaiby";
-    } else if (selectedSmallOne.regions[0] === "antarctica") {
-      region = "Antarktyka";
-    }
-  }
 
   //////////////////////
   // Wikipedia effect //
@@ -76,7 +60,7 @@ const FlagDetail = () => {
           console.error("Błąd pobierania z Wikipedii", error);
         });
     }
-  }, [selectedSmallOne]);
+  }, [selectedSmallOne, setWikipediaData]);
 
   // console.log(wikipediaData);
 
@@ -203,7 +187,20 @@ const FlagDetail = () => {
       setTld("");
       setCurrencies("");
     }
-  }, [selectedSmallOne, openStreetMapLink]);
+  }, [
+    selectedSmallOne,
+    openStreetMapLink,
+    setArea,
+    setBorders,
+    setCarSide,
+    setCurrencies,
+    setLandlocked,
+    setOfficialName,
+    setOpenStreetMapLink,
+    setPopulation,
+    setTld,
+    setUNMember,
+  ]);
 
   /////////////////////
   // TimeZone effect //
@@ -267,319 +264,7 @@ const FlagDetail = () => {
           });
       } else setTime("");
     }
-  }, [lat, lng, selectedSmallOne]);
-
-  const NameSection = () => (
-    <>
-      <div className="App__flag-detail__name">{selectedSmallOne.name}</div>
-      {officialName && (
-        <div className="App__flag-detail__official-name">{officialName}</div>
-      )}
-      <div className="App__flag-detail__region">{region}</div>
-    </>
-  );
-
-  const MainFlag = () => (
-    <img
-      className="App__flag-detail__img-flag"
-      src={selectedSmallOne.img}
-      alt=""
-    />
-  );
-
-  const Capital = () => {
-    if (selectedSmallOne.capital.length !== 0) {
-      return (
-        <div className="App__flag-detail__capital">
-          <img
-            className="App__flag-detail__capital-img"
-            src={capitolIMG}
-            alt="capital"
-          />
-          <div className="App__flag-detail__capital-description">
-            <p>{selectedSmallOne.capital.join(", ")}</p>
-          </div>
-        </div>
-      );
-    }
-  };
-
-  const TimeZone = () => {
-    if (time) {
-      const [date, hour] = time.split(" ");
-      const parts = date.split("-");
-      const formattedDate = `${parts[2]}.${parts[1]}.${parts[0]}`;
-
-      return (
-        <div className="App__flag-detail__timezones">
-          <img
-            className="App__flag-detail__timezones-img"
-            src={TimezoneIMG}
-            alt="timezones"
-          />
-          <div className="App__flag-detail__timezones-description">
-            <p>data i czas lokalny:</p>
-            <p>
-              {formattedDate}, {hour}
-            </p>
-          </div>
-        </div>
-      );
-    }
-  };
-
-  const Population = () => (
-    <>
-      {population > 0 ? (
-        <div className="App__flag-detail__population">
-          <img src={PopulationIMG} alt="population" />
-          <p>
-            ludność:{" "}
-            {population < 100000
-              ? population < 1000
-                ? `${population}`
-                : `${(((population / 1000) * 10) / 10).toFixed(1)} tys. `
-              : `${(((population / 1000000) * 10) / 10).toFixed(1)} mln `}
-          </p>
-        </div>
-      ) : (
-        ""
-      )}
-    </>
-  );
-  const Area = () => (
-    <>
-      {area > 0 ? (
-        <div className="App__flag-detail__area">
-          <p>
-            powierzchnia:{" "}
-            {area < 1000
-              ? area
-              : `${(((area / 1000) * 10) / 10).toFixed(1)} tys.`}{" "}
-            km²
-          </p>
-        </div>
-      ) : (
-        ""
-      )}
-    </>
-  );
-
-  const InfoBox = () => (
-    <div className="App__flag-detail__land-box__info">
-      <Population />
-      <Area />
-    </div>
-  );
-
-  const logoUN = (
-    <img
-      className={`App__flag-detail__element-logo ${
-        UNMember ? "" : "non-member"
-      }`}
-      src={UNIMG}
-      alt="un"
-    />
-  );
-  const detailUN = <p>{UNMember ? "należy do ONZ" : "nie należy do ONZ"}</p>;
-  const logoLandlocked = (
-    <>
-      <img className="wave" src={seaIMG} alt="sea" />
-      {landlocked ? <img className="negative" src={XIMG} alt="" /> : null}
-    </>
-  );
-  const logoCarside = (
-    <>
-      <img className="carside-road" src={roadIMG} alt="road" />
-      <img
-        className={`carside-car ${carSide === "left" ? "left" : ""} ${
-          carSide === "right" ? "right" : ""
-        }`}
-        src={carIMG}
-        alt="car"
-      />
-    </>
-  );
-  const detailCarside = (
-    <>
-      <p>
-        {carSide === "left"
-          ? "ruch lewostronny"
-          : carSide === "right"
-          ? "ruch prawostronny"
-          : ""}
-      </p>
-    </>
-  );
-  const detailCurrencies = (
-    <div className="currencies-bottom">
-      <p>{currencies.key}</p>
-      <p>({currencies.symbol})</p>
-      <p>{currencies.name}</p>
-    </div>
-  );
-
-  const InfoComponent = (props) => (
-    <div className={`App__flag-detail__element ${props.className}`}>
-      {moreInfoShow ? (
-        <>
-          {" "}
-          <div className="App__flag-detail__element-logo">{props.logo}</div>
-          <div className="App__flag-detail__element-detail">
-            <div className="App__flag-detail__element-detail__top">
-              {props.top}
-            </div>
-            <div className="App__flag-detail__element-detail__bottom">
-              {props.bottom}
-            </div>
-          </div>
-        </>
-      ) : (
-        <div className="App__flag-detail__element-hide">{props.hideView}</div>
-      )}
-    </div>
-  );
-
-  const handleMoreInfoBoxClick = () => {
-    console.log("powinien się rozwijać");
-  };
-
-  const MoreInfoBox = () => (
-    <div
-      className={`App__flag-detail__elements`}
-      onClick={handleMoreInfoBoxClick}
-    >
-      <div
-        className={`App__flag-detail__element-box ${
-          moreInfoShow ? "" : "hide"
-        }`}
-      >
-        <InfoComponent
-          className="un"
-          logo={logoUN}
-          top={detailUN}
-          bottom=""
-          hideView={logoUN}
-        />
-        {landlocked === "brak danych" ? (
-          ""
-        ) : (
-          <InfoComponent
-            className="landlocked"
-            logo={logoLandlocked}
-            top={landlocked ? "brak dostępu do morza" : "dostęp do morza"}
-            bottom=""
-            hideView={logoLandlocked}
-          />
-        )}
-
-        {carSide ? (
-          <InfoComponent
-            className="carside"
-            logo={logoCarside}
-            top={detailCarside}
-            bottom=""
-            hideView={logoCarside}
-          />
-        ) : (
-          ""
-        )}
-        {currencies ? (
-          <InfoComponent
-            className="currencies"
-            logo={<img src={CurrenciesIMG} alt="currencies" />}
-            top="waluta:"
-            bottom={detailCurrencies}
-            hideView={currencies.key}
-          />
-        ) : (
-          ""
-        )}
-        {tld ? (
-          <InfoComponent
-            className="tld"
-            logo={<img src={WebIMG} alt="www" />}
-            top={<p>domena internetowa: {tld[0]}</p>}
-            bottom=""
-            hideView={tld[0]}
-          />
-        ) : (
-          ""
-        )}
-      </div>
-      {moreInfoShow ? (
-        ""
-      ) : (
-        <div className="App__flag-detail__element-box__show">
-          rozwiń informacje
-        </div>
-      )}
-    </div>
-  );
-
-  const Borders = () => (
-    <>
-      {selectedSmallOne.country ? (
-        <div className="App__flag-detail__borders">
-          {borders.length > 0 ? (
-            <div className="App__flag-detail__borders-full">
-              <div className="App__flag-detail__borders-full__content">
-                granice: {borders.join(", ")}
-              </div>
-            </div>
-          ) : (
-            <>
-              <div className="App__flag-detail__borders-empty">
-                <img src={IslandIMG} alt="island" />
-                <p>wyspy</p>
-              </div>
-            </>
-          )}
-        </div>
-      ) : (
-        ""
-      )}
-    </>
-  );
-
-  const Link = (props) => (
-    <a
-      href={props.link}
-      target="blank"
-      className="App__flag-detail__linkbox-link"
-    >
-      <div className="App__flag-detail__linkbox-link__img">
-        <img src={props.img} alt={props.alt} />
-      </div>
-      <p>{props.title}</p>
-    </a>
-  );
-  const LinkBox = () => (
-    <div className="App__flag-detail__linkbox">
-      <div className="App__flag-detail__linkbox-title">zobacz więcej:</div>
-      <Link
-        img={wikipediaIMG}
-        alt="wikipedia"
-        link={`https://pl.wikipedia.org/wiki/${selectedSmallOne.name}`}
-        title="Wikipedia"
-      />
-      <Link
-        img={GMapsIMG}
-        alt="google"
-        link={`https://www.google.com/maps/place/${selectedSmallOne.name}`}
-        title="Google Maps"
-      />
-
-      {openStreetMapLink && (
-        <Link
-          img={OSMapIMG}
-          alt="osmap"
-          link={openStreetMapLink}
-          title="OpenStreetMap"
-        />
-      )}
-    </div>
-  );
+  }, [lat, lng, selectedSmallOne, setLat, setLng, setTime]);
 
   // function setClockHands() {
   //   const currentTime = new Date();
