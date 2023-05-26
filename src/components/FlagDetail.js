@@ -266,41 +266,10 @@ const FlagDetail = () => {
     }
   }, [lat, lng, selectedSmallOne, setLat, setLng, setTime]);
 
-  // function setClockHands() {
-  //   const currentTime = new Date();
-  //   const hour = currentTime.getHours() % 12;
-  //   const minute = currentTime.getMinutes();
-  //   const second = currentTime.getSeconds();
-
-  //   const hourHand = document.querySelector(".hour-hand");
-  //   const minuteHand = document.querySelector(".minute-hand");
-  //   const secondHand = document.querySelector(".second-hand");
-
-  //   const hourRotation = hour * 30 + minute * 0.5; // 360/12 = 30, 30 degrees for each hour
-  //   const minuteRotation = minute * 6 + second * 0.1; // 360/60 = 6, 6 degrees for each minute
-  //   const secondRotation = second * 6; // 360/60 = 6, 6 degrees for each second
-
-  //   hourHand.style.transform = `rotate(${hourRotation}deg)`;
-  //   minuteHand.style.transform = `rotate(${minuteRotation}deg)`;
-  //   secondHand.style.transform = `rotate(${secondRotation}deg)`;
-  // }
-
-  // // Ustaw zegar co sekundę
-  // setInterval(setClockHands, 1000);
-
-  // // Ustaw wskazówki zegara na początku
-  // setClockHands();
-
   return (
     <>
       {selectedSmallOne ? (
         <>
-          {/* <div className="clock">
-            <div className="hour-hand"></div>
-            <div className="minute-hand"></div>
-            <div className="second-hand"></div>
-            <div className="center-dot"></div>
-          </div> */}
           <div className="App__flag-detail">
             <NameSection />
             <MainFlag />

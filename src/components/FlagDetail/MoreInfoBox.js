@@ -7,14 +7,21 @@ import roadIMG from "../../img/road2.png";
 import carIMG from "../../img/car.png";
 import UNIMG from "../../img/UN_emblem_blue.svg";
 import CurrenciesIMG from "../../img/currencies.svg";
-import WebIMG from "../../img/web-icon.svg";
+import WebIMG from "../../img/www.svg";
 import XIMG from "../../img/x.svg";
 
 const MoreInfoBox = () => {
-  const { moreInfoShow, landlocked, carSide, currencies, tld, UNMember } =
-    useContext(FlagDetailContext);
+  const {
+    moreInfoShow,
+    setMoreInfoShow,
+    landlocked,
+    carSide,
+    currencies,
+    tld,
+    UNMember,
+  } = useContext(FlagDetailContext);
   const handleMoreInfoBoxClick = () => {
-    console.log("powinien się rozwijać");
+    setMoreInfoShow((prev) => !prev);
   };
 
   const logoUN = (
@@ -49,9 +56,9 @@ const MoreInfoBox = () => {
     <>
       <p>
         {carSide === "left"
-          ? "ruch lewostronny"
+          ? "lewostronny"
           : carSide === "right"
-          ? "ruch prawostronny"
+          ? "prawostronny"
           : ""}
       </p>
     </>
@@ -65,14 +72,10 @@ const MoreInfoBox = () => {
   );
   return (
     <div
-      className={`App__flag-detail__elements`}
+      className={`App__flag-detail__elements ${moreInfoShow ? "unfold" : ""}`}
       onClick={handleMoreInfoBoxClick}
     >
-      <div
-        className={`App__flag-detail__element-box ${
-          moreInfoShow ? "" : "hide"
-        }`}
-      >
+      <div className={`App__flag-detail__element-box `}>
         <InfoComponent
           className="un"
           logo={logoUN}
@@ -86,7 +89,11 @@ const MoreInfoBox = () => {
           <InfoComponent
             className="landlocked"
             logo={logoLandlocked}
-            top={landlocked ? "brak dostępu do morza" : "dostęp do morza"}
+            top={
+              landlocked
+                ? "nie posiada dostępu do morza"
+                : "posiada dostęp do morza"
+            }
             bottom=""
             hideView={logoLandlocked}
           />
@@ -96,8 +103,8 @@ const MoreInfoBox = () => {
           <InfoComponent
             className="carside"
             logo={logoCarside}
-            top={detailCarside}
-            bottom=""
+            top="ruch uliczny:"
+            bottom={detailCarside}
             hideView={logoCarside}
           />
         ) : (
@@ -118,7 +125,7 @@ const MoreInfoBox = () => {
           <InfoComponent
             className="tld"
             logo={<img src={WebIMG} alt="www" />}
-            top={<p>domena internetowa: {tld[0]}</p>}
+            top={<p>domena krajowa: {tld[0]}</p>}
             bottom=""
             hideView={tld[0]}
           />

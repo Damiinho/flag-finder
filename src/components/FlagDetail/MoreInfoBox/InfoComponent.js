@@ -5,7 +5,11 @@ const InfoComponent = (props) => {
   const { moreInfoShow } = useContext(FlagDetailContext);
 
   return (
-    <div className={`App__flag-detail__element ${props.className}`}>
+    <div
+      className={`App__flag-detail__element ${props.className} ${
+        moreInfoShow ? "unfold" : ""
+      }`}
+    >
       {moreInfoShow ? (
         <>
           {" "}
