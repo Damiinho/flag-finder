@@ -15,17 +15,11 @@ const InfoBox = () => {
         <Population />
         <Area />
       </div>
-      <div className="info__borders">
-        {selectedSmallOne.country ? (
-          !(borders.length > 0) ? (
-            <Borders />
-          ) : (
-            ""
-          )
-        ) : (
-          ""
-        )}
-      </div>
+      {selectedSmallOne.country && !(borders.length > 0) && (
+        <div className="info__borders">
+          <Borders />
+        </div>
+      )}
     </div>
   );
 };

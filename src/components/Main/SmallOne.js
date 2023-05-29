@@ -5,7 +5,7 @@ const SmallOne = (props) => {
   const { selectedSmallOne, setSelectedSmallOne } = useContext(AppContext);
 
   const handleClick = (item) => {
-    if (item !== selectedSmallOne) {
+    if (!selectedSmallOne) {
       setSelectedSmallOne(item);
     } else setSelectedSmallOne(null);
   };

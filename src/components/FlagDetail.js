@@ -9,6 +9,7 @@ import NameSection from "./FlagDetail/NameSection";
 import MainFlag from "./FlagDetail/MainFlag";
 import TimeZone from "./FlagDetail/TimeZone";
 import Capital from "./FlagDetail/Capital";
+import Exit from "./FlagDetail/Exit";
 
 const FlagDetail = () => {
   const {
@@ -270,10 +271,10 @@ const FlagDetail = () => {
       {selectedSmallOne ? (
         <>
           <div className="App__flag-detail">
+            <Exit />
             <NameSection />
             <MainFlag />
             <Capital />
-            <TimeZone />
 
             <div className="App__flag-detail__land-box">
               <InfoBox />

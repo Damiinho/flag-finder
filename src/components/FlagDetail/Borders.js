@@ -11,19 +11,19 @@ const Borders = () => {
     <>
       {selectedSmallOne.country ? (
         <div className="App__flag-detail__borders">
-          {borders.length > 0 ? (
-            <div className="App__flag-detail__borders-full">
-              <div className="App__flag-detail__borders-full__content">
-                granice lądowe: {borders.join(", ")}
-              </div>
-            </div>
-          ) : (
+          {!(borders.length > 0) ? (
             <>
               <div className="App__flag-detail__borders-empty">
                 <img src={IslandIMG} alt="island" />
                 <p>wyspy</p>
               </div>
             </>
+          ) : (
+            <div className="App__flag-detail__borders-full">
+              <div className="App__flag-detail__borders-full__content">
+                granice lądowe: {borders.join(", ")}
+              </div>
+            </div>
           )}
         </div>
       ) : (

@@ -11,6 +11,7 @@ import WebIMG from "../../img/www.svg";
 import XIMG from "../../img/x.svg";
 import Borders from "./Borders";
 import { AppContext } from "../../contexts/AppContext";
+import TimeZone from "./TimeZone";
 
 const MoreInfoBox = () => {
   const {
@@ -47,39 +48,54 @@ const MoreInfoBox = () => {
   );
   const logoCarside = (
     <>
-      <img className="carside-road" src={roadIMG} alt="road" />
-      <img
-        className={`carside-car ${carSide === "left" ? "left" : ""} ${
-          carSide === "right" ? "right" : ""
-        }`}
-        src={carIMG}
-        alt="car"
-      />
+      {" "}
+      {carSide ? (
+        <>
+          <img className="carside-road" src={roadIMG} alt="road" />
+          <img
+            className={`carside-car ${carSide === "left" ? "left" : ""} ${
+              carSide === "right" ? "right" : ""
+            }`}
+            src={carIMG}
+            alt="car"
+          />
+        </>
+      ) : (
+        ""
+      )}
     </>
   );
+
   const detailCarside = (
     <>
-      <p>
-        {carSide === "left"
-          ? "lewostronny"
-          : carSide === "right"
-          ? "prawostronny"
-          : ""}
-      </p>
+      {carSide ? (
+        <p>
+          {carSide === "left"
+            ? "lewostronny"
+            : carSide === "right"
+            ? "prawostronny"
+            : ""}
+        </p>
+      ) : (
+        ""
+      )}
     </>
   );
-  const detailCurrencies = (
+  const detailCurrencies = currencies ? (
     <div className="currencies-bottom">
       {currencies.name ? <p>{currencies.name}</p> : ""}
       {currencies.key ? <p>{currencies.key}</p> : ""}
       {currencies.symbol ? <p>({currencies.symbol})</p> : ""}
     </div>
+  ) : (
+    ""
   );
   return (
     <div
       className={`App__flag-detail__elements ${moreInfoShow ? "unfold" : ""}`}
       onClick={handleMoreInfoBoxClick}
     >
+      {moreInfoShow ? <TimeZone /> : ""}
       <div className={`App__flag-detail__element-box `}>
         <InfoComponent
           className="un"
@@ -103,7 +119,6 @@ const MoreInfoBox = () => {
             hideView={logoLandlocked}
           />
         )}
-
         {carSide ? (
           <InfoComponent
             className="carside"
@@ -114,7 +129,7 @@ const MoreInfoBox = () => {
           />
         ) : (
           ""
-        )}
+        )}{" "}
         {currencies ? (
           <InfoComponent
             className="currencies"
