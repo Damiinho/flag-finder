@@ -5,7 +5,6 @@ import LinkBox from "./FlagDetail/LinkBox";
 import { FlagDetailContext } from "../contexts/FlagDetailContext";
 import MoreInfoBox from "./FlagDetail/MoreInfoBox";
 import InfoBox from "./FlagDetail/InfoBox";
-import Borders from "./FlagDetail/Borders";
 import NameSection from "./FlagDetail/NameSection";
 import MainFlag from "./FlagDetail/MainFlag";
 import TimeZone from "./FlagDetail/TimeZone";
@@ -279,7 +278,6 @@ const FlagDetail = () => {
             <div className="App__flag-detail__land-box">
               <InfoBox />
               <MoreInfoBox />
-              <Borders />
             </div>
 
             <LinkBox />

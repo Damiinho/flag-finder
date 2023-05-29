@@ -14,7 +14,7 @@ const Borders = () => {
           {borders.length > 0 ? (
             <div className="App__flag-detail__borders-full">
               <div className="App__flag-detail__borders-full__content">
-                granice: {borders.join(", ")}
+                granice lądowe: {borders.join(", ")}
               </div>
             </div>
           ) : (

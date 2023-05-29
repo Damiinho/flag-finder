@@ -210,7 +210,7 @@ body {
       }
       &__land-box {
         margin: 15px auto;
-        width: 75%;
+        // width: 75%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -218,7 +218,9 @@ body {
 
         &__info {
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
         }
       }
       &__population {
@@ -239,7 +241,7 @@ body {
 
       &__elements {
         margin: 0 auto;
-        max-width: 200px;
+        width: 180px;
         cursor: pointer;
         background-color: #131a5aa6;
         padding: 10px 20px;
@@ -251,12 +253,14 @@ body {
 
         &.unfold {
           position: absolute;
-          width: 250px;
+          width: auto;
+          width: 215px;
           z-index: 1;
           bottom: 60px;
           left: 50%;
           transform: translateX(-50%);
           background-color: #19145f;
+          box-shadow: 0px 0px 5px white;
 
           .App__flag-detail__element-box {
             justify-content: flex-start;
@@ -327,7 +331,8 @@ body {
         }
       }
       .currencies {
-        font-size: 20px;
+        font-size: 12px;
+        text-align: center;
         &-bottom {
           display: flex;
           flex-direction: row;
@@ -372,22 +377,21 @@ body {
         font-size: 10px;
         &-empty {
           width: 50px;
-          height: 70px;
+          height: 65px;
 
           p {
             text-align: center;
           }
           img {
-            width: 50px;
-            height: 50px;
+            margin: 0 5px;
+            width: 40px;
+            height: 40px;
           }
         }
         &-full {
           margin: 10px 0;
           width: 100%;
-          &__content {
-            max-width: 250px;
-          }
+          display: flex;
         }
       }
 

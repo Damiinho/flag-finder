@@ -9,6 +9,8 @@ import UNIMG from "../../img/UN_emblem_blue.svg";
 import CurrenciesIMG from "../../img/currencies.svg";
 import WebIMG from "../../img/www.svg";
 import XIMG from "../../img/x.svg";
+import Borders from "./Borders";
+import { AppContext } from "../../contexts/AppContext";
 
 const MoreInfoBox = () => {
   const {
@@ -19,7 +21,10 @@ const MoreInfoBox = () => {
     currencies,
     tld,
     UNMember,
+    borders,
   } = useContext(FlagDetailContext);
+
+  const { selectedSmallOne } = useContext(AppContext);
   const handleMoreInfoBoxClick = () => {
     setMoreInfoShow((prev) => !prev);
   };
@@ -65,9 +70,9 @@ const MoreInfoBox = () => {
   );
   const detailCurrencies = (
     <div className="currencies-bottom">
-      <p>{currencies.key}</p>
-      <p>({currencies.symbol})</p>
-      <p>{currencies.name}</p>
+      {currencies.name ? <p>{currencies.name}</p> : ""}
+      {currencies.key ? <p>{currencies.key}</p> : ""}
+      {currencies.symbol ? <p>({currencies.symbol})</p> : ""}
     </div>
   );
   return (
@@ -116,7 +121,9 @@ const MoreInfoBox = () => {
             logo={<img src={CurrenciesIMG} alt="currencies" />}
             top="waluta:"
             bottom={detailCurrencies}
-            hideView={currencies.key}
+            hideView={`${currencies.key} ${
+              currencies.symbol ? `(${currencies.symbol})` : ""
+            }`}
           />
         ) : (
           ""
@@ -134,12 +141,22 @@ const MoreInfoBox = () => {
         )}
       </div>
       {moreInfoShow ? (
-        ""
+        selectedSmallOne.country ? (
+          borders.length > 0 ? (
+            <Borders />
+          ) : (
+            ""
+          )
+        ) : (
+          ""
+        )
       ) : (
-        <div className="App__flag-detail__element-box__show">
-          rozwiń informacje
-        </div>
+        ""
       )}
+
+      <div className="App__flag-detail__element-box__show">
+        {moreInfoShow ? "zwiń informacje" : "rozwiń informacje"}
+      </div>
     </div>
   );
 };
