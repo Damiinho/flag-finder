@@ -2804,12 +2804,12 @@
         "symbols": true,
         "country": false,
         "capital": [
-            ""
+            "Basse-Terre"
         ],
         "englishName": "Guadeloupe",
         "alpha3": "GLP",
         "englishCapital": [
-            "NO QUERY SPECIFIED. EXAMPLE REQUEST: GET?Q=HELLO&LANGPAIR=EN|IT"
+            "Basse-Terre"
         ]
     },
     {
