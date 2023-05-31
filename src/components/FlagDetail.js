@@ -7,7 +7,6 @@ import MoreInfoBox from "./FlagDetail/MoreInfoBox";
 import InfoBox from "./FlagDetail/InfoBox";
 import NameSection from "./FlagDetail/NameSection";
 import MainFlag from "./FlagDetail/MainFlag";
-import TimeZone from "./FlagDetail/TimeZone";
 import Capital from "./FlagDetail/Capital";
 import Exit from "./FlagDetail/Exit";
 

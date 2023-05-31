@@ -606,11 +606,6 @@ body {
       flex-direction: row;
       height: calc(95vh - 112px);
 
-      &.flag-selected {
-        margin-top: 20px;
-        height: calc(95vh - 157px);
-      }
-
       .main__is-selectors-button {
         position: absolute;
         top: 111px;

@@ -6,8 +6,7 @@ import Game from "./Game";
 import GameProvider from "../contexts/GameContext";
 
 const Main = () => {
-  const { setFlags, windowWidth, selectedSmallOne, isGame, isSelectors } =
-    useContext(AppContext);
+  const { setFlags, windowWidth, isGame, isSelectors } = useContext(AppContext);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -31,11 +30,7 @@ const Main = () => {
           <Game />
         </GameProvider>
       ) : (
-        <div
-          className={`main ${
-            selectedSmallOne && windowWidth < 550 ? "flag-selected" : ""
-          }`}
-        >
+        <div className={`main`}>
           {windowWidth > 669 ? (
             <div className="main__select">
               <div className="main__select-box">
