@@ -7,7 +7,9 @@ const SmallOne = (props) => {
   const handleClick = (item) => {
     if (!selectedSmallOne) {
       setSelectedSmallOne(item);
-    } else setSelectedSmallOne(null);
+    } else {
+      setSelectedSmallOne(null);
+    }
   };
   if (props.item.active) {
     return (

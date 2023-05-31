@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import InfoComponent from "./MoreInfoBox/InfoComponent";
 import { FlagDetailContext } from "../../contexts/FlagDetailContext";
 
@@ -24,6 +24,10 @@ const MoreInfoBox = () => {
     UNMember,
     borders,
   } = useContext(FlagDetailContext);
+
+  useEffect(() => {
+    setMoreInfoShow(false);
+  }, [setMoreInfoShow]);
 
   const { selectedSmallOne } = useContext(AppContext);
   const handleMoreInfoBoxClick = () => {
