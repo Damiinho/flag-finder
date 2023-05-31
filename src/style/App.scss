@@ -275,6 +275,30 @@ body {
             justify-content: flex-start;
           }
         }
+        &.large {
+          width: 100%;
+          background-color: transparent;
+          box-shadow: none;
+          position: static;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          cursor: default;
+          transform: none;
+          .App__flag-detail__element-box {
+            justify-content: center;
+            // width: 400px;
+          }
+          .App__flag-detail__borders {
+            justify-content: center;
+            text-align: center;
+            width: 400px;
+            &-full__content {
+              margin: 0 auto;
+            }
+          }
+        }
       }
 
       &__element-box {

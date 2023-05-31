@@ -1,16 +1,18 @@
 import { useContext } from "react";
 import { FlagDetailContext } from "../../../contexts/FlagDetailContext";
+import { AppContext } from "../../../contexts/AppContext";
 
 const InfoComponent = (props) => {
   const { moreInfoShow } = useContext(FlagDetailContext);
+  const { windowWidth } = useContext(AppContext);
 
   return (
     <div
       className={`App__flag-detail__element ${props.className} ${
-        moreInfoShow ? "unfold" : ""
+        moreInfoShow || !(windowWidth < 688) ? "unfold" : ""
       }`}
     >
-      {moreInfoShow ? (
+      {moreInfoShow || !(windowWidth < 688) ? (
         <>
           {" "}
           <div className="App__flag-detail__element-logo">{props.logo}</div>

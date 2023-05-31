@@ -24,6 +24,7 @@ const MoreInfoBox = () => {
     UNMember,
     borders,
   } = useContext(FlagDetailContext);
+  const { windowWidth } = useContext(AppContext);
 
   useEffect(() => {
     setMoreInfoShow(false);
@@ -31,7 +32,9 @@ const MoreInfoBox = () => {
 
   const { selectedSmallOne } = useContext(AppContext);
   const handleMoreInfoBoxClick = () => {
-    setMoreInfoShow((prev) => !prev);
+    if (windowWidth < 688) {
+      setMoreInfoShow((prev) => !prev);
+    }
   };
 
   const logoUN = (
@@ -96,11 +99,13 @@ const MoreInfoBox = () => {
   );
   return (
     <div
-      className={`App__flag-detail__elements ${moreInfoShow ? "unfold" : ""}`}
+      className={`App__flag-detail__elements ${
+        moreInfoShow || !(windowWidth < 688) ? "unfold" : ""
+      } ${windowWidth < 688 ? "" : "large"}`}
       onClick={handleMoreInfoBoxClick}
     >
-      {moreInfoShow ? <TimeZone /> : ""}
       <div className={`App__flag-detail__element-box `}>
+        {moreInfoShow || !(windowWidth < 688) ? <TimeZone /> : ""}
         <InfoComponent
           className="un"
           logo={logoUN}
@@ -159,7 +164,7 @@ const MoreInfoBox = () => {
           ""
         )}
       </div>
-      {moreInfoShow ? (
+      {moreInfoShow || !(windowWidth < 688) ? (
         selectedSmallOne.country ? (
           borders.length > 0 ? (
             <Borders />
@@ -173,9 +178,11 @@ const MoreInfoBox = () => {
         ""
       )}
 
-      <div className="App__flag-detail__element-box__show">
-        {moreInfoShow ? "zwiń informacje" : "rozwiń informacje"}
-      </div>
+      {windowWidth < 688 && (
+        <div className="App__flag-detail__element-box__show">
+          {moreInfoShow ? "zwiń informacje" : "rozwiń informacje"}
+        </div>
+      )}
     </div>
   );
 };
