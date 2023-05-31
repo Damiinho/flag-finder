@@ -14,20 +14,24 @@ const TitleBox = () => {
   };
 
   return (
-    <div
-      onClick={handleClick}
-      className={`header__title-box ${
-        isGame ? "game" : !(windowWidth > 669) ? "switcher" : ""
-      }`}
-    >
-      {isGame
-        ? "Czyja to flaga? – gra"
-        : !(windowWidth > 669)
-        ? isSelectors
-          ? "pokaż flagi"
-          : "pokaż ustawienia"
-        : "Znajdź flagę"}
-    </div>
+    <>
+      <div
+        onClick={handleClick}
+        className={`header__title-box ${
+          isGame ? "game" : !(windowWidth > 669) ? "switcher" : ""
+        } ${
+          !isGame && !(windowWidth > 669) && !isSelectors ? "show-settings" : ""
+        }`}
+      >
+        {isGame
+          ? "Czyja to flaga? – gra"
+          : !(windowWidth > 669)
+          ? isSelectors
+            ? "pokaż flagi"
+            : "ustawienia"
+          : "Znajdź flagę"}
+      </div>
+    </>
   );
 };
 

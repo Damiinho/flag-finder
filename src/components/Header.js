@@ -2,9 +2,11 @@ import React, { useContext } from "react";
 
 import { AppContext } from "../contexts/AppContext";
 import TitleBox from "./Header/TitleBox";
+import ResetButton from "./Header/ResetButton";
 
 const Header = () => {
-  const { windowHeight, isGame } = useContext(AppContext);
+  const { windowHeight, windowWidth, isGame, isSelectors } =
+    useContext(AppContext);
 
   return (
     <header className="App__header">
@@ -14,6 +16,7 @@ const Header = () => {
         <>
           <div className="header__title">
             <TitleBox />
+            {windowWidth < 670 && !isSelectors && <ResetButton />}
           </div>
         </>
       )}

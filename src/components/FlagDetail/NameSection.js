@@ -11,14 +11,10 @@ const NameSection = () => {
     <>
       <div className="App__flag-detail__name">
         <FitText>{selectedSmallOne.name}</FitText>
+        <div className="App__flag-detail__region">({region})</div>
       </div>
       {officialName && (
-        <div className="App__flag-detail__official-name">
-          {officialName} ({region})
-        </div>
-      )}
-      {!officialName && (
-        <div className="App__flag-detail__region">{region}</div>
+        <div className="App__flag-detail__official-name">{officialName}</div>
       )}
     </>
   );
