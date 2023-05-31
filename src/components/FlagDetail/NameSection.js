@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AppContext } from "../../contexts/AppContext";
 import { FlagDetailContext } from "../../contexts/FlagDetailContext";
+import FitText from "@kennethormandy/react-fittext";
 
 const NameSection = () => {
   const { selectedSmallOne } = useContext(AppContext);
@@ -8,7 +9,9 @@ const NameSection = () => {
 
   return (
     <>
-      <div className="App__flag-detail__name">{selectedSmallOne.name}</div>
+      <div className="App__flag-detail__name">
+        <FitText>{selectedSmallOne.name}</FitText>
+      </div>
       {officialName && (
         <div className="App__flag-detail__official-name">
           {officialName} ({region})

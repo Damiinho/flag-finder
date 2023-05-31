@@ -166,10 +166,6 @@ body {
         margin: 10px auto;
         padding: 0 10px;
         text-align: center;
-        font-size: 25px;
-        @media screen and (min-width: 550px) {
-          font-size: 40px;
-        }
       }
       &__official-name,
       &__region {
