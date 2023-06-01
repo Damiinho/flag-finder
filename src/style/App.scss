@@ -533,8 +533,13 @@ body {
             text-align: center;
             font-size: 15px;
             padding: 0;
-
             background-color: #ff0d0d60;
+            border: none;
+            border: 2px solid rgb(105, 105, 105);
+            text-shadow: none;
+            &:hover {
+              border: 2px solid white;
+            }
           }
         }
 
