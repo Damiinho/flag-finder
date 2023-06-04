@@ -46,7 +46,6 @@ const MoreInfoBox = () => {
       alt="un"
     />
   );
-  const detailUN = <p>{UNMember ? "należy do ONZ" : "nie należy do ONZ"}</p>;
   const logoLandlocked = (
     <>
       <img className="wave" src={seaIMG} alt="sea" />
@@ -109,8 +108,8 @@ const MoreInfoBox = () => {
         <InfoComponent
           className="un"
           logo={logoUN}
-          top={detailUN}
-          bottom=""
+          top="ONZ:"
+          bottom={UNMember ? "należy" : "nie należy"}
           hideView={logoUN}
         />
         {landlocked === "brak danych" ? (
@@ -119,12 +118,8 @@ const MoreInfoBox = () => {
           <InfoComponent
             className="landlocked"
             logo={logoLandlocked}
-            top={
-              landlocked
-                ? "nie posiada dostępu do morza"
-                : "posiada dostęp do morza"
-            }
-            bottom=""
+            top="dostęp do morza:"
+            bottom={landlocked ? "nie posiada" : "posiada"}
             hideView={logoLandlocked}
           />
         )}

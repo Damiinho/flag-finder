@@ -10,7 +10,7 @@ const NameSection = () => {
   return (
     <>
       <div className="App__flag-detail__name">
-        <FitText>{selectedSmallOne.name}</FitText>
+        <FitText maxFontSize={35}>{selectedSmallOne.name}</FitText>
         <div className="App__flag-detail__region">({region})</div>
       </div>
       {officialName && (

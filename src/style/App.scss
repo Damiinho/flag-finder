@@ -200,11 +200,8 @@ body {
       &__timezones {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        width: 163px;
+        height: 100%;
         gap: 10px;
-        // justify-content: space-between;
-        padding-bottom: 10px;
         font-size: 10px;
         img {
           height: 30px;
@@ -321,6 +318,8 @@ body {
         display: flex;
         flex-direction: row;
         font-size: 10px;
+        min-width: 120px;
+        justify-content: center;
         &-logo {
           position: relative;
           width: 30px;
@@ -536,6 +535,7 @@ body {
             background-color: #ff0d0d60;
             border: none;
             border: 2px solid rgb(105, 105, 105);
+            box-shadow: none;
             text-shadow: none;
             &:hover {
               border: 2px solid white;
