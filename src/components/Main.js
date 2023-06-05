@@ -4,9 +4,12 @@ import { AppContext } from "../contexts/AppContext";
 import SelectionBox from "./SelectionBox";
 import Game from "./Game";
 import GameProvider from "../contexts/GameContext";
+import CapitalGame from "./CapitalGame";
+import CapitalGameProvider from "../contexts/CapitalGameContext";
 
 const Main = () => {
-  const { setFlags, windowWidth, isGame, isSelectors } = useContext(AppContext);
+  const { setFlags, windowWidth, isGame, isSelectors, isCapitalGame } =
+    useContext(AppContext);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -23,41 +26,47 @@ const Main = () => {
     return () => clearTimeout(timer);
   }, [setFlags]);
 
+  if (isGame) {
+    return (
+      <GameProvider>
+        <Game />
+      </GameProvider>
+    );
+  }
+
+  if (isCapitalGame) {
+    return (
+      <CapitalGameProvider>
+        <CapitalGame />
+      </CapitalGameProvider>
+    );
+  }
+
   return (
-    <>
-      {isGame ? (
-        <GameProvider>
-          <Game />
-        </GameProvider>
-      ) : (
-        <div className={`main`}>
-          {windowWidth > 669 ? (
-            <div className="main__select">
-              <div className="main__select-box">
-                <SelectionBox />
-              </div>
-            </div>
-          ) : (
-            ""
-          )}
-          <div className="main-list">
-            {isSelectors && !(windowWidth > 669) ? (
-              <SelectionBox />
-            ) : (
-              <div className="main-list__full-list">
-                {isLoading ? (
-                  <div className="full-list__preloader-box">
-                    <div className="full-list__preloader-box-preloader"></div>
-                  </div>
-                ) : (
-                  <FullList />
-                )}
-              </div>
-            )}
+    <div className="main">
+      {windowWidth > 669 && (
+        <div className="main__select">
+          <div className="main__select-box">
+            <SelectionBox />
           </div>
         </div>
       )}
-    </>
+      <div className="main-list">
+        {isSelectors && !(windowWidth > 669) ? (
+          <SelectionBox />
+        ) : (
+          <div className="main-list__full-list">
+            {isLoading ? (
+              <div className="full-list__preloader-box">
+                <div className="full-list__preloader-box-preloader"></div>
+              </div>
+            ) : (
+              <FullList />
+            )}
+          </div>
+        )}
+      </div>
+    </div>
   );
 };
 

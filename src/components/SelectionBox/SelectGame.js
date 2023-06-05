@@ -5,14 +5,19 @@ import miniFlagIMG from "../../img/miniFlag.svg";
 import capitolIMG from "../../img/capitol-building.svg";
 
 const SelectGame = () => {
-  const { setIsGame } = useContext(AppContext);
+  const { setIsGame, setIsCapitalGame } = useContext(AppContext);
   const [buttonActive, setButtonActive] = useState(false);
 
   const handleActive = () => {
     setButtonActive(!buttonActive);
   };
-  const handleClick = () => {
-    setIsGame(true);
+  const handleClick = (prop) => {
+    if (prop === "flag") {
+      setIsGame(true);
+    }
+    if (prop === "capital") {
+      setIsCapitalGame(true);
+    }
   };
   return (
     <div className={`selectors__game`}>
@@ -27,16 +32,16 @@ const SelectGame = () => {
         <div className="selectors__game__button-box">
           <button
             className="selectors__game__button-box-button"
-            onClick={handleClick}
+            onClick={() => handleClick("flag")}
           >
-            <img src={miniFlagIMG} alt="flaga" />
+            <img src={miniFlagIMG} alt="flag" />
             flagi
           </button>
           <button
             className="selectors__game__button-box-button"
-            onClick={handleClick}
+            onClick={() => handleClick("capital")}
           >
-            <img src={capitolIMG} alt="flaga" />
+            <img src={capitolIMG} alt="capital" />
             stolice
           </button>
         </div>
