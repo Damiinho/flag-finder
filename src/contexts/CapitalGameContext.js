@@ -22,9 +22,12 @@ export const CapitalGameProvider = ({ children }) => {
     ż: "z",
     ʻ: "'",
   };
+  const [start, setStart] = useState(false);
 
   const providerValue = {
     polishCharsMap,
+    start,
+    setStart,
   };
 
   return (
