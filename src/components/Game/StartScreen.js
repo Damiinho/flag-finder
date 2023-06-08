@@ -5,6 +5,7 @@ import SelectTime from "./StartScreen/SelectTime";
 import SelectMistakes from "./StartScreen/SelectMistakes";
 import SelectMode from "./StartScreen/SelectMode";
 import { AppContext } from "../../contexts/AppContext";
+import SelectRegions from "./StartScreen/SelectRegions";
 
 const StartScreen = () => {
   const { handleStartStop } = useContext(GameContext);
@@ -24,6 +25,7 @@ const StartScreen = () => {
         <SelectVariants />
         <SelectTime />
         <SelectMistakes />
+        <SelectRegions />
         {/* <div className="main-game__settings-box__continents">Kontynenty</div> */}
       </div>
       <button

@@ -11,6 +11,7 @@ export const GameProvider = ({ children }) => {
   const [score, setScore] = useState(0);
   const [lastScore, setLastScore] = useState(null);
   const [bestScore, setBestScore] = useState(0);
+  const [settingsRegions, setSettingsRegions] = useState([]);
   const [settingsVariants, setSettingsVariants] = useState(4);
   const [settingsTime, setSettingsTime] = useState(10);
   const [settingsMistakes, setSettingsMistakes] = useState(2);
@@ -157,6 +158,8 @@ export const GameProvider = ({ children }) => {
     setIsEmpty,
     currentFlagCounter,
     setCurrentFlagCounter,
+    settingsRegions,
+    setSettingsRegions,
   };
 
   return (
