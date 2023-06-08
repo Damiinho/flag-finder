@@ -5441,7 +5441,7 @@
         ],
         "img": "./assets/pe.png",
         "regions": [
-            "north-america"
+            "south-america"
         ],
         "verticalStripes": true,
         "horizontalStripes": false,
@@ -5796,7 +5796,7 @@
         ],
         "img": "./assets/py.png",
         "regions": [
-            "north-america"
+            "south-america"
         ],
         "verticalStripes": false,
         "horizontalStripes": true,
