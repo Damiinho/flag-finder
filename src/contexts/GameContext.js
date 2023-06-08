@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { AppContext } from "./AppContext";
 
 export const GameContext = createContext();
@@ -77,6 +77,23 @@ export const GameProvider = ({ children }) => {
     setQuizList(newQuizList);
     setCorrectFlag(randomCurrentFlag);
   };
+
+  useEffect(() => {
+    if (settingsRegions.length === 0) {
+      setGameFlagList(flags.filter((item) => item.country === true));
+      setCurrentGameFlagList(flags.filter((item) => item.country === true));
+    } else {
+      if (settingsRegions.length > 0) {
+        let newFlags = flags.filter((item) => item.country === true);
+        newFlags = newFlags.filter((item) =>
+          settingsRegions.some((region) => item.regions.includes(region.value))
+        );
+
+        setGameFlagList(newFlags);
+        setCurrentGameFlagList(newFlags);
+      }
+    }
+  }, [settingsRegions, flags]);
 
   const handleStartStop = (value) => {
     setStart(value);

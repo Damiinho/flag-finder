@@ -16,8 +16,8 @@ const options = [
 const styles = {
   option: (defaultStyles, state) => ({
     ...defaultStyles,
-    color: state.isSelected ? "white" : "white",
     backgroundColor: state.isFocused ? "#52b054" : "#090628",
+    color: state.isSelected ? "white" : defaultStyles.color,
     cursor: "pointer",
     fontWeight: "bold",
     letterSpacing: "2px",
@@ -40,10 +40,15 @@ const styles = {
     borderRadius: "15px",
     color: "white",
   }),
-  singleValue: (defaultStyles) => ({
+  multiValue: (defaultStyles) => ({
     ...defaultStyles,
-    color: "white",
-    letterSpacing: "2px",
+    backgroundColor: "#52b054",
+    color: "#090628",
+  }),
+  multiValueLabel: (defaultStyles) => ({
+    ...defaultStyles,
+    color: "#090628",
+    fontWeight: "bold",
   }),
   menuList: (provided) => ({
     ...provided,
