@@ -43,7 +43,6 @@ const styles = {
   singleValue: (defaultStyles) => ({
     ...defaultStyles,
     color: "white",
-    fontWeight: "bold",
     letterSpacing: "2px",
   }),
   menuList: (provided) => ({
@@ -57,7 +56,6 @@ const styles = {
   placeholder: (defaultStyles) => ({
     ...defaultStyles,
     color: "white",
-    fontWeight: "bold",
     letterSpacing: "2px",
   }),
 };
@@ -72,12 +70,11 @@ const SelectRegions = () => {
   return (
     <div className="main-game__settings-box__regions">
       <div className="main-game__settings-box__regions-title">
-        <p>Wybierz regiony</p>
+        <p>Wybierz regiony:</p>
       </div>
-
       <Select
         isMulti
-        placeholder="wybierz tryb"
+        placeholder="cały świat"
         className="main-game__settings-box__mode__selector"
         value={settingsRegions}
         styles={styles}

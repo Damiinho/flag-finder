@@ -39,7 +39,6 @@ const styles = {
   singleValue: (defaultStyles) => ({
     ...defaultStyles,
     color: "white",
-    fontWeight: "bold",
     letterSpacing: "2px",
   }),
   menuList: (provided) => ({
@@ -53,7 +52,6 @@ const styles = {
   placeholder: (defaultStyles) => ({
     ...defaultStyles,
     color: "white",
-    fontWeight: "bold",
     letterSpacing: "2px",
   }),
 };
@@ -94,7 +92,7 @@ const SelectMode = () => {
   return (
     <div className="main-game__settings-box__mode">
       <div className="main-game__settings-box__mode-title">
-        <p>Wybierz tryb gry lub ustaw ręcznie</p>
+        <p>Wybierz tryb gry lub ustaw ręcznie:</p>
       </div>
 
       <Select

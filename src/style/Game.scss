@@ -67,18 +67,30 @@
     }
 
     &__mode {
-      width: 80%;
+      width: 100%;
       min-width: 230px;
       &-title {
         margin: 10px 0;
-        text-align: center;
+        margin-bottom: 5px;
+        padding: 0 5px;
         font-size: 15px;
         @media screen and (min-height: 800px) {
           font-size: 20px;
         }
       }
-
-      margin-bottom: 50px;
+    }
+    &__regions {
+      width: 100%;
+      min-width: 230px;
+      &-title {
+        margin: 10px 0;
+        font-size: 15px;
+        margin-bottom: 5px;
+        padding: 0 5px;
+        @media screen and (min-height: 800px) {
+          font-size: 20px;
+        }
+      }
     }
 
     @mixin for-settings-box-range {

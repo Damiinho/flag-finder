@@ -22,10 +22,10 @@ const StartScreen = () => {
           Wybierz tryb: własny, łatwy, średni, trudny, ekstremalny
         </div> */}
         <SelectMode />
+        <SelectRegions />
         <SelectVariants />
         <SelectTime />
         <SelectMistakes />
-        <SelectRegions />
         {/* <div className="main-game__settings-box__continents">Kontynenty</div> */}
       </div>
       <button

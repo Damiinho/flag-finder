@@ -20,7 +20,9 @@ export const GameProvider = ({ children }) => {
   const [timerRunning, setTimerRunning] = useState(true);
   const [settingsMode, setSettingsMode] = useState(null);
   const [correctFlag, setCorrectFlag] = useState(null);
-  const gameFlagList = flags.filter((item) => item.country === true);
+  const [gameFlagList, setGameFlagList] = useState(
+    flags.filter((item) => item.country === true)
+  );
   const [currentGameFlagList, setCurrentGameFlagList] = useState([
     ...gameFlagList,
   ]);
@@ -131,6 +133,7 @@ export const GameProvider = ({ children }) => {
     bestScore,
     setBestScore,
     gameFlagList,
+    setGameFlagList,
     generateQuizList,
     handleStartStop,
     settingsVariants,
