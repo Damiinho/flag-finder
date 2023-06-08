@@ -96,24 +96,30 @@ export const GameProvider = ({ children }) => {
   }, [settingsRegions, flags]);
 
   const handleStartStop = (value) => {
-    setStart(value);
+    setStart(false);
+    if (currentGameFlagList.length > 0) {
+      setStart(value);
+    }
     setSelectedAnswer(null);
     setCurrentMistakes(settingsMistakes);
     if (!value) {
       setCurrentGameFlagList([...gameFlagList]);
     }
     if (value) {
-      generateQuizList();
-      setLastScore(score);
-      setScore(0);
-      setTimerRunning(true);
-      setCurrentTime(settingsTime);
-      setInputAnswer("");
-      setIsEmpty(false);
-      if (score > bestScore) {
-        setBestScore(score);
+      if (currentGameFlagList.length > 0) {
+        setStart(value);
+        generateQuizList();
+        setLastScore(score);
+        setScore(0);
+        setTimerRunning(true);
+        setCurrentTime(settingsTime);
+        setInputAnswer("");
+        setIsEmpty(false);
+        if (score > bestScore) {
+          setBestScore(score);
+        }
+        setCurrentFlagCounter(gameFlagList.length);
       }
-      setCurrentFlagCounter(gameFlagList.length);
     }
   };
 

@@ -8,7 +8,7 @@ import { AppContext } from "../../contexts/AppContext";
 import SelectRegions from "./StartScreen/SelectRegions";
 
 const StartScreen = () => {
-  const { handleStartStop } = useContext(GameContext);
+  const { handleStartStop, currentGameFlagList } = useContext(GameContext);
   const { setIsGame } = useContext(AppContext);
 
   const handleBackClick = () => {
@@ -17,7 +17,9 @@ const StartScreen = () => {
   return (
     <div className="main-game__wrapper">
       <div className="main-game__settings-box">
-        <div className="main-game__settings-box__title">Ustawienia</div>
+        <div className="main-game__settings-box__title">
+          Ustawienia (do zgadnięcia: {currentGameFlagList.length})
+        </div>
         {/* <div className="main-game__settings-box__mode">
           Wybierz tryb: własny, łatwy, średni, trudny, ekstremalny
         </div> */}
