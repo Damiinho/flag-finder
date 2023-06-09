@@ -8,7 +8,8 @@ import { AppContext } from "../../contexts/AppContext";
 import SelectRegions from "./StartScreen/SelectRegions";
 
 const StartScreen = () => {
-  const { handleStartStop, currentGameFlagList } = useContext(GameContext);
+  const { handleStartStop, currentGameFlagList, wrongStart, settingsVariants } =
+    useContext(GameContext);
   const { setIsGame } = useContext(AppContext);
 
   const handleBackClick = () => {
@@ -20,18 +21,31 @@ const StartScreen = () => {
         <div className="main-game__settings-box__title">
           Ustawienia (do zgadnięcia: {currentGameFlagList.length})
         </div>
-        {/* <div className="main-game__settings-box__mode">
-          Wybierz tryb: własny, łatwy, średni, trudny, ekstremalny
-        </div> */}
         <SelectMode />
         <SelectRegions />
         <SelectVariants />
         <SelectTime />
         <SelectMistakes />
-        {/* <div className="main-game__settings-box__continents">Kontynenty</div> */}
+        {wrongStart ? (
+          <div className="main-game__settings-box__wrong-info">
+            {wrongStart === "zero"
+              ? "Musisz wybrać co najmniej jedną flagę"
+              : wrongStart === "tooFew"
+              ? "Zmniejsz liczbę wariantów odpowiedzi"
+              : ""}
+          </div>
+        ) : (
+          ""
+        )}
       </div>
       <button
-        className="main-game__start-button"
+        className={`main-game__start-button ${
+          currentGameFlagList.length > 0 &&
+          (!(currentGameFlagList.length < settingsVariants) ||
+            settingsVariants === 7)
+            ? ""
+            : "banned"
+        }`}
         onClick={() => handleStartStop(true)}
       >
         Rozpocznij

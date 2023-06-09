@@ -1,6 +1,9 @@
 import { useContext } from "react";
 import Select from "react-select";
 import { GameContext } from "../../../contexts/GameContext";
+import { Checkbox } from "pretty-checkbox-react";
+import "@djthoms/pretty-checkbox/src/pretty-checkbox.scss";
+import "@djthoms/pretty-checkbox/src/rtl.scss";
 
 const options = [
   { value: "europe", label: "Europa" },
@@ -66,16 +69,36 @@ const styles = {
 };
 
 const SelectRegions = () => {
-  const { settingsRegions, setSettingsRegions } = useContext(GameContext);
+  const {
+    settingsRegions,
+    setSettingsRegions,
+    settingsDependentFlags,
+    setSettingsDependentFlags,
+  } = useContext(GameContext);
 
   const handleSelectRegions = (item) => {
     setSettingsRegions(item);
+  };
+
+  const handleChange = () => {
+    setSettingsDependentFlags(!settingsDependentFlags);
   };
 
   return (
     <div className="main-game__settings-box__regions">
       <div className="main-game__settings-box__regions-title">
         <p>Wybierz regiony:</p>
+        <div onClick={handleChange}>
+          terytoria zależne 
+          <Checkbox
+            color="success-o"
+            checked={settingsDependentFlags}
+            onChange={handleChange}
+            shape="curve"
+            bigger
+            animation="smooth"
+          />
+        </div>
       </div>
       <Select
         isMulti

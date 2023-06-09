@@ -12,6 +12,7 @@ export const GameProvider = ({ children }) => {
   const [lastScore, setLastScore] = useState(null);
   const [bestScore, setBestScore] = useState(0);
   const [settingsRegions, setSettingsRegions] = useState([]);
+  const [settingsDependentFlags, setSettingsDependentFlags] = useState(false);
   const [settingsVariants, setSettingsVariants] = useState(4);
   const [settingsTime, setSettingsTime] = useState(10);
   const [settingsMistakes, setSettingsMistakes] = useState(2);
@@ -20,6 +21,7 @@ export const GameProvider = ({ children }) => {
   const [timerRunning, setTimerRunning] = useState(true);
   const [settingsMode, setSettingsMode] = useState(null);
   const [correctFlag, setCorrectFlag] = useState(null);
+  const [wrongStart, setWrongStart] = useState(false);
   const [gameFlagList, setGameFlagList] = useState(
     flags.filter((item) => item.country === true)
   );
@@ -52,11 +54,14 @@ export const GameProvider = ({ children }) => {
     );
     availableIndexes.splice(randomIndexes[0], 1); // usuń indeks wylosowanej poprawnej flagi z listy dostępnych indeksów
 
-    // wylosuj pozostałe indeksy
-    while (randomIndexes.length < settingsVariants) {
-      const randomIndex = Math.floor(Math.random() * availableIndexes.length);
-      randomIndexes.push(availableIndexes[randomIndex]);
-      availableIndexes.splice(randomIndex, 1); // usuń indeks z listy dostępnych indeksów
+    // sprawdź warunek dla settingsVariants
+    if (settingsVariants !== 7) {
+      // wylosuj pozostałe indeksy
+      while (randomIndexes.length < settingsVariants) {
+        const randomIndex = Math.floor(Math.random() * availableIndexes.length);
+        randomIndexes.push(availableIndexes[randomIndex]);
+        availableIndexes.splice(randomIndex, 1); // usuń indeks z listy dostępnych indeksów
+      }
     }
 
     // wymieszaj indeksy
@@ -80,24 +85,40 @@ export const GameProvider = ({ children }) => {
 
   useEffect(() => {
     if (settingsRegions.length === 0) {
-      setGameFlagList(flags.filter((item) => item.country === true));
-      setCurrentGameFlagList(flags.filter((item) => item.country === true));
+      if (settingsDependentFlags) {
+        setGameFlagList(flags);
+        setCurrentGameFlagList(flags);
+        setCurrentFlagCounter(flags.length);
+      } else {
+        setGameFlagList(flags.filter((item) => item.country === true));
+        setCurrentGameFlagList(flags.filter((item) => item.country === true));
+        setCurrentFlagCounter(
+          flags.filter((item) => item.country === true).length
+        );
+      }
     } else {
       if (settingsRegions.length > 0) {
-        let newFlags = flags.filter((item) => item.country === true);
+        let newFlags = flags;
+        if (!settingsDependentFlags) {
+          newFlags = flags.filter((item) => item.country === true);
+        }
         newFlags = newFlags.filter((item) =>
           settingsRegions.some((region) => item.regions.includes(region.value))
         );
 
         setGameFlagList(newFlags);
         setCurrentGameFlagList(newFlags);
+        setCurrentFlagCounter(newFlags.length);
       }
     }
-  }, [settingsRegions, flags]);
+  }, [settingsRegions, flags, settingsDependentFlags]);
 
   const handleStartStop = (value) => {
     setStart(false);
-    if (currentGameFlagList.length > 0) {
+    if (
+      currentGameFlagList.length > 0 &&
+      !(currentGameFlagList.length < settingsVariants)
+    ) {
       setStart(value);
     }
     setSelectedAnswer(null);
@@ -106,7 +127,11 @@ export const GameProvider = ({ children }) => {
       setCurrentGameFlagList([...gameFlagList]);
     }
     if (value) {
-      if (currentGameFlagList.length > 0) {
+      if (
+        currentGameFlagList.length > 0 &&
+        (!(currentGameFlagList.length < settingsVariants) ||
+          settingsVariants === 7)
+      ) {
         setStart(value);
         generateQuizList();
         setLastScore(score);
@@ -118,7 +143,15 @@ export const GameProvider = ({ children }) => {
         if (score > bestScore) {
           setBestScore(score);
         }
-        setCurrentFlagCounter(gameFlagList.length);
+      } else {
+        setWrongStart("zero");
+        if (currentGameFlagList.length > 0) {
+          setWrongStart("tooFew");
+        }
+
+        setTimeout(() => {
+          setWrongStart(false);
+        }, 2000);
       }
     }
   };
@@ -186,6 +219,10 @@ export const GameProvider = ({ children }) => {
     setCurrentFlagCounter,
     settingsRegions,
     setSettingsRegions,
+    wrongStart,
+    setWrongStart,
+    settingsDependentFlags,
+    setSettingsDependentFlags,
   };
 
   return (

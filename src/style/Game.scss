@@ -26,6 +26,19 @@
     @include flex-column(center, center);
     gap: 10px;
     margin-bottom: 30px;
+    position: relative;
+
+    &__wrong-info {
+      width: 280px;
+      color: red;
+      font-weight: bold;
+      letter-spacing: 0.3px;
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -25px;
+    }
 
     .custom-slider {
       width: 100%;
@@ -84,11 +97,26 @@
       min-width: 230px;
       &-title {
         margin: 10px 0;
-        font-size: 15px;
         margin-bottom: 5px;
         padding: 0 5px;
-        @media screen and (min-height: 800px) {
-          font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p {
+          font-size: 15px;
+          @media screen and (min-height: 800px) {
+            font-size: 20px;
+          }
+        }
+        div {
+          cursor: pointer;
+          .state.p-success-o {
+            width: 21px;
+          }
+          div.pretty.p-default.p-bigger.p-smooth.p-curve {
+            width: 21px;
+            margin: 0;
+          }
         }
       }
     }
@@ -137,6 +165,10 @@
   }
   &__start-button {
     @include for-settings-button;
+
+    &.banned {
+      border-color: red;
+    }
   }
   &__back-button {
     @include for-settings-button;
