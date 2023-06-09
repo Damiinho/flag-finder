@@ -37,6 +37,7 @@ const styles = {
       borderColor: "none",
     },
   }),
+
   menu: (provided) => ({
     ...provided,
     padding: 0,
@@ -52,6 +53,7 @@ const styles = {
     ...defaultStyles,
     color: "#090628",
     fontWeight: "bold",
+    letterSpacing: "2px",
   }),
   menuList: (provided) => ({
     ...provided,
