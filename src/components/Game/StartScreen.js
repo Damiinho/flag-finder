@@ -19,7 +19,7 @@ const StartScreen = () => {
     <div className="main-game__wrapper">
       <div className="main-game__settings-box">
         <div className="main-game__settings-box__title">
-          Ustawienia (do zgadnięcia: {currentGameFlagList.length})
+          Ustawienia (flag: {currentGameFlagList.length})
         </div>
         <SelectMode />
         <SelectRegions />
