@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { CapitalGameContext } from "../../contexts/CapitalGameContext";
-import SettingsRegions from "./CapitalSettings/SettingsRegions";
+import SelectRegions from "./CapitalSettings/SelectRegions";
+import SelectVariants from "./CapitalSettings/SelectVariants";
 
 const Settings = () => {
   const { setStart } = useContext(CapitalGameContext);
@@ -11,7 +12,8 @@ const Settings = () => {
   return (
     <div>
       <p>Ustaw ustawienia</p>
-      <SettingsRegions />
+      <SelectRegions />
+      <SelectVariants />
 
       <button onClick={handleClick}>Rozpocznij</button>
     </div>
