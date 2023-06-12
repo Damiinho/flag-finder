@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { CapitalGameContext } from "../../contexts/CapitalGameContext";
+import QuestionBox from "./QuestionBox";
 
 const Game = () => {
   const { setStart } = useContext(CapitalGameContext);
@@ -9,7 +10,7 @@ const Game = () => {
   };
   return (
     <div>
-      <p>to jest gra</p>
+      <QuestionBox />
       <button onClick={handleClick}>powrót</button>
     </div>
   );
