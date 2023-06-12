@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import BackButton from "./CapitalGame/BackButton";
-import Settings from "./CapitalGame/Settings";
+import CapitalSettings from "./CapitalGame/CapitalSettings";
 import { CapitalGameContext } from "../contexts/CapitalGameContext";
 import Game from "./CapitalGame/Game";
 
@@ -8,7 +8,7 @@ const CapitalGame = () => {
   const { start } = useContext(CapitalGameContext);
   return (
     <div>
-      {!start && <Settings />}
+      {!start && <CapitalSettings />}
       {!start && <BackButton />}
       {start && <Game />}
     </div>

@@ -22,12 +22,26 @@ export const CapitalGameProvider = ({ children }) => {
     ż: "z",
     ʻ: "'",
   };
+  const { flags } = useContext(AppContext);
+  const [gameCapitalList, setGameCapitalList] = useState(
+    flags.filter((item) => item.country === true)
+  );
   const [start, setStart] = useState(false);
+  const [settingsRegions, setSettingsRegions] = useState([]);
+  const [settingsDependentCapitals, setSettingsDependentCapitals] =
+    useState(false);
 
   const providerValue = {
     polishCharsMap,
     start,
     setStart,
+    flags,
+    gameCapitalList,
+    setGameCapitalList,
+    settingsRegions,
+    setSettingsRegions,
+    settingsDependentCapitals,
+    setSettingsDependentCapitals,
   };
 
   return (
