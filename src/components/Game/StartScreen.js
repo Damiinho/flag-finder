@@ -6,6 +6,7 @@ import SelectMistakes from "./StartScreen/SelectMistakes";
 import SelectMode from "./StartScreen/SelectMode";
 import { AppContext } from "../../contexts/AppContext";
 import SelectRegions from "./StartScreen/SelectRegions";
+import SelectFormat from "./StartScreen/SelectFormat";
 
 const StartScreen = () => {
   const { handleStartStop, currentGameItemList, wrongStart, settingsVariants } =
@@ -28,6 +29,7 @@ const StartScreen = () => {
           {currentGameItemList.length})
         </div>
         <SelectMode />
+        <SelectFormat />
         <SelectRegions />
         <SelectVariants />
         <SelectTime />

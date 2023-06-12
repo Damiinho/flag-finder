@@ -11,6 +11,7 @@ export const GameProvider = ({ children }) => {
   const [score, setScore] = useState(0);
   const [lastScore, setLastScore] = useState(null);
   const [bestScore, setBestScore] = useState(0);
+  const [settingsFormat, setSettingsFormat] = useState("");
   const [settingsRegions, setSettingsRegions] = useState([]);
   const [settingsDependentItems, setSettingsDependentItems] = useState(false);
   const [settingsVariants, setSettingsVariants] = useState(4);
@@ -226,6 +227,8 @@ export const GameProvider = ({ children }) => {
     setCurrentItemCounter,
     settingsRegions,
     setSettingsRegions,
+    settingsFormat,
+    setSettingsFormat,
     wrongStart,
     setWrongStart,
     settingsDependentItems,
