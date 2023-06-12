@@ -10,7 +10,7 @@ import SelectRegions from "./StartScreen/SelectRegions";
 const StartScreen = () => {
   const { handleStartStop, currentGameItemList, wrongStart, settingsVariants } =
     useContext(GameContext);
-  const { setIsGame } = useContext(AppContext);
+  const { isGame, setIsGame } = useContext(AppContext);
 
   const handleBackClick = () => {
     setIsGame(false);
@@ -19,7 +19,13 @@ const StartScreen = () => {
     <div className="main-game__wrapper">
       <div className="main-game__settings-box">
         <div className="main-game__settings-box__title">
-          Ustawienia (flag: {currentGameItemList.length})
+          Ustawienia (
+          {isGame === "flag"
+            ? "flag:"
+            : isGame === "capital"
+            ? "stolic:"
+            : "elementów:"}{" "}
+          {currentGameItemList.length})
         </div>
         <SelectMode />
         <SelectRegions />

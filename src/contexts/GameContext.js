@@ -4,7 +4,7 @@ import { AppContext } from "./AppContext";
 export const GameContext = createContext();
 
 export const GameProvider = ({ children }) => {
-  const { flags } = useContext(AppContext);
+  const { flags, isGame } = useContext(AppContext);
   const [start, setStart] = useState(false);
   const [quizList, setQuizList] = useState([]);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -84,23 +84,30 @@ export const GameProvider = ({ children }) => {
   };
 
   useEffect(() => {
+    let newFlags = flags;
+    if (isGame === "capital") {
+      newFlags = newFlags.filter((item) => item.capital.length > 0);
+    }
     if (settingsRegions.length === 0) {
       if (settingsDependentItems) {
-        setGameItemList(flags);
-        setCurrentGameItemList(flags);
-        setCurrentItemCounter(flags.length);
+        setGameItemList(newFlags);
+        setCurrentGameItemList(newFlags);
+        setCurrentItemCounter(newFlags.length);
       } else {
-        setGameItemList(flags.filter((item) => item.country === true));
-        setCurrentGameItemList(flags.filter((item) => item.country === true));
+        setGameItemList(newFlags.filter((item) => item.country === true));
+        setCurrentGameItemList(
+          newFlags.filter((item) => item.country === true)
+        );
         setCurrentItemCounter(
-          flags.filter((item) => item.country === true).length
+          newFlags.filter((item) => item.country === true).length
         );
       }
     } else {
       if (settingsRegions.length > 0) {
         let newFlags = flags;
+
         if (!settingsDependentItems) {
-          newFlags = flags.filter((item) => item.country === true);
+          newFlags = newFlags.filter((item) => item.country === true);
         }
         newFlags = newFlags.filter((item) =>
           settingsRegions.some((region) => item.regions.includes(region.value))
@@ -111,7 +118,7 @@ export const GameProvider = ({ children }) => {
         setCurrentItemCounter(newFlags.length);
       }
     }
-  }, [settingsRegions, flags, settingsDependentItems]);
+  }, [settingsRegions, flags, settingsDependentItems, isGame]);
 
   const handleStartStop = (value) => {
     setStart(false);
