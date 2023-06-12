@@ -12,7 +12,7 @@ export const GameProvider = ({ children }) => {
   const [lastScore, setLastScore] = useState(null);
   const [bestScore, setBestScore] = useState(0);
   const [settingsRegions, setSettingsRegions] = useState([]);
-  const [settingsDependentFlags, setSettingsDependentFlags] = useState(false);
+  const [settingsDependentItems, setSettingsDependentItems] = useState(false);
   const [settingsVariants, setSettingsVariants] = useState(4);
   const [settingsTime, setSettingsTime] = useState(10);
   const [settingsMistakes, setSettingsMistakes] = useState(2);
@@ -20,16 +20,16 @@ export const GameProvider = ({ children }) => {
   const [currentTime, setCurrentTime] = useState(null);
   const [timerRunning, setTimerRunning] = useState(true);
   const [settingsMode, setSettingsMode] = useState(null);
-  const [correctFlag, setCorrectFlag] = useState(null);
+  const [correctAnswer, setCorrectAnswer] = useState(null);
   const [wrongStart, setWrongStart] = useState(false);
-  const [gameFlagList, setGameFlagList] = useState(
+  const [gameItemList, setGameItemList] = useState(
     flags.filter((item) => item.country === true)
   );
-  const [currentGameFlagList, setCurrentGameFlagList] = useState([
-    ...gameFlagList,
+  const [currentGameItemList, setCurrentGameItemList] = useState([
+    ...gameItemList,
   ]);
-  const [currentFlagCounter, setCurrentFlagCounter] = useState(
-    gameFlagList.length
+  const [currentItemCounter, setCurrentItemCounter] = useState(
+    gameItemList.length
   );
   const [isEmpty, setIsEmpty] = useState(false);
 
@@ -40,17 +40,17 @@ export const GameProvider = ({ children }) => {
     const availableIndexes = [];
 
     // dodaj wszystkie indeksy do listy dostępnych indeksów
-    for (let i = 0; i < gameFlagList.length; i++) {
+    for (let i = 0; i < gameItemList.length; i++) {
       availableIndexes.push(i);
     }
 
     // wylosuj indeks dla poprawnej flagi
     const randomCurrentIndex = Math.floor(
-      Math.random() * currentGameFlagList.length
+      Math.random() * currentGameItemList.length
     );
-    const randomCurrentFlag = currentGameFlagList[randomCurrentIndex];
+    const randomCurrentFlag = currentGameItemList[randomCurrentIndex];
     randomIndexes.push(
-      gameFlagList.findIndex((flag) => flag.name === randomCurrentFlag.name)
+      gameItemList.findIndex((flag) => flag.name === randomCurrentFlag.name)
     );
     availableIndexes.splice(randomIndexes[0], 1); // usuń indeks wylosowanej poprawnej flagi z listy dostępnych indeksów
 
@@ -75,61 +75,61 @@ export const GameProvider = ({ children }) => {
 
     // utwórz nową listę pytań
     const newQuizList = randomIndexes.map((index, i) => {
-      return { name: gameFlagList[index].name };
+      return { name: gameItemList[index].name };
     });
 
     // ustaw stan komponentu
     setQuizList(newQuizList);
-    setCorrectFlag(randomCurrentFlag);
+    setCorrectAnswer(randomCurrentFlag);
   };
 
   useEffect(() => {
     if (settingsRegions.length === 0) {
-      if (settingsDependentFlags) {
-        setGameFlagList(flags);
-        setCurrentGameFlagList(flags);
-        setCurrentFlagCounter(flags.length);
+      if (settingsDependentItems) {
+        setGameItemList(flags);
+        setCurrentGameItemList(flags);
+        setCurrentItemCounter(flags.length);
       } else {
-        setGameFlagList(flags.filter((item) => item.country === true));
-        setCurrentGameFlagList(flags.filter((item) => item.country === true));
-        setCurrentFlagCounter(
+        setGameItemList(flags.filter((item) => item.country === true));
+        setCurrentGameItemList(flags.filter((item) => item.country === true));
+        setCurrentItemCounter(
           flags.filter((item) => item.country === true).length
         );
       }
     } else {
       if (settingsRegions.length > 0) {
         let newFlags = flags;
-        if (!settingsDependentFlags) {
+        if (!settingsDependentItems) {
           newFlags = flags.filter((item) => item.country === true);
         }
         newFlags = newFlags.filter((item) =>
           settingsRegions.some((region) => item.regions.includes(region.value))
         );
 
-        setGameFlagList(newFlags);
-        setCurrentGameFlagList(newFlags);
-        setCurrentFlagCounter(newFlags.length);
+        setGameItemList(newFlags);
+        setCurrentGameItemList(newFlags);
+        setCurrentItemCounter(newFlags.length);
       }
     }
-  }, [settingsRegions, flags, settingsDependentFlags]);
+  }, [settingsRegions, flags, settingsDependentItems]);
 
   const handleStartStop = (value) => {
     setStart(false);
     if (
-      currentGameFlagList.length > 0 &&
-      !(currentGameFlagList.length < settingsVariants)
+      currentGameItemList.length > 0 &&
+      !(currentGameItemList.length < settingsVariants)
     ) {
       setStart(value);
     }
     setSelectedAnswer(null);
     setCurrentMistakes(settingsMistakes);
     if (!value) {
-      setCurrentGameFlagList([...gameFlagList]);
+      setCurrentGameItemList([...gameItemList]);
     }
     if (value) {
       if (
-        currentGameFlagList.length > 0 &&
-        (!(currentGameFlagList.length < settingsVariants) ||
+        currentGameItemList.length > 0 &&
+        (!(currentGameItemList.length < settingsVariants) ||
           settingsVariants === 7)
       ) {
         setStart(value);
@@ -145,7 +145,7 @@ export const GameProvider = ({ children }) => {
         }
       } else {
         setWrongStart("zero");
-        if (currentGameFlagList.length > 0) {
+        if (currentGameItemList.length > 0) {
           setWrongStart("tooFew");
         }
 
@@ -188,8 +188,8 @@ export const GameProvider = ({ children }) => {
     setLastScore,
     bestScore,
     setBestScore,
-    gameFlagList,
-    setGameFlagList,
+    gameItemList,
+    setGameItemList,
     generateQuizList,
     handleStartStop,
     settingsVariants,
@@ -209,20 +209,20 @@ export const GameProvider = ({ children }) => {
     inputAnswer,
     setInputAnswer,
     polishCharsMap,
-    currentGameFlagList,
-    setCurrentGameFlagList,
-    correctFlag,
-    setCorrectFlag,
+    currentGameItemList,
+    setCurrentGameItemList,
+    correctAnswer,
+    setCorrectAnswer,
     isEmpty,
     setIsEmpty,
-    currentFlagCounter,
-    setCurrentFlagCounter,
+    currentItemCounter,
+    setCurrentItemCounter,
     settingsRegions,
     setSettingsRegions,
     wrongStart,
     setWrongStart,
-    settingsDependentFlags,
-    setSettingsDependentFlags,
+    settingsDependentItems,
+    setSettingsDependentItems,
   };
 
   return (

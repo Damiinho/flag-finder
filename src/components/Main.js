@@ -4,12 +4,9 @@ import { AppContext } from "../contexts/AppContext";
 import SelectionBox from "./SelectionBox";
 import Game from "./Game";
 import GameProvider from "../contexts/GameContext";
-import CapitalGame from "./CapitalGame";
-import CapitalGameProvider from "../contexts/CapitalGameContext";
 
 const Main = () => {
-  const { setFlags, windowWidth, isGame, isSelectors, isCapitalGame } =
-    useContext(AppContext);
+  const { setFlags, windowWidth, isGame, isSelectors } = useContext(AppContext);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -31,14 +28,6 @@ const Main = () => {
       <GameProvider>
         <Game />
       </GameProvider>
-    );
-  }
-
-  if (isCapitalGame) {
-    return (
-      <CapitalGameProvider>
-        <CapitalGame />
-      </CapitalGameProvider>
     );
   }
 

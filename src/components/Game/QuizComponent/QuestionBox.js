@@ -4,7 +4,7 @@ import AnswerButton from "./AnswerButton";
 
 const QuestionBox = () => {
   const {
-    correctFlag,
+    correctAnswer,
     quizList,
     settingsVariants,
     selectedAnswer,
@@ -18,10 +18,10 @@ const QuestionBox = () => {
     currentTime,
     setTimerRunning,
     polishCharsMap,
-    setCurrentGameFlagList,
-    currentGameFlagList,
-    gameFlagList,
-    setCurrentFlagCounter,
+    setCurrentGameItemList,
+    currentGameItemList,
+    gameItemList,
+    setCurrentItemCounter,
   } = useContext(GameContext);
 
   const inputRef = useRef(null);
@@ -29,7 +29,7 @@ const QuestionBox = () => {
     if (inputRef.current) {
       inputRef.current.focus();
     }
-  }, [correctFlag]);
+  }, [correctAnswer]);
 
   const handleInputChange = (e) => {
     if (!selectedAnswer) {
@@ -47,21 +47,24 @@ const QuestionBox = () => {
           inputAnswer
             .toLowerCase()
             .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) ===
-          correctFlag.name
+          correctAnswer.name
             .toLowerCase()
             .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match])
         ) {
           setScore(score + 1);
-          setCurrentGameFlagList(
-            currentGameFlagList.filter((flag) => flag.name !== correctFlag.name)
+          setCurrentGameItemList(
+            currentGameItemList.filter(
+              (flag) => flag.name !== correctAnswer.name
+            )
           );
-          setCurrentFlagCounter(
-            currentGameFlagList.filter((flag) => flag.name !== correctFlag.name)
-              .length
+          setCurrentItemCounter(
+            currentGameItemList.filter(
+              (flag) => flag.name !== correctAnswer.name
+            ).length
           );
         } else {
           if (currentMistakes === 1) {
-            setCurrentGameFlagList([...gameFlagList]);
+            setCurrentGameItemList([...gameItemList]);
           }
           setCurrentMistakes(currentMistakes - 1);
         }
@@ -89,7 +92,7 @@ const QuestionBox = () => {
               ? "quiz__question-box__img"
               : "quiz__img-box__img"
           }`}
-          src={correctFlag.img}
+          src={correctAnswer.img}
           alt="flag"
         />
         {settingsVariants === 7 && (

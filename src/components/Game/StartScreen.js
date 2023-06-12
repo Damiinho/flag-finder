@@ -8,7 +8,7 @@ import { AppContext } from "../../contexts/AppContext";
 import SelectRegions from "./StartScreen/SelectRegions";
 
 const StartScreen = () => {
-  const { handleStartStop, currentGameFlagList, wrongStart, settingsVariants } =
+  const { handleStartStop, currentGameItemList, wrongStart, settingsVariants } =
     useContext(GameContext);
   const { setIsGame } = useContext(AppContext);
 
@@ -19,7 +19,7 @@ const StartScreen = () => {
     <div className="main-game__wrapper">
       <div className="main-game__settings-box">
         <div className="main-game__settings-box__title">
-          Ustawienia (flag: {currentGameFlagList.length})
+          Ustawienia (flag: {currentGameItemList.length})
         </div>
         <SelectMode />
         <SelectRegions />
@@ -40,8 +40,8 @@ const StartScreen = () => {
       </div>
       <button
         className={`main-game__start-button ${
-          currentGameFlagList.length > 0 &&
-          (!(currentGameFlagList.length < settingsVariants) ||
+          currentGameItemList.length > 0 &&
+          (!(currentGameItemList.length < settingsVariants) ||
             settingsVariants === 7)
             ? ""
             : "banned"

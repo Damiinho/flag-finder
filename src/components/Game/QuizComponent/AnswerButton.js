@@ -4,7 +4,7 @@ import { GameContext } from "../../../contexts/GameContext";
 const AnswerButton = (props) => {
   const {
     selectedAnswer,
-    correctFlag,
+    correctAnswer,
     setSelectedAnswer,
     setScore,
     score,
@@ -12,10 +12,10 @@ const AnswerButton = (props) => {
     setTimerRunning,
     currentMistakes,
     setCurrentMistakes,
-    setCurrentGameFlagList,
-    currentGameFlagList,
-    gameFlagList,
-    setCurrentFlagCounter,
+    setCurrentGameItemList,
+    currentGameItemList,
+    gameItemList,
+    setCurrentItemCounter,
   } = useContext(GameContext);
 
   const handleAnswerClick = (value) => {
@@ -23,18 +23,21 @@ const AnswerButton = (props) => {
       if (!selectedAnswer) {
         setSelectedAnswer(value.name);
 
-        if (value.name === correctFlag.name) {
+        if (value.name === correctAnswer.name) {
           setScore(score + 1);
-          setCurrentGameFlagList(
-            currentGameFlagList.filter((flag) => flag.name !== correctFlag.name)
+          setCurrentGameItemList(
+            currentGameItemList.filter(
+              (flag) => flag.name !== correctAnswer.name
+            )
           );
-          setCurrentFlagCounter(
-            currentGameFlagList.filter((flag) => flag.name !== correctFlag.name)
-              .length
+          setCurrentItemCounter(
+            currentGameItemList.filter(
+              (flag) => flag.name !== correctAnswer.name
+            ).length
           );
         } else {
           if (currentMistakes === 1) {
-            setCurrentGameFlagList([...gameFlagList]);
+            setCurrentGameItemList([...gameItemList]);
           }
           setCurrentMistakes(currentMistakes - 1);
         }
@@ -48,14 +51,14 @@ const AnswerButton = (props) => {
       <button
         className={`quiz__answers-item__button ${
           selectedAnswer &&
-          (selectedAnswer === correctFlag.name
-            ? correctFlag.name === props.item.name
+          (selectedAnswer === correctAnswer.name
+            ? correctAnswer.name === props.item.name
               ? "correct"
               : ""
-            : correctFlag.name === props.item.name
+            : correctAnswer.name === props.item.name
             ? "correct"
             : selectedAnswer === props.item.name &&
-              selectedAnswer !== correctFlag.name
+              selectedAnswer !== correctAnswer.name
             ? "incorrect"
             : "")
         }`}

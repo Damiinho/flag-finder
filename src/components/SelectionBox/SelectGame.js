@@ -5,19 +5,14 @@ import miniFlagIMG from "../../img/miniFlag.svg";
 import capitolIMG from "../../img/capitol-building.svg";
 
 const SelectGame = () => {
-  const { setIsGame, setIsCapitalGame } = useContext(AppContext);
+  const { setIsGame } = useContext(AppContext);
   const [buttonActive, setButtonActive] = useState(false);
 
   const handleActive = () => {
     setButtonActive(!buttonActive);
   };
   const handleClick = (prop) => {
-    if (prop === "flag") {
-      setIsGame(true);
-    }
-    if (prop === "capital") {
-      setIsCapitalGame(true);
-    }
+    setIsGame(prop);
   };
   return (
     <div className={`selectors__game`}>

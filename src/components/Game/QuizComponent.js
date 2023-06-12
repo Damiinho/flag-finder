@@ -6,7 +6,7 @@ import LoadingBox from "./QuizComponent/LoadingBox";
 
 const QuizComponent = () => {
   const {
-    correctFlag,
+    correctAnswer,
     handleStartStop,
     selectedAnswer,
     setSelectedAnswer,
@@ -18,12 +18,12 @@ const QuizComponent = () => {
     currentMistakes,
     setInputAnswer,
     polishCharsMap,
-    setCurrentGameFlagList,
-    currentGameFlagList,
-    gameFlagList,
+    setCurrentGameItemList,
+    currentGameItemList,
+    gameItemList,
     isEmpty,
     setIsEmpty,
-    setCurrentFlagCounter,
+    setCurrentItemCounter,
   } = useContext(GameContext);
   const [isQuizLoading, setIsQuizLoading] = useState(true);
 
@@ -37,7 +37,7 @@ const QuizComponent = () => {
   const handleRestart = () => {
     handleStartStop(true);
     setIsEmpty(false);
-    setCurrentFlagCounter(gameFlagList.length);
+    setCurrentItemCounter(gameItemList.length);
     setIsQuizLoading(true);
     setTimeout(() => {
       setIsQuizLoading(false);
@@ -55,7 +55,7 @@ const QuizComponent = () => {
   );
 
   const CorrectAnswer = () => (
-    <div className={`main-game__result correct`}>{correctFlag.name}</div>
+    <div className={`main-game__result correct`}>{correctAnswer.name}</div>
   );
 
   useEffect(() => {
@@ -67,11 +67,11 @@ const QuizComponent = () => {
   }, []);
 
   useEffect(() => {
-    if (currentGameFlagList.length === 0) {
+    if (currentGameItemList.length === 0) {
       setIsEmpty(true);
-      setCurrentGameFlagList([...gameFlagList]);
+      setCurrentGameItemList([...gameItemList]);
     }
-  }, [currentGameFlagList, setCurrentGameFlagList, gameFlagList, setIsEmpty]);
+  }, [currentGameItemList, setCurrentGameItemList, gameItemList, setIsEmpty]);
 
   return (
     <>
@@ -84,7 +84,7 @@ const QuizComponent = () => {
             selectedAnswer
               .toLowerCase()
               .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) ===
-              correctFlag.name
+              correctAnswer.name
                 .toLowerCase()
                 .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) &&
             !isEmpty && (
@@ -97,7 +97,7 @@ const QuizComponent = () => {
             selectedAnswer
               .toLowerCase()
               .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) !==
-              correctFlag.name
+              correctAnswer.name
                 .toLowerCase()
                 .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) && (
               <>
@@ -109,7 +109,7 @@ const QuizComponent = () => {
             selectedAnswer
               .toLowerCase()
               .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) !==
-              correctFlag.name
+              correctAnswer.name
                 .toLowerCase()
                 .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) &&
             currentMistakes === 0 && (
@@ -122,7 +122,7 @@ const QuizComponent = () => {
             selectedAnswer
               .toLowerCase()
               .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) !==
-              correctFlag.name
+              correctAnswer.name
                 .toLowerCase()
                 .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) &&
             currentMistakes > 0 &&

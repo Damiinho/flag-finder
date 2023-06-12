@@ -74,8 +74,8 @@ const SelectRegions = () => {
   const {
     settingsRegions,
     setSettingsRegions,
-    settingsDependentFlags,
-    setSettingsDependentFlags,
+    settingsDependentItems,
+    setSettingsDependentItems,
   } = useContext(GameContext);
 
   const handleSelectRegions = (item) => {
@@ -83,7 +83,7 @@ const SelectRegions = () => {
   };
 
   const handleChange = () => {
-    setSettingsDependentFlags(!settingsDependentFlags);
+    setSettingsDependentItems(!settingsDependentItems);
   };
 
   return (
@@ -94,7 +94,7 @@ const SelectRegions = () => {
           terytoria zależne 
           <Checkbox
             color="success-o"
-            checked={settingsDependentFlags}
+            checked={settingsDependentItems}
             onChange={handleChange}
             shape="curve"
             bigger
