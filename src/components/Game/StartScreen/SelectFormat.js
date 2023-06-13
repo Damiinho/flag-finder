@@ -4,13 +4,13 @@ import { GameContext } from "../../../contexts/GameContext";
 import Select from "react-select";
 
 const optionsFlag = [
-  { value: "flagToCountry", label: "widok flagi, zgadnij kraj" },
-  { value: "countryToFlag", label: "widok nazwy kraju, zgadnij flagę" },
+  { value: "flagToCountry", label: "flaga ➡ zgadnij kraj" },
+  { value: "countryToFlag", label: "kraj ➡ zgadnij flagę" },
 ];
 const optionsCapital = [
-  { value: "flagToCapital", label: "widok flagi, zgadnij kraj" },
-  { value: "countryToCapital", label: "widok nazwy kraju, zgadnij flagę" },
-  { value: "capitalToCountry", label: "widok nazwy kraju, zgadnij flagę" },
+  { value: "flagToCapital", label: "flaga ➡ zgadnij stolicę" },
+  { value: "countryToCapital", label: "kraj ➡ zgadnij stolicę" },
+  { value: "capitalToCountry", label: "stolica ➡ zgadnij kraj" },
 ];
 
 const styles = {
