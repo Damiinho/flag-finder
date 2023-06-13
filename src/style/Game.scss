@@ -92,6 +92,20 @@
         }
       }
     }
+    &__format {
+      width: 100%;
+      min-width: 230px;
+      &-title {
+        margin: 10px 0;
+        margin-bottom: 5px;
+        padding: 0 5px;
+        font-size: 15px;
+        @media screen and (min-height: 800px) {
+          font-size: 20px;
+        }
+      }
+    }
+
     &__regions {
       width: 100%;
       min-width: 230px;

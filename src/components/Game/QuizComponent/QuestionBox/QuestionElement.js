@@ -84,7 +84,7 @@ const QuestionElement = () => {
 
   if (isGame === "flag") {
     if (!(settingsVariants === 7)) {
-      if (settingsFormat === "flagToCountry") {
+      if (settingsFormat.value === "flagToCountry") {
         return (
           <div className="quiz__img-box">
             <img
@@ -94,10 +94,10 @@ const QuestionElement = () => {
             />
           </div>
         );
-      } else if (settingsFormat === "countryToFlag") {
+      } else if (settingsFormat.value === "countryToFlag") {
         return <div className="quiz__name-box">{correctAnswer.name}</div>;
       }
-    } else if (settingsVariants === 7) {
+    } else if (settingsVariants.value === 7) {
       return (
         <div className="quiz__question-box">
           <img
@@ -119,8 +119,8 @@ const QuestionElement = () => {
       );
     }
   } else if (isGame === "capital") {
-    if (!(settingsVariants === 7)) {
-      if (settingsFormat === "flagToCapital") {
+    if (!(settingsVariants.value === 7)) {
+      if (settingsFormat.value === "flagToCapital") {
         return (
           <div className="quiz__img-box">
             <img
@@ -130,16 +130,16 @@ const QuestionElement = () => {
             />
           </div>
         );
-      } else if (settingsFormat === "countryToCapital") {
+      } else if (settingsFormat.value === "countryToCapital") {
         return <div className="quiz__name-box">{correctAnswer.name}</div>;
-      } else if (settingsFormat === "capitalToCountry") {
+      } else if (settingsFormat.value === "capitalToCountry") {
         return (
           <div className="quiz__name-box">
             {correctAnswer.capital.join(", ")}
           </div>
         );
       }
-    } else if (settingsVariants === 7) {
+    } else if (settingsVariants.value === 7) {
       return (
         <div className="quiz__question-box">
           <img

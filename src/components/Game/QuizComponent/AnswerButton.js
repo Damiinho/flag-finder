@@ -51,8 +51,8 @@ const AnswerButton = (props) => {
 
   const answerContent = () => {
     if (isGame === "flag") {
-      if (settingsFormat === "flagToCountry") return props.item.name;
-      if (settingsFormat === "countryToFlag")
+      if (settingsFormat.value === "flagToCountry") return props.item.name;
+      if (settingsFormat.value === "countryToFlag")
         return (
           <img
             className="quiz__answers-item__button__img"
@@ -61,13 +61,13 @@ const AnswerButton = (props) => {
           />
         );
     } else if (isGame === "capital") {
-      if (settingsFormat === "flagToCapital") {
+      if (settingsFormat.value === "flagToCapital") {
         return props.item.capital.join(", ");
       }
-      if (settingsFormat === "countryToCapital") {
+      if (settingsFormat.value === "countryToCapital") {
         return props.item.capital.join(", ");
       }
-      if (settingsFormat === "capitalToCountry") {
+      if (settingsFormat.value === "capitalToCountry") {
         return props.item.name;
       }
     } else return "błąd";

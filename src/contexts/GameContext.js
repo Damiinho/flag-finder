@@ -167,9 +167,9 @@ export const GameProvider = ({ children }) => {
 
   useEffect(() => {
     if (isGame === "flag") {
-      setSettingsFormat("flagToCountry");
+      setSettingsFormat({ value: "flagToCountry" });
     } else if (isGame === "capital") {
-      setSettingsFormat("countryToCapital");
+      setSettingsFormat({ value: "countryToCapital" });
     }
   }, [isGame]);
 
