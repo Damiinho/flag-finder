@@ -49,9 +49,9 @@ export const GameProvider = ({ children }) => {
     const randomCurrentIndex = Math.floor(
       Math.random() * currentGameItemList.length
     );
-    const randomCurrentFlag = currentGameItemList[randomCurrentIndex];
+    const randomCurrentItem = currentGameItemList[randomCurrentIndex];
     randomIndexes.push(
-      gameItemList.findIndex((flag) => flag.name === randomCurrentFlag.name)
+      gameItemList.findIndex((flag) => flag.name === randomCurrentItem.name)
     );
     availableIndexes.splice(randomIndexes[0], 1); // usuń indeks wylosowanej poprawnej flagi z listy dostępnych indeksów
 
@@ -76,12 +76,12 @@ export const GameProvider = ({ children }) => {
 
     // utwórz nową listę pytań
     const newQuizList = randomIndexes.map((index, i) => {
-      return { name: gameItemList[index].name };
+      return gameItemList[index];
     });
 
     // ustaw stan komponentu
     setQuizList(newQuizList);
-    setCorrectAnswer(randomCurrentFlag);
+    setCorrectAnswer(randomCurrentItem);
   };
 
   useEffect(() => {

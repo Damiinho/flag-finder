@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { GameContext } from "../../../contexts/GameContext";
+import { AppContext } from "../../../contexts/AppContext";
 
 const AnswerButton = (props) => {
   const {
@@ -17,6 +18,7 @@ const AnswerButton = (props) => {
     gameItemList,
     setCurrentItemCounter,
   } = useContext(GameContext);
+  const { isGame } = useContext(AppContext);
 
   const handleAnswerClick = (value) => {
     if (currentTime !== 0) {
@@ -64,7 +66,11 @@ const AnswerButton = (props) => {
         }`}
         onClick={() => handleAnswerClick(props.item)}
       >
-        {props.item.name}
+        {isGame === "flag"
+          ? props.item.name
+          : isGame === "capital"
+          ? props.item.capital.join(",")
+          : ""}
       </button>
     </div>
   );
