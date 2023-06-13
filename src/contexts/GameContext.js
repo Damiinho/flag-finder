@@ -165,6 +165,14 @@ export const GameProvider = ({ children }) => {
     }
   };
 
+  useEffect(() => {
+    if (isGame === "flag") {
+      setSettingsFormat("flagToCountry");
+    } else if (isGame === "capital") {
+      setSettingsFormat("countryToCapital");
+    }
+  }, [isGame]);
+
   const polishCharsMap = {
     ą: "a",
     å: "a",
