@@ -128,7 +128,7 @@
     {
         "id": 4,
         "active": true,
-        "name": "Brytyjskie Terytorium Zamorskie Anguilla",
+        "name": "Anguilla",
         "colors": [
             "red",
             "navyblue",
@@ -237,7 +237,7 @@
         ],
         "img": "./assets/ao.png",
         "regions": [
-            "europe"
+            "africa"
         ],
         "verticalStripes": false,
         "horizontalStripes": true,
@@ -867,7 +867,7 @@
             "Bandar Seri Begawan"
         ],
         "englishName": "Brunei",
-        "alpha3": "BRN",
+        "alpha3": "BRU",
         "englishCapital": [
             "Bandar Seri Begawan"
         ]
@@ -1461,7 +1461,7 @@
             "Pekin"
         ],
         "englishName": "China",
-        "alpha3": "TWN",
+        "alpha3": "CHN",
         "englishCapital": [
             "Beijing"
         ]
@@ -1562,7 +1562,7 @@
     {
         "id": 50,
         "active": true,
-        "name": "Republikja Zielonego Przylądka",
+        "name": "Republika Zielonego Przylądka",
         "colors": [
             "white",
             "navyblue",
@@ -2804,12 +2804,12 @@
         "symbols": true,
         "country": false,
         "capital": [
-            ""
+            "Basse-Terre"
         ],
         "englishName": "Guadeloupe",
         "alpha3": "GLP",
         "englishCapital": [
-            "NO QUERY SPECIFIED. EXAMPLE REQUEST: GET?Q=HELLO&LANGPAIR=EN|IT"
+            "Basse-Terre"
         ]
     },
     {
@@ -4131,7 +4131,7 @@
         "englishName": "Sri Lanka",
         "alpha3": "LKA",
         "englishCapital": [
-            "Sri Jayawardanapura Kotte"
+            "Sri Jayewardenepura Kotte"
         ]
     },
     {
@@ -5441,7 +5441,7 @@
         ],
         "img": "./assets/pe.png",
         "regions": [
-            "north-america"
+            "south-america"
         ],
         "verticalStripes": true,
         "horizontalStripes": false,
@@ -5796,7 +5796,7 @@
         ],
         "img": "./assets/py.png",
         "regions": [
-            "north-america"
+            "south-america"
         ],
         "verticalStripes": false,
         "horizontalStripes": true,
