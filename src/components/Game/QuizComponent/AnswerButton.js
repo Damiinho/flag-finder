@@ -17,6 +17,7 @@ const AnswerButton = (props) => {
     currentGameItemList,
     gameItemList,
     setCurrentItemCounter,
+    settingsFormat,
   } = useContext(GameContext);
   const { isGame } = useContext(AppContext);
 
@@ -48,6 +49,30 @@ const AnswerButton = (props) => {
     }
   };
 
+  const answerContent = () => {
+    if (isGame === "flag") {
+      if (settingsFormat === "flagToCountry") return props.item.name;
+      if (settingsFormat === "countryToFlag")
+        return (
+          <img
+            className="quiz__answers-item__button__img"
+            src={props.item.img}
+            alt="flag"
+          />
+        );
+    } else if (isGame === "capital") {
+      if (settingsFormat === "flagToCapital") {
+        return props.item.capital.join(", ");
+      }
+      if (settingsFormat === "countryToCapital") {
+        return props.item.capital.join(", ");
+      }
+      if (settingsFormat === "capitalToCountry") {
+        return props.item.name;
+      }
+    } else return "błąd";
+  };
+
   return (
     <div className="quiz__answers-item" key={props.index}>
       <button
@@ -66,11 +91,7 @@ const AnswerButton = (props) => {
         }`}
         onClick={() => handleAnswerClick(props.item)}
       >
-        {isGame === "flag"
-          ? props.item.name
-          : isGame === "capital"
-          ? props.item.capital.join(",")
-          : ""}
+        {answerContent()}
       </button>
     </div>
   );

@@ -133,6 +133,7 @@ export const GameProvider = ({ children }) => {
     setCurrentMistakes(settingsMistakes);
     if (!value) {
       setCurrentGameItemList([...gameItemList]);
+      setCurrentItemCounter([...gameItemList].length);
     }
     if (value) {
       if (
