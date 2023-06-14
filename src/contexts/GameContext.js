@@ -167,9 +167,15 @@ export const GameProvider = ({ children }) => {
 
   useEffect(() => {
     if (isGame === "flag") {
-      setSettingsFormat({ value: "flagToCountry" });
+      setSettingsFormat({
+        label: "flaga ➡ zgadnij kraj",
+        value: "flagToCountry",
+      });
     } else if (isGame === "capital") {
-      setSettingsFormat({ value: "countryToCapital" });
+      setSettingsFormat({
+        label: "kraj ➡ zgadnij stolicę",
+        value: "countryToCapital",
+      });
     }
   }, [isGame]);
 

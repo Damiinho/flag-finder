@@ -4,6 +4,8 @@ import { useEffect } from "react";
 import { useRef } from "react";
 import { AppContext } from "../../../../contexts/AppContext";
 
+import FitText from "@kennethormandy/react-fittext";
+
 const QuestionElement = () => {
   const {
     settingsVariants,
@@ -95,7 +97,11 @@ const QuestionElement = () => {
           </div>
         );
       } else if (settingsFormat.value === "countryToFlag") {
-        return <div className="quiz__name-box">{correctAnswer.name}</div>;
+        return (
+          <div className="quiz__name-box">
+            <FitText>{correctAnswer.name}</FitText>
+          </div>
+        );
       }
     } else if (settingsVariants.value === 7) {
       return (

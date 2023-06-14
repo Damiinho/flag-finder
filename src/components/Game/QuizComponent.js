@@ -3,6 +3,7 @@ import { GameContext } from "../../contexts/GameContext";
 import ScoreComponent from "./QuizComponent/ScoreComponent";
 import QuestionBox from "./QuizComponent/QuestionBox";
 import LoadingBox from "./QuizComponent/LoadingBox";
+import { AppContext } from "../../contexts/AppContext";
 
 const QuizComponent = () => {
   const {
@@ -24,7 +25,9 @@ const QuizComponent = () => {
     isEmpty,
     setIsEmpty,
     setCurrentItemCounter,
+    settingsFormat,
   } = useContext(GameContext);
+  const { isGame } = useContext(AppContext);
   const [isQuizLoading, setIsQuizLoading] = useState(true);
 
   const handleNext = () => {
@@ -54,9 +57,13 @@ const QuizComponent = () => {
     <div className={`main-game__result ${props.result}`}>{props.name}</div>
   );
 
-  const CorrectAnswer = () => (
-    <div className={`main-game__result correct`}>{correctAnswer.name}</div>
-  );
+  const CorrectAnswer = () => {
+    if (isGame === "flag" && settingsFormat === "flagToCountry") {
+      return (
+        <div className={`main-game__result correct`}>{correctAnswer.name}</div>
+      );
+    }
+  };
 
   useEffect(() => {
     const timer = setTimeout(() => {
