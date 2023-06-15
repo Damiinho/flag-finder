@@ -380,6 +380,10 @@
     max-width: 800px;
 
     @include flex-column(center, center);
+
+    &.countryToFlag {
+      margin-top: 60px;
+    }
     .quiz__img-box {
       &__img {
         max-width: 230px;
@@ -421,10 +425,6 @@
           cursor: pointer;
           overflow: hidden;
 
-          &__img {
-            width: 100px;
-          }
-
           @media screen and (min-width: 300px) {
             font-size: 15px;
             width: 90%;
@@ -441,6 +441,17 @@
           }
           &.incorrect {
             border: 3px solid red;
+          }
+          &.countryToFlag {
+            width: auto;
+            img {
+              width: 100px;
+            }
+            @media screen and (min-width: 400px) {
+              img {
+                width: 120px;
+              }
+            }
           }
         }
       }
@@ -487,6 +498,9 @@
     }
     @media screen and (min-height: 830px) {
       margin-top: 150px;
+      &.countryToFlag {
+        margin-top: 90px;
+      }
     }
     @media screen and (min-width: 900px) {
       flex-direction: row;

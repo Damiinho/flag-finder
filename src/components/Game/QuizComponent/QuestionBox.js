@@ -4,7 +4,7 @@ import QuestionElement from "./QuestionBox/QuestionElement";
 import AnswersElement from "./QuestionBox/AnswersElement";
 
 const QuestionBox = () => {
-  const { correctAnswer } = useContext(GameContext);
+  const { correctAnswer, settingsFormat } = useContext(GameContext);
 
   const inputRef = useRef(null);
   useEffect(() => {
@@ -14,7 +14,11 @@ const QuestionBox = () => {
   }, [correctAnswer]);
 
   return (
-    <div className="main-game__quiz">
+    <div
+      className={`main-game__quiz ${
+        settingsFormat.value === "countryToFlag" ? "countryToFlag" : ""
+      }`}
+    >
       <QuestionElement />
       <AnswersElement />
     </div>

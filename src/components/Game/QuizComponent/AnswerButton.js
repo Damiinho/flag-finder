@@ -74,9 +74,11 @@ const AnswerButton = (props) => {
   };
 
   return (
-    <div className="quiz__answers-item" key={props.index}>
+    <div className={`quiz__answers-item`} key={props.index}>
       <button
         className={`quiz__answers-item__button ${
+          settingsFormat.value === "countryToFlag" ? "countryToFlag" : ""
+        } ${
           selectedAnswer &&
           (selectedAnswer === correctAnswer.name
             ? correctAnswer.name === props.item.name
