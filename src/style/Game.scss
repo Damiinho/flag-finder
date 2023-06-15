@@ -408,6 +408,11 @@
       width: 100%;
       max-width: 600px;
       grid-template-columns: repeat(2, 50%);
+
+      &.countryToFlag {
+        width: auto;
+        gap: 10px;
+      }
       &-item {
         text-align: center;
         &__button {
@@ -445,11 +450,21 @@
           &.countryToFlag {
             width: auto;
             img {
-              width: 100px;
+              width: 90px;
+            }
+            @media screen and (min-width: 300px) {
+              img {
+                width: 100px;
+              }
             }
             @media screen and (min-width: 400px) {
               img {
                 width: 120px;
+              }
+            }
+            @media screen and (min-width: 600px) {
+              img {
+                width: 150px;
               }
             }
           }
@@ -467,6 +482,11 @@
         &.little {
           grid-template-columns: repeat(1, 100%);
           gap: 5px;
+
+          &.countryToFlag {
+            grid-template-columns: repeat(2, 50%);
+            gap: 10px;
+          }
         }
       }
     }
@@ -504,6 +524,9 @@
     }
     @media screen and (min-width: 900px) {
       flex-direction: row;
+      &.countryToFlag {
+        flex-direction: column;
+      }
     }
   }
   &__stop-button {
