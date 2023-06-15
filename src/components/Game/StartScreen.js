@@ -9,13 +9,37 @@ import SelectRegions from "./StartScreen/SelectRegions";
 import SelectFormat from "./StartScreen/SelectFormat";
 
 const StartScreen = () => {
-  const { handleStartStop, currentGameItemList, wrongStart, settingsVariants } =
-    useContext(GameContext);
+  const {
+    handleStartStop,
+    currentGameItemList,
+    wrongStart,
+    settingsVariants,
+    settingsFormat,
+  } = useContext(GameContext);
   const { isGame, setIsGame } = useContext(AppContext);
 
   const handleBackClick = () => {
     setIsGame(false);
   };
+
+  const isBanned = () => {
+    if (currentGameItemList.length > 0) {
+      if (
+        !(currentGameItemList.length < settingsVariants) ||
+        settingsVariants === 7
+      ) {
+        if (
+          settingsFormat.value === "countryToFlag" &&
+          settingsVariants === 7
+        ) {
+          return "banned";
+        }
+
+        return "";
+      } else return "banned";
+    } else return "banned";
+  };
+
   return (
     <div className="main-game__wrapper">
       <div className="main-game__settings-box">
@@ -47,13 +71,7 @@ const StartScreen = () => {
         )}
       </div>
       <button
-        className={`main-game__start-button ${
-          currentGameItemList.length > 0 &&
-          (!(currentGameItemList.length < settingsVariants) ||
-            settingsVariants === 7)
-            ? ""
-            : "banned"
-        }`}
+        className={`main-game__start-button ${isBanned()}`}
         onClick={() => handleStartStop(true)}
       >
         Rozpocznij
