@@ -137,7 +137,11 @@ const QuestionElement = () => {
           </div>
         );
       } else if (settingsFormat.value === "countryToCapital") {
-        return <div className="quiz__name-box">{correctAnswer.name}</div>;
+        return (
+          <div className="quiz__name-box">
+            <FitText>{correctAnswer.name}</FitText>
+          </div>
+        );
       } else if (settingsFormat.value === "capitalToCountry") {
         return (
           <div className="quiz__name-box">

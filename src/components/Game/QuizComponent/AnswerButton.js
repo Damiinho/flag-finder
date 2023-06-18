@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { GameContext } from "../../../contexts/GameContext";
 import { AppContext } from "../../../contexts/AppContext";
+import FitText from "@kennethormandy/react-fittext";
 
 const AnswerButton = (props) => {
   const {
@@ -73,12 +74,16 @@ const AnswerButton = (props) => {
     } else return "błąd";
   };
 
+  const additionalClass = () => {
+    if (settingsFormat.value === "countryToFlag") return "countryToFlag";
+    else if (settingsFormat.value === "countryToCapital")
+      return "countryToCapital";
+  };
+
   return (
     <div className={`quiz__answers-item`} key={props.index}>
       <button
-        className={`quiz__answers-item__button ${
-          settingsFormat.value === "countryToFlag" ? "countryToFlag" : ""
-        } ${
+        className={`quiz__answers-item__button ${additionalClass()} ${
           selectedAnswer &&
           (selectedAnswer === correctAnswer.name
             ? correctAnswer.name === props.item.name
@@ -93,7 +98,7 @@ const AnswerButton = (props) => {
         }`}
         onClick={() => handleAnswerClick(props.item)}
       >
-        {answerContent()}
+        <FitText>{answerContent()}</FitText>
       </button>
     </div>
   );

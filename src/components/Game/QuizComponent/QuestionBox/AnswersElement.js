@@ -19,6 +19,14 @@ const AnswersElement = () => {
           })}
         </div>
       );
+    } else if (settingsFormat.value === "countryToCapital") {
+      return (
+        <div className={`quiz__answers countryToCapital`}>
+          {quizList.map((item, index) => {
+            return <AnswerButton key={index} item={item} />;
+          })}
+        </div>
+      );
     } else
       return (
         <div

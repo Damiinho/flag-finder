@@ -13,12 +13,14 @@ const QuestionBox = () => {
     }
   }, [correctAnswer]);
 
+  const additionalClass = () => {
+    if (settingsFormat.value === "countryToFlag") return "countryToFlag";
+    else if (settingsFormat.value === "countryToCapital")
+      return "countryToCapital";
+  };
+
   return (
-    <div
-      className={`main-game__quiz ${
-        settingsFormat.value === "countryToFlag" ? "countryToFlag" : ""
-      }`}
-    >
+    <div className={`main-game__quiz ${additionalClass()}`}>
       <QuestionElement />
       <AnswersElement />
     </div>
