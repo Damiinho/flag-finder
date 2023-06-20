@@ -387,11 +387,6 @@
     &.countryToFlag {
       margin-top: 60px;
     }
-    &.countryToCapital {
-      .quiz__answers {
-        display: block;
-      }
-    }
     .quiz__img-box {
       &__img {
         max-width: 230px;
@@ -536,7 +531,8 @@
     }
     @media screen and (min-width: 900px) {
       flex-direction: row;
-      &.countryToFlag {
+      &.countryToFlag,
+      &.countryToCapital {
         flex-direction: column;
       }
     }
