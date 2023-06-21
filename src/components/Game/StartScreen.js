@@ -35,8 +35,7 @@ const StartScreen = () => {
           settingsVariants === 7
         ) {
           setStartPossibility(false);
-        }
-        setStartPossibility(true);
+        } else setStartPossibility(true);
       } else setStartPossibility(false);
     } else setStartPossibility(false);
   }, [
