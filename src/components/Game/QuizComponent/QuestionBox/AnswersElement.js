@@ -19,7 +19,10 @@ const AnswersElement = () => {
           })}
         </div>
       );
-    } else if (settingsFormat.value === "countryToCapital") {
+    } else if (
+      settingsFormat.value === "countryToCapital" ||
+      settingsFormat.value === "capitalToCountry"
+    ) {
       return (
         <div className={`quiz__answers countryToCapital`}>
           {quizList.map((item, index) => {

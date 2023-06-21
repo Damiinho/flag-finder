@@ -165,6 +165,15 @@ export const GameProvider = ({ children }) => {
     }
   };
 
+  const additionalClass = () => {
+    if (settingsFormat.value === "countryToFlag") return "countryToFlag";
+    else if (
+      settingsFormat.value === "countryToCapital" ||
+      settingsFormat.value === "capitalToCountry"
+    )
+      return "countryToCapital";
+  };
+
   useEffect(() => {
     if (isGame === "flag") {
       setSettingsFormat({
@@ -248,6 +257,7 @@ export const GameProvider = ({ children }) => {
     setWrongStart,
     settingsDependentItems,
     setSettingsDependentItems,
+    additionalClass,
   };
 
   return (

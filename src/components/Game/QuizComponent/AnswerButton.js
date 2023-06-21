@@ -19,6 +19,7 @@ const AnswerButton = (props) => {
     gameItemList,
     setCurrentItemCounter,
     settingsFormat,
+    additionalClass,
   } = useContext(GameContext);
   const { isGame } = useContext(AppContext);
 
@@ -72,12 +73,6 @@ const AnswerButton = (props) => {
         return props.item.name;
       }
     } else return "błąd";
-  };
-
-  const additionalClass = () => {
-    if (settingsFormat.value === "countryToFlag") return "countryToFlag";
-    else if (settingsFormat.value === "countryToCapital")
-      return "countryToCapital";
   };
 
   return (

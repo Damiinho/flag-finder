@@ -145,7 +145,7 @@ const QuestionElement = () => {
       } else if (settingsFormat.value === "capitalToCountry") {
         return (
           <div className="quiz__name-box">
-            {correctAnswer.capital.join(", ")}
+            <FitText>{correctAnswer.capital.join(", ")}</FitText>
           </div>
         );
       }
