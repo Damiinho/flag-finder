@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { GameContext } from "../../contexts/GameContext";
 import SelectVariants from "./StartScreen/SelectVariants";
 import SelectTime from "./StartScreen/SelectTime";
@@ -15,6 +15,8 @@ const StartScreen = () => {
     wrongStart,
     settingsVariants,
     settingsFormat,
+    startPossibility,
+    setStartPossibility,
   } = useContext(GameContext);
   const { isGame, setIsGame } = useContext(AppContext);
 
@@ -22,7 +24,7 @@ const StartScreen = () => {
     setIsGame(false);
   };
 
-  const isBanned = () => {
+  useEffect(() => {
     if (currentGameItemList.length > 0) {
       if (
         !(currentGameItemList.length < settingsVariants) ||
@@ -32,13 +34,17 @@ const StartScreen = () => {
           settingsFormat.value === "countryToFlag" &&
           settingsVariants === 7
         ) {
-          return "banned";
+          setStartPossibility(false);
         }
-
-        return "";
-      } else return "banned";
-    } else return "banned";
-  };
+        setStartPossibility(true);
+      } else setStartPossibility(false);
+    } else setStartPossibility(false);
+  }, [
+    currentGameItemList,
+    setStartPossibility,
+    settingsVariants,
+    settingsFormat,
+  ]);
 
   return (
     <div className="main-game__wrapper">
@@ -71,7 +77,9 @@ const StartScreen = () => {
         )}
       </div>
       <button
-        className={`main-game__start-button ${isBanned()}`}
+        className={`main-game__start-button ${
+          startPossibility ? "" : "banned"
+        }`}
         onClick={() => handleStartStop(true)}
       >
         Rozpocznij

@@ -6,6 +6,7 @@ export const GameContext = createContext();
 export const GameProvider = ({ children }) => {
   const { flags, isGame } = useContext(AppContext);
   const [start, setStart] = useState(false);
+  const [startPossibility, setStartPossibility] = useState(true);
   const [quizList, setQuizList] = useState([]);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [score, setScore] = useState(0);
@@ -136,11 +137,7 @@ export const GameProvider = ({ children }) => {
       setCurrentItemCounter([...gameItemList].length);
     }
     if (value) {
-      if (
-        currentGameItemList.length > 0 &&
-        (!(currentGameItemList.length < settingsVariants) ||
-          settingsVariants === 7)
-      ) {
+      if (startPossibility) {
         setStart(value);
         generateQuizList();
         setLastScore(score);
@@ -258,6 +255,8 @@ export const GameProvider = ({ children }) => {
     settingsDependentItems,
     setSettingsDependentItems,
     additionalClass,
+    startPossibility,
+    setStartPossibility,
   };
 
   return (
