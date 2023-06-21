@@ -416,6 +416,12 @@
         width: auto;
         gap: 10px;
       }
+      &.countryToCapital {
+        grid-template-columns: repeat(1, 100%);
+        @media screen and (min-width: 700px) {
+          grid-template-columns: repeat(2, 50%);
+        }
+      }
 
       &-item {
         text-align: center;
