@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/flag-finder/static/css/main.b817f464.css",
-    "main.js": "/flag-finder/static/js/main.b5bf6b1b.js",
+    "main.css": "/flag-finder/static/css/main.b7911d70.css",
+    "main.js": "/flag-finder/static/js/main.9841c731.js",
     "static/js/787.c318f016.chunk.js": "/flag-finder/static/js/787.c318f016.chunk.js",
     "static/media/worldbackground.png": "/flag-finder/static/media/worldbackground.f23a7ebb7757a3d8c2a4.png",
     "static/media/Wikipedia.svg": "/flag-finder/static/media/Wikipedia.7024fe85136a59602e5f3f8b3cde9ab7.svg",
@@ -36,12 +36,12 @@
     "static/media/star.svg": "/flag-finder/static/media/star.0b2b733025d3c123092b5a066ccb8753.svg",
     "static/media/circle.svg": "/flag-finder/static/media/circle.826dabebd6f3bd713ad109ac62bee3ef.svg",
     "static/media/cross.svg": "/flag-finder/static/media/cross.2cce26b83be11a0f764c5e8d8684f2ce.svg",
-    "main.b817f464.css.map": "/flag-finder/static/css/main.b817f464.css.map",
-    "main.b5bf6b1b.js.map": "/flag-finder/static/js/main.b5bf6b1b.js.map",
+    "main.b7911d70.css.map": "/flag-finder/static/css/main.b7911d70.css.map",
+    "main.9841c731.js.map": "/flag-finder/static/js/main.9841c731.js.map",
     "787.c318f016.chunk.js.map": "/flag-finder/static/js/787.c318f016.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b817f464.css",
-    "static/js/main.b5bf6b1b.js"
+    "static/css/main.b7911d70.css",
+    "static/js/main.9841c731.js"
   ]
 }
