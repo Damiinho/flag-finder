@@ -15,8 +15,11 @@
 // settings
 .main-game {
   font-family: "Poiret One", cursive;
+  height: calc(100% - 50px);
+  overflow-y: auto;
   &__wrapper {
     width: 90%;
+    height: 100%;
     max-width: 500px;
     margin: 0 auto;
     @include flex-column;
