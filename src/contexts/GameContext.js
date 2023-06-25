@@ -124,12 +124,6 @@ export const GameProvider = ({ children }) => {
 
   const handleStartStop = (value) => {
     setStart(false);
-    if (
-      currentGameItemList.length > 0 &&
-      !(currentGameItemList.length < settingsVariants)
-    ) {
-      setStart(value);
-    }
     setSelectedAnswer(null);
     setCurrentMistakes(settingsMistakes);
     if (!value) {
