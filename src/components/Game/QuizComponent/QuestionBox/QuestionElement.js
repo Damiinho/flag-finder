@@ -48,30 +48,59 @@ const QuestionElement = () => {
     if (currentTime !== 0) {
       if (!selectedAnswer && inputAnswer) {
         setSelectedAnswer(inputAnswer);
-        if (
-          inputAnswer
-            .toLowerCase()
-            .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) ===
-          correctAnswer.name
-            .toLowerCase()
-            .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match])
-        ) {
-          setScore(score + 1);
-          setCurrentGameItemList(
-            currentGameItemList.filter(
-              (flag) => flag.name !== correctAnswer.name
-            )
-          );
-          setCurrentItemCounter(
-            currentGameItemList.filter(
-              (flag) => flag.name !== correctAnswer.name
-            ).length
-          );
-        } else {
-          if (currentMistakes === 1) {
-            setCurrentGameItemList([...gameItemList]);
+
+        if (settingsFormat.value === "flagToCapital") {
+          if (
+            inputAnswer
+              .toLowerCase()
+              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) ===
+            correctAnswer.capital[0]
+              .toLowerCase()
+              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match])
+          ) {
+            setScore(score + 1);
+            setCurrentGameItemList(
+              currentGameItemList.filter(
+                (flag) => flag.name !== correctAnswer.name
+              )
+            );
+            setCurrentItemCounter(
+              currentGameItemList.filter(
+                (flag) => flag.name !== correctAnswer.name
+              ).length
+            );
+          } else {
+            if (currentMistakes === 1) {
+              setCurrentGameItemList([...gameItemList]);
+            }
+            setCurrentMistakes(currentMistakes - 1);
           }
-          setCurrentMistakes(currentMistakes - 1);
+        } else {
+          if (
+            inputAnswer
+              .toLowerCase()
+              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) ===
+            correctAnswer.name
+              .toLowerCase()
+              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match])
+          ) {
+            setScore(score + 1);
+            setCurrentGameItemList(
+              currentGameItemList.filter(
+                (flag) => flag.name !== correctAnswer.name
+              )
+            );
+            setCurrentItemCounter(
+              currentGameItemList.filter(
+                (flag) => flag.name !== correctAnswer.name
+              ).length
+            );
+          } else {
+            if (currentMistakes === 1) {
+              setCurrentGameItemList([...gameItemList]);
+            }
+            setCurrentMistakes(currentMistakes - 1);
+          }
         }
       }
 
@@ -103,7 +132,7 @@ const QuestionElement = () => {
           </div>
         );
       }
-    } else if (settingsVariants.value === 7) {
+    } else if (settingsVariants === 7) {
       return (
         <div className="quiz__question-box">
           <img
@@ -125,7 +154,7 @@ const QuestionElement = () => {
       );
     }
   } else if (isGame === "capital") {
-    if (!(settingsVariants.value === 7)) {
+    if (!(settingsVariants === 7)) {
       if (settingsFormat.value === "flagToCapital") {
         return (
           <div className="quiz__img-box">
@@ -149,7 +178,7 @@ const QuestionElement = () => {
           </div>
         );
       }
-    } else if (settingsVariants.value === 7) {
+    } else if (settingsVariants === 7) {
       return (
         <div className="quiz__question-box">
           <img

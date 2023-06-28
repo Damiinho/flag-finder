@@ -17,6 +17,7 @@
   font-family: "Poiret One", cursive;
   height: calc(100% - 50px);
   overflow-y: auto;
+  overflow-x: hidden;
   &__wrapper {
     width: 90%;
     height: 100%;

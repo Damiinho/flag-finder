@@ -163,6 +163,7 @@ export const GameProvider = ({ children }) => {
       settingsFormat.value === "capitalToCountry"
     )
       return "countryToCapital";
+    else return "";
   };
 
   useEffect(() => {

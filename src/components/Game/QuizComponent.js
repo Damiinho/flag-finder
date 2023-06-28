@@ -58,7 +58,7 @@ const QuizComponent = () => {
   );
 
   const CorrectAnswer = () => {
-    if (isGame === "flag" && settingsFormat === "flagToCountry") {
+    if (isGame === "flag" && settingsFormat.value === "flagToCountry") {
       return (
         <div className={`main-game__result correct`}>{correctAnswer.name}</div>
       );
@@ -80,6 +80,79 @@ const QuizComponent = () => {
     }
   }, [currentGameItemList, setCurrentGameItemList, gameItemList, setIsEmpty]);
 
+  const Empty = () => {
+    if (isEmpty) {
+      return (
+        <>
+          <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
+          <ResultBox result="bad" name="Koniec" />
+        </>
+      );
+    }
+  };
+
+  const Result = () => {
+    if (currentTime === 0) {
+      return <ResultBox result="bad" name="CZAS MINĄŁ" />;
+    } else if (isGame === "flag") {
+      if (selectedAnswer) {
+        if (
+          selectedAnswer
+            .toLowerCase()
+            .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) ===
+            correctAnswer.name
+              .toLowerCase()
+              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) &&
+          !isEmpty
+        ) {
+          return (
+            <>
+              <HandleButton click={handleNext} name="Następna flaga" />
+              <ResultBox result="good" name="DOBRZE" />
+            </>
+          );
+        } else if (
+          selectedAnswer
+            .toLowerCase()
+            .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) !==
+          correctAnswer.name
+            .toLowerCase()
+            .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match])
+        )
+          return (
+            <>
+              <CorrectAnswer />
+              <ResultBox result="bad" name="BŁĄD" />
+            </>
+          );
+        else if (
+          selectedAnswer
+            .toLowerCase()
+            .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) !==
+            correctAnswer.name
+              .toLowerCase()
+              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) &&
+          currentMistakes === 0
+        ) {
+          return (
+            <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
+          );
+        } else if (
+          selectedAnswer
+            .toLowerCase()
+            .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) !==
+            correctAnswer.name
+              .toLowerCase()
+              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) &&
+          currentMistakes > 0 &&
+          !isEmpty
+        ) {
+          <HandleButton click={handleNext} name="Następna flaga" />;
+        }
+      }
+    }
+  };
+
   return (
     <>
       {isQuizLoading ? (
@@ -87,67 +160,15 @@ const QuizComponent = () => {
       ) : (
         <>
           <ScoreComponent />
-          {selectedAnswer &&
-            selectedAnswer
-              .toLowerCase()
-              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) ===
-              correctAnswer.name
-                .toLowerCase()
-                .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) &&
-            !isEmpty && (
-              <>
-                <HandleButton click={handleNext} name="Następna flaga" />
-                <ResultBox result="good" name="DOBRZE" />
-              </>
-            )}
-          {selectedAnswer &&
-            selectedAnswer
-              .toLowerCase()
-              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) !==
-              correctAnswer.name
-                .toLowerCase()
-                .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) && (
-              <>
-                <ResultBox result="bad" name="BŁĄD" />
-                <CorrectAnswer />
-              </>
-            )}
-          {selectedAnswer &&
-            selectedAnswer
-              .toLowerCase()
-              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) !==
-              correctAnswer.name
-                .toLowerCase()
-                .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) &&
-            currentMistakes === 0 && (
-              <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
-            )}
-          {isEmpty && (
-            <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
-          )}
-          {selectedAnswer &&
-            selectedAnswer
-              .toLowerCase()
-              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) !==
-              correctAnswer.name
-                .toLowerCase()
-                .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) &&
-            currentMistakes > 0 &&
-            !isEmpty && (
-              <HandleButton click={handleNext} name="Następna flaga" />
-            )}
+          <Empty />
+          <Result />
+
           {currentTime === 0 && (
             <>
-              <ResultBox result="bad" name="CZAS MINĄŁ" />
               <CorrectAnswer />
             </>
           )}
 
-          {isEmpty && (
-            <>
-              <ResultBox result="bad" name="Koniec" />
-            </>
-          )}
           {currentTime === 0 && currentMistakes === 0 && (
             <>
               <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
