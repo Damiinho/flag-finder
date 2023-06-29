@@ -4,6 +4,7 @@ import ScoreComponent from "./QuizComponent/ScoreComponent";
 import QuestionBox from "./QuizComponent/QuestionBox";
 import LoadingBox from "./QuizComponent/LoadingBox";
 import { AppContext } from "../../contexts/AppContext";
+import ExitIMG from "../../img/exit.svg";
 
 const QuizComponent = () => {
   const {
@@ -96,14 +97,14 @@ const QuizComponent = () => {
             // -------------------- correct & !isEmpty
             return (
               <>
-                <HandleButton click={handleNext} name="Następna flaga" />
+                <HandleButton click={handleNext} name="Dalej" />
                 <ResultBox result="good" name="DOBRZE" />
               </>
             );
           } else if (isEmpty) {
             // -------------------- correct & isEmpty
             <>
-              <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
+              <HandleButton click={handleRestart} name="Od nowa" />
               <ResultBox result="good" name="Koniec" />
             </>;
           }
@@ -120,7 +121,7 @@ const QuizComponent = () => {
             // -------------------- incorrect & alive
             return (
               <>
-                <HandleButton click={handleNext} name="Następna flaga" />
+                <HandleButton click={handleNext} name="Dalej" />
                 <CorrectAnswer />
                 <ResultBox result="bad" name="BŁĄD" />
               </>
@@ -129,7 +130,7 @@ const QuizComponent = () => {
             // -------------------- incorrect & dead
             return (
               <>
-                <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
+                <HandleButton click={handleRestart} name="Od nowa" />
                 <CorrectAnswer />
                 <ResultBox result="bad" name="Koniec" />
               </>
@@ -143,7 +144,7 @@ const QuizComponent = () => {
         // -------------------- end time & alive
         return (
           <>
-            <HandleButton click={handleNext} name="Następna flaga" />
+            <HandleButton click={handleNext} name="Dalej" />
             <CorrectAnswer />
             <ResultBox result="bad" name="CZAS MINĄŁ" />
           </>
@@ -152,7 +153,7 @@ const QuizComponent = () => {
         // -------------------- end time & dead
         return (
           <>
-            <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
+            <HandleButton click={handleRestart} name="Od nowa" />
             <CorrectAnswer />
             <ResultBox result="bad" name="Koniec" />
           </>
@@ -168,14 +169,16 @@ const QuizComponent = () => {
       ) : (
         <>
           <ScoreComponent />
-          <AfterResponse />
           <QuestionBox />
-          <button
-            className="main-game__stop-button"
-            onClick={() => handleStartStop(false)}
-          >
-            Przerwij
-          </button>
+          <AfterResponse />
+          {(selectedAnswer || currentTime === 0) && (
+            <button
+              className="main-game__stop-button"
+              onClick={() => handleStartStop(false)}
+            >
+              <img src={ExitIMG} alt="exit" />
+            </button>
+          )}
         </>
       )}
     </>

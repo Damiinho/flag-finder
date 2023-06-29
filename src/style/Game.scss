@@ -221,7 +221,7 @@
       margin-top: 5px;
       @include flex-column;
       gap: 10px;
-      width: 80px;
+      width: 90px;
       .main-game__score-box__flag-counter {
         font-size: 20px;
         text-align: center;
@@ -247,7 +247,7 @@
     &__lastbest {
       @include flex-column;
       gap: 5px;
-      width: 80px;
+      width: 90px;
       margin-top: 10px;
       font-size: 15px;
     }
@@ -286,9 +286,6 @@
           font-size: 16px;
         }
       }
-    }
-    @media screen and (min-height: 830px) {
-      margin-top: 20px;
     }
   }
   &__result {
@@ -366,34 +363,35 @@
     }
   }
   &__handle-box {
-    position: relative;
+    // margin-top: 50px;
+    // display: flex;
+    // justify-content: center;
     button {
       position: absolute;
-      top: 10px;
+      bottom: 20px;
       left: 50%;
       transform: translateX(-50%);
       font-family: "Poiret One", cursive;
       text-transform: uppercase;
-      background-color: rgba(8, 8, 56, 0.827);
+      background-color: #07411d;
       font-size: 15px;
       padding: 10px 0;
       color: white;
       cursor: pointer;
       border-color: white;
-      width: 200px;
+      width: 100px;
       border-radius: 10px;
     }
-    @media screen and (min-height: 830px) and (min-width: 300px) {
+    @media screen and (min-width: 300px) {
       button {
-        top: 30px;
-        width: 250px;
+        width: 120px;
         font-size: 20px;
       }
     }
   }
 
   &__quiz {
-    margin: 80px auto 0;
+    margin: 20px auto 0;
     width: 100%;
     max-width: 800px;
 
@@ -411,7 +409,7 @@
         @media screen and (min-width: 900px) {
           max-width: 320px;
           max-height: 200px;
-          margin-right: 30px;
+          margin-left: 50px;
         }
       }
     }
@@ -544,13 +542,17 @@
         }
       }
     }
-    @media screen and (min-height: 830px) {
-      margin-top: 150px;
+    @media screen and (min-height: 700px) {
+      margin-top: 50px;
       &.countryToFlag {
         margin-top: 90px;
       }
     }
+    @media screen and (min-height: 800px) {
+      margin-top: 70px;
+    }
     @media screen and (min-width: 900px) {
+      margin-top: 100px;
       flex-direction: row;
       &.countryToFlag,
       &.countryToCapital {
@@ -559,11 +561,12 @@
     }
   }
   &__stop-button {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    width: 100px;
-    transform: translateX(-50%);
+    position: fixed;
+    bottom: 17px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    // transform: translateX(-50%);
     font-family: "Poiret One", cursive;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -574,13 +577,18 @@
     cursor: pointer;
     border-color: white;
     margin: 0 auto;
-    border-radius: 10px;
-    @media screen and (max-height: 860px) {
-      bottom: 10px;
+    border-radius: 50%;
+    img {
+      width: 23px;
     }
-    @media screen and (min-height: 900px), screen and (min-width: 600px) {
-      width: 250px;
-      font-size: 20px;
+
+    @media screen and (min-width: 300px) {
+      bottom: 10px;
+      width: 60px;
+      height: 60px;
+      img {
+        width: 35px;
+      }
     }
   }
   &__loading {

@@ -11,7 +11,7 @@ const AnswersElement = () => {
       return (
         <div
           className={`quiz__answers countryToFlag ${
-            settingsVariants > 5 ? "many" : "little"
+            settingsVariants > 4 ? "many" : "little"
           }`}
         >
           {quizList.map((item, index) => {
