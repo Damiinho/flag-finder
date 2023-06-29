@@ -80,75 +80,83 @@ const QuizComponent = () => {
     }
   }, [currentGameItemList, setCurrentGameItemList, gameItemList, setIsEmpty]);
 
-  const Empty = () => {
-    if (isEmpty) {
-      return (
-        <>
-          <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
-          <ResultBox result="bad" name="Koniec" />
-        </>
-      );
-    }
-  };
-
-  const Result = () => {
-    if (currentTime === 0) {
-      return <ResultBox result="bad" name="CZAS MINĄŁ" />;
-    } else if (isGame === "flag") {
-      if (selectedAnswer) {
+  const AfterResponse = () => {
+    if (selectedAnswer) {
+      if (isGame === "flag") {
         if (
+          // -------------------- correct
           selectedAnswer
             .toLowerCase()
             .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) ===
-            correctAnswer.name
-              .toLowerCase()
-              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) &&
-          !isEmpty
+          correctAnswer.name
+            .toLowerCase()
+            .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match])
         ) {
-          return (
+          if (!isEmpty) {
+            // -------------------- correct & !isEmpty
+            return (
+              <>
+                <HandleButton click={handleNext} name="Następna flaga" />
+                <ResultBox result="good" name="DOBRZE" />
+              </>
+            );
+          } else if (isEmpty) {
+            // -------------------- correct & isEmpty
             <>
-              <HandleButton click={handleNext} name="Następna flaga" />
-              <ResultBox result="good" name="DOBRZE" />
-            </>
-          );
+              <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
+              <ResultBox result="good" name="Koniec" />
+            </>;
+          }
         } else if (
+          // -------------------- incorrect
           selectedAnswer
             .toLowerCase()
             .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) !==
           correctAnswer.name
             .toLowerCase()
             .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match])
-        )
-          return (
-            <>
-              <CorrectAnswer />
-              <ResultBox result="bad" name="BŁĄD" />
-            </>
-          );
-        else if (
-          selectedAnswer
-            .toLowerCase()
-            .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) !==
-            correctAnswer.name
-              .toLowerCase()
-              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) &&
-          currentMistakes === 0
         ) {
-          return (
-            <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
-          );
-        } else if (
-          selectedAnswer
-            .toLowerCase()
-            .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) !==
-            correctAnswer.name
-              .toLowerCase()
-              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) &&
-          currentMistakes > 0 &&
-          !isEmpty
-        ) {
-          <HandleButton click={handleNext} name="Następna flaga" />;
+          if (currentMistakes > 0) {
+            // -------------------- incorrect & alive
+            return (
+              <>
+                <HandleButton click={handleNext} name="Następna flaga" />
+                <CorrectAnswer />
+                <ResultBox result="bad" name="BŁĄD" />
+              </>
+            );
+          } else if (currentMistakes === 0) {
+            // -------------------- incorrect & dead
+            return (
+              <>
+                <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
+                <CorrectAnswer />
+                <ResultBox result="bad" name="Koniec" />
+              </>
+            );
+          }
         }
+      }
+    } else if (currentTime === 0) {
+      // -------------------- end time
+      if (currentMistakes > 0) {
+        // -------------------- end time & alive
+        return (
+          <>
+            <HandleButton click={handleNext} name="Następna flaga" />
+            <CorrectAnswer />
+            <ResultBox result="bad" name="CZAS MINĄŁ" />
+          </>
+        );
+      } else if (currentMistakes === 0) {
+        // -------------------- end time & dead
+        return (
+          <>
+            <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
+            <CorrectAnswer />
+            <ResultBox result="bad" name="Koniec" />
+          </>
+        );
       }
     }
   };
@@ -160,25 +168,7 @@ const QuizComponent = () => {
       ) : (
         <>
           <ScoreComponent />
-          <Empty />
-          <Result />
-
-          {currentTime === 0 && (
-            <>
-              <CorrectAnswer />
-            </>
-          )}
-
-          {currentTime === 0 && currentMistakes === 0 && (
-            <>
-              <HandleButton click={handleRestart} name="Rozpocznij od nowa" />
-            </>
-          )}
-          {currentTime === 0 && currentMistakes > 0 && !isEmpty && (
-            <>
-              <HandleButton click={handleNext} name="Następna flaga" />
-            </>
-          )}
+          <AfterResponse />
           <QuestionBox />
           <button
             className="main-game__stop-button"
