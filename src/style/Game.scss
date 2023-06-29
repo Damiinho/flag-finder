@@ -328,14 +328,25 @@
       position: absolute;
       top: 180px;
       left: 50%;
-      width: 280px;
+      width: 100%;
       text-align: center;
       transform: translateX(-50%);
+      font-size: 13px;
       @media screen and (min-height: 830px) {
-        top: 320px;
-        font-size: 25px;
+        top: 210px;
+        font-size: 18px;
+
+        @media screen and (min-width: 300px) {
+          top: 235px;
+        }
+        @media screen and (min-width: 350px) {
+          font-size: 20px;
+        }
+        @media screen and (min-width: 530px) {
+          font-size: 25px;
+        }
       }
-      @media screen and (min-width: 280px) {
+      @media screen and (min-width: 350px) {
         width: 100%;
       }
     }
@@ -372,7 +383,7 @@
       width: 200px;
       border-radius: 10px;
     }
-    @media screen and (min-height: 830px) {
+    @media screen and (min-height: 830px) and (min-width: 300px) {
       button {
         top: 30px;
         width: 250px;
