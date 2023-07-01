@@ -171,14 +171,13 @@ const QuizComponent = () => {
           <ScoreComponent />
           <QuestionBox />
           <AfterResponse />
-          {(selectedAnswer || currentTime === 0) && (
-            <button
-              className="main-game__stop-button"
-              onClick={() => handleStartStop(false)}
-            >
-              <img src={ExitIMG} alt="exit" />
-            </button>
-          )}
+
+          <button
+            className="main-game__stop-button"
+            onClick={() => handleStartStop(false)}
+          >
+            <img src={ExitIMG} alt="exit" />
+          </button>
         </>
       )}
     </>
