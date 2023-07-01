@@ -27,6 +27,7 @@ const QuizComponent = () => {
     setIsEmpty,
     setCurrentItemCounter,
     settingsFormat,
+    settingsVariants,
   } = useContext(GameContext);
   const { isGame } = useContext(AppContext);
   const [isQuizLoading, setIsQuizLoading] = useState(true);
@@ -83,15 +84,52 @@ const QuizComponent = () => {
 
   const AfterResponse = () => {
     if (selectedAnswer) {
-      if (isGame === "flag") {
+      if (isGame === "flag" || isGame === "capital") {
         if (
           // -------------------- correct
-          selectedAnswer
-            .toLowerCase()
-            .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) ===
-          correctAnswer.name
-            .toLowerCase()
-            .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match])
+          ((isGame === "flag" ||
+            (isGame === "capital" && settingsVariants < 7)) &&
+            selectedAnswer
+              .toLowerCase()
+              .replace(
+                /[ąåãćçęéíłńñóśźżʻ]/g,
+                (match) => polishCharsMap[match]
+              ) ===
+              correctAnswer.name
+                .toLowerCase()
+                .replace(
+                  /[ąåãćçęéíłńñóśźżʻ]/g,
+                  (match) => polishCharsMap[match]
+                )) ||
+          (isGame === "capital" &&
+            (selectedAnswer
+              .toLowerCase()
+              .replace(
+                /[ąåãćçęéíłńñóśźżʻ]/g,
+                (match) => polishCharsMap[match]
+              ) ===
+              correctAnswer.capital
+                .join(", ")
+                .toLowerCase()
+                .replace(
+                  /[ąåãćçęéíłńñóśźżʻ]/g,
+                  (match) => polishCharsMap[match]
+                ) ||
+              correctAnswer.capital.some(
+                (capital) =>
+                  selectedAnswer
+                    .toLowerCase()
+                    .replace(
+                      /[ąåãćçęéíłńñóśźżʻ]/g,
+                      (match) => polishCharsMap[match]
+                    ) ===
+                  capital
+                    .toLowerCase()
+                    .replace(
+                      /[ąåãćçęéíłńñóśźżʻ]/g,
+                      (match) => polishCharsMap[match]
+                    )
+              )))
         ) {
           if (!isEmpty) {
             // -------------------- correct & !isEmpty
@@ -108,15 +146,9 @@ const QuizComponent = () => {
               <ResultBox result="good" name="Koniec" />
             </>;
           }
-        } else if (
-          // -------------------- incorrect
-          selectedAnswer
-            .toLowerCase()
-            .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) !==
-          correctAnswer.name
-            .toLowerCase()
-            .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match])
-        ) {
+        }
+        // -------------------- incorrect
+        else {
           if (currentMistakes > 0) {
             // -------------------- incorrect & alive
             return (
