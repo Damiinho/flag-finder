@@ -7,6 +7,7 @@ import SelectMode from "./StartScreen/SelectMode";
 import { AppContext } from "../../contexts/AppContext";
 import SelectRegions from "./StartScreen/SelectRegions";
 import SelectFormat from "./StartScreen/SelectFormat";
+import ExitIMG from "../../img/exit.svg";
 
 const StartScreen = () => {
   const {
@@ -85,7 +86,7 @@ const StartScreen = () => {
       </button>
 
       <button onClick={handleBackClick} className="main-game__back-button">
-        powrót
+        <img src={ExitIMG} alt="exit" />
       </button>
     </div>
   );

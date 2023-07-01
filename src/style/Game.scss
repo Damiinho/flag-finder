@@ -190,9 +190,35 @@
     }
   }
   &__back-button {
-    @include for-settings-button;
-    margin-top: 30px;
-    font-weight: normal;
+    position: fixed;
+    bottom: 17px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    // transform: translateX(-50%);
+    font-family: "Poiret One", cursive;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #ff0d0d60;
+    font-size: 15px;
+    padding: 10px 0;
+    color: white;
+    cursor: pointer;
+    border-color: white;
+    margin: 0 auto;
+    border-radius: 50%;
+    img {
+      width: 23px;
+    }
+
+    @media screen and (min-width: 300px) {
+      bottom: 10px;
+      width: 60px;
+      height: 60px;
+      img {
+        width: 35px;
+      }
+    }
   }
 }
 
