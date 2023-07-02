@@ -88,7 +88,10 @@ const QuizComponent = () => {
         if (
           // -------------------- correct
           ((isGame === "flag" ||
-            (isGame === "capital" && settingsVariants < 7)) &&
+            (isGame === "capital" && settingsVariants < 7) ||
+            (isGame === "capital" &&
+              settingsVariants === 7 &&
+              settingsFormat.value === "capitalToCountry")) &&
             selectedAnswer
               .toLowerCase()
               .replace(

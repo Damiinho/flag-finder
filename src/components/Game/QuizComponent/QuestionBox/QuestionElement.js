@@ -49,14 +49,26 @@ const QuestionElement = () => {
       if (!selectedAnswer && inputAnswer) {
         setSelectedAnswer(inputAnswer);
 
-        if (settingsFormat.value === "flagToCapital") {
+        if (
+          settingsFormat.value === "flagToCapital" ||
+          settingsFormat.value === "countryToCapital"
+        ) {
           if (
-            inputAnswer
-              .toLowerCase()
-              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) ===
-            correctAnswer.capital[0]
-              .toLowerCase()
-              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match])
+            correctAnswer.capital.some(
+              (capital) =>
+                inputAnswer
+                  .toLowerCase()
+                  .replace(
+                    /[ąåãćçęéíłńñóśźżʻ]/g,
+                    (match) => polishCharsMap[match]
+                  ) ===
+                capital
+                  .toLowerCase()
+                  .replace(
+                    /[ąåãćçęéíłńñóśźżʻ]/g,
+                    (match) => polishCharsMap[match]
+                  )
+            )
           ) {
             setScore(score + 1);
             setCurrentGameItemList(
@@ -79,10 +91,13 @@ const QuestionElement = () => {
           if (
             inputAnswer
               .toLowerCase()
-              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match]) ===
+              .replace(
+                /[ąåãćçęéíłńñóśźżʻ]/g,
+                (match) => polishCharsMap[match]
+              ) ===
             correctAnswer.name
               .toLowerCase()
-              .replace(/[ąćęłńóśźż]/g, (match) => polishCharsMap[match])
+              .replace(/[ąåãćçęéíłńñóśźżʻ]/g, (match) => polishCharsMap[match])
           ) {
             setScore(score + 1);
             setCurrentGameItemList(
@@ -179,25 +194,51 @@ const QuestionElement = () => {
         );
       }
     } else if (settingsVariants === 7) {
-      return (
-        <div className="quiz__question-box">
-          <img
-            className="quiz__question-box__img"
-            src={correctAnswer.img}
-            alt="flag"
-          />
-          <div className="quiz__question-box__answers">
-            <form onSubmit={handleInputSubmit}>
-              <input
-                type="text"
-                onChange={handleInputChange}
-                value={inputAnswer}
-                ref={inputRef}
-              />
-            </form>
+      if (
+        settingsFormat.value === "countryToCapital" ||
+        settingsFormat.value === "capitalToCountry"
+      ) {
+        return (
+          <div className="quiz__question-box">
+            <div className="quiz__name-box">
+              <FitText>
+                {settingsFormat.value === "countryToCapital"
+                  ? correctAnswer.name
+                  : correctAnswer.capital.join(", ")}
+              </FitText>{" "}
+            </div>
+            <div className="quiz__question-box__answers">
+              <form onSubmit={handleInputSubmit}>
+                <input
+                  type="text"
+                  onChange={handleInputChange}
+                  value={inputAnswer}
+                  ref={inputRef}
+                />
+              </form>
+            </div>
           </div>
-        </div>
-      );
+        );
+      } else
+        return (
+          <div className="quiz__question-box">
+            <img
+              className="quiz__question-box__img"
+              src={correctAnswer.img}
+              alt="flag"
+            />
+            <div className="quiz__question-box__answers">
+              <form onSubmit={handleInputSubmit}>
+                <input
+                  type="text"
+                  onChange={handleInputChange}
+                  value={inputAnswer}
+                  ref={inputRef}
+                />
+              </form>
+            </div>
+          </div>
+        );
     }
   }
 };
