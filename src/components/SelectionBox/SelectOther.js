@@ -34,9 +34,6 @@ const SelectOther = () => {
       >
         <p>tylko państwa</p>
       </button>
-      {/* <label className="other countries">
-        tylko państwa <input type="checkbox" />
-      </label> */}
 
       <button className="other reset" onClick={handleResetButton}>
         <p>reset</p>
