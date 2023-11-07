@@ -5,11 +5,9 @@ const MainFlag = () => {
   const { selectedSmallOne } = useContext(AppContext);
 
   return (
-    <img
-      className="App__flag-detail__img-flag"
-      src={selectedSmallOne.img}
-      alt=""
-    />
+    <div className="App__flag-detail__img-flag">
+      <img src={selectedSmallOne.img} alt="" />
+    </div>
   );
 };
 

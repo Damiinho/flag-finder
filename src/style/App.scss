@@ -138,7 +138,7 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      height: 90vh;
+      // height: 90vh;
       max-height: 550px;
       width: 80vw;
       max-width: 550px;
@@ -149,8 +149,9 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: center;
+      // align-items: center;
       font-size: 12px;
+      padding: 20px 50px;
 
       &__exit {
         position: absolute;
@@ -162,55 +163,62 @@ body {
         }
       }
       &__name {
-        width: 90%;
-        margin: 10px auto;
-        padding: 0 10px;
-        text-align: center;
+        // margin-top: 25px;
+        width: 100%;
+        // margin: 20px auto;
+        // padding: 0 10px;
+        // text-align: center;
       }
       &__official-name,
-      &__region {
-        width: 90%;
-        text-align: center;
-        margin: 0 auto 5px;
-      }
-      &__img-flag {
-        max-height: 75px;
-      }
+      &__region,
       &__capital {
-        margin: 10px 0;
-        padding: 0 15px;
+        margin-top: 5px;
+      }
+      &__infocomponent {
         display: flex;
-        flex-direction: row;
-        align-items: center;
         justify-content: center;
-        &-img {
-          height: 40px;
-          padding-right: 20px;
-        }
-        &-description {
-          min-width: 80px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          font-size: 15px;
+        align-items: center;
+        gap: 10px;
+        background-color: red;
+      }
+
+      &__img-flag {
+        margin-top: 25px;
+        img {
+          max-height: 75px;
         }
       }
+
       &__timezones {
         display: flex;
         flex-direction: row;
-        height: 100%;
-        gap: 10px;
-        font-size: 10px;
+        // height: 100%;
+        gap: 5px;
+        font-size: 12px;
         img {
-          height: 30px;
+          // height: 30px;
         }
         &-description {
           min-width: 60px;
           display: flex;
           flex-direction: column;
           justify-content: center;
+        }
+      }
+      &__web {
+        display: flex;
+        flex-direction: row;
+        // height: 100%;
+        gap: 5px;
+        font-size: 10px;
+        img {
+          // height: 30px;
+        }
+        &-description {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          font-size: 15px;
         }
       }
       &__land-box {
@@ -221,10 +229,26 @@ body {
         gap: 10px;
 
         &__info {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
+          .info__main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            // justify-content: center;
+            align-items: center;
+            gap: 10px;
+            &-infocomponent {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 10px;
+              background-color: #ffffff22;
+              border: 1px solid black;
+              box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+                0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+                0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+              padding: 5px 10px;
+            }
+          }
         }
       }
       &__population {
@@ -232,14 +256,16 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        font-size: 10px;
         img {
           margin-right: 5px;
           width: 20px;
         }
       }
       &__area {
-        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
         text-align: center;
       }
 
@@ -428,16 +454,15 @@ body {
       }
 
       &__linkbox {
-        position: absolute;
-        bottom: 5px;
-        display: flex;
-        flex-direction: row;
+        // position: absolute;
+        // bottom: 5px;
 
         &-title {
-          width: 60px;
+          width: 50px;
           text-align: center;
           position: relative;
           top: 3px;
+          font-size: 15px;
         }
 
         &-link {
@@ -448,8 +473,14 @@ body {
 
           justify-content: center;
           align-items: center;
+          background-color: #ffffff22;
+          border: 1px solid black;
+          box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+            0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+            0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+          padding: 0px 5px;
           &:hover {
-            color: rgb(49, 131, 255);
+            background-color: #ffffff55;
           }
           &__img {
             width: 40px;

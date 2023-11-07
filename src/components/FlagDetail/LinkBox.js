@@ -12,28 +12,30 @@ const LinkBox = () => {
 
   return (
     <div className="App__flag-detail__linkbox">
-      <div className="App__flag-detail__linkbox-title">zobacz więcej:</div>
-      <Link
-        img={wikipediaIMG}
-        alt="wikipedia"
-        link={`https://pl.wikipedia.org/wiki/${selectedSmallOne.name}`}
-        title="Wikipedia"
-      />
-      <Link
-        img={GMapsIMG}
-        alt="google"
-        link={`https://www.google.com/maps/place/${selectedSmallOne.name}`}
-        title="Google Maps"
-      />
-
-      {openStreetMapLink && (
+      <div style={{ fontSize: 15, padding: 3 }}>Linki:</div>
+      <div style={{ display: "flex", gap: 5 }}>
         <Link
-          img={OSMapIMG}
-          alt="osmap"
-          link={openStreetMapLink}
-          title="OpenStreetMap"
+          img={wikipediaIMG}
+          alt="wikipedia"
+          link={`https://pl.wikipedia.org/wiki/${selectedSmallOne.name}`}
+          title="Wikipedia"
         />
-      )}
+        <Link
+          img={GMapsIMG}
+          alt="google"
+          link={`https://www.google.com/maps/place/${selectedSmallOne.name}`}
+          title="Google Maps"
+        />
+
+        {openStreetMapLink && (
+          <Link
+            img={OSMapIMG}
+            alt="osmap"
+            link={openStreetMapLink}
+            title="OpenStreetMap"
+          />
+        )}
+      </div>
     </div>
   );
 };

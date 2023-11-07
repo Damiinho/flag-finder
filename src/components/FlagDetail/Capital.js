@@ -8,13 +8,13 @@ const Capital = () => {
   if (selectedSmallOne.capital.length !== 0) {
     return (
       <div className="App__flag-detail__capital">
-        <img
+        {/* <img
           className="App__flag-detail__capital-img"
           src={capitolIMG}
           alt="capital"
-        />
+        /> */}
         <div className="App__flag-detail__capital-description">
-          <p>{selectedSmallOne.capital.join(", ")}</p>
+          <p>stolica: {selectedSmallOne.capital.join(", ")}</p>
         </div>
       </div>
     );

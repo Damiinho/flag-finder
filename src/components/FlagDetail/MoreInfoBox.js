@@ -104,7 +104,7 @@ const MoreInfoBox = () => {
       onClick={handleMoreInfoBoxClick}
     >
       <div className={`App__flag-detail__element-box `}>
-        {moreInfoShow || !(windowWidth < 688) ? <TimeZone /> : ""}
+        {/* {moreInfoShow || !(windowWidth < 688) ? <TimeZone /> : ""} */}
         <InfoComponent
           className="un"
           logo={logoUN}

@@ -7,7 +7,7 @@ const Link = (props) => (
     <div className="App__flag-detail__linkbox-link__img">
       <img src={props.img} alt={props.alt} />
     </div>
-    <p>{props.title}</p>
+    {/* <p>{props.title}</p> */}
   </a>
 );
 
