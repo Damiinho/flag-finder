@@ -3,16 +3,9 @@ import { AppContext } from "../contexts/AppContext";
 
 import LinkBox from "./FlagDetail/LinkBox";
 import { FlagDetailContext } from "../contexts/FlagDetailContext";
-import MoreInfoBox from "./FlagDetail/MoreInfoBox";
 import InfoBox from "./FlagDetail/InfoBox";
 import NameSection from "./FlagDetail/NameSection";
 import MainFlag from "./FlagDetail/MainFlag";
-import Capital from "./FlagDetail/Capital";
-import Exit from "./FlagDetail/Exit";
-import Population from "./FlagDetail/InfoBox/Population";
-import Area from "./FlagDetail/InfoBox/Area";
-import LocalTime from "./FlagDetail/InfoBox/LocalTime";
-import LocalWeb from "./FlagDetail/InfoBox/LocalWeb";
 
 const FlagDetail = () => {
   const {
