@@ -6,6 +6,7 @@ import { FlagDetailContext } from "../contexts/FlagDetailContext";
 import InfoBox from "./FlagDetail/InfoBox";
 import NameSection from "./FlagDetail/NameSection";
 import MainFlag from "./FlagDetail/MainFlag";
+import Exit from "./FlagDetail/Exit";
 
 const FlagDetail = () => {
   const {
@@ -266,10 +267,15 @@ const FlagDetail = () => {
     <>
       {selectedSmallOne ? (
         <>
-          <div className="App__flag-detail">
-            {/* <Exit /> */}
+          <div
+            // style={{
+            //   backgroundImage: `url(${selectedSmallOne.img})`,
+            //   backgroundColor: "rgba(255, 255, 255, 0.2)", // Dostosuj poziom przezroczystości zmieniając ostatni parametr
+            // }}
+            className="App__flag-detail"
+          >
+            <Exit />
             <NameSection />
-            <MainFlag />
 
             <div className="App__flag-detail__land-box">
               <InfoBox />

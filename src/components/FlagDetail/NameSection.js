@@ -12,15 +12,21 @@ const NameSection = () => {
     <>
       <div className="App__flag-detail__name">
         <FitText maxFontSize={35}>{selectedSmallOne.name}</FitText>
-        <div className="App__flag-detail__region">
-          region: {region}
-          {officialName && (
-            <div className="App__flag-detail__official-name">
-              oficjalna nazwa: {officialName}
-            </div>
-          )}
+        <div
+          style={{ display: "flex", justifyContent: "space-between", gap: 10 }}
+          className="App__flag-detail__region"
+        >
+          <div>
+            region: {region}
+            {officialName && (
+              <div className="App__flag-detail__official-name">
+                oficjalna nazwa: {officialName}
+              </div>
+            )}
+            <Capital />
+          </div>
+          <img style={{ maxHeight: 75 }} src={selectedSmallOne.img} alt="" />
         </div>
-        <Capital />
       </div>
     </>
   );
