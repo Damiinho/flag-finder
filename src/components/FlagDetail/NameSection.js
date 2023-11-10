@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { AppContext } from "../../contexts/AppContext";
 import { FlagDetailContext } from "../../contexts/FlagDetailContext";
 import FitText from "@kennethormandy/react-fittext";
-import Capital from "./Capital";
 
 const NameSection = () => {
   const { selectedSmallOne } = useContext(AppContext);
@@ -23,7 +22,13 @@ const NameSection = () => {
                 oficjalna nazwa: {officialName}
               </div>
             )}
-            <Capital />
+            {selectedSmallOne.capital.length !== 0 && (
+              <div className="App__flag-detail__capital">
+                <div className="App__flag-detail__capital-description">
+                  <p>stolica: {selectedSmallOne.capital.join(", ")}</p>
+                </div>
+              </div>
+            )}
           </div>
           <img style={{ maxHeight: 75 }} src={selectedSmallOne.img} alt="" />
         </div>

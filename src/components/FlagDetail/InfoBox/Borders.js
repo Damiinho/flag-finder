@@ -32,14 +32,21 @@ const Borders = () => {
           style={{
             justifyContent: "center",
             alignItems: "center",
-            backgroundColor: "#ffffff22",
-            padding: "5px 10px",
-            border: "1px solid black",
-            boxShadow:
-              "0px 3px 1px -2px rgba(0, 0, 0, 0.2),      0px 2px 2px 0px rgba(0, 0, 0, 0.14),      0px 1px 5px 0px rgba(0, 0, 0, 0.12)",
+            maxWidth: 250,
+            // backgroundColor: "#ffffff22",
+            // padding: "5px 10px",
+            // border: "1px solid black",
+            // boxShadow:
+            //   "0px 3px 1px -2px rgba(0, 0, 0, 0.2),      0px 2px 2px 0px rgba(0, 0, 0, 0.14),      0px 1px 5px 0px rgba(0, 0, 0, 0.12)",
           }}
         >
-          <span style={{ width: 40, fontSize: 12, textAlign: "center" }}>
+          <span
+            style={{
+              width: 40,
+              fontSize: 12,
+              textAlign: "center",
+            }}
+          >
             granice lądowe:
           </span>{" "}
           {borders.join(", ")}

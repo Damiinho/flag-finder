@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import InfoComponent from "./InfoComponent";
 import { FlagDetailContext } from "../../../contexts/FlagDetailContext";
 import roadIMG from "../../../img/road2.png";
 import carIMG from "../../../img/car.png";

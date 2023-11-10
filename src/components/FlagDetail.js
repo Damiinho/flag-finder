@@ -5,7 +5,6 @@ import LinkBox from "./FlagDetail/LinkBox";
 import { FlagDetailContext } from "../contexts/FlagDetailContext";
 import InfoBox from "./FlagDetail/InfoBox";
 import NameSection from "./FlagDetail/NameSection";
-import MainFlag from "./FlagDetail/MainFlag";
 import Exit from "./FlagDetail/Exit";
 
 const FlagDetail = () => {
@@ -31,6 +30,7 @@ const FlagDetail = () => {
     lng,
     setLng,
     setTime,
+    borders,
   } = useContext(FlagDetailContext);
   const { selectedSmallOne } = useContext(AppContext);
 
@@ -282,7 +282,7 @@ const FlagDetail = () => {
               {/* <MoreInfoBox /> */}
             </div>
 
-            <LinkBox />
+            {!(borders.length > 0) && <LinkBox />}
           </div>
         </>
       ) : null}

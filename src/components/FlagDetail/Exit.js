@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import XIMG from "../../img/x.svg";
+import ClearIMG from "../../img/clear_black_24dp.svg";
 import { AppContext } from "../../contexts/AppContext";
 
 const Exit = () => {
@@ -10,7 +11,7 @@ const Exit = () => {
   };
   return (
     <div className="App__flag-detail__exit" onClick={handleClick}>
-      <img src={XIMG} alt="exit" />
+      <img src={ClearIMG} alt="exit" />
     </div>
   );
 };
