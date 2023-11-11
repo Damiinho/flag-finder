@@ -1,6 +1,6 @@
 const InfoComponent = (props) => {
   return (
-    <div className="info__main-infocomponent">
+    <div className="App__flag-detail__info-box__infocomponent">
       <img src={props.img} alt="" />
       <p style={{ fontSize: props.fontSize ? props.fontSize : 12 }}>
         {props.text}

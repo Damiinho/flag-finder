@@ -14,26 +14,21 @@ import { FlagDetailContext } from "../../contexts/FlagDetailContext";
 const InfoBox = () => {
   const { borders } = useContext(FlagDetailContext);
   return (
-    <div className="App__flag-detail__land-box__info">
-      <div style={{ fontSize: 15, padding: 3 }}>Informacje: </div>
-      <div className="info__main">
-        <Population />
-        <Area />
-
-        <LocalTime />
-        <LocalWeb />
-        <Landlocked />
-        <UNMember />
-        <CarSide />
-        <Currency />
-        <Borders />
-        {borders.length > 0 && <LinkBox />}
+    <div className="App__flag-detail__info-box">
+      <div style={{ fontSize: 15, padding: 3, width: "100%" }}>
+        Informacje:{" "}
       </div>
-      {/* {selectedSmallOne.country && !(borders.length > 0) && (
-        <div className="info__borders">
-          <Borders />
-        </div>
-      )} */}
+      <Population />
+      <Area />
+
+      <LocalTime />
+      <LocalWeb />
+      <Landlocked />
+      <UNMember />
+      <CarSide />
+      <Currency />
+      <Borders />
+      {borders.length > 0 && <LinkBox />}
     </div>
   );
 };

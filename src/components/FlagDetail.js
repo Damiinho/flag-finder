@@ -277,10 +277,7 @@ const FlagDetail = () => {
             <Exit />
             <NameSection />
 
-            <div className="App__flag-detail__land-box">
-              <InfoBox />
-              {/* <MoreInfoBox /> */}
-            </div>
+            <InfoBox />
 
             {!(borders.length > 0) && <LinkBox />}
           </div>
